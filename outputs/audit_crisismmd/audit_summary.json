@@ -1,0 +1,1367 @@
+{
+  "duplicates": {
+    "total_samples": 18082,
+    "high_similarity_pairs_count": 3295,
+    "cross_split_contamination_count": 2376,
+    "sample_matches": [
+      {
+        "sample_1": "sample_0",
+        "sample_2": "sample_1",
+        "similarity": 0.9999999403953552,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_2",
+        "sample_2": "sample_3",
+        "similarity": 0.9999999403953552,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_2",
+        "sample_2": "sample_4",
+        "similarity": 0.9999999403953552,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_3",
+        "sample_2": "sample_4",
+        "similarity": 0.9999999403953552,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_5",
+        "sample_2": "sample_6",
+        "similarity": 0.9999999403953552,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_5",
+        "sample_2": "sample_7",
+        "similarity": 0.9999999403953552,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_6",
+        "sample_2": "sample_7",
+        "similarity": 0.9999999403953552,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_8",
+        "sample_2": "sample_9",
+        "similarity": 0.9999999403953552,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_8",
+        "sample_2": "sample_10",
+        "similarity": 0.9999999403953552,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_9",
+        "sample_2": "sample_10",
+        "similarity": 0.9999999403953552,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_11",
+        "sample_2": "sample_12",
+        "similarity": 0.9999998807907104,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_11",
+        "sample_2": "sample_13",
+        "similarity": 0.9999998807907104,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_11",
+        "sample_2": "sample_14",
+        "similarity": 0.9999998807907104,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_12",
+        "sample_2": "sample_13",
+        "similarity": 0.9999998807907104,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_12",
+        "sample_2": "sample_14",
+        "similarity": 0.9999998807907104,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_13",
+        "sample_2": "sample_14",
+        "similarity": 0.9999998807907104,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_15",
+        "sample_2": "sample_16",
+        "similarity": 1.0000001192092896,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_15",
+        "sample_2": "sample_17",
+        "similarity": 1.0000001192092896,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_15",
+        "sample_2": "sample_18",
+        "similarity": 1.0000001192092896,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_16",
+        "sample_2": "sample_17",
+        "similarity": 1.0000001192092896,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_16",
+        "sample_2": "sample_18",
+        "similarity": 1.0000001192092896,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_17",
+        "sample_2": "sample_18",
+        "similarity": 1.0000001192092896,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_19",
+        "sample_2": "sample_20",
+        "similarity": 0.9999999403953552,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_21",
+        "sample_2": "sample_22",
+        "similarity": 0.9999997615814209,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_21",
+        "sample_2": "sample_23",
+        "similarity": 0.9999997615814209,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_21",
+        "sample_2": "sample_24",
+        "similarity": 0.9999997615814209,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_22",
+        "sample_2": "sample_23",
+        "similarity": 0.9999997615814209,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_22",
+        "sample_2": "sample_24",
+        "similarity": 0.9999997615814209,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_23",
+        "sample_2": "sample_24",
+        "similarity": 0.9999997615814209,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_25",
+        "sample_2": "sample_26",
+        "similarity": 1.000000238418579,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_27",
+        "sample_2": "sample_28",
+        "similarity": 0.9999998807907104,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_29",
+        "sample_2": "sample_30",
+        "similarity": 1.0000004768371582,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_29",
+        "sample_2": "sample_31",
+        "similarity": 1.0000004768371582,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_29",
+        "sample_2": "sample_32",
+        "similarity": 1.0000004768371582,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_30",
+        "sample_2": "sample_31",
+        "similarity": 1.0000004768371582,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_30",
+        "sample_2": "sample_32",
+        "similarity": 1.0000004768371582,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_31",
+        "sample_2": "sample_32",
+        "similarity": 1.0000004768371582,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_33",
+        "sample_2": "sample_34",
+        "similarity": 1.0,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_35",
+        "sample_2": "sample_36",
+        "similarity": 1.0,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_37",
+        "sample_2": "sample_38",
+        "similarity": 1.000000238418579,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_37",
+        "sample_2": "sample_39",
+        "similarity": 1.000000238418579,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_38",
+        "sample_2": "sample_39",
+        "similarity": 1.000000238418579,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_40",
+        "sample_2": "sample_41",
+        "similarity": 0.9999996423721313,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_42",
+        "sample_2": "sample_43",
+        "similarity": 1.000000238418579,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_44",
+        "sample_2": "sample_45",
+        "similarity": 1.0,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_44",
+        "sample_2": "sample_46",
+        "similarity": 1.0,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_44",
+        "sample_2": "sample_47",
+        "similarity": 1.0,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_45",
+        "sample_2": "sample_46",
+        "similarity": 1.0,
+        "cross_event": false,
+        "cross_split": true
+      },
+      {
+        "sample_1": "sample_45",
+        "sample_2": "sample_47",
+        "similarity": 1.0,
+        "cross_event": false,
+        "cross_split": false
+      },
+      {
+        "sample_1": "sample_46",
+        "sample_2": "sample_47",
+        "similarity": 1.0,
+        "cross_event": false,
+        "cross_split": true
+      }
+    ]
+  },
+  "label_noise": {
+    "total_samples": 18082,
+    "detected_issues_count": 5725,
+    "estimated_noise_rate": 0.31661320650370534,
+    "flagged_samples": [
+      {
+        "sample_idx": 12021,
+        "given_label": 7,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0005594345275312662,
+        "confidence_in_pred": 0.7530711889266968,
+        "quality_score": 0.0005594345275312662,
+        "sample_id": "sample_12021",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 17871,
+        "given_label": 7,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0009129737154580653,
+        "confidence_in_pred": 0.6256000399589539,
+        "quality_score": 0.0009129737154580653,
+        "sample_id": "sample_17871",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 4412,
+        "given_label": 7,
+        "predicted_label": 6,
+        "confidence_in_given": 0.0011954281944781542,
+        "confidence_in_pred": 0.7697463035583496,
+        "quality_score": 0.0011954281944781542,
+        "sample_id": "sample_4412",
+        "event_id": "california_wildfires"
+      },
+      {
+        "sample_idx": 8194,
+        "given_label": 3,
+        "predicted_label": 5,
+        "confidence_in_given": 0.0013163888361304998,
+        "confidence_in_pred": 0.48909103870391846,
+        "quality_score": 0.0013163888361304998,
+        "sample_id": "sample_8194",
+        "event_id": "mexico_earthquake"
+      },
+      {
+        "sample_idx": 9948,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0016042889328673482,
+        "confidence_in_pred": 0.5457447171211243,
+        "quality_score": 0.0016042889328673482,
+        "sample_id": "sample_9948",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 15902,
+        "given_label": 3,
+        "predicted_label": 6,
+        "confidence_in_given": 0.001615816494449973,
+        "confidence_in_pred": 0.37370753288269043,
+        "quality_score": 0.001615816494449973,
+        "sample_id": "sample_15902",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 15817,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0016773290699347854,
+        "confidence_in_pred": 0.684184193611145,
+        "quality_score": 0.0016773290699347854,
+        "sample_id": "sample_15817",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 16987,
+        "given_label": 7,
+        "predicted_label": 5,
+        "confidence_in_given": 0.0017357526812702417,
+        "confidence_in_pred": 0.7763155698776245,
+        "quality_score": 0.0017357526812702417,
+        "sample_id": "sample_16987",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 3542,
+        "given_label": 7,
+        "predicted_label": 4,
+        "confidence_in_given": 0.001745466492138803,
+        "confidence_in_pred": 0.5662940740585327,
+        "quality_score": 0.001745466492138803,
+        "sample_id": "sample_3542",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 10245,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0018329472513869405,
+        "confidence_in_pred": 0.581670343875885,
+        "quality_score": 0.0018329472513869405,
+        "sample_id": "sample_10245",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 3792,
+        "given_label": 7,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0018930732039734721,
+        "confidence_in_pred": 0.4311193823814392,
+        "quality_score": 0.0018930732039734721,
+        "sample_id": "sample_3792",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 17058,
+        "given_label": 2,
+        "predicted_label": 6,
+        "confidence_in_given": 0.0019508623518049717,
+        "confidence_in_pred": 0.6557378768920898,
+        "quality_score": 0.0019508623518049717,
+        "sample_id": "sample_17058",
+        "event_id": "mexico_earthquake"
+      },
+      {
+        "sample_idx": 17254,
+        "given_label": 3,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0019705956801772118,
+        "confidence_in_pred": 0.3435371220111847,
+        "quality_score": 0.0019705956801772118,
+        "sample_id": "sample_17254",
+        "event_id": "srilanka_floods"
+      },
+      {
+        "sample_idx": 14593,
+        "given_label": 3,
+        "predicted_label": 4,
+        "confidence_in_given": 0.001971661113202572,
+        "confidence_in_pred": 0.49403515458106995,
+        "quality_score": 0.001971661113202572,
+        "sample_id": "sample_14593",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 16590,
+        "given_label": 7,
+        "predicted_label": 4,
+        "confidence_in_given": 0.002245055977255106,
+        "confidence_in_pred": 0.47749248147010803,
+        "quality_score": 0.002245055977255106,
+        "sample_id": "sample_16590",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 14900,
+        "given_label": 3,
+        "predicted_label": 6,
+        "confidence_in_given": 0.002306421520188451,
+        "confidence_in_pred": 0.5383697748184204,
+        "quality_score": 0.002306421520188451,
+        "sample_id": "sample_14900",
+        "event_id": "mexico_earthquake"
+      },
+      {
+        "sample_idx": 3115,
+        "given_label": 3,
+        "predicted_label": 4,
+        "confidence_in_given": 0.002442691707983613,
+        "confidence_in_pred": 0.5401168465614319,
+        "quality_score": 0.002442691707983613,
+        "sample_id": "sample_3115",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 12212,
+        "given_label": 7,
+        "predicted_label": 6,
+        "confidence_in_given": 0.0024984043557196856,
+        "confidence_in_pred": 0.6489137411117554,
+        "quality_score": 0.0024984043557196856,
+        "sample_id": "sample_12212",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 3114,
+        "given_label": 3,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0026310007087886333,
+        "confidence_in_pred": 0.6030855178833008,
+        "quality_score": 0.0026310007087886333,
+        "sample_id": "sample_3114",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 3979,
+        "given_label": 3,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0026685367338359356,
+        "confidence_in_pred": 0.7275093793869019,
+        "quality_score": 0.0026685367338359356,
+        "sample_id": "sample_3979",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 9139,
+        "given_label": 7,
+        "predicted_label": 5,
+        "confidence_in_given": 0.002875547856092453,
+        "confidence_in_pred": 0.8019049167633057,
+        "quality_score": 0.002875547856092453,
+        "sample_id": "sample_9139",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 12223,
+        "given_label": 0,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0028926425147801638,
+        "confidence_in_pred": 0.8903375267982483,
+        "quality_score": 0.0028926425147801638,
+        "sample_id": "sample_12223",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 3414,
+        "given_label": 7,
+        "predicted_label": 4,
+        "confidence_in_given": 0.002913798438385129,
+        "confidence_in_pred": 0.5702990889549255,
+        "quality_score": 0.002913798438385129,
+        "sample_id": "sample_3414",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 8507,
+        "given_label": 3,
+        "predicted_label": 4,
+        "confidence_in_given": 0.00322199915535748,
+        "confidence_in_pred": 0.5118193626403809,
+        "quality_score": 0.00322199915535748,
+        "sample_id": "sample_8507",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 14102,
+        "given_label": 0,
+        "predicted_label": 6,
+        "confidence_in_given": 0.003281890181824565,
+        "confidence_in_pred": 0.8861991763114929,
+        "quality_score": 0.003281890181824565,
+        "sample_id": "sample_14102",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 10135,
+        "given_label": 0,
+        "predicted_label": 4,
+        "confidence_in_given": 0.003312935819849372,
+        "confidence_in_pred": 0.8417242765426636,
+        "quality_score": 0.003312935819849372,
+        "sample_id": "sample_10135",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 15993,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.003342845942825079,
+        "confidence_in_pred": 0.4796701669692993,
+        "quality_score": 0.003342845942825079,
+        "sample_id": "sample_15993",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 6136,
+        "given_label": 3,
+        "predicted_label": 4,
+        "confidence_in_given": 0.00349521916359663,
+        "confidence_in_pred": 0.5358940362930298,
+        "quality_score": 0.00349521916359663,
+        "sample_id": "sample_6136",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 2168,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0035233234521001577,
+        "confidence_in_pred": 0.8505656719207764,
+        "quality_score": 0.0035233234521001577,
+        "sample_id": "sample_2168",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 10142,
+        "given_label": 3,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0035728653892874718,
+        "confidence_in_pred": 0.6273457407951355,
+        "quality_score": 0.0035728653892874718,
+        "sample_id": "sample_10142",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 4725,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0038393447175621986,
+        "confidence_in_pred": 0.6152951121330261,
+        "quality_score": 0.0038393447175621986,
+        "sample_id": "sample_4725",
+        "event_id": "california_wildfires"
+      },
+      {
+        "sample_idx": 15323,
+        "given_label": 7,
+        "predicted_label": 6,
+        "confidence_in_given": 0.003965882118791342,
+        "confidence_in_pred": 0.714206874370575,
+        "quality_score": 0.003965882118791342,
+        "sample_id": "sample_15323",
+        "event_id": "california_wildfires"
+      },
+      {
+        "sample_idx": 4730,
+        "given_label": 0,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0039717210456728935,
+        "confidence_in_pred": 0.7816149592399597,
+        "quality_score": 0.0039717210456728935,
+        "sample_id": "sample_4730",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 3419,
+        "given_label": 2,
+        "predicted_label": 6,
+        "confidence_in_given": 0.00401828158646822,
+        "confidence_in_pred": 0.4990275502204895,
+        "quality_score": 0.00401828158646822,
+        "sample_id": "sample_3419",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 12841,
+        "given_label": 7,
+        "predicted_label": 4,
+        "confidence_in_given": 0.004057135432958603,
+        "confidence_in_pred": 0.5666698217391968,
+        "quality_score": 0.004057135432958603,
+        "sample_id": "sample_12841",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 16263,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0040612900629639626,
+        "confidence_in_pred": 0.44622886180877686,
+        "quality_score": 0.0040612900629639626,
+        "sample_id": "sample_16263",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 15387,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0040775928646326065,
+        "confidence_in_pred": 0.7805733680725098,
+        "quality_score": 0.0040775928646326065,
+        "sample_id": "sample_15387",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 16087,
+        "given_label": 0,
+        "predicted_label": 6,
+        "confidence_in_given": 0.00414464483037591,
+        "confidence_in_pred": 0.7157146334648132,
+        "quality_score": 0.00414464483037591,
+        "sample_id": "sample_16087",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 12016,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.004149882588535547,
+        "confidence_in_pred": 0.5702585577964783,
+        "quality_score": 0.004149882588535547,
+        "sample_id": "sample_12016",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 5345,
+        "given_label": 0,
+        "predicted_label": 4,
+        "confidence_in_given": 0.004189931321889162,
+        "confidence_in_pred": 0.6546580791473389,
+        "quality_score": 0.004189931321889162,
+        "sample_id": "sample_5345",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 11065,
+        "given_label": 7,
+        "predicted_label": 6,
+        "confidence_in_given": 0.004288624040782452,
+        "confidence_in_pred": 0.567827045917511,
+        "quality_score": 0.004288624040782452,
+        "sample_id": "sample_11065",
+        "event_id": "iraq_iran_earthquake"
+      },
+      {
+        "sample_idx": 13385,
+        "given_label": 7,
+        "predicted_label": 6,
+        "confidence_in_given": 0.004401816986501217,
+        "confidence_in_pred": 0.8516284227371216,
+        "quality_score": 0.004401816986501217,
+        "sample_id": "sample_13385",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 10909,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.004431873094290495,
+        "confidence_in_pred": 0.46676623821258545,
+        "quality_score": 0.004431873094290495,
+        "sample_id": "sample_10909",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 17408,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.004615922458469868,
+        "confidence_in_pred": 0.7525323033332825,
+        "quality_score": 0.004615922458469868,
+        "sample_id": "sample_17408",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 10688,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.004661608021706343,
+        "confidence_in_pred": 0.7402337193489075,
+        "quality_score": 0.004661608021706343,
+        "sample_id": "sample_10688",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 16223,
+        "given_label": 7,
+        "predicted_label": 4,
+        "confidence_in_given": 0.004672824405133724,
+        "confidence_in_pred": 0.6953126192092896,
+        "quality_score": 0.004672824405133724,
+        "sample_id": "sample_16223",
+        "event_id": "california_wildfires"
+      },
+      {
+        "sample_idx": 4495,
+        "given_label": 7,
+        "predicted_label": 1,
+        "confidence_in_given": 0.0047501069493591785,
+        "confidence_in_pred": 0.36222031712532043,
+        "quality_score": 0.0047501069493591785,
+        "sample_id": "sample_4495",
+        "event_id": "california_wildfires"
+      },
+      {
+        "sample_idx": 10168,
+        "given_label": 3,
+        "predicted_label": 4,
+        "confidence_in_given": 0.004829606506973505,
+        "confidence_in_pred": 0.8065900206565857,
+        "quality_score": 0.004829606506973505,
+        "sample_id": "sample_10168",
+        "event_id": "mexico_earthquake"
+      },
+      {
+        "sample_idx": 8590,
+        "given_label": 7,
+        "predicted_label": 4,
+        "confidence_in_given": 0.0048825000412762165,
+        "confidence_in_pred": 0.5668219923973083,
+        "quality_score": 0.0048825000412762165,
+        "sample_id": "sample_8590",
+        "event_id": "california_wildfires"
+      },
+      {
+        "sample_idx": 3488,
+        "given_label": 7,
+        "predicted_label": 4,
+        "confidence_in_given": 0.004892037715762854,
+        "confidence_in_pred": 0.7554634809494019,
+        "quality_score": 0.004892037715762854,
+        "sample_id": "sample_3488",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 9808,
+        "given_label": 7,
+        "predicted_label": 5,
+        "confidence_in_given": 0.004930229391902685,
+        "confidence_in_pred": 0.7807466387748718,
+        "quality_score": 0.004930229391902685,
+        "sample_id": "sample_9808",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 9371,
+        "given_label": 2,
+        "predicted_label": 5,
+        "confidence_in_given": 0.004941909108310938,
+        "confidence_in_pred": 0.5410308241844177,
+        "quality_score": 0.004941909108310938,
+        "sample_id": "sample_9371",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 8738,
+        "given_label": 0,
+        "predicted_label": 6,
+        "confidence_in_given": 0.0049921371974051,
+        "confidence_in_pred": 0.532257080078125,
+        "quality_score": 0.0049921371974051,
+        "sample_id": "sample_8738",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 9188,
+        "given_label": 2,
+        "predicted_label": 5,
+        "confidence_in_given": 0.005052649416029453,
+        "confidence_in_pred": 0.6387467384338379,
+        "quality_score": 0.005052649416029453,
+        "sample_id": "sample_9188",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 4003,
+        "given_label": 7,
+        "predicted_label": 5,
+        "confidence_in_given": 0.005098647903650999,
+        "confidence_in_pred": 0.441426545381546,
+        "quality_score": 0.005098647903650999,
+        "sample_id": "sample_4003",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 9470,
+        "given_label": 7,
+        "predicted_label": 4,
+        "confidence_in_given": 0.005183685105293989,
+        "confidence_in_pred": 0.4697614014148712,
+        "quality_score": 0.005183685105293989,
+        "sample_id": "sample_9470",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 3926,
+        "given_label": 0,
+        "predicted_label": 6,
+        "confidence_in_given": 0.005224045366048813,
+        "confidence_in_pred": 0.9773308038711548,
+        "quality_score": 0.005224045366048813,
+        "sample_id": "sample_3926",
+        "event_id": "srilanka_floods"
+      },
+      {
+        "sample_idx": 16964,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.005227811634540558,
+        "confidence_in_pred": 0.5501713752746582,
+        "quality_score": 0.005227811634540558,
+        "sample_id": "sample_16964",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 11504,
+        "given_label": 7,
+        "predicted_label": 6,
+        "confidence_in_given": 0.005268733948469162,
+        "confidence_in_pred": 0.5919601321220398,
+        "quality_score": 0.005268733948469162,
+        "sample_id": "sample_11504",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 6252,
+        "given_label": 0,
+        "predicted_label": 4,
+        "confidence_in_given": 0.005372023209929466,
+        "confidence_in_pred": 0.548961877822876,
+        "quality_score": 0.005372023209929466,
+        "sample_id": "sample_6252",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 16169,
+        "given_label": 2,
+        "predicted_label": 6,
+        "confidence_in_given": 0.0053820498287677765,
+        "confidence_in_pred": 0.3367742598056793,
+        "quality_score": 0.0053820498287677765,
+        "sample_id": "sample_16169",
+        "event_id": "california_wildfires"
+      },
+      {
+        "sample_idx": 14895,
+        "given_label": 0,
+        "predicted_label": 5,
+        "confidence_in_given": 0.005389173049479723,
+        "confidence_in_pred": 0.6879066824913025,
+        "quality_score": 0.005389173049479723,
+        "sample_id": "sample_14895",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 14289,
+        "given_label": 0,
+        "predicted_label": 4,
+        "confidence_in_given": 0.005648499820381403,
+        "confidence_in_pred": 0.7968287467956543,
+        "quality_score": 0.005648499820381403,
+        "sample_id": "sample_14289",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 14643,
+        "given_label": 7,
+        "predicted_label": 6,
+        "confidence_in_given": 0.00578870577737689,
+        "confidence_in_pred": 0.3952276408672333,
+        "quality_score": 0.00578870577737689,
+        "sample_id": "sample_14643",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 5710,
+        "given_label": 6,
+        "predicted_label": 5,
+        "confidence_in_given": 0.005827025510370731,
+        "confidence_in_pred": 0.7804151177406311,
+        "quality_score": 0.005827025510370731,
+        "sample_id": "sample_5710",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 1359,
+        "given_label": 0,
+        "predicted_label": 4,
+        "confidence_in_given": 0.005885011050850153,
+        "confidence_in_pred": 0.6970991492271423,
+        "quality_score": 0.005885011050850153,
+        "sample_id": "sample_1359",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 6183,
+        "given_label": 3,
+        "predicted_label": 5,
+        "confidence_in_given": 0.005963439587503672,
+        "confidence_in_pred": 0.38771551847457886,
+        "quality_score": 0.005963439587503672,
+        "sample_id": "sample_6183",
+        "event_id": "california_wildfires"
+      },
+      {
+        "sample_idx": 5026,
+        "given_label": 6,
+        "predicted_label": 4,
+        "confidence_in_given": 0.005964296869933605,
+        "confidence_in_pred": 0.8704521059989929,
+        "quality_score": 0.005964296869933605,
+        "sample_id": "sample_5026",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 6126,
+        "given_label": 0,
+        "predicted_label": 6,
+        "confidence_in_given": 0.006122265011072159,
+        "confidence_in_pred": 0.8398128747940063,
+        "quality_score": 0.006122265011072159,
+        "sample_id": "sample_6126",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 5908,
+        "given_label": 7,
+        "predicted_label": 5,
+        "confidence_in_given": 0.006129582412540913,
+        "confidence_in_pred": 0.6086558699607849,
+        "quality_score": 0.006129582412540913,
+        "sample_id": "sample_5908",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 5773,
+        "given_label": 7,
+        "predicted_label": 5,
+        "confidence_in_given": 0.006177759729325771,
+        "confidence_in_pred": 0.5650226473808289,
+        "quality_score": 0.006177759729325771,
+        "sample_id": "sample_5773",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 10995,
+        "given_label": 3,
+        "predicted_label": 6,
+        "confidence_in_given": 0.0063255550339818,
+        "confidence_in_pred": 0.4344435930252075,
+        "quality_score": 0.0063255550339818,
+        "sample_id": "sample_10995",
+        "event_id": "mexico_earthquake"
+      },
+      {
+        "sample_idx": 9438,
+        "given_label": 3,
+        "predicted_label": 4,
+        "confidence_in_given": 0.006325605791062117,
+        "confidence_in_pred": 0.6674230098724365,
+        "quality_score": 0.006325605791062117,
+        "sample_id": "sample_9438",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 13804,
+        "given_label": 0,
+        "predicted_label": 4,
+        "confidence_in_given": 0.006542973220348358,
+        "confidence_in_pred": 0.8515952229499817,
+        "quality_score": 0.006542973220348358,
+        "sample_id": "sample_13804",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 10886,
+        "given_label": 0,
+        "predicted_label": 5,
+        "confidence_in_given": 0.006546723190695047,
+        "confidence_in_pred": 0.6118667721748352,
+        "quality_score": 0.006546723190695047,
+        "sample_id": "sample_10886",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 575,
+        "given_label": 5,
+        "predicted_label": 4,
+        "confidence_in_given": 0.006602414418011904,
+        "confidence_in_pred": 0.9793013334274292,
+        "quality_score": 0.006602414418011904,
+        "sample_id": "sample_575",
+        "event_id": "mexico_earthquake"
+      },
+      {
+        "sample_idx": 16534,
+        "given_label": 5,
+        "predicted_label": 6,
+        "confidence_in_given": 0.00662132166326046,
+        "confidence_in_pred": 0.903985857963562,
+        "quality_score": 0.00662132166326046,
+        "sample_id": "sample_16534",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 13932,
+        "given_label": 3,
+        "predicted_label": 4,
+        "confidence_in_given": 0.006644772365689278,
+        "confidence_in_pred": 0.39319372177124023,
+        "quality_score": 0.006644772365689278,
+        "sample_id": "sample_13932",
+        "event_id": "srilanka_floods"
+      },
+      {
+        "sample_idx": 3269,
+        "given_label": 0,
+        "predicted_label": 6,
+        "confidence_in_given": 0.006694281008094549,
+        "confidence_in_pred": 0.43266603350639343,
+        "quality_score": 0.006694281008094549,
+        "sample_id": "sample_3269",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 574,
+        "given_label": 0,
+        "predicted_label": 4,
+        "confidence_in_given": 0.006725480780005455,
+        "confidence_in_pred": 0.9564252495765686,
+        "quality_score": 0.006725480780005455,
+        "sample_id": "sample_574",
+        "event_id": "mexico_earthquake"
+      },
+      {
+        "sample_idx": 6606,
+        "given_label": 0,
+        "predicted_label": 6,
+        "confidence_in_given": 0.006731651723384857,
+        "confidence_in_pred": 0.581272304058075,
+        "quality_score": 0.006731651723384857,
+        "sample_id": "sample_6606",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 2571,
+        "given_label": 7,
+        "predicted_label": 5,
+        "confidence_in_given": 0.00685545802116394,
+        "confidence_in_pred": 0.45083943009376526,
+        "quality_score": 0.00685545802116394,
+        "sample_id": "sample_2571",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 17288,
+        "given_label": 0,
+        "predicted_label": 5,
+        "confidence_in_given": 0.007252915762364864,
+        "confidence_in_pred": 0.5756615996360779,
+        "quality_score": 0.007252915762364864,
+        "sample_id": "sample_17288",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 8852,
+        "given_label": 0,
+        "predicted_label": 5,
+        "confidence_in_given": 0.00728532113134861,
+        "confidence_in_pred": 0.6154084801673889,
+        "quality_score": 0.00728532113134861,
+        "sample_id": "sample_8852",
+        "event_id": "mexico_earthquake"
+      },
+      {
+        "sample_idx": 17138,
+        "given_label": 7,
+        "predicted_label": 1,
+        "confidence_in_given": 0.007321483921259642,
+        "confidence_in_pred": 0.46425217390060425,
+        "quality_score": 0.007321483921259642,
+        "sample_id": "sample_17138",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 9556,
+        "given_label": 6,
+        "predicted_label": 4,
+        "confidence_in_given": 0.007406989578157663,
+        "confidence_in_pred": 0.8057590126991272,
+        "quality_score": 0.007406989578157663,
+        "sample_id": "sample_9556",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 14519,
+        "given_label": 1,
+        "predicted_label": 6,
+        "confidence_in_given": 0.007426226977258921,
+        "confidence_in_pred": 0.8617244958877563,
+        "quality_score": 0.007426226977258921,
+        "sample_id": "sample_14519",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 6770,
+        "given_label": 7,
+        "predicted_label": 4,
+        "confidence_in_given": 0.007478086277842522,
+        "confidence_in_pred": 0.575803816318512,
+        "quality_score": 0.007478086277842522,
+        "sample_id": "sample_6770",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 8781,
+        "given_label": 3,
+        "predicted_label": 4,
+        "confidence_in_given": 0.00753086619079113,
+        "confidence_in_pred": 0.37541770935058594,
+        "quality_score": 0.00753086619079113,
+        "sample_id": "sample_8781",
+        "event_id": "srilanka_floods"
+      },
+      {
+        "sample_idx": 11016,
+        "given_label": 7,
+        "predicted_label": 4,
+        "confidence_in_given": 0.007691993378102779,
+        "confidence_in_pred": 0.5807816386222839,
+        "quality_score": 0.007691993378102779,
+        "sample_id": "sample_11016",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 5993,
+        "given_label": 0,
+        "predicted_label": 6,
+        "confidence_in_given": 0.007887225598096848,
+        "confidence_in_pred": 0.5245488882064819,
+        "quality_score": 0.007887225598096848,
+        "sample_id": "sample_5993",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 11424,
+        "given_label": 7,
+        "predicted_label": 5,
+        "confidence_in_given": 0.007911132648587227,
+        "confidence_in_pred": 0.5457952618598938,
+        "quality_score": 0.007911132648587227,
+        "sample_id": "sample_11424",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 953,
+        "given_label": 0,
+        "predicted_label": 4,
+        "confidence_in_given": 0.008073640055954456,
+        "confidence_in_pred": 0.615570604801178,
+        "quality_score": 0.008073640055954456,
+        "sample_id": "sample_953",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 3467,
+        "given_label": 2,
+        "predicted_label": 4,
+        "confidence_in_given": 0.008107811212539673,
+        "confidence_in_pred": 0.6956672072410583,
+        "quality_score": 0.008107811212539673,
+        "sample_id": "sample_3467",
+        "event_id": "hurricane_maria"
+      },
+      {
+        "sample_idx": 15712,
+        "given_label": 0,
+        "predicted_label": 4,
+        "confidence_in_given": 0.008134821429848671,
+        "confidence_in_pred": 0.8702274560928345,
+        "quality_score": 0.008134821429848671,
+        "sample_id": "sample_15712",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 14154,
+        "given_label": 0,
+        "predicted_label": 6,
+        "confidence_in_given": 0.008161763660609722,
+        "confidence_in_pred": 0.4340798556804657,
+        "quality_score": 0.008161763660609722,
+        "sample_id": "sample_14154",
+        "event_id": "california_wildfires"
+      },
+      {
+        "sample_idx": 13441,
+        "given_label": 6,
+        "predicted_label": 5,
+        "confidence_in_given": 0.008225208148360252,
+        "confidence_in_pred": 0.5888205766677856,
+        "quality_score": 0.008225208148360252,
+        "sample_id": "sample_13441",
+        "event_id": "hurricane_irma"
+      },
+      {
+        "sample_idx": 13705,
+        "given_label": 7,
+        "predicted_label": 5,
+        "confidence_in_given": 0.008251581341028214,
+        "confidence_in_pred": 0.5550220608711243,
+        "quality_score": 0.008251581341028214,
+        "sample_id": "sample_13705",
+        "event_id": "iraq_iran_earthquake"
+      },
+      {
+        "sample_idx": 12925,
+        "given_label": 7,
+        "predicted_label": 5,
+        "confidence_in_given": 0.008281663060188293,
+        "confidence_in_pred": 0.7988108396530151,
+        "quality_score": 0.008281663060188293,
+        "sample_id": "sample_12925",
+        "event_id": "hurricane_harvey"
+      },
+      {
+        "sample_idx": 1305,
+        "given_label": 1,
+        "predicted_label": 6,
+        "confidence_in_given": 0.00832736399024725,
+        "confidence_in_pred": 0.8806041479110718,
+        "quality_score": 0.00832736399024725,
+        "sample_id": "sample_1305",
+        "event_id": "hurricane_harvey"
+      }
+    ],
+    "mean_quality_score": 0.42848777770996094
+  }
+}

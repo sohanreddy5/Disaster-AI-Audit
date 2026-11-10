@@ -1,0 +1,3712 @@
+[
+    {
+        "tweet_id": 913755179157217280,
+        "tweet_text": "San Juan Mayor: Dammit, this is not a good news story @realDonaldTrump isnt illegal in NY to not render aid?",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 912970846200848384,
+        "tweet_text": "Tropical Storm Maria Potential Storm Surge Flooding Map",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913377662847954944,
+        "tweet_text": "10/ there haven’t had water, power or cell service since Hurricane Maria decimated the island last week. Roads are washed away or covered in",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914367996453441537,
+        "tweet_text": "@mybrandonboyd what about my tiny island of Dominica - utterly destroyed by #hurricanemaria",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914133763961081856,
+        "tweet_text": "Center for investigative journalism says the Puerto Rico death toll for #Maria could rise in the hundreds",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 914153925254828032,
+        "tweet_text": "Hurricane Maria but his corporation and its assets were severely damaged. It turns out.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913170622523437056,
+        "tweet_text": "@espn_macmahon @DwyaneWade Hi everyone, this is my GoFundME for Hurricane Maria Relief to help my family and friends out in Puerto Rico",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914127319622709249,
+        "tweet_text": "#Trump slams mayor of #SanJuan , says they want a handout ὢ9 thoughts?? @theheatmag #puertorico #pr #Hurricanemaria #donaldtrump",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 912996244502597633,
+        "tweet_text": "Retweeted The Associated Press (@AP): Scope of the damage in Puerto Rico in the aftermath of Hurricane Maria is",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913693807727783936,
+        "tweet_text": "#HurricaneMaria is getting little news coverage despite the severe damage afflicting #PuertoRico.  Via @voxdotcom",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910761915651108864,
+        "tweet_text": "Hurricane Maria Leaves Puerto Rico Facing Billions of Dollars in Damage",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913013365341130754,
+        "tweet_text": "@CNN FEMA and Coast Guard twitter feeds updating regularly on assistance , as well as food, water and fuel distribution.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912338412107005952,
+        "tweet_text": "Animals hurt by Hurricane Maria need your help Retweet to #donate $10 to @thesatoproject to help relief efforts",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910720388656779264,
+        "tweet_text": "RT @cher: We ὤFἿB4 Those Suffering From Devastating Earthquake in Mexicoὢ5We AlsoὤFἿB4 Ppl Of Islands Who Suffer Catastrophic Damage Due 2 Hurri",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911964321038635008,
+        "tweet_text": "@realDonaldTrump Puerto Ricos hurricane Maria a collapsed dam threatening thousands &amp; your tweeting football #NFLPlayers #YoureTheWorst",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914326631019360259,
+        "tweet_text": "#Beyoncé is donating proceeds from the new Mi Gente remix to Hurricane Maria relief efforts! #PuertoRico #PRsTRONG #HurricaneMaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913910703018450944,
+        "tweet_text": "RT @NRDC: Hurricane Maria affected 3.4M of our fellow Americans in Puerto Rico. We must do more to help them. @VocesVerdes",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913898566502019074,
+        "tweet_text": "RT @BonnieWeather: #supplies flying out tonight to help #puertorico #NYC #pix11 #news #hurricanemaria @ Long Island",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911561278342168576,
+        "tweet_text": "Floods and millions without power in Puerto Rico after Hurricane Maria  #breaking #world #news #video #china #today",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911731750782545920,
+        "tweet_text": "RT @JCTheResistance: @realDonaldTrump IS MIA! Hurricane Maria Live Updates: Structural Damage at Dam Prompts Evacuations in Puerto Rico h",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910653702763098112,
+        "tweet_text": "#HurricaneMaria causing conditions to deteriorate over the Dominican Republic.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912400568282476544,
+        "tweet_text": "Praying for those affected by the Hurricanes! #HurricaneHarvey #HurricaneIrma #HurricaneMaria",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 910682189972434944,
+        "tweet_text": "The island of Puerto Rico has been destroyed after Hurricane Maria made landfall there as a Category 4 storm",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914139323859169281,
+        "tweet_text": "RT @CCharitiesUSA: Support our #HurricaneMaria relief efforts in Puerto Rico &amp; US Virgin Islands. Text CCUSADISASTER to 71777.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913366359194656769,
+        "tweet_text": "RT @IronStache: .@realDonaldTrump, suspend the Jones Act. Americans in Puerto Rico devastated by Hurricane Maria need our help.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912976123214123008,
+        "tweet_text": "A Storm Surge Warning has been issued for the coast of North Carolina from Ocracoke Inlet to Cape Hatteras #Maria",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 910586556330717184,
+        "tweet_text": "RT @UMDCSA: Dominica was hit hard from Hurricane Maria. Please keep them in your thoughts and prayers ὤFἿE἞9἟2",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913960150045806592,
+        "tweet_text": "Donald Trump says Puerto Rico is an island surrounded by big water-  via  - @realDonaldTrump",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 914470619277922306,
+        "tweet_text": "An honor to send volunteers of The American Red Cross from @atl to SJU for relief efforts from Hurricane Maria @JetBlue @RedCross",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912365372866744321,
+        "tweet_text": "RT @NBCLA: Jennifer Lopez pledged to donate $1 million to help residents in Puerto Rico recover from Hurricane Maria.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914945889638240256,
+        "tweet_text": "RT @FLSERT: Call the State Assistance Information Line for general information regarding Hurricane Irma &amp; Maria at 1-800-342-3557",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910798025336983553,
+        "tweet_text": "Hurricane Maria killed at least 14 people on Dominica, a government spokesman said",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 914857623060697088,
+        "tweet_text": "Photo of Our Tornado Safe Spot  #hurricaneIrma #hurricaneHarvey #hurricaneMaria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913116164934520832,
+        "tweet_text": "RT @BiophysicalFrog: Many thanks to @dacolon for the information on how we can help!",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 912465281058000898,
+        "tweet_text": "RT @Mike_DeCillis: Maybe as the leader of the free world Germany will send humanitarian aid to Puerto Rico. #HurricaneMaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912084182108594176,
+        "tweet_text": "Puerto Rico. Our countrymen need our help. Tweet your representative to send aid ASAP! More urgent than NFL! #HurricaneMaria #PuertoRico",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 911815710539628544,
+        "tweet_text": "RT @DrFunkySpoon: Post-storm satellite image of damaged Arecibo radio telescope in PR, from @planetlabs",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912430370825568257,
+        "tweet_text": "RT @CAIRFlorida: Florida Muslims join to lend a hand assisting #HurricaneMaria and #HurricaneIrma victims in #PuertoRico",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913363490609516545,
+        "tweet_text": "No swimming in #AsburyPark, says the red flag at #NJsunrise, thanks to rip tides and rough surf caused by #HurricaneMaria",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 913870142228058113,
+        "tweet_text": "@realDonaldTrump I just donated again. Please help if you can:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911666425298849792,
+        "tweet_text": "RT @vquin96427: #HuracánMaría #HurricaneMaria electrical power and running water services in #PuertoRico slow rebuilding process .",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914224758782390281,
+        "tweet_text": "Long-term fixes to Puerto Rico’s food crisis will not happen overnight.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914139218854760454,
+        "tweet_text": "Trump accused her of poor leadership and denied federal aid after her city faced hurricane Maria. Repubs who follow me: this is your leader.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913225046662971392,
+        "tweet_text": "Hurricane Maria 2017 Ocean City Maryland Tropical Storm:  via @YouTube",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 910674004909883393,
+        "tweet_text": "thinking of everyone affected by hurricane maria ὢDἳ9 my heart goes out to you.. ✨✨",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913960964856406022,
+        "tweet_text": "Please help a fellow process trustee if you can!",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913502404649345025,
+        "tweet_text": "#HurricaneMaria #PuertoRico #Damage #Destruction #Devastation #Distress #Destitution #Death by the numbers!",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912287718197026821,
+        "tweet_text": "Rudy, a #RedCrossLA volunteer, is on his way to help with #HurricaneMaria relief efforts in #PuertoRico. Thanks for your service Rudy!!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914750086609084417,
+        "tweet_text": "@phillyxam @realDonaldTrump You mean the strike? With limited/no cell service? Many still in shelters? #Bogus",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913244955212156928,
+        "tweet_text": "This is horrific!! #puertorico #hurricanemaria #relief #suffering #trauma #fundraising",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913053277062942720,
+        "tweet_text": "RT @StateDept: View the latest information for US citizens affected by #HurricaneMaria.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913101312539144197,
+        "tweet_text": "@JustinTrudeau @pmharriskn BREAKING: Saint Lucia &amp; Saint Kitts &amp; Nevis had MINIMAL affects &amp; damage from hurricane Irma, Jose &amp; Maria! So what are you really doing?",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914908948695781376,
+        "tweet_text": "Cant listen to idiot 45. Thankful for private jets been loaded w supplies and transporting the sick back to NJ,NY etc. HUGE THX @Bethenny",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913155243491328000,
+        "tweet_text": "@NBCNews My childhood friends have no drinking water, running out of food. This should be your top story everyday! #HurricaneMaria",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914352380820447233,
+        "tweet_text": "THIS! #PR have supplies, the authorities aren’t distributing them to to the people! Cop says it’s communism. They’ve food but are starving!",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 914215417803083776,
+        "tweet_text": "Red Cross are in Puerto Rico, providing food, water, tarps, blood supplies for clinics and other relief, and helping trace family members.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914664089300930560,
+        "tweet_text": "RT @reinlb21: Please send help to Dominican Republic. They need our help. Hold On D.R, be strong.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 912976068923019264,
+        "tweet_text": "@UandMeRStrong State of Emergency declared in ADVANCE of Maria and this.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 912254391901663233,
+        "tweet_text": "Forecast for Maria is a bit weaker, but still impacts in the region. Tropical storm warning issued for Dare co. Winds increase Tue/Wed.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 911624449757208577,
+        "tweet_text": "Playing for Puerto Rico tonight. Our thoughts are with all affected by Hurricane Maria especially @yavianliz and her family! ἟5἟7",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912420982018629632,
+        "tweet_text": "#HurricaneMaria death toll rises as storm kicks up #ocean on the coast: Orlando Sentinel  #environment",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 913044369221005312,
+        "tweet_text": "We stand united! Your support is many peoples lifeline here! THANK YOU FOR YOUR HELP!! #PuertoRico #HurricaneMaria",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913028244831645696,
+        "tweet_text": "Hurricane Maria didnt just affect homes, but also devastated farmland and pastures.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912166290948857856,
+        "tweet_text": "San Juan isnt the only city in Puerto Rico, FFS. This flooding is horrible in San Juan but go to other parts, esp Central PR.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914679184810762240,
+        "tweet_text": "RT @ResisteMN: Maria’s death toll in PR higher than official count. Meanwhile @RepErikPaulsen pushes tax cuts for top 0.1%",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 914269783339696128,
+        "tweet_text": "#US - - Corporate donations for Hurricane Maria relief top $24 million - CNN - KCTV5 -",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914869696394153984,
+        "tweet_text": "Thank you to all who made this possible @TBCharities @CaribbeanOTTB. The need will be great. Please continue with generous donations.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 911824631060934657,
+        "tweet_text": "Marc Anthony, Nicky Jam &amp; More Stars Raising Funds for Hurricane  #Paparazzi #anthony #funds #hurricane #maria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912135192332181504,
+        "tweet_text": "RT @kami_rrod: please help my family in puerto rico recover from hurricane maria by donating or sharing!ὉEthank you!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913327565200396290,
+        "tweet_text": "US Navy evacuates residents from #HurricaneMaria devastated Dominica; dozens still missing #switch2sendai #IDDR2017",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 914937908058116099,
+        "tweet_text": "Video shows severe damage to campus of University of Puerto Rico just after Maria made landfall as Category 4 storm.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913866702210965509,
+        "tweet_text": "#USA sends initial aid to Puerto Rico nearly a weekly after #HurricaneMaria. As if being a #US territory matters to the @POTUS",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911813858859163654,
+        "tweet_text": "RT @leylasantiago: APOCALYPTIC- how the mayor of Manatí describes his community. He says its one of the hardest hit areas. #HurricaneMaria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911841583007506433,
+        "tweet_text": "Looking for loved ones in #PuertoRico after #HurricaneMaria? Try calling nearby shelters:  #HuracánMaría",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911713452393103360,
+        "tweet_text": "RT @ricardorossello: With @NYGovCuomo flying over areas of Puerto Rico in order to assess the damages done by Hurricane #Maria",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914050442530828289,
+        "tweet_text": ".@kentuckyguard Airmen deploy to Caribbean for Hurricane Maria relief operations:  #HurricaneMaria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911618627861909506,
+        "tweet_text": "RT @PHCJam: #TSMaria #Risk - 3 killed in #Haiti as Hurricane Maria related rains lash country - @JamaicaGleaner",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 910758357451059201,
+        "tweet_text": "Prayers to all in the Caribbean affected by Hurricane Maria. May your soul lights shine bright in the darkness.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913762965328973824,
+        "tweet_text": "@AynRandPaulRyan Pressure your members of Congress to help #PuertoRico. This is inhumane. #HurricaneMaria",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 910714047603134464,
+        "tweet_text": "WATCH: Hundreds of families are heading to shelters in San Juan, Puerto Rico seeking protection from Hurricane Maria (Via @GadiNBC)",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 914256676081078272,
+        "tweet_text": "Why wont @CNN report these stories?",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910702607806672896,
+        "tweet_text": "RT @baderalsolmi: Hurricane Maria latest: Tsunami alarms blare as Puerto Rico hit | Weather | News |",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913405522954551296,
+        "tweet_text": "RT @honeygirlyoongi: #HurricaneMaria #PuertoRico Ὑ5ἿCὙ5ἿCὙ5ἿC Shes been looking for food for days now.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913435006088790016,
+        "tweet_text": "RT @KK_Pelletier: #HurricaneMaria: catastrophic damage, ongoing emergency, long term recovery",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912198206121025536,
+        "tweet_text": "@RobynMundyWYO @john_wawrow @jrwestling @Jungipad Robyn, this site has great, verified info on how to find loved ones in PR, and ways/what to donate and to who,",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911796594667859968,
+        "tweet_text": "#hurricaneMaria @SkerritR at the United Nations: To deny climate change is to procrastinate while the earth sinks",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913930113670148098,
+        "tweet_text": "Rescued dogs from Puerto Rico are on their way to new homes after Hurricane Maria” on #Vimeo",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914089385632714753,
+        "tweet_text": "RT @UNIDOSxPR: There’s not one leaf left on a tree”  Help us rebuild Puerto Rico by donating to",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913986523699318784,
+        "tweet_text": "@realDonaldTrump more help is needed now, not in the next few days.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913936591550386177,
+        "tweet_text": "Due to rec of trusted Chicago org, @FeedingAmerica, I donated to #PuertoRico Food Pantry. Many great orgs need help",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913894924931801088,
+        "tweet_text": "RT @MotoStreams: A team of us are fundraising for Puerto Rico in the aftermath of Hurricane Maria! Donations are appreciated! Pls RT.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914157732059652096,
+        "tweet_text": "I have to say that #hurricanemaria most be the best mission for soldiers because they dont have to kill anyone, just provide food &amp; water",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912454432843079680,
+        "tweet_text": "Tonights @Texas2Split proceeds will go towards Unidos por Puerto Rico for Hurricane Maria relief. #UnitedForPuertoRico ἟5἟7",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914670036123570178,
+        "tweet_text": "Recent photos from distribution points–where people in USVI/PR can receive food &amp; water. Info:  #Maria [὏7: DVIDS]",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913755130608136193,
+        "tweet_text": "Delusional Lying Mofos #USVirginIslands #PuertoRico",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 910523961267703814,
+        "tweet_text": "Reuters: Hurricane Maria blasts Puerto Rico with high winds and flooding",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911593704246398978,
+        "tweet_text": "Hurricane Maria passed #DominicanRepublic on 21 September. No reports of serious damage to tourist infrastructure",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913785471142162433,
+        "tweet_text": "Still a threat, Hurricane Maria weakens off US Southeast #EVACUATIONS #NOW  Mandatory evacuations have been ordered",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 913000618721193984,
+        "tweet_text": ".@USCG MSU crews get ready to go to St. Thomas for #relief and #security ops with volunteers from the @RedCross #Hurricane #Maria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911737544773169152,
+        "tweet_text": "RT @airwayslive: URGENT: We Have A Plane! We Need Supplies &amp; Donations for #PuertoRico #HurricaneMaria Relief. OPERATION CARE-LIFT /",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911979737571979265,
+        "tweet_text": ".@CharityNav has a list of highly-rated organizations responding to those affected by Hurricane Maria:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914606127748235264,
+        "tweet_text": "@latimes Mex earthquake: Sep 19. Hurricane Maria: Sept 20 Help was late, but not Trump admin late",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914240444040601600,
+        "tweet_text": "Hurricane Maria results in few direct deaths in Puerto Rico . . . Trump, hold my beer, I can out kill any hurricane",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 913556489725530112,
+        "tweet_text": "Our very own Kenny Santos spoke to First Coast News in Jacksonville about our Hurricane Maria relief efforts",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914461710035111936,
+        "tweet_text": "Despair outruns aid in Puerto Rico after Hurricane Maria - The Boston Globe",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912956919631028224,
+        "tweet_text": "RT @JohnClarkABC11: Tropical Storm Maria roughs up NC coast  via @abc11_wtvd",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912163728946270208,
+        "tweet_text": "RT @Nichols_NAMI: Our hearts go out to those in Puerto Rico who are affected by Hurricane Maria ἟5἟7❤️ #HuracánMaría",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 911967729338454018,
+        "tweet_text": "After Maria clobbered Puerto Rico, U.S. military relocates base for foreign relief efforts",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914825628855173120,
+        "tweet_text": "Special delivery! #201stAirliftSquadron offloads 3K lbs. of donated supplies in #SanJuan, #PuertoRico. ἟5἟7 #HurricaneMaria #ReliefEfforts",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914998701797646336,
+        "tweet_text": "A Riverview student is organizing this donation drive. Please share &amp;/or donate if you can. Thank you! #PuertoRico #HurricaneMaria #donate",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914819206037803009,
+        "tweet_text": "Continued #PrayersforPuertoRico #FoxyXaily all profits this week to benefit #HurricaneMaria #Victims #UnitedForPuertoRico #UnitedWeStand",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914170743440543744,
+        "tweet_text": "RT @ChrisCoons: For updated information on federal hurricane response efforts and to find out how you can help, visit",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914530791522209793,
+        "tweet_text": "My SIL is there and verifies the rumors @CarmenYulinCruz wont allow supplies to be distributed #WhyWeMustImpeachTrumpin7Words",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912021930424770560,
+        "tweet_text": "RT @swadylady: @HillaryClinton .@potus .@SECNAV please send help to #PuertoRico now, to assist in recovery from #HurricaineIrma and #Hurric",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914211781882597376,
+        "tweet_text": "Heres where Trump spent the past 10 days as Puerto Rico collapsed: Hurricane Maria is the",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912139789142335488,
+        "tweet_text": "I am worried about #PuertoRico. Text 505-715-8388 to find out how you can help. With @RioGrandeSierra @SierraClub. Let us help.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 912368221529018368,
+        "tweet_text": "US Navy rescues Hurricane Maria victims from Dominica via FOX NEWS #USCG #usarmy #usairforce #usnavy #usmarines #tricare",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914143923190280193,
+        "tweet_text": "#HurricaneMaria damage is catastrophic in #Domenica - I have just allocated $3M from @UNCERF to kick-start aid for most pressing needs.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913239410774130689,
+        "tweet_text": "‘Nothing, nothing.’ Aid lags in Hurricane Maria-torn Puerto Rico  via @PittsburghPG",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911964021477269504,
+        "tweet_text": "Hurricane #Maria ADVISORY 34 issued. #Maria slightly weaker as it moves northward",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910587208691679232,
+        "tweet_text": "RT @Cary_Elwes: God bless the victims of Hurricane Maria &amp; the Mexican earthquake. Not tryin to politicize but think natures upset :",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914530370162495489,
+        "tweet_text": "How You Can Help Animals in Puerto Rico Affected by Hurricane Maria - The Conscious Cat",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 912094191349616640,
+        "tweet_text": "RT @od3lynn: remember that we still have refugees from BVI and USVI #HurricaneIrma #HurricaneMaria #PuertoRico #BVIstrong #USVIStrong #PRse",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913337065844207616,
+        "tweet_text": "IT IS nearly a week since Hurricane Maria thumped #Puerto Rico flattening buildings and ripping up roads, and the",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913036227632402432,
+        "tweet_text": "RT @LexiWhite27: Please share and donate if you can:   #family #HurricaneMaria #HurricaneIrma #PuertoRico #gofundme",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914205656604868609,
+        "tweet_text": "RT @ConvoyofHope: Looking for a way to help #HurricaneMaria survivors? Check out this list, including Convoy of Hope, from @nytimes —",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913749682182074369,
+        "tweet_text": "For all deaths DURING #Maria the hurricane is responsible. For all who died &amp; will die after, #RacketeerMan .@POTUS &amp; his gov. are! #MURDER",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 912430686254006273,
+        "tweet_text": "RT @grist: #HurricaneMaria has destroyed 80% of Puerto Rico’s agricultural production",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913427544229134342,
+        "tweet_text": "Link to #volunteer, send supplies and or to #donate. #PuertoRicoStrong",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914212462416859137,
+        "tweet_text": "Please help #PuertoRico through The #AmericanRedCross if you can. No amount too small  #HelpPuertoRico #giving #Help",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 912289605323509761,
+        "tweet_text": "This is facts, Im IN Puerto Rico b/c I got stuck here after hurricane Maria. Conditions throughout the island vary from bad to detrimental",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914589259901935616,
+        "tweet_text": "@ScottAdamsSays UNION truckers striking and refusing to deliver supplies over contract dispute / using Hurricane Maria as leverage.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911674758034546691,
+        "tweet_text": "RT @Goatys_News: #Isabella #Quebradillas #HurricaneMARIA #MariaPR #PR #PuertoRico #News/ FLASH #FLOOD WARNING:",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 913970640629137408,
+        "tweet_text": "in sight. DIY from community and volunteers. #PuertoRico #texas #HurricaneMaria #HurricaneIrma",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912437824133189632,
+        "tweet_text": "RT @ericfisher: Some resources for those who are feeling generous and would like to help Hurricane #Maria victims -&gt;",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911736653877846016,
+        "tweet_text": "Ways to help the tiny island of Dominica through the devastating effects of Hurricane Maria:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914564398152404992,
+        "tweet_text": "Hurricane Maria: #Buhari Orders Immediate Evacuation of Nigerian Students in Dominican Island",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 914728350677004288,
+        "tweet_text": "RT @AndrewUmana: Please help my girlfriend’s family if you can. Anything is appreciated.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914156098340507648,
+        "tweet_text": "@Lin_Manuel Would appreciate if you read this and share! Hurricane Maria Relief Fund for Puerto Rico  via @youcaring",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912990995549220864,
+        "tweet_text": "WTF?! It WAS waved 4 #HurricaneIrma AND #HurricaneHarvey but not #HurricaneMaria? I see a lawsuit on the horizon. ὄ7ἿF #JonesAct #PuertoRico",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 914161507059019778,
+        "tweet_text": "@realDonaldTrump - pictures of PR residents coping -",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 910554460862189568,
+        "tweet_text": "RT @CallahanCRS: Our prayers are with the people of #Mexico and those in path of Hurricane #Maria. We stand with them and our Caritas partn",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913125880267968512,
+        "tweet_text": "Maria causing #OuterBanks flooding. Via @WRAL: Maria, again a hurricane, swirls over North Carolina beaches",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 913155582206586881,
+        "tweet_text": "@cj_wentz @jake_elliott22 Hey Carson, big eagles fan. Can he donate it to the victims of Hurricane Maria please, those people are in desperate need.Thanks! @cj_wentz",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910795330647715840,
+        "tweet_text": "Please keep all in the path of this storm in your thoughts and prayers.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 910641373493243904,
+        "tweet_text": "Watching all the damage Hurricane Maria is doing to Puerto Rico is hurting my heart ὡEὢ2ὤFἿD",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912368913014493184,
+        "tweet_text": "RT @cjgratacos: I cant believe that @FedEx, @UPS and @USPS are not bringing any type of special rate for sending food to Puerto Rico after",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 914805144189116418,
+        "tweet_text": "@NikaTheAdvocate @independent_r21 @realDonaldTrump  PEOPLE ARENT DYING IN DROVES. ONLY 16 DEAD. PR MAYOR IS A LIAR WHO IS RESELLING SUPPLIES! Listen to this!",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 913968009181458433,
+        "tweet_text": ".@TIDALHiFi is doing their part in helping the victims of #HurricaneMaria &amp; sending them 200,000 pounds of supplies.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913552299963817984,
+        "tweet_text": "Signal boosting another great auction for #HurricaneMaria relief for Puerto Rico. #pubforPR Great Items to bid on!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910798432641650689,
+        "tweet_text": "No power/communication. Please help Puerto Rico during this devastating time by donating/sharing. #PuertoRicoStrong",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912328533099401216,
+        "tweet_text": "RT @johnlundin: There will be no food in #PuertoRico. #MondayMotivation",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913658638866178048,
+        "tweet_text": "@DrAndyRoark Help us spread the word &amp; send aid to people &amp; their pets after hurricane Maria! Veterinarians for PR",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914230808805822464,
+        "tweet_text": "@MiamiHerald Loss of life is terrible but the infrastructure was destroyed in the Island by politicians not by Maria",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911600628878757889,
+        "tweet_text": "RT @ChrisMurphyCT: I know the Puerto Rican community in CT is anxiously awaiting news of loved ones affected by Hurricane Maria. My heart i",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 912987205190156289,
+        "tweet_text": ".@realDonaldTrump if the people of #PuertoRico were WHTE would they be getting aid? this is going to be your #Katrina people are dying daily",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911576745370939392,
+        "tweet_text": "Crack in dam ravaged by Hurricane Maria sparks Puerto Rico evacuations",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 914708537686798336,
+        "tweet_text": "Sadly, its up to us since the billionaire president of the wealthiest country in the world is doing jack shit to help his own citizens.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914530156433117184,
+        "tweet_text": "For context, the Obama admin sent 20,000 troops to Haiti after their 2010 earthquake.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914579240426680322,
+        "tweet_text": "RT @Rigged_It: Puerto Ricos cop telling the truth about Hurricane Marias aid WITHOLDING AID BY LIBERAL BUREAUCRACY #RIGGEDIT",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912341898483953666,
+        "tweet_text": "RT @UpFirst: Hurricane Maria destroyed large swaths of Puerto Ricos infrastructure, including cell service.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912351961596473345,
+        "tweet_text": "RT @RINCON_POP: @jlo Donating $1 Million to Aid Hurricane Victims in Puerto Rico  via @billboard",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912407537906941953,
+        "tweet_text": "@realDonaldTrump Get your USAF to airlift generators, solar panels, water, food. Stop causing more grief.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910611406764019713,
+        "tweet_text": "3.5 million people without power in Puerto Rico due to Hurricane Maria, whilst flooding also a major issue",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914990355707199493,
+        "tweet_text": "I feel like I’m living in a nightmare with all these horrific events that have been happening. I can’t imagine how the actual survivors and the people affected are going through.. Ὁ4 #LasVegasShooting #HoustonFlood #HurricaneIrma #HurricaneMaria #MexicoQuake #DACA",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910552852656906240,
+        "tweet_text": "This is so hard to watch. Im praying for the people everywhere affected by Hurricanes Irma and Maria Ὁ4ὤFἿC",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914269266345676800,
+        "tweet_text": "Josh Norman pledges $100,000 to assist Hurricane Maria relief in Puerto Rico",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913511491978039296,
+        "tweet_text": "Cardinal Dolan will offer Mass for #HurricaneMaria victims on Oct 8 4pm at St. Patricks cathedral. #Catholic",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913765546163867648,
+        "tweet_text": "Hard to believe 14 years since we woke up to the damage from Hurricane Juan. Got off lucky &amp; feel for those in recovering from #Maria.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913720659318108160,
+        "tweet_text": "I am praying for everyone affected by the devastation in Puerto Rico. #HurricaneMaria",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 910637966661316609,
+        "tweet_text": "There are MILLIONS of Americans impacted by #Maria. Our Southern neighbors in #Mexico 230+ deaths. Not a SINGLE tweet from @realDonaldTrump",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 914204885456998400,
+        "tweet_text": "RT @EricHolthaus: In just hours, Maria wiped out more than one-fifth of Puerto Ricos economy. No other modern weather event compares. http",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913788767181340672,
+        "tweet_text": "Former Island runner and coach says Hurricane Maria destroyed Puerto Rico!",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913411337904119809,
+        "tweet_text": "Necessities. I have a Brother with autism. My family as many others need help. Please spread the word. #HurricaneMaria #PuertoRicoSeLevanta",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912362577287614464,
+        "tweet_text": "@Lin_Manuel We need to raise awareness and aid to #PuertoRico. A humanitarian crisis is developing. We need help! #HurricaneMaria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912089130817003521,
+        "tweet_text": "This is what Hurricane Maria did to the NWS Doppler Radar that covers Puerto Rico. Amazing wind damage.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914123750018359296,
+        "tweet_text": "THEYVE JUST BEEN HIT BY A CAT 5 HURRICANE. THEIR INFRASTRUCTURE IS COMPLETELY DESTROYED. THEY ARE STARVING TO DEATH.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912345256250810370,
+        "tweet_text": "@itsjennmiranda Were trying help Puerto Ricans in the US connect with folks back home! Please join us here:  #HurricaneMaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914083004712194049,
+        "tweet_text": "DOMINICA-WEATHER-Dominica PM pleased with ‘rescue” phase of recovery following Hurricane Maria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912013743667712000,
+        "tweet_text": "RT @LouisOrtiz92: A reminder that Puerto Rico needs your help. 3.4 Million Americans are affected: ἟5἟7",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913007799457714177,
+        "tweet_text": "Americans in Puerto Rico are in crisis, 1M+ without drinking water. @realDonaldTrump &amp; Congress must fast-track aide before its too late.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912409116441808899,
+        "tweet_text": "RT @ZoomRadar: Latest article from  on Puerto Ricos radar destroyed by Hurricane Maria.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911646969168384000,
+        "tweet_text": "i still havent heard from my family please donate whatever you can theres tons of places accepting donations please look into it ☹️",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913939796413894656,
+        "tweet_text": "Mind blowing in its destruction",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913300377591717888,
+        "tweet_text": "Here’s where you can donate to relief efforts in Puerto Rico In the wake of Hurricane Maria, the island needs massive support to rebuild.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911628846599991297,
+        "tweet_text": "PLEASE @CNN @FoxNews Keep shining a light on #PuertoRico #hurricanemaria the way you did mainland hurricanes. They r devasted n need help!!",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914521240030908416,
+        "tweet_text": "Of little islands forgotten. Hurricane Maria hit Dominica as a Cat 5 and just killed the island for over 8 hours.",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 910615709771632640,
+        "tweet_text": "Lets keep Puerto Rico and Mexico in our thoughts ❤ἳ9. #art #artist #edm #edmfamily #Veterans",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910550304885755904,
+        "tweet_text": "RT @BusterUSMC: Hurricane Maria devastates the Island of Puerto Rico. Roads have turned into rivers.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912445988463357952,
+        "tweet_text": "is highly rated. They have a Puerto Rico and Caribbean hurricane relief fund. Donate!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912454357605429248,
+        "tweet_text": "BLM employees continue to help local communities with recovery efforts in Puerto Rico after #HurricaneMaria devastated parts of the island.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 912203056808386560,
+        "tweet_text": "New York Expands Relief Efforts for Puerto Rico After Hurricane Maria via @NYTimes",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912288653342380033,
+        "tweet_text": "RT @JuhaPalosaari1: #JenniferLopez donates $1m to #PuertoRico hurricane recovery effort. #charity #HurricaneMaria #HurricaneIrma .",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912315226179145728,
+        "tweet_text": "ACTION: Call on your Senators and Reps to support emergency aid package for PR. Fellow Americans need our help now. (202) 224-3121",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913213863096668160,
+        "tweet_text": "It never ends Now @JoeNBC and @morningmika blame Hillary Clinton for not doing enough to help Puerto Rico after #HurricaneMaria! Unreal.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 912366828860588032,
+        "tweet_text": "Our fellow Americans in Puerto Rico need assistance. Instead of working on real issues, @realDonaldTrump tweets smack about the NFL &amp; NBA.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 911729116369604609,
+        "tweet_text": "Puerto Rico is w/out electricity and is flooding bc of #HurricaneMaria, but our president is more concerned with Steph Curry ᾒ6ἿB‍♀️",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912293590499577856,
+        "tweet_text": "RT @ACLU: Our thoughts are with our colleagues at @ACLUPR and everyone affected by Hurricane Maria.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 911583621294764035,
+        "tweet_text": "RT @KelloggCompany: We’re donating 1m breakfast servings to aid Mexico after earthquakes; extending support to Puerto Rico following Hurric",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910749323524231168,
+        "tweet_text": "Entire island of Puerto Rico loses power As Hurricane Maria drenches the island, winds and flooding t  via @Salon",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912451685758447616,
+        "tweet_text": "RT @JoseResendez: I’m volunteering at NBC/Telemundo right now taking #HurricaneMaria telethon calls for #RedCross, call me at 954-392-4770",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912419693029478401,
+        "tweet_text": "Donate and volunteer to support those impacted by Hurricane Maria in Puerto Rico and earthquakes in Mexico. Share:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913937619763040256,
+        "tweet_text": "@johncornyn @tedcruz @RogerWilliamsTX deaths in Puerto Rico from now forward are on your hands - get them aid! Speak out!",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 910718722599538688,
+        "tweet_text": "RT @MagentaFleetDFW: Our hearts, thoughts, &amp; prayers are with the the people of Puerto Rico.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914190210728173575,
+        "tweet_text": "Links for different charities you can donate to to help our Puerto Rican brothers and sisters after Hurricane Maria:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911925136365903872,
+        "tweet_text": "RT @DominicaEurope: Satellite pics of damage in Dominica by Hurricane Maria Sept 2017",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912191191738978305,
+        "tweet_text": "RT @NWSKansasCity: This NWS doppler radar in Puerto Rico was completely destroyed by Hurricane Maria.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913382901059932160,
+        "tweet_text": "@SenseSales @4evahNauseous @TalibKweli @elrideprods And this finally happened because once again someone had to yell at the president to assist",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913320916901355520,
+        "tweet_text": "Soooo, what’s the problem helping PR the same as Harvey &amp; Irma victims with suspending the Jones Act? Does dumbass not know their Americans?",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 911494578716446721,
+        "tweet_text": "Hurricane Maria churns toward Turks and Caicos, death toll increases",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 911573517975588867,
+        "tweet_text": "#HurricaneMaria still a powerful category 3 with 120mph winds east of the Bahamas.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912382087746990081,
+        "tweet_text": "RT @johnlundin: Lets get #PuertoRico trending! They need our help. Please R/T",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914526520860925952,
+        "tweet_text": "Puerto Ricos cop telling the truth about Hurricane Marias aid..Mayor wont let them distribute!",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910628872693088256,
+        "tweet_text": "New: Hurricane Maria Hits Areas Still Recovering From Hurricane Irma",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912278288780992512,
+        "tweet_text": "I hope the editor who only wanted me to write about coffee in PR if it was destroyed sees this.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 914198568386297856,
+        "tweet_text": "@VP @POTUS @ricardorossello Hurricane Irma had caused damage, a week later direct hit by Maria, a week later a kick in the stomach &amp; slap in face by Trump-Pence Admin",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913894575734972421,
+        "tweet_text": "#WithEnoughCoffeeICan keep focusing on working on the #CajunReliefInitiative for Puerto Rico aid  — Dr. Torres LSU",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914157638761541632,
+        "tweet_text": "Me doing my sexiest tween poses atop the Castillo de San Felipe del Morro. #SavePuertoRicoNOW Donate here:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914154617084067841,
+        "tweet_text": "We can go evacuate our Canadians, but Trump cant get Puerto Rico supplies!? IMPEACH HIM NOW!!!!!",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 913882577454358528,
+        "tweet_text": "@GeoDagent I saw how little damage the port of Norfolk suffered in Maria &amp; hurricane has two Rs in it. I was an airlift crew chief. How bout u chief?",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913278078939303936,
+        "tweet_text": "I was in Hurricane Andrew and it took more than a month to get things moving again a huge mess of destruction.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912414964643540992,
+        "tweet_text": "RT @NBCNews: UPDATE: 16 people in Puerto Rico have been killed by Hurricane Maria, governor confirms",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 913560124056248320,
+        "tweet_text": "Stories from the aftermath of Hurricane Maria in Puerto Rico #worldnews #actu",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913829706402811905,
+        "tweet_text": "Zoom in and see the damage from the hurricane.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913408898404634624,
+        "tweet_text": "Chicago! Please stop by! 3.5M Puerto Ricans need your help. #PuertoRicoStrong #PuertoRicoSeLevanta #puertoricorises #HurricaneMaria",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 911565357789454336,
+        "tweet_text": "#PuertoRico #SanJuan #HuracanMariaPR #MariaPR #HurricaneMariapr #HurricaneMaria #Maria ➡️ #RedCross #Safety &amp; Need #Emergecy #assistance ὄ7",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914188157972881408,
+        "tweet_text": "#WATCH: Thank you @NationalGuard! Diesel is delivered to hospitals in #PuertoRico to keep generators going #Military #HurricaneMaria #Relief",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912463770894651392,
+        "tweet_text": "#PuertoRicoRelief #fema #HurricaneMaria #HuracanMariaPR #Puertoricoaid @ricardorossello What are you doing with all the aid sent?",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913253060910166016,
+        "tweet_text": "In light of #HurricaneMaria, #you should #prepare as #celiac for #glutenfree #food. Know @RedCross cant #support you in #Shelter!",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 911602770070863872,
+        "tweet_text": "Caribbean Update: Whats Damaged, Whats Not After Hurricanes Irma &amp; Maria | A list island by island, good.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913437005882679296,
+        "tweet_text": "Hurricane Maria requires unique response; covers ENTIRE territory, compounded damage of first storm. HUGE logistical/distribution challenge.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911782801984368640,
+        "tweet_text": "Support a great cause and help @NipunChopra7s @gofundme for @PRFootballClub staff in the wake of #HurricaneMaria:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914555425260920832,
+        "tweet_text": "@fema @DeptofDefense @USCG @USCGSoutheast @USACEHQ @DVIDSHub @USNavy @USMC @USFleetForces @USNationalGuard @CarmenYulinCruz @USArmyReserve 33. #Georgia &amp; #NewYork more @USNationalGuard members loaded ✈️ with 90K lbs. ofὊ7&amp; MREs for #HurricaneMaria affected areas this morning.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910540035665072128,
+        "tweet_text": "Hurricane Maria Hits Vieques And St. Croix: Pictures And Videos Show Damage  #Trending #News #Politics #Defense #Cr",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912143183945093121,
+        "tweet_text": "RT @RepJohnLarson: I stand with everyone in Puerto Rico. Here are some updates from FEMA on what’s happening and shelter information:",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 911663066994982912,
+        "tweet_text": "Puerto Rico battered by #HurricaneMaria Devastation – its everywhere  70% without drinking water",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912200667481157632,
+        "tweet_text": "RT @lizlibby0: Praying that supplies are distributed quickly . People without anything  Day 5",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 911720719922409473,
+        "tweet_text": "@realDonaldTrump Shouldnt you be on a plane to Puerto Rico to show support for the victims of Hurricane Maria.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913833661509849089,
+        "tweet_text": "President Trump on Puerto Rico relief efforts: This is an island. Surrounded by water. Big water. Ocean water. #HurricaneMaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913384770880495616,
+        "tweet_text": "View the damage that this failed presidency is too incompetent to deal with. *45s inadequate response is unacceptable. #PuertoRico suffers!",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913154883909443584,
+        "tweet_text": "Donating all this weeks profits to #puertorico and its people affected by #hurricanemaria  #lionbabe ὤFἿE@Astro_Raw",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910579372104601601,
+        "tweet_text": "RT @MichelleKaske: #PuertoRico without power and faces $30B in damage from #Maria. With @WeatherSullivan  via @busin",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912237343712493569,
+        "tweet_text": "My heart &amp; prayers go out to the people of Puerto Rico; they keep facing one disaster after another - wishing them strength. #HurricaneMaria",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913779391381082112,
+        "tweet_text": ".Lin_Manuel teases Hurricane Maria relief song, featuring JoellOrtiz, Anthony_Ramos1 and rubenblades ἟5἟7  — Honest",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913057429323157504,
+        "tweet_text": "Unconscionable, @realDonaldTrump People are without food, water, medical care and you are fiddling",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914621323590037505,
+        "tweet_text": "RT @markdubya: Thread here on important reporting from Puerto Rico, where people are still trapped and waiting for help.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913515042892648448,
+        "tweet_text": "THE HILL: Pentagon sending three-star general to Puerto Rico for Hurricane Maria relief efforts",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912083864398462976,
+        "tweet_text": "Please, send dog and cat food to our animal shelters and sanctuaries #RoyalCanin #Hills #ScienceDiet #Purina #dogfoodhelp #HurricaneMaria",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 910771459785498624,
+        "tweet_text": "Puerto Rico has been devastated by Hurricane Maria, with the death toll unclear because communications are down. #TenNews @CandiceWyatt10",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 913749160712646656,
+        "tweet_text": "RT @jery_schmidt: Before #HurricaneMaria destroyed #PuertoRico did anyone at #FEMA say we could have a problem here!",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913799122616033280,
+        "tweet_text": "#AgriNews ARS Agricultural Research Service : Secretary Perdue Statement on Hurricane Maria Assistance to Agricult",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912283564758073344,
+        "tweet_text": "RT @mitchellhirsch: 5 days since #HurricaneMaria hit #USVI &amp; #PuertoRico and Trump has yet to approve federal financial assistance /",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913047211394531328,
+        "tweet_text": "RT @FitChelle: @realDonaldTrump @POTUS Please help OUR American people in PR and USVI",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 912298691347779584,
+        "tweet_text": "RT @orlandomayor: Our compassionate community can help the @PRFAA get needed supplies to Puerto Rico.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913789856266047493,
+        "tweet_text": "Puerto Rico cell phone companies struggle to restore service after #HurricaneMaria damaged 90% cell sites",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913784765513437184,
+        "tweet_text": "@5ChurchCHS via @ChasCityPaper on Hurricane Maria relief efforts in Puerto Rico  #Charleston #chseats #holycityeats",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912198493510479872,
+        "tweet_text": "RT @democraticbear: As Trump is lying through his teeth, Puerto Rico is falling to shreds. He is doing nothing. One useless dingbat. http",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913052198929657856,
+        "tweet_text": "3.5M Americans! Its troubling not being able to communicate with family. Are they ok? What do they need? Help! ὡ4 #PuertoRico #Rincon #Mom",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914098367327870982,
+        "tweet_text": "Official count is at 16, but suspicions are that the death toll in Puerto Rico will rise to the hundreds by the time a final count is made. Maria takes some responsibility, how many belong to Trump for his poor response?",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 914205289586585601,
+        "tweet_text": "Journalists faced the same issues as relief workers. Damage made it hard to get to PR and hard to communicate while there. #HurricaneMaria",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910535604126937088,
+        "tweet_text": "Hurricane Maria Does ‘Mind-Boggling’ Damage to Dominica, Leader Says",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912289667474710529,
+        "tweet_text": "Puerto Rico officials describe apocalyptic conditions after Hurricane Maria  #worldnews",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912999667801223168,
+        "tweet_text": "The @DeptofDefense continues msns to deliver water/meals, trans, comm support, security, &amp; contingency response efforts for #HurricaneMaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911777287120486400,
+        "tweet_text": "Separate from any other question: is there an aid package for the victims of Hurricane Maria yet?",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911965190631182336,
+        "tweet_text": "Personnel from various government agencies are being sent to areas where there is no communication. #HurricaneMaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912103951138422784,
+        "tweet_text": "The island is completely without power and no one is talking about Puerto Rico or the damage done there. I havent heard a word from family",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911570210376880128,
+        "tweet_text": "Hurricane Maria to track northward off the southeast coast through midweek. Breezy conditions possible for central NC. #ncwx",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914852072314621952,
+        "tweet_text": "RT @USNationalGuard: RT @NCNationalGuard: #NCNG off to PR to help with recovery efforts #HurricaneMaria  via @abc11_",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913867540127993856,
+        "tweet_text": "RT @tainaasili: If you are in NYC, here are places you can donate supplies to those effected by Hurricane Maria in PR.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912289015231078401,
+        "tweet_text": "Donate to support Puerto Rico in this time of crisis:  #hurricanemaria #hurricanerelief",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912292954361839616,
+        "tweet_text": "RT @SPEAKUPJULIA: Please send the comfort ship there. Trump.is ignoring them.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911548703114252288,
+        "tweet_text": "An album of photographs showing damage from Hurricane Maria at Colegio Episcopal Santa Cruz in the Santa Fe",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913753354068795395,
+        "tweet_text": "RT @oecscommission: #HurricaneMaria Seven major actions we are currently implementing for the recovery of #Dominica",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911677923068973056,
+        "tweet_text": "#HurricaneMaria is likely to have destroyed” #PuertoRico, the",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914851019842113536,
+        "tweet_text": "Save the Children’s Hurricane Maria relief provides critical aid to children and families who need it most. @SavetheChildren @SC_Humanitarian",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913887759533780993,
+        "tweet_text": "RT @nbcwashington: Members of Maryland National Guard going to Puerto Rico to purify water for residents affected by Hurricane Maria :",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913041973010927616,
+        "tweet_text": "RT @stylteam: Our thoughts &amp; prayers are with those affected by #hurricanemaria Here are some donation locations for Puerto Rico. /",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914274542599753728,
+        "tweet_text": "Union: Puerto Rico Aid Bottleneck Not Due To Lack Of Drivers But Red Tape #HurricaneMaria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912013979303550976,
+        "tweet_text": "No air conditioning, no water, no refrigeration, no cell phones, for an entire almost-state of the US.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912058895425835009,
+        "tweet_text": "RT @IvanPer4: .@JLo speaks about the #hurricanemaria damage in #puertorico in Spanish.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913206258697691136,
+        "tweet_text": "During my encounter with @hillaryclinton tonight, I asked her about Puerto Rico and how much they need our help. #PuertoRico #HurricaneMaria",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912456945386352640,
+        "tweet_text": "Petition · DOHS: Waive the Jones Act for ALL Cargo at Ports in Puerto Rico to Aid Hurricane Maria Relief",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913024591823605761,
+        "tweet_text": "RT @RomanovaNRS: FGC family member .@Beyond_Toxin is raising money to get food and supplies to his pap in Puerto Rico. Lets help! /",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913059167996391424,
+        "tweet_text": "In case you cant tell, #HurricaneMaria is suuuuuppper close to Hampton Roads today",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 912265146793435136,
+        "tweet_text": "Whats the priority on your agenda today? #PuertoRico",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912368025596317696,
+        "tweet_text": "Hey, maybe we should stop focusing on these football players for a sec and talk about how Puerto Ricans HAVE NO FOOD",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912394022672637952,
+        "tweet_text": "RT @coreymintz: Hurricane Maria has destroyed 80% of Puerto Ricos agricultural crops.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911698440270356486,
+        "tweet_text": "#Chitown folks can donate to #PuertoRico #HurricaneMaria relief efforts at",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910689976819601409,
+        "tweet_text": "RT @thequeenmongeau: The @ pack is raising money for Hurricane Maria! Go donate! :)❤️ @elijahdaniel @tanamongeau @ChrisKlemens",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910570790881554437,
+        "tweet_text": "Hurricane Maria, the strongest hurricane to hit Puerto Rico in over 80 years, unleashed heavy flooding Wednesday.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912384008880775171,
+        "tweet_text": "RT @lovethedivablog: 3.4 million American citizens without water, electricity, gas and food. We need to help #PuertoRico #huricanemaria htt",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913258071949942784,
+        "tweet_text": "Trump Refuses to Send More Aid to Puerto Rico - Because These Americans Cant Vote? #SmartNews",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 913800725192359937,
+        "tweet_text": "Exactly., if only the military could drive, then they can DELIVER DRINKING WATER to stranded delivery drivers from Hurricane Maria. #Impeach",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912165013271523329,
+        "tweet_text": "Pres. Trump/Congress-pls make this your #1 priority! There are 3.4 million Americans who desperately need help. #PuertoRico #HurricaneMaria",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 910557757123723264,
+        "tweet_text": "RT @landovela1: Pray for Mexico they just had another earthquake. Pray for Puerto Rico &amp; the islands that have been or will be affected by",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913843718104535045,
+        "tweet_text": "@NBCNews You had weeks of reports of hurricane Marias strength and track. Why was there no staging of people and supplies by the federal government?",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912265700403761152,
+        "tweet_text": "Priti Patel: Extra UK Aid To Dominica Following Deadly Hurricane Maria #Maria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913005639793876993,
+        "tweet_text": "RT @kfor: Oklahomans working to help relief efforts in Puerto Rico after Hurricane Maria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912107426329001986,
+        "tweet_text": "RT @keithrhernandez: I have set up a Hurricane Maria fundraiser page in honor of my father. Will match every dollar. 100% goes to relief. h",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913066462864138240,
+        "tweet_text": "#HurricaneMaria has devastated Puerto Rico, destroying buildings leaving its more than 3.4M largely without power:",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912366012523323397,
+        "tweet_text": "RT @IPS_PrimateNews: Caribbean Primate Research Center staff in #PuertoRico urgently need help after #HurricaneMaria. Pls RT &amp; #helpcayo ht",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912415214657818625,
+        "tweet_text": "PBSO provides disaster relief aid for #PuertoRico and #Mexico with 150 volunteers and 85,000 pounds of donations #HurricaneMaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911962882253971457,
+        "tweet_text": "Lets not lose sight of the fact that over 3.5 million US Citizens are in desperate need of our help following #HurricaneMaria",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913139032053501952,
+        "tweet_text": "The latest The First in Line!  #hurricanemaria #amazonalexa",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 913177990074429441,
+        "tweet_text": "RT @HoustonChron: Pitbull, Mark Cuban offer their private planes for Puerto Rico victims affected by Hurricane Maria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914478305620963329,
+        "tweet_text": "Wow: Despair outruns aid in Puerto Rico after Hurricane Maria.  by @davabel with @jrinaldi5 #FactsMatter @BostonGlobe",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914865678636724224,
+        "tweet_text": "As promised, a percentage of our proceeds are going to Operation USA for Hurricane Maria rescue and relief efforts!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914351597731307520,
+        "tweet_text": "RT @Starseed52: What Its Like For THOUSANDS Trying To Find Food &amp; Water In Hurricane-Hit #USVirginIslands #USVI #Irma #Maria /",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912366497040928768,
+        "tweet_text": "RT @Hamlet_Machine: Made some donations to Doctors Without Borders and Hurricane Maria ReliefὤFὉ5 I hope it helps those in need..",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914198605635948544,
+        "tweet_text": "You can help Puerto Rico by purchasing one of these shirts at . 100% of proceeds will go to hurricane Maria victims!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913836954147590145,
+        "tweet_text": "Help needed post hurricane Maria",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914495275577806849,
+        "tweet_text": "@bonitalea @RealMadRooster @MillardFillmor1 @maggieNYT What NYT will never tell you: Puerto Ricos cop telling the truth about Hurricane Marias aid",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913218391867043840,
+        "tweet_text": "RT @CWJaneTheVirgin: Join The CW family and @DirectRelief to raise donations for the victims of Hurricane Maria:  ht",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914460526960431106,
+        "tweet_text": "The Feds were preparing aid to PR before Maria arrived.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913434187394371590,
+        "tweet_text": "Sending our thoughts with the members of @txtf1 who’ve been deployed to #PuertoRico  #HurricaneMaria",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 910751885128343552,
+        "tweet_text": "Hurricane Maria destroys homes, knocks out power across Puerto Rico  via the @FoxNews Android app",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911657257527660545,
+        "tweet_text": "@NifMuhammad A pic thread of some of the damage.  @blogdiva also has a lot of info.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910571793710231552,
+        "tweet_text": "NEW: Update on the damage from #HurricaneMaria",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912351190918287360,
+        "tweet_text": "RT @1000Days: There will be no food in #PuertoRico - #HurricaneMaria wipes out 80% of the crop value in the country",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910525290098470913,
+        "tweet_text": "please pray hard for PRmy fear is that Maria is worse than Harvey &amp; Irma !",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 911830702529839104,
+        "tweet_text": "Vieques is devastated and out of food, water and other supplies! Please help Steven Mueller@ViequesUSA #viequesUSA#ViequesLove",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 910577199975149569,
+        "tweet_text": "RT @GartrellLinda: VIDEO: Hurricane Maria makes landfall in Puerto Rico Where are all the countries sending relief?",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911978582523686912,
+        "tweet_text": "RT @cfishman: Puerto Rico drifts toward apocalypse. —No power —No water —No sewer —No cell phone service —Roads &amp; towns destroyed",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913735614079500290,
+        "tweet_text": "RT @NatGeoChannel: The worlds most iconic radio telescope has been damaged during Hurricane Maria.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914531819864809474,
+        "tweet_text": "Twas #climatechange that killed the beast. trump #PuertoRico #PuertoRicoRelief #globalwarming #HurricaneMaria",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 913039158838480896,
+        "tweet_text": "18 @FDNY locations across the 5 boroughs are accepting specific donations for residents affected by #HurricaneMaria.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914702370671677440,
+        "tweet_text": "@tigerseye345 @TimAllenRants @nbcsnl @BarackObama  Heres the truth about the disaster relief. Started a week early, not 8 days late. Disgraceful lie.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 912302420138627072,
+        "tweet_text": "8 a.m. update has Maria barely holding on as a hurricane. Its over cooler water that was stirred up by Jose.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914832363275931648,
+        "tweet_text": "RT @VOALearnEnglish: #HurricaneMaria severely damaged a giant telescope in #PuertoRico.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913236993655656449,
+        "tweet_text": "@RedCross volunteers on the ground in Puerto Rico helping deliver supplies and relief to those affected by Hurricane Maria. #RedCrossStrong",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914700211842277377,
+        "tweet_text": "As if a 60 mile wide tornado went all the way across Puerto Rico  plus catastrophic flooding",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913833238195572736,
+        "tweet_text": "Adirondacker heading to Puerto Rico for #HurricaneMaria relief efforts:  via @SunCmtyNews",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910677656319987712,
+        "tweet_text": "Pray for my family in friends in Puerto Rico, hurricane Maria is doing some damage to the island ἟5἟7἟5἟7",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 910723417661308928,
+        "tweet_text": "RT @elijahdaniel: Donate if you can, even if its just a dollar it can still help. If you cant donate, share donation links: /",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910555171318566912,
+        "tweet_text": "RT @RepMaloney: My thoughts are with the 3.4 million ppl of #PuertoRico as #HurricaneMaria moves through with winds topping 155 mph",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914184654885765120,
+        "tweet_text": "RT @telesurenglish: Cuba and Venezuela offer assistance to #PuertoRico as it recovers from the devastating effects of Hurricane Maria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912166373337440256,
+        "tweet_text": "Hurricane Maria destroyed crops and livestock, knocking out about 80 % of its crops.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913060479177601024,
+        "tweet_text": "#HelpPuertoRico @realDonaldTrump #Americans need your help! Why wont you #help",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 910672992514052103,
+        "tweet_text": "Hurricane Maria brings destruction, heavy floods to Puerto Rico - Times of India  #India #News",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911630456516259843,
+        "tweet_text": "Facing Months in the Dark, Ordinary Life in #PuertoRico is ‘Beyond Reach’ -Affects so much! Water, food, cooling etc",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912385537838845954,
+        "tweet_text": "Hysteria is starting to spread. The hospital is about to collapse. It’s at capacity. We need someone to help us.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912947280931569664,
+        "tweet_text": "#CBP Air and Marine Operations National Air Security Operations Center-Jacksonville crews transport supplies to Puerto Rico #HurricaneMaria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914589137923133445,
+        "tweet_text": "RT @MarketplaceWKND: Downed trees, no food. Puerto Rican agriculture was devastated by Hurricane Maria.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914913470146998272,
+        "tweet_text": "Florida Blue donates $50,000 to the American Red Cross for those impacted by Hurricane Maria.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912418238083997696,
+        "tweet_text": "The federal government aid response is not happening, we must act. #PuertoRico #Hurricane",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914215003112185856,
+        "tweet_text": "RT @zyonseven: .@POTUS this is not about a news story. These are people lives you are toying with. HELP THEM! PLEASE! #begging4PR /",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 911547647634427905,
+        "tweet_text": "RT @BoffleSpoffle: Food, water, fix power grid. Americans in need. #PuertoRico",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912168762601811968,
+        "tweet_text": "Listen up #Orlando  Please help out Puerto Rico recover from Hurricane Maria. Spread the word. #PuertoRicoSeLevanta",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913929199425122304,
+        "tweet_text": "#NEWS NJ Mobilizes To Assist Hurricane Maria Victims In Puerto Rico  #",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914354698232254464,
+        "tweet_text": "In need of help to get a generator for his father In #PuertoRico #἟5἟7 #HurricaneMaria",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913451707878854656,
+        "tweet_text": "business: Heres what the Fed can do to aid Puerto Rico as it recovers from Hurricane Maria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910816245821394944,
+        "tweet_text": "Were now starting to see the devastating destruction across Puerto Rico from Hurricane #Maria:",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911602898412490756,
+        "tweet_text": "His country destroyed by #hurricanemaria . @AJEnglish to carry his remarks LIVE @dominica_relief",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913499261555417089,
+        "tweet_text": "Were collecting supplies for @FriendsOfPR &amp; @UNIDOSxPR. Donate items to a local @Sprint4FL store now - 10/8  ὤF἟5἟7#HurricaneMaria #hurricanerelief #UnitedforPR #BuildPuertoRico",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912301894403534848,
+        "tweet_text": "RT @socarolinesays: 2k! Thank you to everyone who contributed. going to Costco this week so if youre moved to donate, its not too late ht",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914419428716146688,
+        "tweet_text": "@dkrwilliams @JustCallMeEd @DavidJollyFL Thats a lie. They cant get a hold of the drivers because they have no comm, and roads are gone.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910586820571799552,
+        "tweet_text": "‘Total devastation’: Hurricane Maria brings high winds and flooding to Puerto R  via @NEWSdotCLUB #Breaking #News",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 912390832803782657,
+        "tweet_text": "RT @AnettePelletier: @realDonaldTrump PR needs help, they have no power, no water, nothing. People are going to die on your watch!!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914123050009989120,
+        "tweet_text": "Forget Politics &amp; suppot, encourage #Maria hurricane relief efforts &amp; Administration @CNN @nbc @MSNBC @ABC Support @fema @DeptofDefense @VP",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914998868873379840,
+        "tweet_text": "Hurricane Maria: government official acknowledges there are more deaths in Puerto Rico CLICK BELOW FOR FULL STORY",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 912279686457188354,
+        "tweet_text": "Where To Donate Money And Goods For Hurricane Maria Relief  via @Gothamist",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910726675222077440,
+        "tweet_text": "Puerto Rico in dark, curfew set after island destroyed by Hurricane Maria, officials say  via @GMA",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911675133273804802,
+        "tweet_text": "[Author: sports-news-fresnobee-com]  Its been three days since Hurricane Maria destroyed Puerto Rico and Carlos",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914176816591638528,
+        "tweet_text": "How #HurricaneMaria, #HurricaneIrma, and #HurricaneHarvey are creating new #opendata disaster relief efforts:",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910638927530229760,
+        "tweet_text": "RT @MerrellTwins: Our thoughts &amp; prayers are with those affected by the earthquake in Mexico &amp; Hurricane Maria in the Caribbean. ὤFἿBὡ4Ὁ6ὉC http",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 912310920612864000,
+        "tweet_text": "@Delta I have a flight booked from St. Croix to BWI in December - Due to damage and aftermath of Hurricane Maria will I be able to cancel it?",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912348069261344769,
+        "tweet_text": "11AM #HurricaneMaria update plus current winds in #NorthCarolina and #Bermuda @WRCBweather @WRCB",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912432513427152898,
+        "tweet_text": "RT @EndDeportations: RT NYCMayorsOffice: We are accepting donations for: ὑ8 Diapers ὑ8 Baby food ὑ8 Batteries ὑ8 First aid supplies ὑ8 Femin ht",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913481454532866048,
+        "tweet_text": "Stay up to date on the damage assessments from #Caribbean resorts as they release information:  #HurricaneMaria",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913234230418735104,
+        "tweet_text": "EXCLUSIVE: Desperate plea for help from an #Omaha woman who survived #hurricanemaria on #Vieques. Read her hand-written letter. @KETV at 10",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912993935353577473,
+        "tweet_text": "Damage left by Hurricane Maria in Arecibo, PR - Hospitals are suffering from shortages of water, power &amp; supplies in the wake of the storm.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910642789955727361,
+        "tweet_text": "My homeland is Destroyed and 100% with no electricity. Really old electrical system. this is horrible",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910706400170582016,
+        "tweet_text": "@adrim00 Praying for everyone impacted by Hurricane Maria. #PuertoRicoStrong",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914992431153561600,
+        "tweet_text": "Relief Fund for Animals of #PuertoRico; .. #AnimalWelfare #AnimalRescue #HurricaneMaria #HurricaneIrma #Humanity",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913025655104819201,
+        "tweet_text": "U.S. denies Puerto Rico a shipping waiver of damaged ports unable to handle additional ships.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910610987283288064,
+        "tweet_text": "FLOOD WARNING: Hurricane Maria Landfall Puerto Rico",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 913154729844396032,
+        "tweet_text": "Thanks to Kyle from #VA06 &amp; volunteers helping victims of Irma &amp; Maria --&gt; Local pilot flying in hurricane relief",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913105016352759808,
+        "tweet_text": "@altNOAA These deaths are on @realDonaldTrump a head, for failing to act after hurricane Maria. #murderer #WorstPresidentEver",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 913021685766479872,
+        "tweet_text": "RT @astros: Carlos Beltran is raising money for Hurricane Maria relief in Puerto Rico. You can help by clicking the link below:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914898160283242497,
+        "tweet_text": "@orlandomayor Interesting. I checked your past messages and not a single prayer or thoughts for fellow americans in @PuertoRicoPUR The hypocrisy is sickening. #HelpPuertoRicoNow #HurricaneMaria",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914096819155738624,
+        "tweet_text": "RT @doolittlelady: Good article w/ links to donate",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911582232313200640,
+        "tweet_text": "Carmelo Anthony organizes Hurricane Maria Relief Fund with goal of raising $1MὤC  #HipHop #Music #Culture",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911563090906505217,
+        "tweet_text": "RT @DrPhiltill: Thread. Hurricane damage to the Arecibo radio telescope in Puerto Rico.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912309801262166016,
+        "tweet_text": "RT @awatson8381: Hurricane Maria destroyed about 80 percent of the crop value in Puerto Rico.  #envhist",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910736673025093632,
+        "tweet_text": "Hurricane Maria cut all electricity from Puerto Rico, damaged with high winds, and now flooding",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914007690250215426,
+        "tweet_text": ".@USCG personnel continue to send personnel and relief supplies to Puerto Rico and the Virgin Island. #breaking #Maria #Hurricane",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912347253670588417,
+        "tweet_text": "#SeeThis Mon Sep 25 17 Announcement from Hurricane Maria Relief: $300!..  #BCF",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914119988373524482,
+        "tweet_text": "RT @sherrilee7: Imagine the worst storm ever and no cell phones, no water, no power, no roads. It’s just unfathomable. Horrible. /",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910709782507552768,
+        "tweet_text": "My heart is broken!I can’t pray enough for my fam &amp; Hurricane Maria destroys homes, triggers flooding in Puerto Rico",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910687886445494273,
+        "tweet_text": "HURRICANE MARIA FOOTAGE, DAMAGE, CAUGHT ON CAMERA  via @YouTube",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913441625531207681,
+        "tweet_text": "WATCH: Basic resources like food, water, fuel &amp; medicine are still hard to find in Puerto Rico, *8 days* after Hurricane #Maria.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914263136437379073,
+        "tweet_text": "EVEN THE BEES ARE WITHOUT FOOD IN #PuertoRico Please help this beautiful island.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913190128524447744,
+        "tweet_text": "4615 Sending love and support to all families in Puerto Rico devastated by hurricane Mariaὢ2Ὁ7Oraciones a mi familia Manati,PR @eric_marler",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913906885551644672,
+        "tweet_text": "A huge thank you to these corporate companies trying to help rebuild areas destroyed by #HurricaneMaria",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914906178559315968,
+        "tweet_text": "Fla. Will Aid Hurricane Maria Refugees From Puerto Rico: Gov. Scott",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913415334165487616,
+        "tweet_text": "@FEMA_Brock 3 ways for FEMA to help: clear roads, get truck convoy, deliver supplies sitting uselessly in ports! DO YOUR JOB!",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 914935227474116610,
+        "tweet_text": "Please help us bring aid to the victims of Hurricane Maria. You can drop your donations off at our Florida Mall store! #PuertoRicoStrong",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912283318225391616,
+        "tweet_text": "#InfoMV: Venezuela is the first country to send humanitarian aid to Dominica after the devastation of Hurricane Maria.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914083906357522432,
+        "tweet_text": "Here we go, off to Atlanta Georgia then my home #STL from #HurricaineIrma relief. Now home to focus on #HurricaneMaria",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 914667712764370947,
+        "tweet_text": "RT @jgolivares9: Mayor of Puerto Rico selling supplies?! Corruption is no exaggeration! I see now that corruption is rampant! /",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912119939779219458,
+        "tweet_text": "@FOX5Atlanta at 10: Local woman tells me her family remains in a shelter at a police station in Dominica after #HurricaneMaria",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 912333993676345344,
+        "tweet_text": "Donate things for #PuertoRico #hurricanerelief effort at #RedHook Library this week. #PuertoRicoStrong #HurricaneMaria #PuertoRicoSeLevanta",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914166926674415616,
+        "tweet_text": "Only 20% of truck drivers reported back to work since Hurricane Maria, aid is trapped in thousands of containers",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913854166187040768,
+        "tweet_text": "If youre looking for a reason to donate to help victims of Hurricane Maria, consider @realDonaldTrump says things are going really well",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911696605774049281,
+        "tweet_text": "RT @the_chill_son: I am active duty military, w/ supplies, trying to get to St. Croix. Currently flying to St. Thomas on Sunday. Help! #stc",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910779986319216641,
+        "tweet_text": "RT @TwitterMoments: Dominicas Prime Minister had to be rescued as Hurricane Maria destroyed his home.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913969662299435009,
+        "tweet_text": "prayig that the much needed help arrive soon.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 910570689723236353,
+        "tweet_text": "Hurricane Maria Live Updates: Puerto Rico Suffers a Direct Hit With Worries of Floods",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914177775937966080,
+        "tweet_text": "Their workers were hit by #HurricaneMaria lost homes and entire island devastated Need people, food, supplies and equipment from outside",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914129220397420544,
+        "tweet_text": "Navy has been deployed to Puerto Rico..Ships can provide medical attention from sea, land or air!",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912365552798183424,
+        "tweet_text": "RT @Shakestweetz: These organizations are helping with immediate needs—like food—and long-term efforts, including rebuilding.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 912130299965849601,
+        "tweet_text": "One plane with Hurricane Maria evacuees lands in Shreveport, more to come",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 910685585265893376,
+        "tweet_text": "RT @elijahdaniel: .@TacoBell @Houseparty @streamLiveme @YouNow @bestfiends @MorpheBrushes yall got $$$ to blow on influencers, donate: http",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912987709710520320,
+        "tweet_text": "Hurricane Maria: Puerto Ricans Plead for More Federal Aid to Devastated Island",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913371079502163968,
+        "tweet_text": "Hurricane Maria blows 900 FINRA arbitration cases off course",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914262648576815104,
+        "tweet_text": "RT @JamesCostos: Making a huge difference: @chefjoseandres Flew to Puerto Rico to Cook for Thousands of Hurricane Victims ἞A἟8἟A἟8/",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914882967402631169,
+        "tweet_text": "@Liquid_Memory FEMA Dir 15 min interview discussing challenges (no fuel, power, 1000’s roads damaged) made no mention of strike.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912286740941086727,
+        "tweet_text": "This is cruel &amp; unusual. They are Americans! Why isnt the mainland not pulling all stops to help! #PuertoRico #SOS #HurricaneMaria",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 914196332855865347,
+        "tweet_text": "Dr. Jon LaPook is in San Juan where he spoke with patients and doctors about their fears as the crisis after Hurricane Maria continue:",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912461989087236097,
+        "tweet_text": "RT @nytimes: Jennifer Lopez pledges $1 million of own money to victims of Hurricane Maria in Puerto Rico",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912999417468342272,
+        "tweet_text": "Thoughts and prayers going out to all the American citizens affected by the hurricanes this past month.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 910566541321736192,
+        "tweet_text": "NASA image of the day for my children: Suomi NPP Satellite Captures Thermal Image of Hurricane Maria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913126362503942144,
+        "tweet_text": "@realDonaldTrump @SenToddYoung @SenDonnelly @RepWalorski President @realDonaldTrump starts by extending his thoughts and prayers to #PuertoRico &amp; the US Virgin Islands in wake of #HurricaneMaria.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 910695029915521024,
+        "tweet_text": "So many heartbreaking stories latelyὡ5 It proves how strong people really are. My thoughts &amp; prayers are with the people Puerto RicoὉ9἟5἟7❤️",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914887339754782721,
+        "tweet_text": "#HurricaneMaria left #PuertoRico devastated. @operationbless is on the ground providing relief. Pray for the people of Puerto Rico!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914053249849856000,
+        "tweet_text": "RT @_camillefontz: Help for my friend who lost it all to #HurricaneMaria  or venmo/athmovil at (787) 457-9155 :",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 910523589195165696,
+        "tweet_text": "Hurricane Maria Damages Buildings and Downs Trees in Puerto Rico  #Trending #News #Politics #Defense #Crisis",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914110399993335808,
+        "tweet_text": "RT @kimrrenfro: If havent yet but are able to, now is the time to donate to Hurricane Maria relief funds:  Outrage",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913554906748989441,
+        "tweet_text": "@WGRZ who is accepting donations supplies for hurricane Maria in Lackawanna Hamburg area?",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914581868963663873,
+        "tweet_text": "RT @WorldOfOneSter: One for One  #Donate #OneAmericaAppeal #Obama #Clinton #Carter #HurricaneMaria #Hurricane",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911813875028373504,
+        "tweet_text": "#HurricaneMaria devastated Puerto Rico, an island of great spirit &amp; history in the Caribbean. As Americans, we must help recovery &amp; rebuild.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 912014519278346240,
+        "tweet_text": "@margaretcho admire your activism. Can you help get word out about how #dominica was impacted by #HurricaneMaria?",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913766638608113666,
+        "tweet_text": "RT @BaltimorePolice: BPD Take Collection for Victims of #HurricaneMaria, Donations to go to #PuertoRico",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913240581794664448,
+        "tweet_text": "Where to donate in Western New York to help Hurricane Maria victims:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912180311210975233,
+        "tweet_text": "Thread on what its now like to fly out of San Juan airport without electricity or a working air traffic control systemor A/Cor water.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911920229919318016,
+        "tweet_text": "Just one of the pictures I took of the damage from Hurricane Maria here in Puerto Rico. We got",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910610304949739520,
+        "tweet_text": "Our thoughts and prayers are with the people in the Caribbean that are dealing with the aftermath of Hurricane Maria.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914554102033481728,
+        "tweet_text": "@foster2adoptof4 @bbusa617 This doesnt jive w/fact that lack of navigable roads id prob Not striking unions",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 914355269039214592,
+        "tweet_text": "#SheldonAdelson is a giant #WorldNews #Asshole  By the numbers: Hurricane Maria damage, recovery in Puerto Rico",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911768717146693632,
+        "tweet_text": "RT @Hoodscholars: Information on Arecibo, Coamo, Camuy needed please! #HurricaneMaria #HuracanMariaRD #PuertoRicoStrong #PuertoRico",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913250473901268992,
+        "tweet_text": "@norvina1 @atleeeey @JeffreeStar Help my babe out please",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913587343029760000,
+        "tweet_text": "Wait is #trump himself running out of food in this scenario? If not, he couldnt care less. #HurricaneMaria",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 911564519482290176,
+        "tweet_text": "RT @LeesburgJackets: Thank you Jackets for sending your love and prayers to the victims of Hurricane Maria in Puerto Rico! #LeesburgPride h",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 912251683002085377,
+        "tweet_text": "Tropical storm warning in effect for Dare County ahead of Maria - WAVY-TV  #Storms #Weather #News",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 913570813512765440,
+        "tweet_text": "Agriculture sector in Dominica destroyed by Hurricane Maria  #news",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913876854754484225,
+        "tweet_text": "RT @protestcards: drinking from a creek, it’s not a good news story. When you don’t have food for a baby, it’s not a good news story” http",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914586150613917696,
+        "tweet_text": "FEMA IS working hard to provide emergency services to ALL areas hit by Hurricane MARIA #Trump #Tucker #Hannity #Dobbs #Hannity #tucker",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913545611772858369,
+        "tweet_text": "More than a week after Hurricane Maria hit Puerto Rico, Marines are still clearing roads",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912035221826080768,
+        "tweet_text": "@realDonaldTrump @VP rather than worrying about NFL, DO SOMETHING! PEOPLE NEED HELP @FEMA_Brock",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913063296818909184,
+        "tweet_text": "Plane leaving Travis Air Force Base later today to help in #HurricaneMaria relief efforts in Puerto Rico.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914362009151356928,
+        "tweet_text": "RT @g8torgrrl: If you can, please help and R/T. Fundraiser for 4 families in #PuertoRico that were devastated by #HurricaneMaria .",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913366198724608000,
+        "tweet_text": "IsraAID sends emergency response team to Puerto Rico: After Hurricane Maria wreaks havoc, Israelis arrive  ISRAELITY",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913881935826636801,
+        "tweet_text": "Puerto Rico in dire need of food, water after Hurricane Maria",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914134151154061313,
+        "tweet_text": "First ὢD Second, note how they have no power or clean water, but generously *don’t* want family outside #PuertoRico to worry. ὢD",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911967309190885376,
+        "tweet_text": "RT @JohnMoralesNBC6: No less than 5 places where you can drop off donations for María victims in South Florida. 5 sitios donde donar. h",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912338791981027328,
+        "tweet_text": "But when the world needed Kanye West the most, he vanished. Hurricane Maria has passed and Trump ignoring the destruction in Puerto Rico.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913403935024705536,
+        "tweet_text": "Three Ways To Help After Hurricane Maria”  #MariaRecovery #IRMARecovery #HarveyRecovery call #800621FEMA",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914613606544678912,
+        "tweet_text": "@realDonaldTrump hey donnie, I thought all buildings were inspected per your earlier tweet. #PuertoRico is more than San Juan",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913190339694952449,
+        "tweet_text": "Thank you @SenJohnMcCain This is humanitarian aid, not to bring in tequilla for a party. They need medicine, water, food and basic supplies",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 910704095060783104,
+        "tweet_text": "#breakingnews #tech Hurricane Maria made landfall in Puerto Rico Wednesday morning, destroying homes as rain, po",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910671112802992128,
+        "tweet_text": "We extend our thoughts and prayers to all the victims impacted by Hurricane Maria and Mexico Citys Earth Quake disasters!",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914503723916959744,
+        "tweet_text": "#Costco Please update us on what you are doing to help Hurricane Maria survivors in Puerto Rico. @Costco",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914976256571174912,
+        "tweet_text": "U.S. Customs and Border Protection personnel continue to support response efforts on the ground after #HurricaneMaria to help those in need.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913165578420015104,
+        "tweet_text": "RT @NYCMedics: #NYCMedics is deploying a team to #Dominica. Our team leader is en route now, medical team &amp; supplies will arrive tomorrow.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913214803048415232,
+        "tweet_text": "RT @HumanityRoad: #PuertoRico - Pentagon sending General to lead #HurricaneMaria recovery efforts:  #MariaPR #Huraca",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914044306712879104,
+        "tweet_text": "#DSTRCrewDeployment New York rescue team deployed after Mari",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913237722902548480,
+        "tweet_text": "Libs lie saying, Puerto Rico is getting no assistance from USA/Trump ἟A἟8἟5἟7 ἟A἟8",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 912401011028918273,
+        "tweet_text": "RT @IoTandIoE: Puerto Ricos Hilly Terrain Worsened Hurricane Marias Damage  #Science #Technology",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914258300623040512,
+        "tweet_text": "Josh Norman supporting Hurricane Maria relief effort in Puerto Rico",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914252937794326530,
+        "tweet_text": "Lets see Trump try and golf here, Working is a lot tougher. No food, no water, no power.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910629984439619585,
+        "tweet_text": "‘Total devastation’: Hurricane Maria brings high winds and flooding to Puerto Rico (IMAGES, VIDEO)",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912265184814788608,
+        "tweet_text": "RT @NYDailyNews: Hillary Clinton urges Trump to send Navy to aid in Puerto Rico’s #HurricaneMaria recovery  /",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914277733487824896,
+        "tweet_text": "If you want to help the Children that were in Hurricane Maria:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914212095939481600,
+        "tweet_text": "Heres where Trump spent the past 10 days as Puerto Rico collapsed  Hurricane Maria is the largest storm to hit P",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 913034414455771136,
+        "tweet_text": "#WednesdayWisdom Trump denied waving the #JonesAct and now more Americans are without aid in Puerto Rico. This is Trumps Katrina.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911515596105437191,
+        "tweet_text": "The dam failed in a new crisis on Puerto Rico amidst floods caused by Hurricane Maria #BREAKING112",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913764864782422016,
+        "tweet_text": "links to donate money for puerto rico 1.  2.  3.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912368845800841217,
+        "tweet_text": "Three million Americans. An entire de facto US state is living a post-apocalyptic nightmare - no water, food, electricity for 6 months.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910559745206972416,
+        "tweet_text": "Please keep Puerto Rico in your thoughts and prayers. From what Ive heard/seen, hurricane Maria is very bad. Ὁ4἟5἟7",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914807302007508992,
+        "tweet_text": "Families across the Caribbean are trying to escape conditions caused by hurricane Maria.  #WCCB #maria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913109557634899977,
+        "tweet_text": "Only 44 percent of #PuertoRico has drinking water. Only 11 of 69 hospitals have fuel or power. #Maria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911745579528712192,
+        "tweet_text": "Im currently with a U.S. Army medical unit documenting relief efforts in the wake of Hurricane Irma and Maria in the U.S. Virgin Islands.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913843011121025024,
+        "tweet_text": "RT @SBA_PuertoRico: @SBA_PuertoRico ready with #DisasterAssistance for #PuertoRico after Hurricane #Maria. @VoceroPR",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914116656259059712,
+        "tweet_text": "@JohnCornyn @tedcruz @LamarSmithTX21 Texas cannot support a leader who attacks disaster victims. We are watching you. Stand up for Americans in Puerto Rico. #HurricaneMaria #PuertoRicoRelief",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914189165599760384,
+        "tweet_text": "@softhartzz @tponews Hurricane Katrina death toll 1,833. Hurricane Maria death toll (so far) 16. Hysterical behavior is a #Liberal trademark #MAGA #Trump",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 913027516931219458,
+        "tweet_text": "In the Dominican Republic, Master Guides Rescue Dozens from Flood Waters During Hurricane Maria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910585538725412864,
+        "tweet_text": "My heart goes out to the people of Puerto Rico as Hurricane Maria hits the island.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 911759567306010624,
+        "tweet_text": "Aerial Video: Bayamon, Puerto Rico after #HurricaneMaria. #Maria Homes/Businesses destroyed with others roofs peeled off like a sardine can",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912447225376231425,
+        "tweet_text": "We stand with Puerto Rico and asks for assistance in their recovery from Hurricane Maria",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913811051140980736,
+        "tweet_text": "#USA_News Beyoncé Releases Remix to J Balvin’s ”Mi Gente” to Benefit Hurricane Maria Relief  Via #Learnfromnazrul",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910576867165515776,
+        "tweet_text": "funny how no one talks about hurricane maria cause it’s not affecting the us but 7 people and counting are dead cause it.",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 910621353245593600,
+        "tweet_text": "#StMaarten has been spared additional damage as most of the category 5 #HurricaneMaria passed South of the island.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912119720542797824,
+        "tweet_text": "NYC: fundraiser for #puerto rico hurricane relief happening saturday. come through! (via @aliciakennedy)",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914234891105161216,
+        "tweet_text": "Our POTUS is this close to becoming a Hurricane Maria Truther (storm was just a little squall, minor property damage)",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 914928513177841665,
+        "tweet_text": "The craft brweries in #PuertoRico need your help after hurricane #Maria. Learn how you can donate here:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914729623258226693,
+        "tweet_text": "Lets remember all the people who lost there lives doing hurricane Maria/Harvey/Irma and send our thoughts &amp; prayers . The hell w/Trump",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914668051794100224,
+        "tweet_text": "♦️Puerto Ricos cop telling the truth about Hurricane Marias aid♦️  via @YouTube @NFL @CNN @MSNBC Ur LIARS❗️ Listenἵ5",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913808030894055424,
+        "tweet_text": "Im supporting Royal Caribbean Hurricane Irma &amp; Maria Relief!  via @DonorDrive #helphurricanevictims",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914102473924767744,
+        "tweet_text": "RT @MaraGottfried: 10 St. Paul officers volunteered to go to Puerto Rico and provide aid after Hurricane Maria, @sarah_chavey reports. http",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912462912798806016,
+        "tweet_text": "@BarackObama  Ἲ5 Hurricane Marias Massive Destruction In Puerto Rico - YouTube",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912432777475260416,
+        "tweet_text": "Our thoughts and prayers are with those in #PuertoRico affected by the devastating #HurricaneMaria.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913396744259461121,
+        "tweet_text": "SAN JUAN, Puerto Rico (AP) — First, Hurricane Maria knocked out power and water to Puerto Rico. Then diesel fuel,",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913435493689384960,
+        "tweet_text": "Survivors of Hurricane Maria need assistance",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912174243747524608,
+        "tweet_text": "Puerto Rico isnt Trumps Katrina. Puerto Rico is Trumps Puerto Rico. Heres where you can donate:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910614710801911810,
+        "tweet_text": "RT @Rainmaker1973: Comparison between the eyes of hurricane #Harvey, #Irma and #Maria in this Atlantic hurricane season [not to scale] http",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910548233847324672,
+        "tweet_text": "ὤFὤFὤF praying for these Americans",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 910765020589576193,
+        "tweet_text": "Yo @MrWilliamHaynes @yessica @JohnRos93 Hurricane Maria fuckef us. No water and no light but hey at least I got the Earthlings Podcastssᾒ3",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913252358838157313,
+        "tweet_text": "abc4utah: LDS missionaries displaced by Hurricane Maria leave Puerto Rico behind for reassignment in Utah.",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 914497933126619136,
+        "tweet_text": "I remember getting water this way for 4 days after the NZ 2011 earthquake. That was in a 1st world city accessible by road. #Perspective",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913810464685137920,
+        "tweet_text": "RT @Northeastern: #Northeastern student, Puerto Rico native Laura Rivera leads Boston-area relief efforts after #HurricaneMaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914837760581799937,
+        "tweet_text": "#HurricaneMaria relief work from #ChefsForPuertoRico cc: @PerezReports @SenSchumer @JoaquinCastrotx @SuzGamboa @DavidBegnaud",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914207084199034882,
+        "tweet_text": "Irma/Maria Aid Efforts (I have not researched them, though): Puerto Rico -",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913852678966513670,
+        "tweet_text": "RT @13WHAM: #ROC Public Market fixtures Juan &amp; Maria raising money to help hurricane, earthquake victims  #13WHAM",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914196111220494336,
+        "tweet_text": "I have family we still havent heard from. Its heartbreaking! If anyone can help please please do what you canὉ9❤️#PuertoRicansAreAmericans",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912456352072683520,
+        "tweet_text": "Please keep @danielalthist, our May assembly speaker, in your thoughts. He has family in #PuertoRico affected by #HurricaneMaria.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 910686900796645378,
+        "tweet_text": "3.4 million Americans will be without electricity for an estimated 4-6 months after Hurricane Maria damage.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911728463513563137,
+        "tweet_text": "@USArmy @fortleonardwood There should be US cargo planes parachuting supplies #HurricaneMaria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913961822465679361,
+        "tweet_text": "Can people not understand how MANY natural disasters we have been routing resources to? Yes, they need help but unfortunately it takes time.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 910576832981950464,
+        "tweet_text": "No power in ALL of Puerto Rico. Roofs torn off buildings. Major flooding. This is bad.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911549177523589121,
+        "tweet_text": "Puerto Rico is in real trouble. Dam breaking. 95% (!) of cell towers destroyed.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910630016169467904,
+        "tweet_text": "RT @dircetoca: For Chicago locals, you can attend and donate to the victims of Hurricane Maria in Puerto Rico",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911984215268429827,
+        "tweet_text": "Caribbean Nature Isle Dominica needs help after Hurricane Maria. Please share",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913209745187667968,
+        "tweet_text": "RT @BethDeFalco: Heres whats happening in USVI right now and why help is so desperately needed. #USVI @BloombergDotOrg",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913166905724231680,
+        "tweet_text": "#HurricaneMaria: How to help Puerto Ricos Scientists &amp; Docs, Appeal from Cienca Puerto Rico @CienciaPR @PLOSBLOGS",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912287330744053760,
+        "tweet_text": "Cant congress do SOMETHING?! THEY NEED HELP!!!",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912457758317977604,
+        "tweet_text": "San Juan airport remains crippled by Hurricane Maria damage",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914870434264469505,
+        "tweet_text": "Weve partnered with @MANNAFoodBank for hurricane relief. Look for orange bins at Mission Health locations to donate",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914216894219128832,
+        "tweet_text": "Any donation that you can spare, no matter how large or small will help. @wyattsgarage #puertorico #hurricanemaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913076230974590976,
+        "tweet_text": "Information to donate to PR from two local Atlanta Restaurants by Sept 30th, please share this. #HurricaneMaria #PuertoRicoRelief #Atlanta",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913457770770391042,
+        "tweet_text": "@funder Everybody is 7 days late especially the 1 in charge of the Military that could have prevented deaths and days of suffering #HurricaneMaria",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 912432795292700673,
+        "tweet_text": "#people #RESCUED 3 Dead, At Least 150 Rescued Off NJ As Hurricane Maria Impacts Shore  The storm didnt come to the",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913975034288463872,
+        "tweet_text": "Dominica Severely Damaged From Hurricane Maria- Aerial Views:  via @YouTube",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914192396094726146,
+        "tweet_text": "@amazon help get shipments to Puerto Rico. Trying to get a generator to my parents and can’t find a way! #HurricaneMaria #HurricaneMariapr",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914060400869691392,
+        "tweet_text": "In wake of Hurricane Maria, FINRA stays more than 900 arbitration cases  | by @AndrewWelsch",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912414763925286912,
+        "tweet_text": "WOWW! From #Naranjito to #Barranquitas, #PuertoRico The damage left behind from #HurricaneMaria #MariaPR ἟5἟7",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912291775234105344,
+        "tweet_text": "Retweeted NWS Memphis (@NWSMemphis): Damage to NWS San Juans radar from Hurricane Maria!",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913968734582263808,
+        "tweet_text": "unsure if clear in pic: glass, metal railing on 9th fl is GONE. winds are #epic #SanJuan #HuracanMariaPR #HurricaneMaria #SpelmanPuertoRico",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914345345185976325,
+        "tweet_text": "Lady Gaga will be donating $1M to relief efforts for Hurricane Harvey, Irma, José, Maria, and the Mexico City earthquake.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912099279644381184,
+        "tweet_text": "@AndrewNBC12 NWS San Juans radar sustained severe damage after hurricane maria tore across Puerto Rico #MariaPR #hurricanemaria",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913931802598928384,
+        "tweet_text": "Btw, hurricane Maria destroyed the majority of my island and thats the reason why im so inactive ;w; we dont have electricity or internet.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912169107352621056,
+        "tweet_text": "Praying for Puerto Rico. All this focus on football and they need help.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 910587624359854080,
+        "tweet_text": "RT @CNNNewsource: Flood waters from Hurricane Maria rush down street in Guayama, Puerto Rico. IN-120WE",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912176893528592384,
+        "tweet_text": "#Americans r suffering in #PuertoRico. Why is this not our focus? #HurricaneMaria destroyed the island.  @MailOnline",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912463363254386688,
+        "tweet_text": "Shut your mouth and do your job! u get relief and help to Puerto Rico or youre fired you son of a bitch!!! @realDonaldTrump #Impeach #25th",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912200778076512256,
+        "tweet_text": "We need to help rebuild Puerto Rico.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 911590934525210624,
+        "tweet_text": "RT @elizondogabriel: Prime Minister of #Dominica. ὄ7ἿD His country completely destroyed from #HurricaneMaria .",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912336753364754432,
+        "tweet_text": "For those impacted by Hurricane Maria, we sent 2,600 vials &amp; pens of insulin &amp; glucagon to Puerto Rico &amp; donated $625K to recovery efforts.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913054707177967616,
+        "tweet_text": "#Trump #FEMA #Redcross must do better and delivery #PuertoRicoRelief faster. People are dying. #Resist must increase pressure for Aid.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914109525946437633,
+        "tweet_text": "RT @playingforpride: This week we ask that your #PlayingforPride donations go to helping our brothers and sisters in Puerto Rico recover fr",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913448718321557505,
+        "tweet_text": "#Florida #PuertoRico residents Mass Exodus to Miami after #HurricaneMaria~",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914000150758084608,
+        "tweet_text": "RT @nycgov: .@FDNY members deployed to Puerto Rico for #HurricaneMaria rescue and relief efforts:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913285146769547264,
+        "tweet_text": "Puerto Rico IS the US. USVI are the US. No excuse for not knowing this. No excuse for lack of assistance by Trump administration either.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912325869280129024,
+        "tweet_text": "RT @karibkollective: #Dominica will rise again. Heres how you can help:  #HurricaneMaria #helpdominica",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914413389123932160,
+        "tweet_text": "Id say the mayor whos doing photo-ops in front of piles of food, instead of getting said food distributed, is the bigger problem.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910628788488335360,
+        "tweet_text": "New story on NPR: Hurricane Maria Hits Areas Still Recovering From Hurricane Irma  tell me what you think @jose_tij",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910723379086467073,
+        "tweet_text": "Hurricane Maria has destroyed many Caribbean islands, and after Puerto Rico, it has potential to strengthen again",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910688315065683968,
+        "tweet_text": "Pictures Show Hurricane Marias Destruction At San Juan Airport In Puerto Rico",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913806829263708161,
+        "tweet_text": "US troops deliver food, supplies to devastated Puerto Rico during round-the-clock operations.  #HurricaneMaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912360057496535040,
+        "tweet_text": "RT @AlexPadilla4CA: If you can, consider making a donation to aid Hurricane Maria relief efforts in Puerto Rico →",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913050197802053632,
+        "tweet_text": "RT @LucieHMacias: Hurricane Maria wiped away about 80% of Puerto Ricos crops. It is abhorrent that Trump would even bring up debt during t",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911638988267569152,
+        "tweet_text": "#PuertoRico in my thoughts as #HurricaneMaria brings formidable force. Eye opening to see storms strength intensify increasingly each year.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 910682308897800194,
+        "tweet_text": "New post (Hurricane Maria brings destruction, heavy floods to Puerto Rico) has been published on libyanewstoday -",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910750722865561601,
+        "tweet_text": "PLEASE! donate which will benefit the victims of mexico, as to hurricane maria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913142734197796864,
+        "tweet_text": "NEVER FORGET @realDonaldTrump. HAS KILLED PUERTO RICAN PEOPLE &amp;WILL CONTINUE TO MURDER WOMEN AND CHILDREN! KARMA TRUMP KARMA!",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 912400073216135168,
+        "tweet_text": "Toa Alta, #PuertoRico A cyclist rides across a road damaged by Hurricane Maria Pic: Ricardo Arduengo",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913943550626279424,
+        "tweet_text": "@POTUS @realDonaldTrump should be impeached for golfing while Hurricane Maria destroyed Puerto Rico. 9 days to respond is INCOMPETENCE!",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910546947294892037,
+        "tweet_text": "Video my boyfriend sent me in #PuertoRico as Hurricane #Maria lands at a Category 4. Please pray for him &amp;everyone else there Ἲ5: @juvymata1",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914529283758022657,
+        "tweet_text": "Tell #Congress: Lift #ShippingRestrictions Indefinitely to Help #PuertoRico Recover from #HurricaneMaria! Sign &amp; RT:",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912463288105127936,
+        "tweet_text": "RT @SprintsERT: Recon team heading in to Puerto Rico to support communication and recovery efforts. #hurricanemaria #puertorico #sprint #s",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914275445897654274,
+        "tweet_text": "From 10 a.m. to 2 p.m. theyll be accepting emergency supplies like bottled water, diapers, and repellent. DETAILS:",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 911978164527685633,
+        "tweet_text": "Recovery supplies needed in most areas of Puerto Rico.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 910563817381392393,
+        "tweet_text": "Hurricane #Maria Intermediate ADVISORY 18A issued.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 914875467676733440,
+        "tweet_text": "You can help Hurricane Maria victims just by listening to Beyonces Mi Gente remix   — T",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910674507601514501,
+        "tweet_text": "RT @aciIegna: Thank you so much Elijah for using your platform to help us.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 911650029961711618,
+        "tweet_text": "Me: *eyes water* Laura: seriously how does your body produce so many tears Hurricane Maria, those were all your fucking tears",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912133213908357120,
+        "tweet_text": "Will you or a loved one be affected by #HurricaneMaria in Puerto Rico? Follow @USDAFoodSafe_es for food safety updates in Spanish.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912329907220467713,
+        "tweet_text": "New post (Mandatory evacuation ordered for Hatteras Island as Hurricane Maria nears) has been published on BRO  -",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 910576078070206466,
+        "tweet_text": "RT @putinsgay: Live Updates: All Of Puerto Rico Has Lost Power As Hurricane Maria Kills 9 People In The Caribbean",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 913440822733000704,
+        "tweet_text": "Looking for organizations working to aid those affected by #HurricaneMaria in #PuertoRico? Weve got a list:",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914191874646249472,
+        "tweet_text": "RT @SavetheChildren: How you can help hurricane victims in #PuertoRico  via @NewsHour #HurricaneMaria #HurricaneIrma",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913370223637618688,
+        "tweet_text": ".@realDonaldTrump is using the JonesAct to SCREW #PuertoRico REFUSING 2 send more AID citing BUSINESS INTERESTS @ABC",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913873081566879744,
+        "tweet_text": "In Puerto Rico, Hurricane Maria has created barriers to accessing #safesurgery, timely #traumacare, and essential medicines.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911748389628465152,
+        "tweet_text": "@eieri31 Hi Xavier. We are currently waiving our Bag/Pet in Cabin Fees for the areas affected by Hurricane Maria including SJU through 9/29/17. *TKR",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914660573220102144,
+        "tweet_text": "ὤFἿB to all the #press that covered our food donation of 300,000 lbs of food for victims of #hurricanemaria #PuertoRicoRelief #goyagives",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913171473405300737,
+        "tweet_text": "These good people are in urgent need of our help. People are suffering. Gasoline is in short supply also. They are American citizens, no?",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 911972117087948801,
+        "tweet_text": "My wife’s family in PR &amp; millions in the Caribbean are living a nightmare right now. If you can, donate to help.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913295904538529792,
+        "tweet_text": ",@realDonaldTrump maybe you can open #MaraLago 4 #PuertoRico refugees. They will be coming 2 the mainland by the millions #HurricaneMaria",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 914263158155554817,
+        "tweet_text": "Eighty percent of the islands overhead transmission lines were damaged in the storm. Honestly, this isnt even funny anymore. Someone take the keys from this fool. Puerto Ricans arent watching television because they DONT HAVE ELECTRICITY.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914211130784014337,
+        "tweet_text": "RT @AshcanPress: Im donating $1 from each thing I sell at @NY_Comic_Con to @GlobalGivings Puerto Rico Hurricane Relief Efforts.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913122493405200384,
+        "tweet_text": "Soundside Flooding Becoming an Issue; Wednesday Afternoon Update for Hurricane MariaWITH SLIDE SHOW",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914221752225591298,
+        "tweet_text": "Esri: Maps and data for #PuertoRico hurricane damage are available here:  #HurricaneMaria",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910713982339526657,
+        "tweet_text": "RT @NBCLA: Aerial footage above Dominca shows the damage from Hurricane #Maria across the island.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913930302514483203,
+        "tweet_text": "Despite the widespread damage to Puerto Ricos infrastructure inflicted by Hurricane Maria, the federal",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914981208936902660,
+        "tweet_text": "The Hurricane Maria death toll sure seems like its going to get higher",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 913133723570380802,
+        "tweet_text": "Family Ties: New York Rushes Aid to Ravaged Puerto Rico by THE ASSOCIATED PRESS via NYT",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911826913529917440,
+        "tweet_text": "Hi @Bethenny! Thank you for tweeting about my island. Were US citizens &amp; we need all the help we can get! #HurricaneMaria #ThisIsACrisis",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913536184344809473,
+        "tweet_text": "A fellow @AUWCL student is collecting items to send to #PuertoRico Relief. Donate 5 items for 1 EJF Community Service Point. #hurricanemaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912077496019013632,
+        "tweet_text": "hi! my brother lost most of his stuff in hurricane maria while @ school on the island dominia. if u can pls donate !",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914342545437597696,
+        "tweet_text": "Hurricane in Puerto Rico causing families to lose connections with family members. Devastating damage &amp; harsh conditions. #RCCMCFALL",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913922035520299009,
+        "tweet_text": "SOS please help in saving my island in the sun #dominica needs you. #HurricaneMaria @Lawrence @maddow @AriMelber",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914578397799559168,
+        "tweet_text": "#HealthyMoms Give Kids Healthy Coping Skills for Storms  #hurricaneIrma #hurricaneHarvey #hurricaneMaria",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 913262464623693830,
+        "tweet_text": "RT @BRANDONWARDELL: heres a bunch of hurricane maria relief funds u should donate 2 that arent the red cross",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911663375364579328,
+        "tweet_text": "@SamaritansPurse Thank you Samaritans Purse. Always first to arrive and help! #HurricaneMaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913455052173475841,
+        "tweet_text": "OneBlood actively sending blood to #PuertoRico to assist with #HurricaneMaria relief.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912466341826842625,
+        "tweet_text": "Hurricane Maria Public Advisory Number 39A",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913056914593984513,
+        "tweet_text": "RT @mavsmoneyball: J.J. Barea teamed up with Mark Cuban to bring aid to Puerto Rico",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914867246731755520,
+        "tweet_text": "@SenatorMenendez @CarmenYulinCruz #Menendez is in NO place to be criticizing ANYONE. #Relief efforts sent by @realDonaldTrump have been EXCELLENT!",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913171076192104449,
+        "tweet_text": "#HurricaneMaria devastated #PuertoRico἟5἟7 leaving 17 dead &amp; many without food, water &amp; electricity yet #45 reminded P.R. of their U.S. debt!",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 913035648424128512,
+        "tweet_text": "People. Products. Partnership. Purpose. One of our staging warehouses for #PuertoRico &amp; #USVI #DisasterRelief shipments. #HurricaneMaria @CitiIMPACT Donate &amp; Volunteer",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913849660997029889,
+        "tweet_text": "#prmapathon in full swing with Despacito” on loop. Full house, with over 60 mappers helping #HurricaneMaria relief efforts.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913034074683531271,
+        "tweet_text": "Amid Relentless Hurricanes, Puerto Rican Art Spaces Report Dire Damage | artnet News",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913039353835859968,
+        "tweet_text": "Even US territory Puerto Rico cant deal with damage from huge storms. Need #ClimateAction to reduce #LossAndDamage",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912286164769546242,
+        "tweet_text": "Puerto Rico governor says federal response to search &amp; rescue, aid drop requests lagging:",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912076090226757632,
+        "tweet_text": "Special 6hr charity livestream benefit United for Puerto Rico to help in relief efforts from Hurricane Irma &amp; Maria!",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 911731648462508033,
+        "tweet_text": "@Shananana11 @realDonaldTrump Trump dividing America with racist taunts Puerto Rico needs a massive and immediate relief + rebuilding effort",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 912415082524626952,
+        "tweet_text": "Extreme damage between #Naranjito and #Barranquitas, #PuertoRico. This was mostly shot along Hwy 152 #HurricaneMaria",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910697285020979201,
+        "tweet_text": "RT @HurricaneNBC10: Chances of a Fujiwara Effect up a little more after todays models. Jose moves back west. Explanation + examples http",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 914564430922469376,
+        "tweet_text": "Hurricane Maria,Weather Warfare &amp; OUR Military ,which is FILLED WITH OATH BREAKING-BRAIN WASHED MURDERING PUPPETS",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912289034310782976,
+        "tweet_text": "Donations are being accepted for #HurricaneHarvery #HurricaneIrma #HurricaneMaria. Fast, Safe &amp; Easy Way to donate.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911630206770700288,
+        "tweet_text": "Video footage documents the destruction Hurricane Maria caused in Puerto Rico #2150bm",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911637887917215744,
+        "tweet_text": "RT @readeologist: #SpeakUpForPuertoRico #HurricaneMaria has done so much damage. Hospitals are closed! They cant",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913835596858224640,
+        "tweet_text": "RT @DrewBrooks: 60 trucks are carrying 30,000 meals each. 60 trucks are carrying 20,000 liters of water each.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910576389014933504,
+        "tweet_text": "RT @JamaicaGleaner: Dominica severely damaged by Hurricane Maria, 6 reported dead -",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913266337543110656,
+        "tweet_text": "Should have left 3-4 days ago. Get it going asap! People are desperate and need food and water NOW!",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 910643888838381569,
+        "tweet_text": "New story on NPR: Hurricane Maria Hits Areas Still Recovering From Hurricane Irma  #people #places - TheTedShow",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912143392863162368,
+        "tweet_text": "VIDEO: Damage left behind after Hurricane Maria tore through P",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914118336593543169,
+        "tweet_text": "The news is reporting the truth..9 days ago #HurricaneMaria hit &amp; many ppl are still without WATER, FOOD, ELECTRICITY, FUEL..shame!",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913813814122024961,
+        "tweet_text": "Visiting Puerto Rico after #HurricaneMaria. @USNationalGuard is assisting partners to help local residents. Always Ready, Always There!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912308219489505280,
+        "tweet_text": "Hurricane Maria knocked out about 80% of Puerteo Ricos crops.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914939018110017536,
+        "tweet_text": "RT @WeatherNation: .@FLGovScott declared a state of emergency for all counties in response to #HurricaneMaria’s impact on #PuertoRico",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 914490673746907137,
+        "tweet_text": "@MosesDidItBest @JoyAnnReid Official Death Toll of 16 not being updated eitherListen at 1:20 8 Police Officers dead",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 910570522261549062,
+        "tweet_text": "RT @IssaKhari: You can see the destruction caused by Hurricane Maria in the Rios Cana, section of Puerto Rico ἟5἟7 #HurricaneMaria .",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913455465287348225,
+        "tweet_text": "RAF Aeromedical Rescue Team Sqn work w/ @RoyalNavy &amp; @kon_marine medics on vital #hurricanemaria #dominica medical ops. Truly inspirational.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912381904833454080,
+        "tweet_text": "Large amounts of federal aid have begun moving local officials who praised the Trump administration’s response",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914328613335351296,
+        "tweet_text": "Feed the hungry I just dropped $50.00 So can you",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912314666956869632,
+        "tweet_text": "@185ARW members deploy to Puerto Rico to assist with security after Hurricane Maria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913389450708709376,
+        "tweet_text": "RT @CBSMiami: .@FLGovScott set to meet with @ricardorossello at 10 a.m. in #PuertoRico to talk about Hurricane Maria relief.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914665901777137670,
+        "tweet_text": "Wow. Look at road damage in PR.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911766467342938114,
+        "tweet_text": "To my friends reading this, PR was destroyed by #HurricaneMaria most of us are fine. Were rebuilding and surviving. #PuertoRicoSeLevanta",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913418638262140929,
+        "tweet_text": "What a month with Hurricane Irma and Maria passing by North Coast. Fortunately, we were spared any serious damage. #instagood #instatravel",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912437634932371457,
+        "tweet_text": "RT @WORLDSTAR: #HurricaneMaria is doing some serious damage to #PuertoRico ὤFὡE",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912424791092731904,
+        "tweet_text": "* Tourist evacuations from Dominica after Hurricane Maria",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 912983200166744064,
+        "tweet_text": "In Puerto Rico, death toll from Hurricane Maria reaches 16",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 912334195116167168,
+        "tweet_text": ".@realDonaldTrump @POTUS Americans are suffering! Send water, ice, drugs, gasoline, oxygen tanks ASAP! Send Navy hospital ship!",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911554672804147201,
+        "tweet_text": "Puerto Rico has been savaged by both hurricanes and imperialism. Please help our comrades.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913943084018405381,
+        "tweet_text": "Team Rubicon USA:  Unites the skills and experiences of military veterans with first responders to rapidly deploy emergency response teams. #HurricaneMaria #PuertoRicoRelief",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914569355454828545,
+        "tweet_text": ".@EnterpriseNow on beginning to assess the damage from #HurricaneMaria:",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914234850613264384,
+        "tweet_text": "Duncan USVI Relief:  Will match financial donations up to $1,000,000 for relief efforts in the US Virgin Islands. #HurricaneMaria #USVirginIslandRelief",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911594085022085120,
+        "tweet_text": "RT @PushitupACV2: Where in NYC you can donate to #PuertoRico hurricane victims  via @nypmetro #hurricaneMaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912325874824998912,
+        "tweet_text": "We need to help fix the airport in PR so help to arrive.PR is a Caribbean hub,we would also be helping our ἳ4 neighbors! #HurricaneMaria",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 914376548127473664,
+        "tweet_text": "All these people are working to help Puerto Rico while their Mayor complains it isnt enough. Sounding very ungrateful. Pls say thank you.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912403360581595136,
+        "tweet_text": "RT @bjorkianrice: Univision map offers up-to-date info about damage in Puerto Rico BLOOD IS ON THE HANDS OF THE GOPDT #THATGUY",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910651131935813633,
+        "tweet_text": "Praying for my friends and their families in Puerto Rico.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 911715899069075456,
+        "tweet_text": "My family and I are alive but we lost everything. The situation is horrible nationwide and we all need help! #HurricaneMaria #Dominica",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913850203358269447,
+        "tweet_text": "RT @rosieperezbklyn: Omg! Wonderful information where to donate. #PuertoRicoRelief #HurricaneMaria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913432394685976576,
+        "tweet_text": "Great Project: A collection of broadsides of contemporary Puerto Rican poets. 100% of sales donated to assist in Hurricane Maria recovery.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911955601701339137,
+        "tweet_text": "U.S. Border Patrol (BORSTAR) agents and CBP Special Response Team officers are on the ground in Puerto Rico supporting emergency responders.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914983811250888705,
+        "tweet_text": "No wonder why Puerto Rico got destroyed by Hurricane Maria :thinking:",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911919932249657345,
+        "tweet_text": "@GMB_union I am a member and in need of help badly. Edward Siddall is my ward in Ashton",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 911740446463987713,
+        "tweet_text": "@dailycamera can you please help us spread the word about this effort to help Puerto Rico after Hurricane Maria? Thanks!",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913810268991434753,
+        "tweet_text": "RT @kylerosa21: 8 FEMA Urban Search &amp; Rescue have been deployed to assist with rescue efforts",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910718121723428864,
+        "tweet_text": "RT @_hm56: @elijahdaniel we are almost at $8000 boi we are getting there !! DONATE if you can it’s for an amazing cause!!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913408181761712129,
+        "tweet_text": "This is true, on State Dept site. Plus medical needs cases should email them. Email w/down cell towers?",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913470534645633024,
+        "tweet_text": "Damage caused by #HurricaneMaria likely to affect Puerto Ricos economy heavily, increasing contract and protest risks. #IHSeconomics",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914155956233232385,
+        "tweet_text": "And yet Trump is busy criticizing the mayor of San Juan for wanting the US to help her people. #sad",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914538723236306949,
+        "tweet_text": "RT @hannajewel09151: Thank you to everyone who is helping! Damn why cant decent people have the jets and means to Help? So sad",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 914622083111555072,
+        "tweet_text": "Come check this out. All proceeds will be matched (up to $1000) and sent to victims of Hurricane Maria in Puerto Rico.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913092097112252418,
+        "tweet_text": "Information to those #smallBiz, homeowners and renters affected by #HurricaneHarvey, #HurricaneIrma, #HurricaneMaria",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 913178140238807042,
+        "tweet_text": "Tomorrow I will get to help my people of PR with Hurricane Maria Disaster Recovery Effort. Thank you for the opportunity @RedCross ὤFἿD἟5἟7",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913901397648773120,
+        "tweet_text": "#WolrdNews New York Daily News Puerto Rico continues to suffer in Hurricane Maria aftermath as Trump celebrates incredible death toll",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914569553618849792,
+        "tweet_text": "When Hurricane Maria destroyed the infrastructure of Puerto Rico, it turned the mayor of its capital city into a",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912351621731975170,
+        "tweet_text": "#PuertoRico Residents Are In ‘Great Danger,’ Need Federal Help, Gov Says #HurricaneMaria #BoricuaStrong",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913168048823160832,
+        "tweet_text": "RT @dandavats_com: Iskcon Puerto Rico Temple Bashed By Hurricane Maria. We Need Your Help, Please Donate!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914949530038226944,
+        "tweet_text": "RT @dabeard: Heartbreaking: @washingtonpost photographer finds no evidence of aid here, 9 days after #Maria - #PuertoRico",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 910581354705948673,
+        "tweet_text": "New post: Hurricane Maria hammers Puerto Rico, causes wide destruction",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913491471810121728,
+        "tweet_text": "Women in control of hurricane relief on Dominica. PAHO/WHO rep and HNLMS ZEELAND officer directing NLD &amp; UK marines &amp; NLD soldiers.#Maria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913605483642200065,
+        "tweet_text": "So sad death toll is at 217 because of the aftermath of hurricane Maria",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 914091802407456769,
+        "tweet_text": "They need water food gas they dont need a wimpy little president you are not a dictator you Putin wanna a be",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 914156016912162816,
+        "tweet_text": "Why arent the people of PR helping themselves instead of asking for handouts &amp; help? This is why @realDonaldTrump you piece of shit! ὢ1ὢ1ὢ1",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 910684395857575936,
+        "tweet_text": "Hurricane Maria Blasts Puerto Rico w/ Damaging Winds, Major Flooding; Dominican Republic, Turks, Caicos Danger Ahead",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 911748255599484929,
+        "tweet_text": "This is the last thing posted about #PuertoRico, a US TERRITORY with catastrophic damage from #HurricaneMaria. Any reason we arent on this?",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911675117993938944,
+        "tweet_text": "Ὥ1἟A἟8SPECIAL OPS HEAD TO PUERTO RICO TO ASSIST IN RESCUE EFFORTS‼️ GO ἟A἟8USA ἟A἟8‼️#PuertoRico #HurricaneMaria HELP IS IN THE WAY‼️Ὥ1#USAirForce἟A἟8",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912372419733618688,
+        "tweet_text": "@SenSanders My paternal aunt and uncle were in Puerto Rico when Hurricane Maria hit. The people on the island are in need of help. ὡF",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912945220886712320,
+        "tweet_text": "RT @jaboukie: I GOT THE SUIT!!! i appreciate this so much, please consider donating to hurricane relief for Puerto Rico",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914102251949404161,
+        "tweet_text": "Our Fellow Citizens Need Our Help @JBStonestreet @BreakPointCC #PuertoRicoRelief #HurricaneMaria ἟5἟7ὤFἿD἟A἟8ὢ5Ὂ8ἰA",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913338924109631488,
+        "tweet_text": ".@TheSatoProject is in #PuertoRico finding &amp; evacuating dogs after #HurricaneMaria. To help, please visit:  ἟5἟7❤️",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 910619419281256448,
+        "tweet_text": "RT @MikeOlbinski: Not really sure this video of destruction in Dominica needed that accompanied soundtrack. Feels super odd. /",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914531074436468736,
+        "tweet_text": "No water. No Food. No hope. That’s what our fellow Puerto Rican citizens are facing. Please help by going to",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913635986982260736,
+        "tweet_text": "@ABC @ABCWorldNews @EvaPilgrim This afternoon, @EvaPilgrim and I went to #Vieques to see #Maria’s damage. Here is what we saw:",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911861702127439872,
+        "tweet_text": "Satellite Animation Shows Hurricane Maria and Post Tropical Storm Jose  via @YouTube",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913412828291354624,
+        "tweet_text": "Bill’s Donuts is collecting items for the victims of Hurricane Maria in Puerto Rico until Oct. 3.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 911723330113327112,
+        "tweet_text": "The priest of the Holy Spirit Chapel in #Dominica shows us some of the horrible damage Hurricane #Maria did to the island nation.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910745831455825920,
+        "tweet_text": "Puerto Rico Hurricane Maria floods power outages and damage:  via @YouTube",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912465303719829505,
+        "tweet_text": "PascoActivists: RT RepAdamSchiff: Puerto Rico suffered catastrophic damage from #HurricaneMaria. Millions w/o powe",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914929043966963712,
+        "tweet_text": "For just $28 you can provide an essentials bag to Puerto Rico in the aftermath of Hurricane Maria. Donate @unicefusa",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912093527953362945,
+        "tweet_text": "Hurricane Maria an Increasing Threat to Brush NC, VA Tidewater With Winds, Rain, Coastal Flooding; Tropical Storm, Storm Surge Watches Issue",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 911627374135070720,
+        "tweet_text": "#HurricaneMaria: #PuertoRicos #GuajatacaRiver Damn Fails  @GPollowitz #tcot #p2 #flooding #hurricaneseason2017",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 914142705227141120,
+        "tweet_text": "RT @KatyCollin: Maybe part of #HurricaneMaria relief in #USVirginIslands and #PuertoRico could be normalizing their sovereign status: no Jo",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914588657671114754,
+        "tweet_text": "@DPClick @Unichmorewine @Corrynmb FACT is Federal aid was activated within 24 hours of Hurricane Maria. None of this is President Trumps fault. All aid &amp; supplies are there.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913104674894471168,
+        "tweet_text": "἟A἟8#NotMyPresident #TheResistance @Tasreme @njterrie #HurricaneMaria We dont need for U 2 tell us #PuertoRicos geography - JUST SEND HELP",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 913869923138580480,
+        "tweet_text": "@Lin_Manuel we need your help #UnidosporPuertoRico",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 911686760106565632,
+        "tweet_text": "RT @charratastica: Im forever thankful for the help to Mexico, but please dont forget about Puerto Rico",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913983153664118784,
+        "tweet_text": "[Author: space-com]  The giant Arecibo radio telescope in Puerto Rico sustained less damage from Hurricane Maria",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913300784829235200,
+        "tweet_text": "RT @bibi_soso42: HELP IF YOU CAN !RETWEETER THIS TWEET PLEASE !THANKS !",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913841007661387777,
+        "tweet_text": "Places to donate for hurricane relief:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 910704030678175744,
+        "tweet_text": "Hurricane Marias wrath leaves Puerto Rico destroyed",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910584942610059265,
+        "tweet_text": "When we can go out, we are going to find the entire island destroyed.” After Maria, Puerto Rico is without power",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 911875070821371904,
+        "tweet_text": "An aerial view shows damage to the Guajataca dam in the aftermath of Hurricane Maria, in Quebradillas, Puerto Rico",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912143350400258053,
+        "tweet_text": "READ THIS SHIT! RIGHT NOW! THEY NEED OUR HELP! AMERICA CITIZENS NEED OUR HELP! ὢ9἟5἟7",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912274971526877186,
+        "tweet_text": "RT @WTKR3: Mandatory evacuation for visitors in Ocracoke Island in preparation for Hurricane Maria",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 913243276223959041,
+        "tweet_text": "Puerto Rico Hurricane Maria Relief Fund  via @youcaring Please consider donating ♥️",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913394136962572291,
+        "tweet_text": "Check this article: . Hurricane Maria: A Refugee Crisis of Americans.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911535175959482369,
+        "tweet_text": "Donate to Caribbean hurricane relief here -",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914828658946297856,
+        "tweet_text": "These people need water and resources. Thank you @Robbiealomar for all you and countless others are doing to help! #PuertoRicoNeedsHelpNow",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 910736654834442240,
+        "tweet_text": "9-20-2017 San Juan, Puerto Rico #Hurricane #Maria First damage, buildings &amp; businesses destroyed  v/@LiveStormsMedia",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 910553590472761344,
+        "tweet_text": "I will be collecting items to send to the victims of Hurricane Maria back home. If you would like to donate, can",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912389019237003266,
+        "tweet_text": "@CharlieWGME @NWSGray First 122 NEXRAD stations (159 total) were installed at a cost of $3.1 billion. Here is JUA destroyed last week:",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 912420455717511168,
+        "tweet_text": "RT @hurrtrackerapp: Tropical Storm Warning has been extended southward to Bogue Inlet and Tropical Storm Watch has been discontinued west o",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 913822414492045312,
+        "tweet_text": "Fort Lauderdale News Search Reviews (JetBlue Saves Employee Injured In Hurricane Maria) Fort Lauderdale News -",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913175817722761216,
+        "tweet_text": "@realDonaldTrump guess the NFL is more important to ya. SAD. Ppl need drinking water,food,gas,medicine,diapers,BABY food, electricity,etc!",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 911505922010337280,
+        "tweet_text": "At 4 am ET: Peter Jon Shuler of @KQEDnews free speech week at @UCBerkeley cancelled(?)&amp; a #HurricaneMaria Puerto Rico dam fail. #nprnewscast",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 911894436669517824,
+        "tweet_text": "Death toll is rising as Hurricane Maria cont. through the Caribbean. Power is out on the island.",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 911788512478887936,
+        "tweet_text": "NEW: Puerto Ricos governor says the death toll in the U.S. territory from Hurricane Maria has risen to 13",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 913768869856202752,
+        "tweet_text": "Thank you Jet Blue. This is the kind of world we need to create, especially in emergency times.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 912393934227300353,
+        "tweet_text": "Damage from #HurricaneMaria pushes medical services in Puerto Rico to the brink:",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 914213961519726592,
+        "tweet_text": "RT @izamontalvonews: This is how the airport in San Juan #PuertoRicoRelief looks right now. No AC, no water no food #HurricaneMaria",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913508146043162624,
+        "tweet_text": "This should go viral: Puerto Rico death toll being underreported via @latinorebels  #puertorico #hurricanemaria",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 914224284192657409,
+        "tweet_text": "Reinforcements on the way! 51,184 bottles of water and 25,345 meals ready-to-eat delivered by #CBP supporting Hurricane Maria relief efforts",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 914858999215931392,
+        "tweet_text": "RT @Skeily_: Beyond relief, Puerto Rico needs a path to prosperity - Even before Hurricane Maria devastated Puerto Rico, the",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913828657784918017,
+        "tweet_text": "Appx 150 soldiers from the 4th ID 4th Sustainment Brigade are being deployed in Hurricane Maria relief efforts",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913104809166872584,
+        "tweet_text": "Farm housing, irrigation &amp; infrastructure, feeder roads, crop &amp; livestock production in #Dominica seriously damaged by #HurricaneMaria2017",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913136329218600960,
+        "tweet_text": "@realDonaldTrump Millions of Americans citizens including elderly, women, children desperately need help! Do your job!",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 912318107141660672,
+        "tweet_text": "Donate to help PR scientists recover what they lost due to Hurricane Maria",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912081622043906049,
+        "tweet_text": "@ladycroftpr I was hit by hurricane Irma but the damage was minimal compared to maria Im glad you made it through",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 913920259840716802,
+        "tweet_text": "RT @AlyssaLuisaaa: Starbucks on Pines &amp; 184th is accepting donations for #HurricaneMaria disaster relief in #PuertoRico! Please share &amp; bri",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 912323897994960897,
+        "tweet_text": "Hurricane Maria bringing dangerous surf conditions to the Cape Fear #ncwx #scwx",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 914214103429914626,
+        "tweet_text": "Leadership?? For 4 days..as storm ravaged PR struggled for food &amp; water, Trump..went dark at his private golf club while tweeting on NFL.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 912462252317560833,
+        "tweet_text": "RT @TheRickyDavila: An Entire US Territory Is Devastated. No Water. No Power. WHERE IS CONGRESS?!",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 913611894426099713,
+        "tweet_text": "RT @LtGovEvelyn: Hurricane Maria left a trail of devastation on PR, leaving millions without power. Thoughts, prayers to PR #PuertoRico",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 913034507711807489,
+        "tweet_text": "RT @SRuhle: @CCharitiesUSA is providing food, water &amp; more for Hurricane Maria victims. DONATE NOW! TEXT CC USA DISASTER to 71777 / CALL",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913827007758262273,
+        "tweet_text": "CERT volunteers helped to organize and pack emergency supplies for residents affected by Hurricane Maria in Puerto Rico. Thank you!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 913787941444624385,
+        "tweet_text": "Spanish-born @chefjoseandres has landed in Puerto Rico, providing meals to staff aiding #HurricaneMaria efforts:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    }
+]

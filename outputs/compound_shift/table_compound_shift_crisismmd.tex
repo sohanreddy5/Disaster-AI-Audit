@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Model evaluation under Joint Compound Shift (Leave-(Disaster Type $\times$ Geographic Region)-Out) on CRISISMMD. Shows severe performance degradation when models face novel disaster categories in unobserved geographical settings.}
+\label{tab:compound_shift_crisismmd}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Held-Out Compound Domain} & \textbf{Test $N$} & \textbf{Accuracy} & \textbf{Macro-F1} & \textbf{ECE} & \textbf{AURC} \\
+\midrule
+Flood $\Times$ South Asia & 1022 & 76.22\% & 0.292 & 0.085 & 0.070 \\
+Hurricane $\Times$ Caribbean & 9060 & 53.39\% & 0.274 & 0.054 & 0.325 \\
+Hurricane $\Times$ North America & 4434 & 52.28\% & 0.355 & 0.045 & 0.316 \\
+Earthquake $\Times$ Central America & 1380 & 43.04\% & 0.267 & 0.074 & 0.437 \\
+Earthquake $\Times$ Middle East & 597 & 42.04\% & 0.341 & 0.066 & 0.443 \\
+Wildfire $\Times$ North America & 1589 & 39.33\% & 0.225 & 0.149 & 0.518 \\
+\midrule
+\textbf{Macro Average} & -- & \textbf{51.05\%} & \textbf{0.292} & \textbf{0.079} & \textbf{0.352} \\
+\bottomrule
+\end{tabular}
+\end{table}

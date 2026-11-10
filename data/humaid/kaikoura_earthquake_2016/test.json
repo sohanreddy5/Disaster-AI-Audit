@@ -1,0 +1,2177 @@
+[
+    {
+        "tweet_id": 798274825441538048,
+        "tweet_text": "The earthquake in New Zealand was massive. Billions of dollars of damage. And it was followed by a storm.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 798452064208568320,
+        "tweet_text": "These pictures show the alarming extent of the quake damage to this building. Keep well clear!",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797804396767682560,
+        "tweet_text": "Just woke to news of another earthquake! WTF NZ?! They seem to be happening an awful lot. Stay safe everyone xx #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798434862830993408,
+        "tweet_text": "When theres an actual earthquake, landslide and severe flooding during your driving test and you still pass #eqnz #Wellington @NZTAWgtn",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797790705414377472,
+        "tweet_text": "Tsunami warning for entire East Coast of NZ, be safe people, move to higher ground! #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797950028161564672,
+        "tweet_text": "And the building is rocking again! #eqnz #aftershocks",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797871832120426500,
+        "tweet_text": "Ferries parked in Wellington harbour morning after earthquake &amp; tsunami warning #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797978721017704448,
+        "tweet_text": "Photo of the homestead in Kaikoura where a 100 year old women was pulled from the rubble alive, sadly her son was killed ὡ4#eqnz",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797910466961883136,
+        "tweet_text": "@backpackergroup Massive 7.5 earthquake hits New Zealand. Liquifaction. Tsunami 2.5 mtrs. East coast on high alert. Wellington CBD closed.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797814517644214272,
+        "tweet_text": "About 60 earthquakes in New Zealand since midnight. Tsunami and damage reported. Buildings collapsed and bridges too. Rail ilnes popped out",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 798732684784566272,
+        "tweet_text": "RT @1NewsNZ: Earthquake LIVE: Wellington building to be taken down due to quake damage",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797990722498625536,
+        "tweet_text": "#Tsunami latest: Theres a marine &amp; beach threat from Wellington to Banks Peninsula. All other threats lifted  #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797971854636056576,
+        "tweet_text": "Local state of emergency declared in Kaikoura &amp; Hurunui. Here are eight tips for coping emotionally after an #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798814786888744961,
+        "tweet_text": "UCs Student Volunteer Army has activated its emergency response plan &amp; is ready to lend a hand:  #earthquake #eqnz",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797839351476588545,
+        "tweet_text": "Powerful magnitude 7.8 earthquake strikes New Zealand, USGS says via the @FoxNews App",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798014926774091776,
+        "tweet_text": "It just keeps on keeping on. Were keeping Kaikoura people in our thoughts. #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797789773691658240,
+        "tweet_text": "24 earthquakes in an hour moving along the fault line. Tsunami warnings issued for South Island east cost. Stay safe NZ #eqnz ὢCὤ8",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797988591443972097,
+        "tweet_text": "I am bad at maths, including probabilities. But I think this is good enough reason to get a transistor radio &amp; batteries this afternoon.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797793160478887937,
+        "tweet_text": "Earthquake, thanks for waking me up. I was about to have midnight snack. If you need me, Ill be under the table eating a porkchop :) #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797859589244846081,
+        "tweet_text": "Thinking of people around the country who were affected by the earthquake last night. Stay safe #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797953098694000641,
+        "tweet_text": "It is okay @MetService says water delivery on way",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797905248610156544,
+        "tweet_text": "NZcivildefence: Waves are expected to continue for the next few hours. Stay off beaches and shore areas. Do not go sightseeing. #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797797117519462400,
+        "tweet_text": "Tsunami sirens going off in Lower Hutt #eqnz #earthquake #tsunami #wgtn",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797793308894367744,
+        "tweet_text": "Photos have emerged of the damage from this mornings earthquakes that have struck New Zealand #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797937437645291520,
+        "tweet_text": "@StJohnNZ Post-earthquake toy rescue centre set up by a St John Penguin of Upper Hutt.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798788754861277184,
+        "tweet_text": "RT @suzikyla23: Amazing shot from SH1 damage north of Kaikoura - from Kim Savage #eqnz @1NewsNZ",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 798088467876085761,
+        "tweet_text": "Very sad to hear the news of the earthquake in New Zealand. Fond memories of sitting by the sea",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797877141308207104,
+        "tweet_text": "RT @radionz: John Key: Predicts structural damage more significant than people think. #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 798929817878073345,
+        "tweet_text": "RT @LifehouseEurope: To our friends in New Zealand, Please stay safe! Were praying for you. Let us know youre ok! #earthquake – besorgt",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798088744129662976,
+        "tweet_text": "Thoughts and prayers with NZ and emergency services teams working in Kaikoura, kia kaha",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797857346718306305,
+        "tweet_text": "Sending hugs &amp; thoughts to all my Sth Island &amp; Wgtn friends XX #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 771434679404630016,
+        "tweet_text": "Get a text, oh theres a tsunami warning. Go on SM and everyone is freaking the fuck out about an earthquake. Didnt feel it!",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798331615545987072,
+        "tweet_text": "Stadium cleared of major structural damage. However @WgtnPhoenixFC v @gomvfc postponed &gt;&gt;  #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797789931204710404,
+        "tweet_text": "#eqnz UPDATE: New Zealand earthquake raised to 7.8 magnitude, first tsunami waves detected and fears for kaikoura",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797963266437902340,
+        "tweet_text": "powerful #quake M6.1 strikes South Island of New Zealand 10 min ago. #Tsunami issued - .",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 800420927490002944,
+        "tweet_text": "Over 4K aftershocks in one week.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798488400877658112,
+        "tweet_text": "A grim forecast: There is high possibility of another 7.0 magnitude earthquake in #NewZealand  #NZEQ",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797877374926733312,
+        "tweet_text": "RT @pablogl: Luckily just had minor damage at home #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797950040169844736,
+        "tweet_text": "12:50pm UPDATE - #Tsunami threat map is reduced. This is our FINAL specific tsunami update . @NZcivildefence for more",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797985366447833088,
+        "tweet_text": "RT @CeridwenFraser: Emergency services ready with cool drone helpers in Wellington #eqnz",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797977581085605888,
+        "tweet_text": "Sobering thought seeing the damage in Wellington how lucky it was midnight Wouldve been fatalities if this was during business hours. #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797816210268131328,
+        "tweet_text": "RT @viralpoet: @hebehu @CanterburyEM so according to this Im in a tsunami zone and should evacuate . According to Selwyn council, Im not.",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 798764430037135361,
+        "tweet_text": "A helping hand for Innovative Waste Kaikoura! Donate to help IWK with the post-quake clean up  @linkedin #eqnz",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798291429059543040,
+        "tweet_text": "Risk of tsunami remains after massive quake  #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797807921601998853,
+        "tweet_text": "Praying for everyone safety #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797972849981984768,
+        "tweet_text": "Stay safe everybody. Thoughts with you from a far #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798275395741052933,
+        "tweet_text": "My streams for the next week will be accepting donation money to go towards any #eqnz #chch #earthquake relief funds for the massive quake",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798289574438969344,
+        "tweet_text": "Good advice from MCDEM",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797899710455390208,
+        "tweet_text": "RT @lou_gordongreen: This is the damage in Parnassus just south of #Kaikoura my friends house #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797869600994050049,
+        "tweet_text": "RT @nzherald: #BREAKING Looting in Christchurch following horror earthquake this morning #EQNZ",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 771469623921258496,
+        "tweet_text": "#TyoNews Tsunami warning after major New Zealand earthquake: submitted by /u/Cansifilayeds [link]  #News",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 771447308844015616,
+        "tweet_text": "HOLYSHIT there was magnitude 7.2 earthquake!!!!!",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797912669906870272,
+        "tweet_text": "New Zealand: After a long night of tsunami warning sirens we have gotten over 100 decent sized aftershocks. #earthquake",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797792919960756224,
+        "tweet_text": "Christchurch tsunami warning sirens now working. #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797982029233078273,
+        "tweet_text": "RT @TonkinTaylor: Specialist earthquake engineers take to the sky to analyse the land damage across North Canterbury #EQNZ",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797971863255318528,
+        "tweet_text": "NZcivildefence: RT MarlEmergency: #Eqnz update: All residents strongly urged to conserve water. It may take days t",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797886909640888320,
+        "tweet_text": "#eqnz #tsunami Update: 8.20am People who were evacuated due to this morning’s earthquake are now able to go home,",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 797997447964299264,
+        "tweet_text": "Glad to hear the Tsunami warning has been cancelled. I pray that we dont have another tonight! #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798466983717195776,
+        "tweet_text": "RT @AP: BREAKING: First US warship to visit New Zealand in more than 30 years diverts to help with earthquake evacuation.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798323898785763328,
+        "tweet_text": "RT @interislander: As a result of Monday’s earthquake the damage sustained has affected the areas where we board our foot passengers in Pic",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797877977555927040,
+        "tweet_text": "RT @alexperro: About to liftoff to check out damage on South Island #eqnz stay tuned to @radionz @NZMorningReport",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 798053900020371456,
+        "tweet_text": "RT @sms1stSL: Update: 2 #dead &amp; 5 #injured after 7.4 severe Earthquake hit #NZ #eqnz #prayfornz #LKA",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797862692769800192,
+        "tweet_text": "Friggin aftershocks. Jeez. #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797941803332665344,
+        "tweet_text": "Another decent shake. #Wellington #eqnz #earthquake",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798100125285371904,
+        "tweet_text": "RT @MabeyBridge: Our thoughts are with everyone affected by the earthquake near Christchurch, New Zealand. #Earthquake #NewZealand #Christc",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797822202892709888,
+        "tweet_text": "Christchurch, New Zealand Thoughts go out to all of those affected by last nights earthquake #Christchurch #newzealand #city #dusk #sunset",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797963398965141504,
+        "tweet_text": "RT @NZcivildefence: #Raglan residents - boil your drinking water for the next three days #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797996432376483841,
+        "tweet_text": "If Rice Bowl Burger Bar is open Im getting fish and chips. I need comfort food (or at least an excuse). #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797951379050405888,
+        "tweet_text": "Is it too early to start drinking?? These aftershocks are breaking me #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797873179582599169,
+        "tweet_text": "Thankful the shake was in the night, not when people were out on the streets. Hope everyone is doing okay #earthquake #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798221353824423936,
+        "tweet_text": "Thinking so much about the people in #NewZealand. Im really sorry about what youve been through - please take care #earthquake #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798038732347609088,
+        "tweet_text": "Theres professionalism and then theres RNZ presenters coolly rolling with it as they take an earthquake in their stride.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797797303461388289,
+        "tweet_text": "UPDATE from NZ herald: tsunami waves in kaikoura and Wellington. Power out in some areas. Road damaged to Cheviot. #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 798001375862931457,
+        "tweet_text": "PHOTOS || Earthquake damage shown from the @NZAirForce NH90 down south:  // #earthquake #eqnz #newzealand",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797814696145539072,
+        "tweet_text": "Latest #eqnz #tsunami update Monday 14 November 2016 Update: 3.50am Christchurch Civil Defence and Emergency",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798014775338946560,
+        "tweet_text": "At least 2 dead in New Zealand earthquake; residents flee tsunami The 7.8 magnitude earthq",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797794600865804288,
+        "tweet_text": "from a friend in burwood, christchurch #eqnz: neighbors gone, roads are packed, sirens are going off.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 800577888672063488,
+        "tweet_text": "RT @RCN_MRC: #HMCSVancouver is the #CAF contribution to @CanadaFP mission to deliver post #EQNZ aid in New Zealand #OpRENAISSANCE",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797893177977905154,
+        "tweet_text": "Says the town was eerily quiet. A number of damaged buildings and power poles. He thought the power would be out for a long time. #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 798809255990075392,
+        "tweet_text": "why you All sleep tight in yours bed tonight. Please think of the victims of New Zealand earthquake that sleeping away from there homes.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798285009098412032,
+        "tweet_text": "New Zealand Red Cross - November 2016 Earthquake Appeal",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797859175460052992,
+        "tweet_text": "RT @alans_world: #eqnz Please check  for information on todays situation",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797868204064284672,
+        "tweet_text": "Showing quake photos of supermarket aisles is misleading, broken red wine ἷ7 always so dramatic! #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 798058465834848256,
+        "tweet_text": "We need more information on these cows, this is a critical situation #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 798074520217096192,
+        "tweet_text": "Most NZ thing ever: Former All Black captain Richie McCaw is flying in aid by helicopter after earthquakes. #eqnz #kiakaha",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797971252384186368,
+        "tweet_text": "RT @nzherald: #BREAKING Several large aftershocks hit Wellington, Seddon and Cheviot. Live updates:  #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797794457491935233,
+        "tweet_text": "RT @Claire_Phipps: There has been a severe earthquake in New Zealand; damage unclear (its the middle of the night) #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797892470725971968,
+        "tweet_text": "RT @CBCNews: At least 2 people killed in 7.8 magnitude earthquake, New Zealands PM says",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797918377020821506,
+        "tweet_text": "RT @airnewsalerts: 2 killed after powerful #earthquake struck #NewZealand, residents flee following #Tsunamiwarning",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797799087659569153,
+        "tweet_text": "RT @03alert: Ὢ8 KAIKOURA - We have reports that The Elms Homestead &amp; Roadhouse on SH1 has completely collapsed. #EQNZ",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797794561099636736,
+        "tweet_text": "#BREAKING: Tsunami has been generated following 7.5-magnitude quake in New Zealand -- civil defense authority @BreakingNews",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797821844678021120,
+        "tweet_text": "RT @DellMcLeod: #eqnz Topo Mouth Punawea and Tairei Mouth in Clutha being evacuated.",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 797847990589222913,
+        "tweet_text": "RT @CitizenSlant: New Zealand Earthquake: 5 Crucial Facts You Need to Know",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 799902785395269633,
+        "tweet_text": "#HMCSVancouver and Sea King work with multinational Task Group to aid #EQNZ - helping to deliver 13,000 kg of food and supplies #BravoZulu",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797865612462563328,
+        "tweet_text": "Hope everyones safe around New Zealand following the earthquake! 7.6. crazy! #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797862075502456833,
+        "tweet_text": "RT @NZWarriors: We hope everyone is doing ok after last nights earthquake #WarriorNation. Stay safe whanau ὊA#eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797863622303043584,
+        "tweet_text": "Some of you may know there has been a 7.5 earthquake in New Zealand. Auckland where I live hasnt been affected.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798732643181281280,
+        "tweet_text": "U.S. Navy P-3C Orion provides assistance to New Zealand after earthquake supporting critical relief efforts:  #eqnz",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797805208713605125,
+        "tweet_text": "RT @PeterVogel: First #Tsunami waves of 2 m come ashore from #earthquake in #NZ with revised magnitude of 7.8. #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 771430455665057792,
+        "tweet_text": "#newzealand #northisland #auckland #earthquake #tsunami warning",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797826191675666432,
+        "tweet_text": "Just to letting friends know. I am North West of Auckland so luckily very clear of the earthquake and Tsunami that has hit south New Zealand",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798305960691265536,
+        "tweet_text": "Hundreds of tourists await rescue in New Zealand by military after massive earthquake  via @markets",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 771494498572599296,
+        "tweet_text": "RT @Jalopnik: Ferrari will build one last LaFerrari to aid Italian earthquake victims",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797806607895642113,
+        "tweet_text": "RT @RachelNBanfield: Northlanders: Civil Defence Northland hve turned off tsunami sirens.Beach &amp; marine threat only. Safe 2 return home if",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797791312015523840,
+        "tweet_text": "RT @radionz: GNS duty seismologist says people should take tsunami warning seriously given the water level change measured around Kaikoura.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 798335986455298048,
+        "tweet_text": "Where are the other nation gone for helping new Zealand in 7.5 earthquake",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797844131712290816,
+        "tweet_text": "A Magnitude 7.8 Earthquake Strikes New Zealand, Leaving Damage And Sparking Tsunami Fears  #worldnews #news #breaki",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797866435141718016,
+        "tweet_text": "Our thoughts are with everyone affected by last nights earthquake. Please stay safe and check your local official advice",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797801648361877504,
+        "tweet_text": "3am, havent slept and all I can hear is the tsunami warning alarm #eqnz #Wellington",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 800433274401144832,
+        "tweet_text": "Video of the land damage from the air along the Kaikoura coast following the 7.8 Earthquake. #NewZealand",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798089816369811456,
+        "tweet_text": "Little Pigeon Bay cottage smashed by tsunami waves  #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797801998124888064,
+        "tweet_text": "This has caused several panic attacks and I cant find a way to calm down ὣ0 #help #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798008629320237057,
+        "tweet_text": "please hurry we dont need any more fatalitys",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 797984659980238848,
+        "tweet_text": "National warning tsunami threat has been cancelled effective immediately #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798224476286631941,
+        "tweet_text": "Retweeted New Zealand News (@KiwiLiveNews): Live: Aftermath of the 7.5 magnitude earthquake that struck the",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797791164854370304,
+        "tweet_text": "RT @nycjim: Residents of Chatham Islands, east of New Zealand mainland, told to reach higher ground as tsunami approaches.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797791278494646273,
+        "tweet_text": "RT @LAX24R: Eastern Wellington #Tsunami Zones. Evacuate now if you are near the coast #eqnz",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 798047360601333760,
+        "tweet_text": "Scary day here in #NewZealand, the beautiful tourist town of #Kaikora has been severely damaged #earthquake #kiakaha",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797852506436956160,
+        "tweet_text": "Where would we be without Twitter. This morning and last it provided me a link #eqnz #Thankyou",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797813950289244160,
+        "tweet_text": "RT @Claire_Phipps: Tsunami warning sirens are sounding along the east coast of New Zealand #eqnz (h/t @CodeClubNZ)",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797804052255940608,
+        "tweet_text": "#NZ #Weather Top of the South Island. #earthquake #NewZealand #CTCorp",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 798614715832250368,
+        "tweet_text": "Australia is stepping up its assistance to New Zealand after the deadly earthquake on the countrys South Island. #eqnz #7News",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798494347209510912,
+        "tweet_text": "New Zealand cows owner tells of earthquake rescue – video",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797936719949545472,
+        "tweet_text": "RT @BBCNewsAsia: Two people are killed in #New Zealand after an earthquake. #Newsday speaks to eyewitness @adamroland",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797815896823631872,
+        "tweet_text": "Earthquakes..tsunami warnings..multiple sirens going off.so hows your night been? ὣ4ὢ9 #NewZealand #earthquake",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797831698897653760,
+        "tweet_text": "Tsunami hits New Zealand after massive quake  #worldnews #news #breakingnews",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797808311974277120,
+        "tweet_text": "More than 45 aftershocks since the big 7.5 earthquake. Please stay safe NZ. Please follow @NZcivildefence for more updates. #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798073796959748097,
+        "tweet_text": "No aftershocks! You will not drive me to eat chocolate to take my mind off it. no. no. OK maybe just one piece of chocolate #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797855136500490241,
+        "tweet_text": "Just landed this morning in AKL, NZ returning from #does16 @DOESsummit, 7.5 mag earthquake hit south island, tsunami warning in place #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798607098166685696,
+        "tweet_text": "Tourists and residents evacuated from New Zealands South Island after massive earthquake damages infrastructure",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 771428994931568640,
+        "tweet_text": "@imcorinnemec Wow! Earthquake hit east coast of north island NZ, a 7.1 @ 4.37am. Tsunami warning active. Thats where I am, I never noticed!",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 771453857767395328,
+        "tweet_text": "Our thoughts are with our members &amp; others living on the East Cape after this mornings earthquake and aftershocks -",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 800239718076063744,
+        "tweet_text": "This timeline underlines why the first warning for a tsunami is an earthquake.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797956205998010369,
+        "tweet_text": "Damage to buildings in Waiau after M7.5 quake this morning. #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797791081735671808,
+        "tweet_text": "RT @Dave_WREMO: Boil drinking water if it looks or smells bad. Reports of tap water tainted in brooklyn #wgtn #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797873717397180416,
+        "tweet_text": "Just woke to the news #EQNZ My thoughts are with you all today We felt nothing here in our in Dunedin We slept right through it",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 771477501990277120,
+        "tweet_text": "RT @cable14: A #hamont group is fundraising for the victims of the recent central Italy #earthquake:  Contact: @Larr",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797903334157860864,
+        "tweet_text": "There is going to be some serious work to get all these roads re opened. that is huge! #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797909696359198720,
+        "tweet_text": "RT @hannahsnotebook: Almost 10 hours later, still feeling aftershocks #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798012648797286400,
+        "tweet_text": "RT @Andy2301: Volunteers required to help. If you are able Please come to the welfare centre at Takahanga Marae, Takahanga Terrace #Kaiko",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 771426001834303488,
+        "tweet_text": "RT @pzf: BREAKING NEWS: Tsunami warning issues for New Zealand after powerful earthquake. Evacuations ordered.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 771428169115054080,
+        "tweet_text": "Last night there was a freaking 7.1 earthquake, now a tsunami warning, but luckily its not near me.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797897624833626112,
+        "tweet_text": "Thoughts go out to our friends around NZ after the earthquakes. Thankfully the Karaka Sales Centre is unaffected &amp; open for business #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797830681137061888,
+        "tweet_text": "Huuge earthquake in New Zealand, had to run up the hill because of a tsunami warning at 2am. Hope everyones ok.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798264408526843904,
+        "tweet_text": "Day 2: #Kiakaha #Kaikoura #eqnz Were with you. Stay strong. Thoughts are with all those affected. Stay safe.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797985762809552896,
+        "tweet_text": "Those that can help should. Please donate generously to @NZRedCross #eqnz #nzquakes",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798583040263884800,
+        "tweet_text": "Warships spearheading Kaikoura rescue effort; more than 1400 aftershocks since Mondays big shake  via @1NewsNZ",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798361902803873792,
+        "tweet_text": "Heart and prayers go out to all who got hit by the earthquake ὤF❤️ #instagood #newzealand @ Salt",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797801489318019072,
+        "tweet_text": "Severe 7.5 earthquake hits Hanmer Springs, felt widely across New Zealand as tsunami warning issued",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797908482875789314,
+        "tweet_text": "Fermentation room pretty well destroyed #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797981007295066112,
+        "tweet_text": "Thinking of everyone affected by the earthquakes throughout NZ. We are here to help if you have any questions call us on 0800 123 642 #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 800579029606596608,
+        "tweet_text": "New Zealand -  HMCS Vancouver returning home following New Zealand earthquake assistance",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798011002855899137,
+        "tweet_text": "Guests are advised to avoid sightseeing. #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797868836607270912,
+        "tweet_text": "Thoughts with all affected by #eqnz Scary night. Stay safe and look after each other.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798005961361231873,
+        "tweet_text": "Want to help out those impacted by the earthquakes? Look no further than Red Cross. 100% of donations go to the cause.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798033138484015104,
+        "tweet_text": "RT @NZStuff: #Kaikoura - Drinking water vessels can be filled at Austin St, Cromer St, Bayview St, Hastings St or Mt Fyffe Ave #nzearthquak",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798075053560643584,
+        "tweet_text": "Poor Seddon &amp; Kaikoura &amp; surrounding areas, Kia kaha thinking of you #eqnz #stopmovingnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797886327823810560,
+        "tweet_text": "Plenty of damage in Waiau. Bricks off houses, large cracks through roads / bridges and power poles down. #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797815701981384706,
+        "tweet_text": "RT @HeralddeParis: #tsunami sighted #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797893806037213184,
+        "tweet_text": "Praying for my home country New Zealand and all my family and friends. Keep safe. #earthquake #nz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797863159927226368,
+        "tweet_text": "Thinking of people in the South Island, and Wellington #eqnz social media location settings earthquake safety checks are a welcome feature.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798281408942723072,
+        "tweet_text": "RT @wimon_song: A little update re #quakecows: Fed Farmers is trying to find them and come up with a rescue plan. #eqnz",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797916816177655809,
+        "tweet_text": "Two dead after NZ 7.5 earthquake.",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 798020075353608192,
+        "tweet_text": "Waimak #EQNZ ALERT: find the #looters rego EPP79 in #Kaiapoi #chch 11.30AM on Hilton &amp; Fuller .. canopy off &amp; rear damage as per @ZNO_NZ",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797993467783720961,
+        "tweet_text": "Plenty of ways to help out those in need -  #eqnz #earthquake",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 800441125785911296,
+        "tweet_text": "Just seen the office security video footage when the #eqnz hit. We have an atrium between 2 buildings. The movement was incredible (1/2)",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797886768141975552,
+        "tweet_text": "After last nights big earthquake on New Zealands South Island Kaikoura, thoughts go out t",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798477826005594112,
+        "tweet_text": "RT @APDiploWriter: WELLINGTON, New Zealand (AP) - First #US warship to visit #NewZealand in more than 30 years diverts to help with earthqu",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797978456214540288,
+        "tweet_text": "RT @rainwindy: I hope everyone is ok. ὤFἿB",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797956037848379393,
+        "tweet_text": "What’s the state of commercial buildings in earthquake damaged areas and when will they be declared safe? #NZHFocus #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797929957603176448,
+        "tweet_text": "Its been a shaky night and morning for much of New Zealand, thoughts are with the upper part of the South Island and Wellington area. #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797994726762958849,
+        "tweet_text": "Glad to be back in beautiful #NewZealand after 19 years but very sad over loss of life &amp; destruction in 7.8 magnitude earthquake #RingofFire",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797799113391624192,
+        "tweet_text": "#eqnz Yep. TVNZ (emmerdale)&amp;TV3 (infomercial) right up there with info. #skynewsaust deliver a live report (although from tsunami central)",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 771565130391826432,
+        "tweet_text": "#earthquake: #PrayForNewZealand!!!! HELP US WE NEED YOU!",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 797804014767247360,
+        "tweet_text": "Prayer &amp; thoughts wid those effected by earthquake 2night. If u r in tsunami warning area plz check on ur neighborhood also. #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797860961067540480,
+        "tweet_text": "RT @IAmJohnSparks: Please Retweet &amp; Pray For New Zealand After a Powerful Earthquake &amp; Tsunami in the South Island.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797870610609147905,
+        "tweet_text": "My heart goes out to everyone affected by the earthquake! ❤️ #earthquake #eqnz #Christchurch",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797849010983710720,
+        "tweet_text": "A powerful magnitude-7.4 earthquake has been felt on the South Island of New Zealand near the city of Christchurch",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797878125484879873,
+        "tweet_text": "Im so tired that I cant even get out of bed for the aftershocks. #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 798222838704574464,
+        "tweet_text": "New Zealand Earthquake - 7.5 powerful quake strikes the Island. Tsunami",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798176297470033920,
+        "tweet_text": "Photos: Another major earthquake has caused utter devastation” in New Zealand",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797886389090062336,
+        "tweet_text": "Terrible news about this mornings earthquake, they can be so frightening - my thoughts are with everyone affected #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797866141162971136,
+        "tweet_text": "@Jewel_Lia Thoughts and prayers with all our friends in New Zealand at this difficult time #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797874675028066304,
+        "tweet_text": "1news reports that TSB Arena &amp; BNZ centre on the waterfront has sustained most damage #Wellington #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 800819679157620736,
+        "tweet_text": "RT @SamHayes_: NZ Civil Defence says there is no tsunami threat to New Zealand after 7.3 magnitude earthquake in Fukushima, Japan",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797911390472130561,
+        "tweet_text": "Our thoughts are with those impacted by the recent #eqnz. Contact us for alternative delivery options above North Canterbury &amp; North Island.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797792380078297088,
+        "tweet_text": "Thank god I live on a hill. Tsunami evacuation sorted ὠ1 #eqnz",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 797897339117502464,
+        "tweet_text": "#eqnz Boys home today with their school closed - eyes all a-goggling as we check out emerging photos esp. of damage to roads around Kaikoura",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 798717684083032065,
+        "tweet_text": "Earthquake damage to the Parliamentary Library. #earthquake #parliamentarylibrary #newzealand",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 800128830887182336,
+        "tweet_text": "More images of Navy #eqnz relief ships in Wellington Harbour from viewer Juan Rubio @USPacificFleet @nznavy @NZDefenceForce",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797875259252711425,
+        "tweet_text": "#eqnz Weve had a big one. Severe damage in the South Island and Wellington is not good either. We are safe in Dunedin.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797908241363521537,
+        "tweet_text": "RT @juliryan: I need info about my friends parents who are tourists from the USA visiting Kaikoura. Can you help? #eqnz",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 798012166309814274,
+        "tweet_text": "With 300 aftershocks so far - incl. four 6+ &amp; twenty 5+ - then AFAIK theres a fair probability of 6+ &amp; 5+ aftershocks tomorrow. /7 #EQNZ",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 800944475811901440,
+        "tweet_text": "Over a week after #eqnz and damage is just coming to light in properties &gt;500km away. Neighbours brick chimneys shifted &amp; need to come down.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797891653495160832,
+        "tweet_text": "Building we do the air conditioning for in Wellington #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797990892313284608,
+        "tweet_text": "RT @LincolnUniNZ: Campus buildings have been inspected and we were unable to identify any material damage. Stay safe. #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797790622379745280,
+        "tweet_text": "Richard McNamara with Marlborough Civil Defence says reports of damage to bridges on the state highways outside Blenheim. #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797791213705306112,
+        "tweet_text": "Thoughts and prayers to everyone! Stay safe ❤️❤️❤️ὡE",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798039761671876612,
+        "tweet_text": "RT @anitapatel09: Another #earthquake hits #NewZealand . My prayers with them",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 771464956705320961,
+        "tweet_text": "Its almost been 6 years since we had our first big earthquake here ὡ4",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797918085072027648,
+        "tweet_text": "Thoughts with everyone effected by #eqnz today. Things are underway in Invercargill we have won the toss and are bowling first.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797992758241738752,
+        "tweet_text": "oh my, in the last 10 minutes Seddon has had 5 aftershocks ranging from M3.5 - M4.1 #eqnz ;(",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797937431504793600,
+        "tweet_text": "RT @RickKiessig: Nearly 5000 households remain without power in the Wellington region. Should be restored to most areas between 3pm and 5:3",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797882016704303104,
+        "tweet_text": "yikes I hope everyone down south in new zealand is safe after that earthquake and aftershocks ὡ4",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797859144631918592,
+        "tweet_text": "RT @NZcivildefence: We are currently assessing whether there is any tsunami threat to NZ. #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797896645983670273,
+        "tweet_text": "Thoughts with everyone affected by the earthquake in New Zealand this morning. I cant imagine how weary/traumatised you must all be.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797863054163574785,
+        "tweet_text": "RT @BBCBreaking: New Zealand Prime Minister John Key says two people killed in earthquake",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797862881530290176,
+        "tweet_text": "RT @NZcivildefence: people in all coastal areas should stay away from beaches and shore. Do not go sightseeing. Follow instructions of loca",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797953770315386880,
+        "tweet_text": "#eqnz Crisis relief =bubbles",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 771469495239974913,
+        "tweet_text": "I didnt even know there was an earthquake I didnt feel anything at all",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797882073335762944,
+        "tweet_text": "RT @sulufiti: Very sad to hear that some people have been killed. #eqnz",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 771455893074354176,
+        "tweet_text": "RT @cctvnews: BREAKING: A powerful 7.1 magnitude earthquake rocks #NewZealand some 167 kilometres from #Gisborne. via @AFP",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797992184297492480,
+        "tweet_text": "New Zealand earthquake: Two dead following powerful tremor, tsunami warning issued A powe",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 771489290169688064,
+        "tweet_text": "Shit there was apparently an earthquake so theres currently a tsunami warning. lel, great time to go for a walk.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 798171945812434944,
+        "tweet_text": "RT @BoyGeorge: Sad news about the earthquake in New Zealand. Thoughts and prayers with everyone!",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797927509333458944,
+        "tweet_text": "Shortly after the 7.5 magnitude quake this morning the 111 emergency operator service was down for about half an hour nationwide #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797917948421603328,
+        "tweet_text": "Thinking of everyone affected today! Yes, we are with you!",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797803805576282112,
+        "tweet_text": "RT @Emergencybot: Take your pets with you if you can do so safely. #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797966925909393409,
+        "tweet_text": "RT @singularityu: Sending good thoughts to our global SU family in New Zealand following the earthquake. Please stay safe. We’re monitoring",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798482766115389440,
+        "tweet_text": "RT @_bobena: So many large quakes, so many diff epicentres. What the hell?! Stay safe everyone, hope is well! #eqnz #TSUNAMI #Kaikoura #EQNZ",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798333435219611648,
+        "tweet_text": "@nightlovell need to come to New Zealand ἟3἟F shit will be rocking just the the earthquake on Monday morning #eqnz litὤFἿBὊF",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797977367746519041,
+        "tweet_text": "Our thoughts and prayers are with everyone impacted by the NZ earthquakes #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797944511175356417,
+        "tweet_text": "I am incredibly thankful that this is the worst damage #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797818062212714497,
+        "tweet_text": "I really really really hope that all my loved ones all across New Zealand are safe from the earthquake ὡ6ὤFἿB",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798468841311379456,
+        "tweet_text": "EU analysis suggests that initial &amp; maybe even largest tsunami waves would have passed before warning issued after Kaikoura quake. #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 771428857626841088,
+        "tweet_text": "Tsunami activity will continue for several hours after a 7.1 magnitude earthquake off New Zealands East Cape.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 800438671673430016,
+        "tweet_text": "SEDDON - If you have lost or found a pet in or near Seddon please contact Seddon Information Centre:  #eqnz",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798435630816464896,
+        "tweet_text": "RT @figuredapp: Sending our thoughts out to all our farming friends &amp; partners in the regions affected by the quakes - stay safe #kiakaha #",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 771529004004159488,
+        "tweet_text": "RT @TheLadBible: BREAKING: New Zealand has been hit by a major 7.1 earthquake.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797866903981068288,
+        "tweet_text": "If I can help anyone in #Wellington tidy up or anything please get in touch #eqnz",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 797934483634688000,
+        "tweet_text": "Paradise has its price, earthquakes, tsunami, sometimes the odd volcano says hello, Kia Kaha we stay forever strong #NewZealand #earthquake",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798376473392541696,
+        "tweet_text": "Still havent seen photos of Kaikoura township post-earthquake despite coast aerials. (Hoping because damage there is less severe-?) #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797795007142895616,
+        "tweet_text": "There was a tsunami warning so have left the house for higher ground. #eqnz #midnightadventures",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797881588956549120,
+        "tweet_text": "wonder if the supermoon early tuesday morning with send us another shake #NewZealand #earthquake",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797833393387900928,
+        "tweet_text": "On @RadioNZ - Bill Fry - tsunami had been caused by the land based #eqnz - didnt think it would cause tsunami until saw sensor data.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797857797723389954,
+        "tweet_text": "Early morning magnitude 7.5 #earthquake: Follow live updates from @geonet here  #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797809886809747456,
+        "tweet_text": "RT @TIME: Powerful earthquake near New Zealand triggers tsunami",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797962873985081344,
+        "tweet_text": "??? They must have a pretty fragile water system to be affected by a quake 800km away! #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797852609583288320,
+        "tweet_text": "Stay off beaches and away from the water until the tsunami warning has been cancelled. Unusually strong currents will continue. #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797962894059196416,
+        "tweet_text": "Two large aftershocks have just hit Seddon and Cheviot  #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798819860893417472,
+        "tweet_text": "RT @kaupapa: GNS says likely to be one 5+ aftershock every day for month. Avoid any buildings that do not feel safe, Welli folk #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798505804244533248,
+        "tweet_text": "Been updated on impact of earthquake in NZ. While not as horrific in taking lives there is significant damage in many areas. #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 798611035217240065,
+        "tweet_text": "Not exactly the smartest place to set up camera in the middle of an emergency cordon FFS (outside NEC building). #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797877785234526210,
+        "tweet_text": "Thoughts and prayers are with family and friends impacted by #eqnz. Stay safe and look after each other.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798004148729954304,
+        "tweet_text": "RT @RougeLikeGirl: Asking again if anyone has any contact with people south of Kaikoura and can help me get hold of my parents in Clarence.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 798000118817431552,
+        "tweet_text": "RT @MavaEnoka: Wellington CBD will be open tomorrow, bar a few cordoned areas – Justin Lester, Wellington Mayor #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797846429737701377,
+        "tweet_text": "@SingularityUNZ any impacts on the venue? Im expecting it to be a relief shelter following the earthquake #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 798669523993776129,
+        "tweet_text": "Aftershocks are causing buildings in Wellington to be evacuated. The earthquakes are not even centered in the Capital #EQNZ This isnt good!",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 797881801708449796,
+        "tweet_text": "Still earthquake aftershocks happening all over new zealand i pray you all are ok . Please pray for us",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797930787202998272,
+        "tweet_text": "RT @BreakingNews: Tsunami warning downgraded in New Zealand but people still warned to stay away from beaches and rivers - NZ Stuff",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797932934388805632,
+        "tweet_text": "RT @nzherald: Brown water in taps in Brooklyn, Newtown, Te Aro and Cuba St, Wellington — Council says safe to drink",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798300773922705408,
+        "tweet_text": "Super thankful for the New Zealand Fire Service that came to my rescue this morning #earthquake #flooding #Wellington",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797840954069630977,
+        "tweet_text": "Upgraded to a 7.5 with 50 aftershocks in five hours and a countrywide tsunami warning. That one was no joke! #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797999551693131780,
+        "tweet_text": "Tsunami hit New Zealand after M7.8 South Island quake leaves two dead",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 798123363314995202,
+        "tweet_text": "When you handle the constant aftershocks, but then the Norwester comes through so you get 140kmph gusts *and* aftershocks. No bueno. #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 800123848456704001,
+        "tweet_text": "Navy ships that supported #eqnz relief effort, including #USSSampson, sail into Wellington  via @TVONENZ",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797890693716815872,
+        "tweet_text": "RT @BNONews: BREAKING: All tsunami warnings for New Zealand have been canceled after this mornings powerful earthquake - civil defence",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797800617540358144,
+        "tweet_text": "RT @RKPriestley: Great to have this specific info: Wellington tsunami evacuation is for red zone (beaches and foreshore) areas only",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 771431680972165120,
+        "tweet_text": "@Sinceritas_C There was a 7.1 earthquake off the east coast of the North Island in the wee hours, hence the tsunami warning. @JuhaIivarinen",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798440707132297216,
+        "tweet_text": "So the statistics departments building in Wellington has been damaged by the earthquakes. What are the chances? #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 798045252447649792,
+        "tweet_text": "By now you may have heard about the earthquake in NZ. Our thoughts go to those effected. Stay safe New Zealand! Photo via @youngadventuress",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798373167261569024,
+        "tweet_text": "This earthquake, triggered 80-100k landslides &amp; was largest recorded in New Zealand since 2009 M7.8 in Dusky Sound",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797807970109112325,
+        "tweet_text": "RT @Sulav_shr: That looks rough! Thoughts with the people in New Zealand. Please take care of yourself! This shall pass. #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797797038779838466,
+        "tweet_text": "RT @1alexcam: CCTV shows magnitude 7.8 #earthquake hit #Christchurch #NewZealand ⏩  #NZ #kiwi #Tsunami #quake #Kiwis",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797916756308205568,
+        "tweet_text": "i hope everyone is staying safe today in the south island, lots of love from up north #earthquake #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798292966099910656,
+        "tweet_text": "All we need now is another massive quake and were fucked #eqnz #floods",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797797543081979905,
+        "tweet_text": "RT @JakeSmethurst3: #BREAKING: Civil Defence says tsunami threat is for the east coast of all NZ (inc. Christchurch, Wellington and the Cha",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 771465355428450305,
+        "tweet_text": "There was a 7.1 magnitude earthquake at 4:37am this morning and I woke up to it but I was too tired to care so I went back to sleep.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798016188701806595,
+        "tweet_text": "Thank you to all the emergency services and volunteer personnel who have responded to this quake. Your efforts are greatly appreciated #eqnz",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798278095958458368,
+        "tweet_text": "Parts of New Zealand facing devastating damage from the earthquakes now we are facing flooding. TY for being so supportiveὤFἿC #eqnz [1/2]",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797842034593669120,
+        "tweet_text": "All my thoughts with the Mainland today. Stay safe. #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798319284384448512,
+        "tweet_text": "Emergency and continuity planning for your #smallbiz - Tips to get through natural disasters:  #flooding #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798473180436271104,
+        "tweet_text": "US warship USS Sampson to help out with earthquake response - New Zealand Herald  #news",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798047264644141056,
+        "tweet_text": "No Tsunami threat to India in the wake of New Zealand quake There is no tsunami threat to",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797906496453419008,
+        "tweet_text": "We have two geologists and a geotechnical engineer flying over Kaikoura, Waiau, Culverdon area soon to assess property &amp; land damage #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797947135496896512,
+        "tweet_text": "OK, OK, its immature but for the sake of comic relief I have to poke fun @radionz on this #eqnz typo :D",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 800827235859132416,
+        "tweet_text": "#tsunami is now trending in New Zealand",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798264102275543040,
+        "tweet_text": "Near to #Kaikoura devastation. Thoughts with all those affected by #EQNZ @ Ohau Point Seal Colony",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797914524783259648,
+        "tweet_text": "Our thoughts and prayers go out to family and friends in the South Island. Stay strong and keep safe. #earthquake #eqnz #Kaikoura",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797998935147036672,
+        "tweet_text": "Anyone know the state of South Bay #kaikoura and how much damage is there? #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 771551696388431872,
+        "tweet_text": "Earthquake at 4.30am slept right through it all. Then tsunami warning. Happy Friday peeps!",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 798692171020783616,
+        "tweet_text": "@RoyalNZNavy is currently #evacuating #people from #kaikoura #earthquake #NewZealand",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 797863329410600960,
+        "tweet_text": "RT @HumanityRoad: #NZ Route 1 photo road damage south of Kaikoura #eqnz #hmrd",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 771430095512752128,
+        "tweet_text": "RT @ONENewsNZ: Live Updates: Tsunami warning issued after 7.1 earthquake strikes off East Coast",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797834617793511425,
+        "tweet_text": "8.2 ft. #Tsunami wave hits #NewZealand just 2 hours after 7.5 #Earthquake rocks the nations South Island. 10-16 ft. waves expected",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797898949071769600,
+        "tweet_text": "Were praying all our supporters and friends affected by the quake and aftershocks overnight know the Lords strength and help today. #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797819764382908416,
+        "tweet_text": "RT @501Awani: #AWANInews [UPDATED] Tsunami hits New Zealand after struck by powerful quake of 7.8",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797876138437550081,
+        "tweet_text": "All calm except for minor aftershocks now. It was 7.8 earthquake and 2 dead. #eqnz #emergency  via @MailOnline",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797855436388999168,
+        "tweet_text": "RT @HenryMcMullan: More state highway 1 damage #eqnz #BREAKING",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 798069897708216320,
+        "tweet_text": "[Updated] Two Killed in New Zealand Earthquake  All is well here in Auckland",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797911656806289409,
+        "tweet_text": "Massive Earthquake Kills Two in New Zealand, Causes Extensive Damage  via @markets",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797794374390255617,
+        "tweet_text": "WE HAVE BEEN EVACUATED FUCKING TSUNAMI IM SICK OF THESE FUCKING EARTHQUAKES. LIVING LIKE THIS FOR 6 YEARS NOW #eqnz",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 798039730700980224,
+        "tweet_text": "RT @MonishNand: Thoughts and prayers goes out to those affected by #earthquake in #NewZealand. Please take heed of warnings and stay safe. ❤",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797825906479767553,
+        "tweet_text": "A powerful 7.8 magnitude earthquake has hit New Zealand, triggering tsunami warnings across the country  #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798210883377831936,
+        "tweet_text": "RT @pmharriskn: Our thoughts and prayers are with the people of New Zealand who were affected by this horrible tragedy #nzearthquake :",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798630598688374785,
+        "tweet_text": "RT @KatGreenbrook: Whats the best place to donate to help those in Kaikoura? #eqnz",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798410286394994688,
+        "tweet_text": "RT @NZDefenceForce: NEWS || @NZAirForce NH90s bring aid supplies to Kaikoura:  // #eqnz #earthquake #Kaikoura :",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 771564730150379520,
+        "tweet_text": "#earthquake: Just found out the 7.1 is hitting NZs North Island, East Coast and now theres a warning that there might be a tsunami coming!",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797885104022384641,
+        "tweet_text": "#BIGUPS to @radionz for their fantastic overnight coverage re: #eqnz and tsunami warnings. Feeling informed helped us feel safer.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 799933530209808384,
+        "tweet_text": "RT @SarahWerner_NZ: Teams lining up for prize giving. Round of applause for the @StJohnNZ Chch team supporting #eqnz efforts",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 800828783246733312,
+        "tweet_text": "Magnitude 6.9 earthquake reported, including tsunami warnings. Stay safe Japan! Love from New Zealand. #Fukushima",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798432142514470912,
+        "tweet_text": "The cats have been obsessive about food for the last 36 hours. I suspect its related to the #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797823420624936960,
+        "tweet_text": "That said the 12.40am CDEM Media Alert National Advisory: No Tsunami Threat to New Zealand was unfortunate/  /2",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797969697580777472,
+        "tweet_text": "Wouldnt be surprised if a tornado full of sharks ripped through Wellingtons CBD in the next 20 minutes. #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797858903497113600,
+        "tweet_text": "Mum-in-law living at Leithfield Beach scared but okay – the whole place has been evacuated on the tsunami warning. #eqnz",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 797895105424146432,
+        "tweet_text": "RT @nowthisnews: At least two are dead after a massive earthquake and tsunami struck New Zealand",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797837350457851904,
+        "tweet_text": "My thoughts and prayers are with everyone in New Zealand and the people affected by the #earthquake #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797793044615397376,
+        "tweet_text": "RT @PhilipDuncan: Showing up in #Wellington gauges now, not as intense there though - GET AWAY FROM COASTAL AREAS:",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798632796805660672,
+        "tweet_text": "Wishing everyone well and safe after the 7.5 quake and the aftershocks that struck. Our thoughts are with you #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798034359202680832,
+        "tweet_text": "RT @dailystarnews: New #earthquake with 6.2 magnitude rattles #NewZealands South Island hours after a more powerful quake takes place http",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797799696953643008,
+        "tweet_text": "Here are key TSUNAMI evacuation zone maps for #Wellington &amp; #LowerHutt &gt;&gt; all maps for Wellington region available via @WREMOinfo #eqnz",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 797936354944393216,
+        "tweet_text": "Our thoughts are with everyone affected by today’s earthquakes and aftershocks. Stay safe. #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797937264009449472,
+        "tweet_text": "Prime Minister John Key postponed a trip to Argentina following this mornings severe earthquake. Click pic for more info #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797931265705947136,
+        "tweet_text": "Kia ora whanau, Our thoughts are with those who have been affected by earthquakes and tsunami in New Zealand.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797810706741596161,
+        "tweet_text": "RT @BreakingNews: New Zealand national monitor Geonet says 45 aftershocks felt following magnitude-7.8 earthquake - NZ Herald /",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797859644165083137,
+        "tweet_text": "RT @TheJaneWardell: #BREAKING New Zealand PM confirms at least two people killed in earthquake #eqnz",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 798417599545638913,
+        "tweet_text": "ὢ7 Queensgate in the #Hutt is closed for the rest of the week - but what about my comfort shopping during these aftershocks #eqnz ?!",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797837680897728512,
+        "tweet_text": "#eqnz just waking up to news of damage to #Wellington and #Canterbury #prayers",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797874476478124032,
+        "tweet_text": "RT @guardian: Tsunami hits New Zealand east coast after 7.4-magnitude earthquake",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798331382355197952,
+        "tweet_text": "@WgtnPhoenixFC v Melb Victory to be rescheduled due to damage @WestpacStadium #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797829523253260288,
+        "tweet_text": "RT @WeatherWatchNZ: New Zealand earthquake and tsunami coverage dominates global news today:",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798106953087995904,
+        "tweet_text": "7.8 magnitude earthquake hits New Zealand. Thanks God I am safe and sound. .@SophiyAnjam",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797792424097480704,
+        "tweet_text": "RT @monique_nz: Surreal listening to Katy Gosset on @radionz with tsunami sirens going off in background. #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797790224801636353,
+        "tweet_text": "RT @misimagined8: Tsunami siren going off in Christchurch now #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 771440913197375488,
+        "tweet_text": "@janedoeee1611 I believe Auckland wasnt really affected by the earthquake. Or maybe coz I was sleeping. Ill pray that they will be safe",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 800816025151434752,
+        "tweet_text": "#BREAKING: No tsunami warning for NEW ZEALAND after 7.3 quake near Fukushima, Japan. #JapanQuake",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798800749769564160,
+        "tweet_text": "Hmm, wonder if I can update my #LinkedIn achievements with Survived 7.5 magnitude Earthquake #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797798694393257984,
+        "tweet_text": "RT @mark_tarello: YIKES! Damage seen after magnitude 7.8 earthquake in New Zealand. Photo credit: @nkpnz #Earthquake #NewZealand #eqnz http",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798488445769220097,
+        "tweet_text": "Rescue operation near epicentre of New Zealand earthquake begins",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797806385702453249,
+        "tweet_text": "RT @keahicory: - what we know -More than 20 aftershocks have struck up and down the country, as far north as Pukekohe, south of Auckland. #",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797794711368966144,
+        "tweet_text": "Stay safe everyone ὡ4❤️",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 771579222410211328,
+        "tweet_text": "Ive been getting calls from friends and family around the world to see if family and I are ok because the earthquake and tsunami warning.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797965278483091456,
+        "tweet_text": "Aftershocks in Wellington &gt;&lt; #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 800611397763616768,
+        "tweet_text": "Thanks to our volunteers &amp; @Disturbed for helping raise $2500 last Friday in #Auckland. You can fundraise too  #eqnz",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 798672548380581888,
+        "tweet_text": "The Defence Force HQ in Wellington is closed due to quake damage, unsure when itll be safe again  #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797797356024365057,
+        "tweet_text": "RT @jackyan: Here are the #tsunami evacuation zones for Wellington City to Ngauranga. #eqnz",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 798028242309386241,
+        "tweet_text": "❤all the msgs of support for Home, New Zealand. Currently 2 tragic deaths from the earthquake. The Tsunami warning was scaled back. #AROHA",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 798622340145811456,
+        "tweet_text": "Wishing all those in affected areas continued safety - member club earthquake updates at  #eqnz #gymnasticsnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797889211332333569,
+        "tweet_text": "LIVE: Two confirmed dead, military helicopters on the way to assess damage, aftershocks still happening  #eqnz",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 798700310105505792,
+        "tweet_text": "Hey @BishopTamaki seems you had a bit to say about earthquakes of late. Why not tell us what your church is doing to help #eqnz victims?",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797914353924075520,
+        "tweet_text": "We are thinking of all those throughout #NewZealand in areas affected by the earthquake - we hope you stay safe. #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797822114732470272,
+        "tweet_text": "RT @Soyerz: Victoria University of Wellington opening tomorrow at 12pm after checking for damage. #eqnz @radionz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797885808308985857,
+        "tweet_text": "Woah. Major damage on SH1.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797794275161358336,
+        "tweet_text": "RT @TrishOpen: ὎3tsunami sirens, truly terrifying sound #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798376164993568768,
+        "tweet_text": "RT @lou_gordongreen: Does anyone have info on how to get on evacuation lists in #Kaikoura #eqnz #earthquakenz @Jwpurd",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 797983208214183936,
+        "tweet_text": "Been following #eqnz all day. There appears to be huge amount of damage that will take a while to repair. But thankfully minimum casualties",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797805304142364673,
+        "tweet_text": "Im so thankful that there was no damage to our house, or anything inside of it. If only it was like this for everyone else ὡ3ὢA #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 798698367803068416,
+        "tweet_text": "4.1 magnitude #earthquake. 37 km from Blenheim, Marlborough, #NewZealand",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797858440727015425,
+        "tweet_text": "RT @ThomasMeadia: Roads getting worse the further north we go. Cracks in SH1 north of Cheviot #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797817465359060992,
+        "tweet_text": "RT @nzherald: Live: Night of earthquakes: Tsunami threat, warning of waves of up to 5m  #EQNZ",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798744524155748353,
+        "tweet_text": "#eqnz Weve activated our special emergency relief package for customers impacted by this weeks earthquake:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797880856182296576,
+        "tweet_text": "please pray for new zealand guys, to everyone in the area of earthquake and tsunami stay safe and alert. all my prayers are on you",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797855125234515968,
+        "tweet_text": "Powerful quake strikes New Zealand, triggering small tsunami  #ynet",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797934882814951424,
+        "tweet_text": "▶️ Stuart Smith, MP for Kaikoura spoke with @ninetonoon after surveying the damage done. #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797808911378038784,
+        "tweet_text": "RT @craigcook3: Larger tsunami waves (2.5m) now recorded @ Kaikoura - NZ WeatherWatch site suggesting underwater landslide caused tsunami.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 800600023310286848,
+        "tweet_text": "RT @IFRCAsiaPacific: .@NZRedCross personnel still operating in areas worst affected by last Mondays 7.8 magnitude earthquake /",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797871085173686272,
+        "tweet_text": "RT @motogroupie: Had a couple of red zone refugees turn up at 3:30am. Now all safely tucked up in bed hoping for no more shakes. #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797878366539874304,
+        "tweet_text": "RT @geoffkinns: Stay safe New Zealand! Earthquake with potential tsunami heading their way ἟3἟F",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797944188184596480,
+        "tweet_text": "Amazing the earth can create this kind of damage #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797808473723568128,
+        "tweet_text": "RT @globalnewsto: UPDATED: Emergency services in New Zealand warned people to move to higher ground to avoid tsunami waves.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797874893710733312,
+        "tweet_text": "Who felt the earthquake in new Zealand good luck to people in kaikoura all my love to you guys and girls keep calm♥♥♥♥♥",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797909129171828736,
+        "tweet_text": "RT @marcelvandenber: State Highway 1 in New Zealand severely damaged and closed for a while",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797892204224135169,
+        "tweet_text": "Following this mornings earthquakes we keep our girls, leaders &amp; their families in the communities affected in our thoughts. Stay safe #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798097772130009088,
+        "tweet_text": "cnni: New Zealands Prime Minister says earthquake may have caused billions of dollars worth of damage",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797844193108512770,
+        "tweet_text": "RT @irishexaminer: Tsunami hits New Zealand after powerful earthquake; residents told to move to higher ground  http",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 797865755668680704,
+        "tweet_text": "Newlands Primary School - we are currently checkng buildings, an update wil be sent out approx 8am as to whether we wil be open today #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797790565697863680,
+        "tweet_text": "RT @Avuxeni_: sealevels wellington new Zealand all over the place #tsunami",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797893031764426752,
+        "tweet_text": "Just been &amp; checked our school buildings following EQ. All ok but we will remain closed until tomorrow. #EQNZ",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797821848641617920,
+        "tweet_text": "Wakefield Rd actually. Nobody on the streets. Witness have said that Mount Victoria is collapsed. Everyone is running away tsunami #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797791766954901506,
+        "tweet_text": "Anyone else in Christchurch hearing this siren? Been going on for about 10 minutes - cant tell if car alarm or emergency siren #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797862700164358144,
+        "tweet_text": "RT @BNZ: Important #eqnz information for staff &amp; customers:  Our thoughts are with everyone whos been impacted. Sta",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798607684660436993,
+        "tweet_text": "Our Canterbury branch is collecting food to send to Kaikoura by helicopter. Please donate and drop off food to CCS in Lichfield #EQNZ",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797828191427514369,
+        "tweet_text": "Tsunami warning is real. Praying for Canterbury Wellington and coastal towns this morning. #eqnz #stayawayfrom beaches",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798502063411859456,
+        "tweet_text": "Arguably either would be better than the #tsunami warnings we normally get - long delay AND false alarm! #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797861783113330688,
+        "tweet_text": "RT @K8Shuttleworth: There have been casualties in Kaikoura following a severe 7.5 quake, and a tsunami between expected.",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797918987145383936,
+        "tweet_text": "RT @iamsudhish: Our thoughts and prayers are with the people #NewZealand #earthquake",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 771465467030478848,
+        "tweet_text": "When you wake up and theres been an earthquake and tsunami warning in your country lmao the shit that happens when were asleep I stg",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797846945255473152,
+        "tweet_text": "RT @NZcivildefence: People in all coastal areas in New Zealand should stay off beaches and away from the water. Do not go sightseeing. #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798271144327397376,
+        "tweet_text": "RT @TheDailyBlogNZ: 7.5 magnitude Earthquake hits New Zealand « The Daily Blog",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797906150897258497,
+        "tweet_text": "Damaged road near Oaro State Highway 1 #eqnz The road remains closed from Waipara to Picton at present. Please stay safe via @NZTATotS",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797796285591883776,
+        "tweet_text": "RT @Dave_WREMO: Tsunami sirens activated in Lower Hutt city #wgtn #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798088672847351808,
+        "tweet_text": "RT @KiwiHammers: Hoping everyone but especially our South Island Hammers are all okay following the latest earthquake #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 771476388100440064,
+        "tweet_text": "#BREAKING Live footage of tsunami hitting NZ coast following 7.1 earthquake this morning. #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797911692302630912,
+        "tweet_text": "RIP lemon liquor ὢD#eqnz #nzearthquake",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 798390777734975488,
+        "tweet_text": "RT @CanHCNZ: Canadas thoughts &amp; deepest condolences for loss of life are with @johnkeypm and people NZ following Mondays earthquake. Kia",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798413119408181248,
+        "tweet_text": "What are the government doing for those affected by the #eqnz ? A tv3 reporter said that their TV crew called airforce to get heli evac?",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 771481180856160256,
+        "tweet_text": "Nz brothers and sisters, after that 7.1 earthquake and tsunami warning that followed after. Shit lets give the beach a pass today! #besafe",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797911574459465728,
+        "tweet_text": "Our thoughts go out to the good people of Kaikoura, Christchurch, Wellington and all the other affected areas of our great country. #eqnz",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798700597612449793,
+        "tweet_text": "Food truck Street Feast on High St off tomorrow night b/c of #Eqnz, floods etc. #wellyweather",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797863710106599424,
+        "tweet_text": "Tsunami Evacuation sirens still going on in christchurch#eqnz #Christchurch",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 798100160148545536,
+        "tweet_text": "RT @_hk_321: May Allah protect everyone in New Zealandtwo earthquakes likeὣ1Ὁ4 #NewZealand #earthquake",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797890496521609216,
+        "tweet_text": "Reports of houses being damaged. This is partially why #iMoved.me was built, to help in times like this. Stay safe #NZ #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 798772666811301889,
+        "tweet_text": "NEWS || NZDF’S disaster relief operation maintains high tempo:  // #eqnz #nzearthquake #Kaikoura",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 797847135974633472,
+        "tweet_text": "White area for us.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797982075177472001,
+        "tweet_text": "RT @socialpinpoint: Our thoughts are with our friends in New Zealand today, stay safe everyone #EQNZ",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798078066656362496,
+        "tweet_text": "RT @rtenews: In pictures: The destruction from the 7.8 magnitude earthquake in New Zealand",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797828789774356480,
+        "tweet_text": "RT @BreakingNews: Magnitude 7.4 earthquake hits Canterbury region of New Zealands South Island - USGS",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798351713916702720,
+        "tweet_text": "At the risk of being repetitive Be kind and be patient - the aftershocks continue and now bad weather, flooding also affecting many #EQNZ",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797941391041040384,
+        "tweet_text": "Were miles away but damn that was a strong quake. God bless this country esp Kaikoura #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797952584392720384,
+        "tweet_text": "Lots of aftershocks still being felt in masterton #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797799284678610944,
+        "tweet_text": "If theres an aftershock and youre inside, drop, cover, hold. If outside, stay clear of damaged buildings in case of debris. #eqnz ^Libby",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797837537532227584,
+        "tweet_text": "RT @nzherald: Damage at a supermarket following the magnitude 7.8 earthquake this morning #EQNZ",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797966573294088192,
+        "tweet_text": "Reports of damage to at least 25 buildings in Wellington so far #eqnz #wellington",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797845962819416064,
+        "tweet_text": "Its going to be a big #Coffee day for most of #NewZealand. Thoughts are with the people of #Kaikoura who have been worst hit. #EQNZ.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798542266012995584,
+        "tweet_text": "There has been 1,492 Earthquake since the M7.5 Kaikoura Earthquakes #eqnz #kaikoura #NewZealand",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798435753692839937,
+        "tweet_text": "tbh, when emergency shit gets real in nz we are a pretty cool place. the same urgency towards poverty and education would perfect us #hint",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 798267192290603009,
+        "tweet_text": "RT @lyallbaynz: Big hugs to the emergency services today helping out around Wellington with #eqnz and now weather issues, thank you for wha",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797908464764743680,
+        "tweet_text": "Our NH90 &amp; P-3 are in the air and surveying the damage from last nights quake. Well get you images as soon we can. Stay safe #eqnz #RNZAF",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797822232869289984,
+        "tweet_text": "Parked up on higher ground due to tsunami warning and this guy keeps farting #frenchbulldog #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797794841677529089,
+        "tweet_text": "RT @neogeo: .@radionz reports earthquake has upgraded from 6.6 to 7.5 #eqnz - take tsunami threat seriously #wellington #nz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 800225681669922816,
+        "tweet_text": "Ugh. My head keeps going all funny and like spinning. Its been happening since the first earthquake. Just stop please!! #eqnz",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797856395437559808,
+        "tweet_text": "Tsunami warning at Redcliffs Christchurch this morning @CodeClubNZ",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797834293938569216,
+        "tweet_text": "Heavy rain/wind for upper South Island &amp; lower North Island this arvo through early Tuesday may hinder #eqnz efforts. Flooding possible.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 771454658845904896,
+        "tweet_text": "Live: Magnitude 7.1 earthquake shakes North Island on @nzherald",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797874494538797057,
+        "tweet_text": "@HunterRowland hunter, in New Zealand we just had a big earthquake! 2 people died and schools are closed! ὡ6 not that you read this but eh..",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797795081268785153,
+        "tweet_text": "im highkey scared rn i dont think i want to get wet and get sick and freeze from the tsunami no thanx",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 797856051949281280,
+        "tweet_text": "Live: One death confirmed in Kaikoura, tsunami warning for much of NZs east coast after massive quake",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 797843610892804096,
+        "tweet_text": "RT @LucanLeBlanc: #BREAKING: Tsunami warning extended to North Island East Coast after 2 metre wave hit South Island. #eqnz",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 798759186456662016,
+        "tweet_text": "Several Wellington CBD buildings deemed unsafe  #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797872667630059520,
+        "tweet_text": "RT @NZcivildefence: Coastal areas between Blenheim and Banks Peninsula, and Chatham islands, are still prone to tsunami. Please remain on h",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797878652952190977,
+        "tweet_text": "8am and still feeling aftershocks. Thats enough already! #nzearthquake #EQNZ #",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798019174777831424,
+        "tweet_text": "Dont worry everyone. We are fine here in Auckland, New Zealand. Were not affected with the earthquake and tsunami, only the other cities.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 798320428125069314,
+        "tweet_text": "RT @SarahLibrarina: The best help we can provide from a distance during an emergency is to donate $ @NZRedCross  #eq",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 771470155784163328,
+        "tweet_text": "@SoulGlowActivtr Hey Soli here in the north island of new zealand we had a shaking morning an earthquake 7.1 pray for us i trixie roxx am",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 798311659034939393,
+        "tweet_text": "RT @SatireNZ: BREAKING: Statistics NZ building earthquake damaged. Spokesperson, Its decimated, including rounding. #earthquake #eqnz #",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797822223453040641,
+        "tweet_text": "RT @gingergemmy: Timaru DC on @radionz have activated their emergency centre. No emergency declared but advising people in low lying areas",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797873050016301058,
+        "tweet_text": "Woah. What a mess to wake to. Stay safe rest of #NewZealand. That was a big #earthquake. Everyone checked in and safe thus far.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 798339370453323776,
+        "tweet_text": "Jeepers. A floor of the @StatisticsNZ building collapses. What are the odds of that? #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797793413903118336,
+        "tweet_text": "Tsunami hits after multiple strong New Zealand quakes",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 797947836880949248,
+        "tweet_text": "The earthquakes and tsunami warnings are scary enough.. but this #EQNZ",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797862022595497988,
+        "tweet_text": "What a night that was. Thankfully no damage to the house, but very little sleep. #eqnz",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 798425325923401728,
+        "tweet_text": "@We3forDemocracy This is since Extreme M7.5 earthquake reported 14 Nov (NZ time) centered near Culverden in New Zealands South Island",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 797808377191600128,
+        "tweet_text": "RT @caity_petersonn: UPDATE: Hanmer Springs -housing damage and power loss according to family relatives in the area #eqnz",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 797961196364124160,
+        "tweet_text": "RT @Halcyon_Knights: Our thoughts go out to the #NewZealand community affected by yesterdays earthquake #NZ",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 797818362256453632,
+        "tweet_text": "Can I just say: these are difficult maps when youre worried. Takes too much time to figure out boundaries. Street names would REALLY help",
+        "class_label": "not_humanitarian"
+    }
+]

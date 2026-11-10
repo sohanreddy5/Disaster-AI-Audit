@@ -1,0 +1,49 @@
+# Go/No-Go experiment configuration
+# Week 1 quick validation: CrisisMMD only, CLIP features, logistic probe
+# Tests whether LOEO shows a meaningful accuracy gap vs random split
+# -------------------------------------------------------------------
+
+defaults:
+  - default
+
+dataset:
+  name: crisismmd
+  label_task: informative
+
+features:
+  image_model: ViT-B-32
+  image_pretrained: openai
+  text_model: all-MiniLM-L6-v2
+  batch_size: 32
+
+splits:
+  strategies:
+    - random
+    - loeo
+  n_random_splits: 3
+  min_test_samples: 5
+
+models:
+  logistic:
+    C: 1.0
+    max_iter: 500
+  mlp:
+    hidden_dims: [128]
+    dropout: 0.2
+    lr: 0.001
+    epochs: 30
+    batch_size: 128
+    patience: 5
+
+evaluation:
+  metrics:
+    - accuracy
+    - macro_f1
+    - balanced_accuracy
+  statistics:
+    n_bootstrap: 1000
+    alpha: 0.05
+
+experiment:
+  seed: 42
+  device: auto

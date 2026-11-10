@@ -1,0 +1,842 @@
+[
+    {
+        "tweet_id": 783477557308100609,
+        "tweet_text": "RT @alyssa__garcia: Everyone tweeting pray for Jamaica and Haiti but theyre also praying for the hurricane to hit us because they dont wa",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783741493869699073,
+        "tweet_text": "RT @CTVToronto: GlobalMedic preparing to go to Haiti to assist in hurricane relief efforts",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 784648953639931904,
+        "tweet_text": "RT @MOBILEMIKE_: Aerial footage of western Haiti shows catastrophic damage after Hurricane Matthew",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783442390140891136,
+        "tweet_text": "Our thoughts and prayers are with the people of Haiti facing the hurricane Matthew #PrayforHaiti #HurricaneMatthew #matthewhaiti #Digicel",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783475241452462085,
+        "tweet_text": "Still raining. Thankful for a hurricane that moved but very aware of all this rain and how it can seriously take out some homes! #Haiti",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783766016522199040,
+        "tweet_text": "Hurricane response in Haiti slowed by blocked roads, floods, power outages",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783469687950577664,
+        "tweet_text": "RT @TmPrettyy: Prayers to Haiti ἞D἟9 first the earthquake now this hurricane they cant catch a break ὤ1",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783637480373358592,
+        "tweet_text": "Washington Post Aid teams in Haiti struggle to reach regions slammed by Hurricane MatthewWashington PostEmergency teams in Haiti struggled",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783424481654149120,
+        "tweet_text": "Nine people dead as Hurricane Matthew makes landfall  #Hurricane #Matthew #HurricaneMatthew #Haiti",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783485153221877760,
+        "tweet_text": "RT @tcoghq: Join us in prayer today for the residents of Haiti as Hurricane Matthew makes landfall. It was only a few years",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783853202085187584,
+        "tweet_text": "My heart is aching for Haiti right now and the damage theyve gotten from the hurricane. Pray for them &amp; count your blessings.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783396670633545728,
+        "tweet_text": "Unseen since late in 2010 when cholera was introduced, though far from where and months after the earthquake affected so many lives",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783679649188548608,
+        "tweet_text": "Haiti, Hurricane Matthew. Flooding in the south, Les Cayes. @PresidenceHT @HaitiNewsNet #HurricaneMatthew #Haitianhero",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783626770998136833,
+        "tweet_text": "RT @ayyyeGabi: My heart aches for their families, homes and peace of mind. Hurricane Matthew makes landfall in Haiti",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783707214271741952,
+        "tweet_text": "RT @TheTropixs: Over 11 deaths related to Hurricane Matthew in the Caribbean, 5 in Haiti",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783750375169888256,
+        "tweet_text": "RT @haitioutreach: #Haiti Outreach is responding to #HurricaneMatthew with water &amp; medical relief. Learn more about our plan &amp; needs!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783917160687104000,
+        "tweet_text": "RT @CTVNews: Haiti working to gauge damage after Hurricane Matthew moves on to Bahamas",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783396934950252545,
+        "tweet_text": "My thoughts are with all those affected by #HurricaneMatthew. Watch out #Haiti #Jamaica #Cuba #Bahamas #USA",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783428457644511233,
+        "tweet_text": "#Matthew strongest Hurricane to hit #Haiti in 52 years. 9 dead. #SouthCarolina to evacuate a million people along the coast.",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783908275427414016,
+        "tweet_text": "Emergency workers struggle to reach worst-hit parts of Haiti as Hurricane Matthew barrels towards Florida",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 783383153876623360,
+        "tweet_text": "A Hurricane Warning is issued for Jamaica &amp; much of Haiti. A #Hurricane Watch is now in effect for SE Cuba.  #Matthew",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 783726287772848128,
+        "tweet_text": "If in doubt, ask India and Haiti! The Clintons PERK up when the hear Earthquake or Hurricane! Shameful family! #TrumpTrain #NC #PA #FL #OH",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 783841170367459328,
+        "tweet_text": "Terrible! Give to the #Red Cross or any disaster relief #charity you trust",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783477346607239168,
+        "tweet_text": "Hurricane #Matthew has made its 2nd landfall of the day. At 7 AM, Les Anglais Haiti. 8 PM, Juaco, Cuba. Flooding in Hispaniola, Bahamas next",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783871340407291904,
+        "tweet_text": "Port Arthur church helps Hurricane Matthew victims in Haiti  via @12NewsNow",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783832644748505088,
+        "tweet_text": "Hurricane Matthew heads toward U.S. after leaving trails of destruction in Cuba, Haiti, Dominican Republic",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783886868358193152,
+        "tweet_text": "#WORLD Hurricane Matthew: Emergency workers struggle to reach worst-hit parts of Haiti a  via @IndyWorld #news",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783737426695061504,
+        "tweet_text": "Lets take a couple seconds of our day and pray for the people in Haiti And Cuba that have been affected by Hurricane Matthew #LoveOnly",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783740287755497472,
+        "tweet_text": "RT @SarahBellee17: Hurricane Matthew is causing flooding,deaths, and destroyed homes in Haiti right now. Please continue to pray.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783845914846892032,
+        "tweet_text": "Seeing all of the pictures in Haiti after the hurricane make my heart hurt and want to go there to help ὡ4",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783791049932103680,
+        "tweet_text": "if its not one thing its another when referring to Haitis adversity. hurricane mathew, the Earthquake, what now?! my heart is breaking :(",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783698648718831617,
+        "tweet_text": "Collecting donations in order to support Haiti during Hurricane Matthew. Call 516-599-2972 for more information. #HurricaneMatthew #Relief",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783385695784173568,
+        "tweet_text": "@realDonaldTrump go to haiti after the hurricane and help give food",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783743243561250816,
+        "tweet_text": "So many ways to help. Please keep praying &amp; donate! Great orgs helping- @jphro @hthhglobal @CARE @Medishare4Haiti @LGL_foundation ❤️Ὁ9἞D἟9ὤFἿC",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783967034573029376,
+        "tweet_text": "The #americanredcross is in great need of blood donations to help those affected by #HurricaneMatthew ! #redcross",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 784698843598352384,
+        "tweet_text": "RT @KeyettaMarie_: R.I.P. to all 841 people killed in Haiti by hurricane Matthew ἞D἟9ὤFἿF",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783995487896547328,
+        "tweet_text": "WPW Haiti rescue teams reach out to devastated areas cut off by massive hurricane: Only 16 have been killed b",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783817782760763393,
+        "tweet_text": "What can you say when you see images from @NASA of #HurricaneMatthew. Thoughts &amp; prayers to people of #Haiti #DR, #Bahamas; Fla be safe!",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783688200334311424,
+        "tweet_text": "Pray for Haiti // Hurricane Matthew Relief",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783671040987701249,
+        "tweet_text": "As I see it: Facebook Live chat, 2.30PM, Jamaica time. Prepared for what? Looking back on Hurricane Matthew; thoughts on damage to Haiti",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 784697434656034816,
+        "tweet_text": "RT @RT_com: Over 870 killed, 350,000 in need of urgent aid in hurricane-stricken Haiti",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783926150632312832,
+        "tweet_text": "Hurricane Matthew: At least 26 killed in Haiti and Cuba",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783431996794105857,
+        "tweet_text": "Hurricane would do less damage to Haiti if the #CrookedHillary #ClintonFoundation had done its job. #SpecialReport",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783769963198832640,
+        "tweet_text": "RT @chaelibug: Sending prayers up for Haiti, the Bahamas and everyone else affected by the hurricane. Cant even begin to imagine. /",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783789156602216448,
+        "tweet_text": "Unless youre In a country like Haiti, Jamaica or The Bahamas stop crying about the hurricane. You live in Florida, this is normal lmao.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 783493456257687553,
+        "tweet_text": "RT @hermfritz: #Haitis #infrastructure especially vulnerable as #Hurricane #Matthew hits #floods #landslides @Marketplace @CEEatGT",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783440203608449025,
+        "tweet_text": "Wow! #Guccifer2 Thoughts &amp; Prayers for Haiti during hurricane. Whatever the outcome, do not allow Hillary anywhere near these poor people!",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783750375434231808,
+        "tweet_text": "I liked a @YouTube video  Hot Chocolate Recipe &amp; a Way to Help Haiti Recover from Hurricane Matthew (Chokola",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 783415400713162752,
+        "tweet_text": "U.S. government advises citizens to leave Haiti and the Bahamas as Hurricane Matthew approaches.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783706832938340352,
+        "tweet_text": "Helping others feels even better than coffee. Support victims of #HurricaneMatthew #WednesdayWisdom",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783714022331854848,
+        "tweet_text": "Bob Vaughn is in touch with the people we serve in Haiti reporting very little damage. Please pray for others affected by Hurricane Matthew.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783917904102326272,
+        "tweet_text": "Unmanned Systems and Hurricane Matthew: Lessons from 2010 Haiti Earthquake -  @TUSExpo #unmanned #drones #robotics",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783517570158714880,
+        "tweet_text": "RT @jgsphd: Concerned about suffering in Haiti? Please consider giving to this excellent organization. We do:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783393218792714240,
+        "tweet_text": "PICTURES: 3 dead and thousands flee as Hurricane Matthew slams into Haiti #hurricane #matthew",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783415246106918913,
+        "tweet_text": "RT @LifelineChild: Please be on your knees in prayer with us on behalf of our partners and children in Haiti and the DR who are in threat o",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783472378445570048,
+        "tweet_text": "RT @emtobias_: Please keep Haiti in your prayers today. An earthquake and hurricane hit. Theres so many sweet kids &amp; people in there count",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783732449528295424,
+        "tweet_text": "#NEWS @USATODAY Raw video: Hurricane Matthew flooding roads in Haiti: EUROPESE OMROEP:Raw video: Hurri  #VIDEO",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783462962572976128,
+        "tweet_text": "@oreillyfactor word has it killary and bill are headed to haiti to start a money donation for hurricane relief",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783422126497738752,
+        "tweet_text": "Cant sleep- thinking about the wonderful babies and people of Haiti. Please pray for this country as they face Hurricane Matthew.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783853635423698944,
+        "tweet_text": "I just seen aerial footage of the damage done in Haiti by Hurricane Matthew and Im hurting. My hearts goes out to them all.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783682030315773952,
+        "tweet_text": "Haiti: Haiti: Hurricane Matthew update: Floods, landslides, torrential rain  #pandemic",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783390493271023617,
+        "tweet_text": "RT @MobilizeClimate: Our thoughts are with the people of Haiti today. We’ve got to mobilize to weather storms ahead, &amp; prevent worse.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783923193862119424,
+        "tweet_text": "The US is sending relief supplies to Haiti, where at least 10 people have died from Hurricane Matthew. Listen:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783491991984222208,
+        "tweet_text": "RT @KatiEkdahl: Everyone please pray for Haiti. I cant imagine what theyre going through after that hurricane without strong homes &amp; resour",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783770892346265604,
+        "tweet_text": "Prayers to Haiti, Cuba, the Bahamas, and everyone else affected by the HurricaneὢD❤️, &amp; lets continue to pray for FLs safety, we need it.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783746165477023745,
+        "tweet_text": "RT @maburg512: SC orders 1Mil to evacuate. Meanwhile, #Matthew pummels Haiti, still recovering from a terrible 2010 earthquake",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 783437329721679872,
+        "tweet_text": "RT @cooldealselect: Powerful hurricane lashes Haiti, moves toward Cuba: The extremely dangerous storm has already killed at lea :",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 783758250680393728,
+        "tweet_text": "US #Navy deploys aircraft carrier to help Haiti hurricane survivors.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783930064090107904,
+        "tweet_text": "Struggling Haiti badly hurt by hurricane Matthew. Wonder how many $$ in donations Clinton Crime Family will steal from them this time? #tcot",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783894677342650368,
+        "tweet_text": "Wind damage from Jeremie, Haiti look ~Cat 4 level. Certainly lends credence that Matthew may have been near/at Cat 5 intensity there.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783827456713121792,
+        "tweet_text": "#BreakingNews Hurricane Matthew kills 26 in Caribbean on destructive path to U.S.: LES CAYES, Haiti/GUA  #News",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783528174122663936,
+        "tweet_text": "Hurricane Matthew has left a trail of destruction across Haiti. National Director of World Vision in Haiti, John Hasse, joins us -ON AIR NOW",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783586436205326336,
+        "tweet_text": "Hurricane Matthew causes widespread damage: The Category 4 storm came ashore in Haiti to cause damage and dea",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783429151529308161,
+        "tweet_text": "HAITI - 10/4/16 -- A few early photos are starting to come in of the storm damage from Hurricane Matthew as it",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783884183940706304,
+        "tweet_text": "Breaking News 16 Dead, 2 Million Affected As Hurricane Matthew Slams Haiti: Emergency teams in Hait  #Followme",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 784649093851340800,
+        "tweet_text": "Haitis ambassador asks Americans to donate to Haitian institutions, including city govts, to avoid mistakes from the past. #Matthew",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783813563039174656,
+        "tweet_text": "Haiti hit hard by Hurricane Matthew: Analyze Laguerre stands inside her home damaged by Hurricane Matthew in",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783817959777050624,
+        "tweet_text": "RT @4joachim: HOPE clinton cartel foundation who lost $6B gets banned from #Haiti donations @Coondawg68 @ValVivino @mashable #HurricaneMat",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 783560406040207360,
+        "tweet_text": "Please support Hurricane Matthew Relief Fund  via @razoo #donate #haiti #prayforhaiti #hurricanematthew #prayforhaiti",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783446562932338689,
+        "tweet_text": "#Thanksgiving Prayers for emergency workers worldwide. #PrayersFor #HurricaneMatthew victims.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783705709523316736,
+        "tweet_text": "Please consider donating or starting your own fundraising campaign thru @imME_org to help people in Haiti!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783644266287464450,
+        "tweet_text": "Incredible conditions being reported out of #Haiti from Hurricane #Matthew",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783703950075662336,
+        "tweet_text": "RT @AndreaButera: #Hurricane #Matthew killed 5 people and injured at least 10 others in Haiti, the countrys Civil Protection Service said.",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783485199841566720,
+        "tweet_text": "Please #pray for #Haiti &amp; the surrounding areas. Lord we ask that you calm Hurricane Matthew. Dont allow any more harm. In Jesus name.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783996035836379136,
+        "tweet_text": "Devastating footage of all the damage from Hurricane #Matthew in parts of Haiti. Only about 1% of the buildings were left standing. Ἲ5: @ABC",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783450425001291780,
+        "tweet_text": "RT @GoldStarMomTX55: ChristiChat: RT DineshDSouza: Hurricane Matthew heads to Haiti and the Clintons are ready to rebuild the country ht",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783814815571668992,
+        "tweet_text": "Prayers to the people in Haiti and anyone else effected by the Hurricane ὤFἿDὡ4",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783678044594638848,
+        "tweet_text": "RT @B911Weather: US Agency for International Development says it is providing $400,000 in aid to Haiti and Jamaica for Hurricane Matthew -",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783872050872061954,
+        "tweet_text": "Haitis death toll from Hurricane Matthew doubles to 10",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783625962101563392,
+        "tweet_text": "RT @RobPulseNews: Hurricane #Matthew hits Haiti and Cuba, takes aim at Bahamas, U.S. @Reuters @NHC_Atlantic  http",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783474201923584000,
+        "tweet_text": "RT @USEmbassyHaiti: Most of Haiti is under a Hurricane Warning. All American citizens are strongly advised to shelter in place if they are",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 783386622037458944,
+        "tweet_text": "#Hillary #Haiti thanks u for the toxic shelters!",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783708132149035008,
+        "tweet_text": "HURRICANE MATTHEW: Hits Haiti, Headed to Cuba: Although only two deaths were initially reported in Haiti, the",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783963066035761152,
+        "tweet_text": "RT @caltanzee: #The Clintons did 2 the people of Haiti more devastating than the earthquake &amp; hurricane Mathew combined.The Clintons R ma",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783778664886444032,
+        "tweet_text": "suggestions, which basically boil down to support local efforts, initiatives, ideas, and organizations #DisasterRelief #aid #resilience",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783576883740807168,
+        "tweet_text": "HAITI (haitian) Haitians flee homes as Hurricane Matthew hits",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783634393734656000,
+        "tweet_text": "RT @Nonna_Ni: #clintoncash Hill stole Haiti relief $ so now they are more vulnerable than ever facing hurricane. Watch #clintoncash to see",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783527082236190720,
+        "tweet_text": "Haiti devastated by Hurricane Matthew. Dont send financial aid via Clinton Foundation! Earthquake funds misappropriated/never recovered",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 784649065980190720,
+        "tweet_text": "As the #HurricaneMatthew death toll climbs, 350,000 people need assistance. Hear directly from our #Haiti staff and see how were helping.",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783483223691108353,
+        "tweet_text": "praying for my people ὤFἿE❤️Ὁ9἞D἟9⚡️ Hurricane Matthew makes landfall in Haiti ”",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783779269721874432,
+        "tweet_text": "Hurricane destroys family home in Haiti, mums concern is childrens uniforms washed awaywhat does this say about priorities in our life",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783388091423875073,
+        "tweet_text": "How do you think Bill Clinton &amp; Hillary Clinton tent city made out in that cat 4 Hurricane built sweatshops &amp; mining factory instead Haiti",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783434337492537344,
+        "tweet_text": "Please pray for people in Haiti who have been affected by hurricane Matthew. Follow the link below for updates or",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783747161620111360,
+        "tweet_text": "Haiti, Florida or Jamaica = outbreak of the Zika virus and now those are the locations this hurricane is hitting ᾑ4Coincidence or scandal?",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783407273817305088,
+        "tweet_text": "We must pray as Hurricane Matthew is causing damage in Haiti. The team working with @ConvoyofHope leaves in less than 2 weeks. Pray!!",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783731003567243264,
+        "tweet_text": "Please support the @LT_Haiti mission base that was damaged by #HurricaneMatthew",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783864451170611200,
+        "tweet_text": "Hurricane Matthews toll: 19 dead in Haiti; widespread damage: A NOAA satellite captured this image of Hurric",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783792679830249472,
+        "tweet_text": "RT @tspoon87: Foor For The Poor supports Haitis hurricane relief.  support Haiti by giving what you can at /",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783771355481243648,
+        "tweet_text": "RT @mrmoxamofficial: Praying for Jamaica &amp; Haiti &amp; all the other Islands that are about to be affected by this Hurricane ὡ4ὤFἿE",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783621644799451136,
+        "tweet_text": "Wonder if @HillaryClinton $ @billclinton will funnel money from the hurricane in Haiti lime they did with the Earthquake #HaitianLivesMatter",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 783796588707737600,
+        "tweet_text": "Please, pray for all of those who have been hurt, help where you can, and hope that #Matthew doesnt hit the US",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783813254778789889,
+        "tweet_text": "Hurricane Matthews toll: 19 dead in Haiti; widespread damage - Breitbart",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783637142669029376,
+        "tweet_text": "#Honolulu #Hilo #Wailuku Aid teams in Haiti struggle to reach regions slammed by Hurricane Matthew - Washington Po",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783701332041445376,
+        "tweet_text": "Our thoughts are with everyone in this storms path. Be safe!",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783456938394877952,
+        "tweet_text": "Congrats To Minister Desmond McKenzie! For Offering Assistance To Haiti, In The Wake Of Hurricane Matthew! The Way To Go! #HurricaneWatch",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783992716136898560,
+        "tweet_text": "RT @KAmorphous: Haiti is devastated and the media is ignoring Haiti as usual. Please help and share.  via @ActionAid",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783650509668360192,
+        "tweet_text": "It would be nice if Haiti had some of the money that was donated to help them. Hurricane now they really need help. Wheres their money?",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783496748476030976,
+        "tweet_text": "Im supporting the Hurricane Victims in Haiti through The Williams-Jeannot Foundation Co.Inc. Support by retweeting.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783654902660796416,
+        "tweet_text": "Hurricane Matthew leaves Haiti facing humanitarian crisis - UN  #earthquake #earthquakenews",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783713208020324352,
+        "tweet_text": "Venezuela to send humanitarian aid to hurricane-ravaged Haiti  #NoTextAndDrive",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783521842996862978,
+        "tweet_text": "ON @GMA: Heavy rain and flooding as Hurricane Matthew approaches western Haiti, packing winds of up to 175mph:",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783490893374492676,
+        "tweet_text": "@hillaryclinton Wheres the Billion you stole from Haitis earthquake recovery?? They really need it now! #NeverHillary",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 783430549062967297,
+        "tweet_text": "South Carolina Begins Evacuations as H",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 783632130370863105,
+        "tweet_text": "ActionAid is currently mobiisiing to provide assistance in Haiti",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783456164788965376,
+        "tweet_text": "RT @rileylassiter_: with the hurricane coming, please be safe and make wise decisions, seven people are already reported dead in Haiti",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 784649241369071616,
+        "tweet_text": "@TheEconomist trump talking smack, VS builking Haiti of billions by the Clintons is 100 times worse. getting someone killed is worse.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 783810402551496705,
+        "tweet_text": "AP Rescue workers in Haiti are strugglingcaused by Hurricane Matthew  #Pray4Haiti #Pray4Florida #Pray4Charlotte",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783810937429958656,
+        "tweet_text": "RT @dbienaime: Hurricane Matthew Death Toll: Deadly Storm Kills In #Haiti And Other Caribbean Nations -",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783520106789867521,
+        "tweet_text": "RT @JamaicaGleaner: Hurricane Matthew batters Haiti - rips off roofs, floods homes",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783586802183483392,
+        "tweet_text": "Hurricane Matthew: Thousands displaced in Haiti: The most powerful Caribbean hurricane in nea  Celebrate Life!",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 783970973305466880,
+        "tweet_text": "Hurricane Matthew created worst humanitarian crisis in Haiti since earthquake w/ ~350k people needing urgent help",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 783388504919277568,
+        "tweet_text": "#WolrdNews CNN Hurricane Matthew lashes Haiti, heads toward CubaCNNAre you affected by Hurricane Matthew? If it i",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783775115708203008,
+        "tweet_text": "Our thoughts are with those in Haiti and the Bahamas and the people on the East Coast preparing for #Matthew.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783619214443765760,
+        "tweet_text": "My heart goes out to the people of the south of #Haiti affected by hurricane #matthew",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783938967066570752,
+        "tweet_text": "Telegraph Pics: Hurricane Matthew: Death toll in Haiti rises to 23 as rescuers struggle to",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783633736671850497,
+        "tweet_text": "Hurricane Matthew leaves #Haiti facing humanitarian crisis after the country’s devastating earthquake 6years ago #UN",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783418132702584833,
+        "tweet_text": "woW @NYDailyNews: At least three dead as Hurricane Matthew wallops Haiti with 145 mph winds",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783671352003887104,
+        "tweet_text": "When your name becomes a hurricane, do you hope it stays strong and leaves a mark or fizzles out before doing a lot of damage?",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 783851232922337281,
+        "tweet_text": "URGENT APPEAL | Please help recovery in Haiti after Hurricane Matthew:",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 783608502015053824,
+        "tweet_text": "As Hurricane Matthew makes landfall in Haiti, #UN relief agencies on standby to provide assistance",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783834163346497537,
+        "tweet_text": "Haiti suffered severe damage at the wrath of Hurricane Matthew, but @WorldVisionUSA is on the ground with relief.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 783704564859965440,
+        "tweet_text": "RT @Alecforman: Dont know how to help Haiti and other hurricane victims? Heres your shot. #HurricaneMatthew",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783871082126278656,
+        "tweet_text": "my heart &amp; prayers are with you all ❤️",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783412685580955648,
+        "tweet_text": "The hurricane season continues to Nov. I would advise Jamaicans to store whatever emergency supplies u hv (aftr helping Haiti). #beprepared.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783737940459618309,
+        "tweet_text": "Please continue to pray for Haiti as they were heavily affected by Hurricane Matthew",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783452134947762176,
+        "tweet_text": "To donate to #Haiti Disaster Relief, please visit  #HurricaneMatthew #Hurricane #MatthewHaiti #haitistrong",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 784689462831742976,
+        "tweet_text": "Families are seeking refuge in the 1,300 temporary shelters that have been set up across #Haiti #HurricaneMatthew:",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 783857505373855744,
+        "tweet_text": "(Independent) Hurricane Matthew: Emergency workers struggle to reach worst-hit parts of Haiti as storm barrel",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783886142185897984,
+        "tweet_text": "We will be sorting/boxing soap to send directly to Haiti to help those that affected by hurricane Matthew. HMU if youre interested",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783426406122487809,
+        "tweet_text": "everyone say a quick prayer for my uncles safety. hes getting deployed out to Haiti tomorrow for search and rescue due to the hurricane",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783705301086146560,
+        "tweet_text": "View of decades most powerful hurricane from space. Our thoughts and prayers for Haiti. #HurricaneMatthew",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783569920768475136,
+        "tweet_text": "RT @HumanityNews: Blogpost: Hurricane Matthew slams Haiti. Help is urgently needed.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 783514216338755584,
+        "tweet_text": "@realDonaldTrump good evening Mr Trump Mike Pence did outstanding. After the Hurricane you should go down to Haiti for help and support.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 783698844068507648,
+        "tweet_text": "RT @MiLUVMiSUMNEEKi: Prayers out to everyone in Cuba, Haiti, the Bahamas &amp; all the countries affected by Hurricane Matthew ❤",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 783840998547791872,
+        "tweet_text": "Watch ~ Devastating in Haiti United Nations says Hurricane #Matthew created the worst humanitarian crisis in",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783765915816996868,
+        "tweet_text": "#HurricaneMatthew Strikes - Help Victims Now : #Haiti  @RandomActsOrg #SPNFamily @mishacollins",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783706418314678272,
+        "tweet_text": "After battering Haiti, Hurricane Matthew hits the Bahamas Chicago Tribune Rescue workers in",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783621201377853440,
+        "tweet_text": "US military stages #Haiti relief efforts in Cayman  via @cayCompass #HurricaneMatthew #Matthew",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783752189504200708,
+        "tweet_text": "Hurricane Matthew powers toward the Bahamas and Floridas eastern coast after battering Haiti and Cuba with torrential rains and kill",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783683668204064768,
+        "tweet_text": "The official death toll and scope of infrastructure damage is still unknown, crippling the poorest country in the western hemisphere.",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783933099365236736,
+        "tweet_text": "New story from TIME in World : Haiti Starts to Gauge the Full Damage from Hurricane Matthew’s Rampage",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783785848840019968,
+        "tweet_text": "Aid teams try to reach areas in Haiti pounded by hurricane  via @WSJ",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783401222682341376,
+        "tweet_text": "RT @JenDelgadoTWC: #Hurricane #MATTHEW will approach sw #Haiti later tonight y eastern #Cuba late Tuesday as #category 4. #flooding :",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783947842092138497,
+        "tweet_text": "U.S. Nonprofit All Hands Volunteers Heads To Haiti After Hurricane",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 783838361425440768,
+        "tweet_text": "RT @Aaylin_xoxo: It breaks my heart to see how the hurricane affected Haiti, DR, Cuba and Jamaica.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 783860660388007937,
+        "tweet_text": "TBH nobody know what hurricane Mathew gone do but Im pretty sure yall seen the damage it did to Haiti and Cuba",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 784689762032508928,
+        "tweet_text": "Hurricane Matthew Barrels Up The East Coast After Ravaging Haiti: Nearly 900 people killed and tens of thousa",
+        "class_label": "injured_or_dead_people"
+    },
+    {
+        "tweet_id": 783701188650819590,
+        "tweet_text": "RT @TimesofSanDiego: San Diego-based charity is airlifting $7M in medical supplies to hurricane-ravaged Haiti:  http",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    }
+]

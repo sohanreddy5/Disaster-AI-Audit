@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Comparison of Domain Generalization Algorithms under Leave-One-Event-Out (LOEO) evaluation on CRISISMMD. Worst-Event Acc indicates performance on the single hardest unseen disaster.}
+\label{tab:dg_benchmark_crisismmd}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Algorithm} & \textbf{Mean LOEO Acc} & \textbf{Worst-Event Acc} & \textbf{LOEO ECE} & \textbf{LOEO AURC} \\
+\midrule
+ERM & 0.505 $\pm$ 0.129 & \textbf{0.374} & 0.090 & 0.363 \\
+GroupDRO & 0.503 $\pm$ 0.124 & \textbf{0.390} & 0.113 & 0.380 \\
+IRM & 0.495 $\pm$ 0.128 & \textbf{0.370} & 0.085 & 0.371 \\
+CORAL & 0.505 $\pm$ 0.129 & \textbf{0.374} & 0.090 & 0.363 \\
+\bottomrule
+\end{tabular}
+\end{table}

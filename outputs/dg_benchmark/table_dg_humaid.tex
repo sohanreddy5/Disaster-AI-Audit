@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Comparison of Domain Generalization Algorithms under Leave-One-Event-Out (LOEO) evaluation on HUMAID. Worst-Event Acc indicates performance on the single hardest unseen disaster.}
+\label{tab:dg_benchmark_humaid}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Algorithm} & \textbf{Mean LOEO Acc} & \textbf{Worst-Event Acc} & \textbf{LOEO ECE} & \textbf{LOEO AURC} \\
+\midrule
+ERM & 0.678 $\pm$ 0.090 & \textbf{0.477} & 0.161 & 0.154 \\
+GroupDRO & 0.671 $\pm$ 0.085 & \textbf{0.481} & 0.195 & 0.160 \\
+IRM & 0.641 $\pm$ 0.098 & \textbf{0.473} & 0.082 & 0.185 \\
+CORAL & 0.678 $\pm$ 0.090 & \textbf{0.477} & 0.161 & 0.154 \\
+\bottomrule
+\end{tabular}
+\end{table}

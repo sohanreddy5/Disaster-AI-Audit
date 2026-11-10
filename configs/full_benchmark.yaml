@@ -1,0 +1,93 @@
+# Full benchmark configuration
+# All datasets, all split strategies, all models
+# -----------------------------------------------
+
+defaults:
+  - default
+
+# All datasets run
+datasets:
+  - name: crisismmd
+    label_task: informative
+    root: ${data_dir}/crisismmd
+  - name: humaid
+    label_task: humanitarian
+    root: ${data_dir}/humaid
+  - name: medic
+    label_task: disaster_type
+    root: ${data_dir}/medic
+  - name: xbd
+    label_task: damage
+    root: ${data_dir}/xbd
+  - name: bright
+    label_task: damage
+    root: ${data_dir}/bright
+
+features:
+  image_models:
+    - name: ViT-B-32
+      pretrained: openai
+    - name: ViT-L-14
+      pretrained: openai
+    - name: ViT-B-16-SigLIP
+      pretrained: webli
+    - name: dinov2_vitb14
+      pretrained: lvd142m
+  text_models:
+    - all-MiniLM-L6-v2
+    - all-mpnet-base-v2
+  batch_size: 64
+
+splits:
+  strategies:
+    - random
+    - loeo
+    - disaster_type_held_out
+    - region_held_out
+    - compound_shift
+  n_random_splits: 5
+  min_test_samples: 10
+
+models:
+  logistic:
+    C: [0.01, 0.1, 1.0, 10.0]
+    max_iter: 2000
+  mlp:
+    hidden_dims: [256, 128]
+    dropout: 0.3
+    lr: 0.001
+    epochs: 100
+    batch_size: 256
+    patience: 15
+
+domain_gen:
+  enabled: true
+  methods:
+    - groupdro
+    - irm
+    - coral
+
+evaluation:
+  metrics:
+    - accuracy
+    - macro_f1
+    - balanced_accuracy
+  calibration:
+    n_bins: 15
+  abstention:
+    coverage_levels: [0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+  statistics:
+    n_bootstrap: 2000
+    alpha: 0.05
+
+audit:
+  duplicates:
+    hash_threshold: 10
+    embed_threshold: 0.95
+  label_noise:
+    n_folds: 5
+
+experiment:
+  seed: 42
+  device: auto
+  num_workers: 4

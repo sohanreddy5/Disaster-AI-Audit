@@ -1,0 +1,13 @@
+\begin{table}[t]
+\centering
+\caption{Benchmark results on CRISISMMD: Random vs. Leave-One-Event-Out (LOEO) evaluation across models. Worst-Event Acc indicates tail risk on the hardest unseen disaster.}
+\label{tab:benchmark_crisismmd}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Model} & \textbf{Random Acc} & \textbf{LOEO Acc} & \textbf{Worst-Event} & $\Delta$ \textbf{Gap} & \textbf{LOEO ECE} & \textbf{LOEO AURC} \\
+\midrule
+EVENT_PRIOR & 0.387 & 0.387 & \textbf{0.233} & +-0.001 & 0.119 & 0.608 \\
+LOGISTIC & 0.551 & 0.521 & \textbf{0.393} & +0.030 & 0.070 & 0.341 \\
+\bottomrule
+\end{tabular}
+\end{table}

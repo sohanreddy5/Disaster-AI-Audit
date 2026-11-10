@@ -1,0 +1,49 @@
+{
+  "experiment": "go_no_go",
+  "dummy_data": false,
+  "n_samples": 18082,
+  "n_events": 7,
+  "elapsed_seconds": 21.15442991256714,
+  "results": [
+    {
+      "model": "logistic",
+      "split_name": "random_avg",
+      "held_out_event": NaN,
+      "n_train": 14465,
+      "n_test": 3617,
+      "accuracy": 0.5557091512303014,
+      "macro_f1": 0.3267761019570215,
+      "balanced_accuracy": 0.31904629348612296
+    },
+    {
+      "model": "logistic",
+      "split_name": "loeo_avg",
+      "held_out_event": NaN,
+      "n_train": 15498,
+      "n_test": 2583,
+      "accuracy": 0.520800474506711,
+      "macro_f1": 0.2959089516747825,
+      "balanced_accuracy": 0.29704645140363845
+    },
+    {
+      "model": "mlp",
+      "split_name": "random_avg",
+      "held_out_event": NaN,
+      "n_train": 14465,
+      "n_test": 3617,
+      "accuracy": 0.5606856510920651,
+      "macro_f1": 0.3349225454776326,
+      "balanced_accuracy": 0.33473270610272404
+    },
+    {
+      "model": "mlp",
+      "split_name": "loeo_avg",
+      "held_out_event": NaN,
+      "n_train": 15498,
+      "n_test": 2583,
+      "accuracy": 0.5311798114828438,
+      "macro_f1": 0.31900242718612865,
+      "balanced_accuracy": 0.32531163179010225
+    }
+  ]
+}

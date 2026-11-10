@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Comparison of classification performance under Random Split vs. Leave-One-Event-Out (LOEO) evaluation. $\Delta$ denotes the score overestimation (inflation) caused by random event leakage.}
+\label{tab:random_vs_loeo}
+\begin{tabular}{lcccccccc}
+\toprule
+\textbf{Model} & \multicolumn{4}{c}{\textbf{Accuracy}} & \multicolumn{3}{c}{\textbf{Macro-F1}} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-8}
+ & \textbf{Random} & \textbf{LOEO} & \textbf{Worst-Event} & $\Delta$ \textbf{Gap} & \textbf{Random} & \textbf{LOEO} & $\Delta$ \textbf{Gap} \\
+\midrule
+LOGISTIC & 0.556 & 0.521 & \textbf{0.393} & +0.035 & 0.327 & 0.296 & +0.031 \\
+MLP & 0.561 & 0.531 & \textbf{0.415} & +0.030 & 0.335 & 0.319 & +0.016 \\
+\bottomrule
+\end{tabular}
+\end{table*}

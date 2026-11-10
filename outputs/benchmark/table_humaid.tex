@@ -1,0 +1,13 @@
+\begin{table}[t]
+\centering
+\caption{Benchmark results on HUMAID: Random vs. Leave-One-Event-Out (LOEO) evaluation across models. Worst-Event Acc indicates tail risk on the hardest unseen disaster.}
+\label{tab:benchmark_humaid}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Model} & \textbf{Random Acc} & \textbf{LOEO Acc} & \textbf{Worst-Event} & $\Delta$ \textbf{Gap} & \textbf{LOEO ECE} & \textbf{LOEO AURC} \\
+\midrule
+EVENT_PRIOR & 0.322 & 0.286 & \textbf{0.078} & +0.036 & 0.132 & 0.714 \\
+LOGISTIC & 0.727 & 0.717 & \textbf{0.515} & +0.010 & 0.039 & 0.121 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{Empirical test accuracy inflation induced by near-duplicate train/test leakage on HUMAID. $\tau$ denotes the cosine similarity threshold on dense embeddings. Evaluated across 5 random seeds (mean $\pm$ std). Leaked subset accuracy demonstrates massive artificial memorization advantage.}
+\label{tab:leakage_impact_humaid}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Leakage Threshold} & \textbf{Leakage Rate} & \textbf{Full Test Acc (\%)} & \textbf{Leaked Test Acc (\%)} & \textbf{Clean Test Acc (\%)} & \textbf{Inflation $\Delta$ (pp)} \\
+\midrule
+$\tau \ge 0.90$ & 4.4\% & 72.69 $\pm$ 0.27 & \textbf{87.47 $\pm$ 1.01} & 72.01 $\pm$ 0.28 & \textbf{+15.46 $\pm$ 1.11} \\
+$\tau \ge 0.95$ & 0.3\% & 72.69 $\pm$ 0.27 & \textbf{85.29 $\pm$ 5.45} & 72.65 $\pm$ 0.26 & \textbf{+12.65 $\pm$ 5.42} \\
+$\tau \ge 0.98$ & 0.0\% & 72.69 $\pm$ 0.27 & \textbf{87.78 $\pm$ 7.24} & 72.68 $\pm$ 0.27 & \textbf{+15.09 $\pm$ 7.29} \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,1142 @@
+[
+    {
+        "tweet_id": 733360620339257344,
+        "tweet_text": ".@GreenABEnergy How can @AirworksCanada assist in the cleanup? #AlbertaStrong",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729520926795157504,
+        "tweet_text": "RT @katvondawn: Thoughts &amp; prayers going to all those being affected by the wildfire in Canada. Truly, truly heartbreaking. #PrayForCanada",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 730739571739271168,
+        "tweet_text": "Glacier Farm Media pledges $50K in support for Fort McMurray wildfire disaster relief.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 733688875529293824,
+        "tweet_text": "Beatton Airport Road wildfire in northern B.C. leaves a patchwork of damage -  #VernonNews",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 733046257090957312,
+        "tweet_text": "RT @dana_balsor: @InsuranceBureau will Insur. professionals be entering our homes without us present? #ymmfire listening to Alberta wildfir",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 729038418823372800,
+        "tweet_text": "RT @reporterchris: The @NHL is donating $100,000 to the Canadian Red Cross in support of the wildfire relief efforts in Fort McMurray. Brav",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728915238121132032,
+        "tweet_text": "Foothills family, coming to the PDL game today? Were collecting cash donations for the Red Cross for #FortMcMurray",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 735178846849404928,
+        "tweet_text": "U.S. #wildfires have already burned 5 times as much acreage as last year at this time:",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 730529189648982017,
+        "tweet_text": "Ad Hoc Committee To Coordinate Federal Wildfire Efforts  #Saskatoon #YXE",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728746282903207936,
+        "tweet_text": "RT @good_archer: #usanews New homes spring up for Fort McMurray evacuees - Temporary homes for evacuees fleeing the wildfire in",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 732744591548506112,
+        "tweet_text": "Nicely done by @iancbates for @NatGeoPhotos of Fort McMurray evacuees",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 733343633169088512,
+        "tweet_text": "Sam is doing my hair, proceeds today at @hairkix #yyc goes towards wildfire relief efforts",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728675830432325632,
+        "tweet_text": "My thoughts are for the people of Fort McMurray fleeing the wildfire. My respect to the firefighters battling the blaze.",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 728591245375766531,
+        "tweet_text": "The wildfire is the latest in a lengthening lineage of early wildfires in the northern reaches of the globe that",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 729438472449208322,
+        "tweet_text": "Such an awful natural disaster, thoughts are with the families #canadianfamily",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 735635845458350080,
+        "tweet_text": "Giveaway at 300 followers+Wildfire Fundraiser  Continuing Overwatch #PS4 #Overwatch #Twitch",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730004711835840512,
+        "tweet_text": "The @WaterlooMasjid is raising money for people affected by the Fort McMurray wildfire. At 810, @CBCKW891 hears why they decided to help.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730545328924012544,
+        "tweet_text": "RT @TravelLeisure: Air Canada blames algorithm for fares of $4K during wildfire evacuation:",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 728795830505734144,
+        "tweet_text": "and people are asking why should i donate .",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 733078333563359232,
+        "tweet_text": "Evacuation order lifted for wildfire in northeast B.C.: An evacuation order has been rescinded for a rural ar",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 729820191337553921,
+        "tweet_text": "So we dont need help fighting the wildfires is this some kind of Joke the wildfire season has just begun.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 733004560239841280,
+        "tweet_text": "655-unit oilsands work camp near Fort McMurray destroyed by wildfire",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 730501289067589632,
+        "tweet_text": "RT @HappyFollowBack: Financial relief for wildfire evacuees  #TEAMFOLLOWBACK",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730034439607226369,
+        "tweet_text": "Illness Sweeps Canada Evacuation Center After Wildfire",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 728587665226928128,
+        "tweet_text": "Evacuations Continue Friday in Wildfire-Struck Alberta  #TEAMFOLLOWBACK",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 734119930619011072,
+        "tweet_text": "Community coalition in aid of Albert wildfire was built for fundraising event.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728541292637134848,
+        "tweet_text": "RT @beforeitsnews: Video: Largest #wildfire evacuation in Alberta’s history",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 729195286845788160,
+        "tweet_text": "Fort McMurray wildfire destruction drive-by 1:15",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 733367125058936832,
+        "tweet_text": "Albertas beast of a wildfire carves a new path of destruction",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 730907859207086080,
+        "tweet_text": "Focus turns to recovery as damage inspectors move in to Fort McMurray  #ymmfire",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 728545605585276928,
+        "tweet_text": "Our thoughts are with all those affected by the devastating wildfire situation in Alberta.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 729022332182757376,
+        "tweet_text": "Fort McMurray wildfire reaches 156,000 ha, expected to double Saturday, $30m donated to Red Cross already #ymmfire",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 733316116844445696,
+        "tweet_text": "RT @madelinemerlo: Doing a pop up show for The Red Cross Alberta Wildfire Relief!!!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728655666349375488,
+        "tweet_text": "Communities south of Fort McMurray order to leave as wildfire advances | CBC #news #FortMacFire",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 728815054523490305,
+        "tweet_text": "RT @edmontonjournal: Rachel Notley to Fort McMurray evacuees: Tell us where you are",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 733984679485923329,
+        "tweet_text": "RT @RENXca: Firms that have come to the aid of Alberta wildfire victims: The Brick -  Pet Value -",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729074038337851392,
+        "tweet_text": "80,000+ Canadians have lost their homes due to a wildfire, so lets try and help them! Please donate! #FortMacFire",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730488769246171137,
+        "tweet_text": "Wildfire donations running low in Bonnyville: Small communities have been ill-equipped to handle an onslaught of",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728646712613605376,
+        "tweet_text": "#FortMcMurray wildfire: state of #emergency #declared as #1,600 #buildings #engulfed in flames | via @telegraphnews",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 730850931315740672,
+        "tweet_text": "After Canada wildfire, a silver lining for businesses  The fire destroyed more than 2,400 buildings, or around 10 p",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 732373855717613568,
+        "tweet_text": "Donate to Fort Mac wildfire relief:  #yymfire #ABfire #AlbertaStrong",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732707430916751360,
+        "tweet_text": "RT @PensJG: The @pensfoundation will donate $25,000 to @redcrosscanada in support of all those affected by a massive wildfire in Ft. McMurr",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728747480893018112,
+        "tweet_text": "NHL donating $100K to Fort McMurray wildfire relief #Canada #Toronto #Alberta #hamont  (via  )",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 733172646825746436,
+        "tweet_text": "Attawapiskat donates $5,000 to Fort McMurray fire victims  via @huffpostalberta",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 733367200489279488,
+        "tweet_text": "Canadas wildfires dont just release carbon dioxide, also Mercury",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 730251627953852416,
+        "tweet_text": "Okotoks Dawgs baseball is saving grace for two families displaced from wildfire.",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 731491053904248832,
+        "tweet_text": "Find official info for Albertans affected by the Fort McMurray wildfires.  #ab411 #wildfire #abfires #ymmfire",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 728610276325601280,
+        "tweet_text": "Donate to Redcross please",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 731278144645124096,
+        "tweet_text": "RT @UNrefugees: Inspiring example of refugees giving back to their host community - Syrian refugees help Canada wildfire victims .",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 734541048551198720,
+        "tweet_text": "Black Bears Foraging for Food in Wake of Canadian Wildfire -  #GoogleAlerts",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 729676667032055809,
+        "tweet_text": "Boy, 5, sells lemonade to help wildfire victims",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729091460335689728,
+        "tweet_text": "@realDonaldTrump can you donate $ towards the out of control wildfire in Fort Mac, Alberta? #ymmfire #ymm",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732277302847905792,
+        "tweet_text": "RT @JWongGlobalNews: Good morning from #YMM. Air quality warning today due to smoke from controlled burns, new fire starts, the wildfire ht",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 731968177551245313,
+        "tweet_text": "RT @JenniferVayne: @rickybrunson Help support The Fort McMurray Wildfire Victims Today through 5/22 at all St. Louis Five Below stores http",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729135135216549888,
+        "tweet_text": "Donated by the women, who are generously fundraising even more--not govt relief",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728748974530650112,
+        "tweet_text": "RT @inky_mark: 80,000 Alberta wildfire victims asked to brace for long wait  via @NatObserver",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 729050755852861440,
+        "tweet_text": "Check out this GoFundMe to help the Canadian wildfire victims.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732990269197451264,
+        "tweet_text": "Wildfire now 4x size of New York City: The mammoth inferno devastating northern Alberta has now destroyed mor",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 734590761027670018,
+        "tweet_text": "RT @NBCNews: Wildfire spreads quickly, approaches homes in Martinez, California  via @nbcbayarea",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 730173623026262016,
+        "tweet_text": "In support of Fort McMurray wildfire relief, Sunnyside Natural Market will be collecting Red Cross donations for",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729433672097484800,
+        "tweet_text": "Im in Manitoba.. I have friends and family in wildfire areas.. And now? They are surrounding my Province. This is scary &amp; heartbreaking. ἞8἞6",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 732627306632515584,
+        "tweet_text": "Overwhelmed with the donations that keep coming in :) Thx guys youre the best!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729354771916709888,
+        "tweet_text": "Edmonton Food Bank on #Yelp: Current urgent needs for Wildfire response 2016",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728677179907706880,
+        "tweet_text": "RT @MachinistsUnion: 300 Machinists in Ft McMurray wildfire vicinity &amp; about 300 more who commute into the area - youre in our thoughts ht",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 728639217530748928,
+        "tweet_text": "Calgarys Syrian refugees step up to aid wildfire evacuees",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 730834506320515072,
+        "tweet_text": "Alberta law firms offer generous support to wildfire victims: As wildfires in and around Fort McMurray begin",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732754544346566656,
+        "tweet_text": "Wildfire flare-up stalls Fort McMurray’s recovery: Nearly 8,000 people evacuated from work camps north of cit",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 728643266401452032,
+        "tweet_text": "Thoughts and Prayers go to the people and their families affected from the #FortMacFire situation. #Wildfire",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 729661131959074816,
+        "tweet_text": "RT @TerraceStandard: Rain, snow slow northern B.C. wildfires, evacuees head home: Alberta crews join B.C. Wildfire Service on cros",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 729488477855748097,
+        "tweet_text": "Just donated to help animals affected by the Fort McMurray fire.The money goes to help&amp;rescue these poor fur babies.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728823363167129600,
+        "tweet_text": "RT @mniype: Hero principal #2: Boys, parents reunited after being separated in evacuation. #ymmfire #yeg  .",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 731509577041076224,
+        "tweet_text": "RT @Q13FOX: Wind whips Gold Bar wildfire to 325 acres overnight, level 2 evacuations in some areas",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 730426507491999745,
+        "tweet_text": "RT @JAZZFM91: Tonight, artists from #TO’s Latin jazz community are raising funds for victims of the Fort Mac wildfire. Reporter Shirley Cam",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728647062103822337,
+        "tweet_text": "Im amazed at the provinces response to the #FortMacFire so far. Keep it up #Alberta these people need our help!",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 728580544049516550,
+        "tweet_text": "RT @wlLakenews: Areas of northeastern British Columbia under wildfire evacuation orders; people in Mile 80 area of Alaska",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 728708404370354176,
+        "tweet_text": "mashable: Syrian refugees who fled the war are fleeing again -- from Canadas wildfire.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 731714501901451264,
+        "tweet_text": "#Alberta Government releases satellite maps showing #FortMcMurray wildfire damage. Have a look ⇨  #ymmfires",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 728576918757478400,
+        "tweet_text": "The @albertachambers have a relief fund to help affected businesses. @Fton_Chamber members can contribute.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730781434265247746,
+        "tweet_text": "Lets not forget that in addition to the damage they cause wildfires endanger the lives of wildland firefighters.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 729828329189199876,
+        "tweet_text": "Over $240K donated by #BCers at #BCLiquor Stores for #FortMcMurray wildfire relief efforts,  #FortMacFire #Alberta",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729234422298517504,
+        "tweet_text": "RT @chris1reuters: #Canada #wildfire grows, nears #oilsands @ReutersWinnipeg @LizHampton1986  #oil #FortMacFire http",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 734614548909559810,
+        "tweet_text": "Martinez, California, Wildfire Quickly Approaches Homes: The fire, the cause of which remained unknown,  #news",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 730812478930575360,
+        "tweet_text": "Another opportunity is available Thursday to make donations for Fort McMurray Wildfire Relief.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730487795173576704,
+        "tweet_text": "Red Cross dispersal of donations for Fort McMurray includes $600 for each adult, $300 per child",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729775854926979073,
+        "tweet_text": "The Damage Done by Canadas Massive Wildfire So Far: According to a report by VICE News this weekend, Russia",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 735975509914324993,
+        "tweet_text": "CRA providing tax relief for #FortMcMurray evacuees. @AonCanReferrals",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 729788301763190785,
+        "tweet_text": "RT @VancouverSun: B.C. liquor stores raise $240,000 for Alberta wildfire relief",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728916428523491328,
+        "tweet_text": "RT @renoaddict: Just donated to Edmonton Humane Society to help Fort Mac animals in need. If u r able, please consider it.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728686172453511168,
+        "tweet_text": "RT @KidsArt4aCause: Hoping #ymm can combat #wildfire and support all affected. (Art by @gslakie last fall to support @redcrosscanada)",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 728654281038020608,
+        "tweet_text": "#FortMcMurray wildfire: First #clearsatelliteimagesshow deserted streets, burned homes",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 729267284217348097,
+        "tweet_text": "Top story: Scorched remains: Haunting images from a city destroyed by wildfire , see more",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 733004995877081090,
+        "tweet_text": "RT @mkeadmirals: Fort McMurray native &amp; Ads alum @ScottieUpshall reflects on the damage to his hometown in the @PlayersTribune",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 730027237483810820,
+        "tweet_text": "#Wildfire evacuees can still register with Red Cross  #ymm #ymmfire",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 729109162223927297,
+        "tweet_text": "RT @amea2014: Wildfire destroys Fort McMurray homes, mo",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 729109541703528448,
+        "tweet_text": "Link: Aerial footage from above Fort McMurray, Alberta, shows wildfire destruction in Abasand an.. #breakingnews",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 728545222888689664,
+        "tweet_text": "RT @schestowitz: Alberta Declares State Of Emergency As Thousands Flee Massive Wildfire  like #indonesia except not",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 732744012969484289,
+        "tweet_text": "Fort McMurray wildfire: Oilsands work camp destroyed as flames threaten other sites – Globalnews.ca",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 732752772253265921,
+        "tweet_text": "RT @CharlieAngusNDP: Attawapiskat residents raised $5,000 to help Fort McMurray. James Bay communities have big big hearts ready to help ht",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728678647301804034,
+        "tweet_text": "RT @jasonagastrich: Alberta, Canadas biggest fire has scorched an area the size of New York City &amp; burns with no end in sight. See vids ht",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 728854188499705860,
+        "tweet_text": "Samaritans help rescue horses left by owners who fled #FortMcMurray Video:  @MolotovGirl",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728752569032445952,
+        "tweet_text": "mlb​.com &gt;&gt; Blue Jays create auction for wildfire victims",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732575097857314818,
+        "tweet_text": "RT @SHINeeCanada: [PLZ SHARE] SWC 8th ANNI Project - Donation to Wildfire in Alberta under SHINees Name to Red Cross and Edmonton",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732032405431689216,
+        "tweet_text": "Residents hit by Canada wildfire offered app to view damaged homes: Authorities in Alberta, Canada, have laun",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 732615379000938500,
+        "tweet_text": "RT @AGeddesCBC: Notley wildfire update at 11 a.m. Extreme conditions make job more dangerous  #ymmfire #yeg :",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 730081812463104000,
+        "tweet_text": "#NewBrunswick sending a team of firefighters to #Alberta to help with wildfire relief",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728913403717115905,
+        "tweet_text": "The beast is getting harder to tame. Please donate. PM Trudeau will match donations to @redcrosscanada",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728754024892252160,
+        "tweet_text": "RT @d_iamondemoji: the transit in the KW is allowing donations through their texting service as well, so probably other cities will! :",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732598333689057280,
+        "tweet_text": "Alberta orders evacuation in northwest for new, out-of-control wildfire | Toronto Star",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 728577314397786112,
+        "tweet_text": "RT @reanesh: This is how much of the city the wildfire would be covering if it were in Toronto. Donate: text REDCROSS to 30333.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730592073620062212,
+        "tweet_text": "on a serious note if you guys want to help the victims of the wildfire in fort Mcmurray theres a link in",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728563498758901760,
+        "tweet_text": "Amazing piece on the #FortMacFire by Rex Murphy. Please donate to the Red Cross to help those in need.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730966791812304897,
+        "tweet_text": "@Nat_Coll @adidasCA @CFL @BCLions If you purchase it tonight the proceeds go towards helping Albertan wildfire victims, right? CFLShop.ca",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729802911228690432,
+        "tweet_text": "RT @MBGovParks: Visit  for updates on #mbfire. Report Wildfires: 1-800-782-0076 Travel Restriction Info: 204-345-14",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 732346845226237952,
+        "tweet_text": "Heres our #CBC story on evacuations north of Fort McMurray. #fortmacfire #ymmfire",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 729158685306408960,
+        "tweet_text": "RT @rconspiracy: Fort McMurray wildfire: Airport in danger, state of emergency declared",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 729531656948883456,
+        "tweet_text": "#YMM IMPORTANT INFORMATION FOR DISPLACED RESIDENTS - Wildfire-Evacuation-Package-May-7.pdf",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 728616717019172865,
+        "tweet_text": "RT @FullFrontalSamB: The Canadian Red Cross has a page to help evacuees from the terrible #FortMcMurray wildfire. RT, donate if you can: ht",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 728682011418714112,
+        "tweet_text": "【#BC #News】 Canadian Red Cross Fort McMurray Wildfire",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 729732224459776001,
+        "tweet_text": "The best thing you can do for victims of the Fort McMurray wildfire is to listen",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 730036899797082112,
+        "tweet_text": "We WILL be back! #ymmfire #ymm to #yyc #evacuation #wildfire @ Calgry Canada",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 730446135098277892,
+        "tweet_text": "Damage in wildfire is pegged in the billions of dollars. Will take years to rebuild #ymmfire",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 728606734399475712,
+        "tweet_text": "RT @ICLRCanada: ICLR News, a selection of the weeks top natural hazard news, is now available  #wildfire #flood #ea",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 732696441370648577,
+        "tweet_text": "Please, please, please pray",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 729384197089984512,
+        "tweet_text": "#albertafire Update: #AHS will be bringing in psychologists from #BC and other jurisdictions to assist #wildfire victims.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728572084566249472,
+        "tweet_text": "@bostonpizza provides hot meals and assistance in Fort McMurray wildfire relief efforts #BBA #Toronto #Food #News",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 731996917517844480,
+        "tweet_text": "RT @GlobalEdmonton: Fort McMurray wildfire: how to retrieve vehicles abandoned during evacuation. #ymmfire #ymm #yeg",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 729026218381582336,
+        "tweet_text": "Its one thing to put yourself at risk, but to risk the lives of children and emergency personnel is unconscionable.",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 729698490893406208,
+        "tweet_text": "RT @zerohedge: Finally Good News For Canadas Raging Wildfire: Rain, Wind Conditions Push Blaze Away From Oil Sands",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 729959316946604032,
+        "tweet_text": "RT @BjornVIKING: @JustinTrudeau  Very sad to see this, how can you possibly turn down assistance from anyone? Very",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 728673034815426560,
+        "tweet_text": "The victims of the wildfire have escaped to bordering cities but many need assistance. The fleeing residents of",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 734848168978993152,
+        "tweet_text": "Fort McMurray #Wildfire | Weakened by Weather | #Oilsands Camps to Reopen #ymm #ymmfire #jobs",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 733190735424544768,
+        "tweet_text": "Detailed new images of wildfire-damaged areas available for Wood Buffalo residents  #alberta",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 734515181896781824,
+        "tweet_text": "National Geographic covers Fort Mac evacuees.",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 728948038006267904,
+        "tweet_text": "Fort McMurray convoy to move wildfire evacuees south again: Another 4,000 residents, who have taken shelter a",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 730462501842780161,
+        "tweet_text": "【#BC #News】 Getting mail to Fort McMurray wildfire evacuees: Canada Post’s emergency",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 728770579273232384,
+        "tweet_text": "Sending out thoughts and prayers to all those in need who are affected by the wildfire in Fort McMurray.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 732692543243223041,
+        "tweet_text": "Pizza pays out $12,700 for wildfire relief | The Sherbrooke Record",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730448638418132992,
+        "tweet_text": "RT @CBCPolitics: Details released on dispersal of $60M collected by Red Cross for Fort McMurray  #cdnpoli #hw",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730549439962697728,
+        "tweet_text": "Photo: Authorities on scene of wildfire burning in Gray, Maine - @DavidWMTW: Photo: Authorities .. #breakingnews",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 732588473253801985,
+        "tweet_text": "Cottagers head back home as wildfire evacuation lifted along Manitoba-Ontario border",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 728575793857712131,
+        "tweet_text": "Our thoughts are with youMassive convoy of evacuees to move through Fort McMurray  via @torontostar",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 730480242729594880,
+        "tweet_text": "Red Willow helps families in Alberta who lost so much in the wildfire with Toonie Tuesday on May 17th. Please help support this worthy cause",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728785002343870464,
+        "tweet_text": "@CPSA_CA extends solidarity w/ Members affected by #ymmfires. CPSA updates available at  Donate at redcross.ca",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729733145793331201,
+        "tweet_text": "RT @211Ontario: How can Ontario residents help the victims of the Fort McMurray Wildfire?",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728746778573582336,
+        "tweet_text": "RT @SsssamanthaaMUA: Our Canadian friends in Fort Mac are being evacuated due to an extreme wildfire. If you can, please donate here - http",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 733372049666801670,
+        "tweet_text": "Parkway Co-op and Grandview Credit Union raised $2,265 for wildfire relief at Fort McMurray",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730079084303290368,
+        "tweet_text": "Helicopter flyover of Fort McMurray shows wildfire destruction",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 733722356305170432,
+        "tweet_text": "@ExpTrackerApp would this app also help citizens affected- returning home after the Fort McMurray wildfires?",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 732351147709587457,
+        "tweet_text": "RT @HouckisPokise: CRITICAL WILDFIRE ALERT; All camps North of Fort McMurray must evacuate immediately #ymmfire #abfire",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 730592125570551808,
+        "tweet_text": "Thank you @JamesTaylor_com for supporting Alberta wildfire relief efforts  #lovemyJT #FortMacFire #canada",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 733344517261295616,
+        "tweet_text": "The Executives Quartet from Alberta is raising funds for the victims of the wildfire in their province. Half of",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729064820704612352,
+        "tweet_text": "@NBCSports @HillaryScottLA Please, please send that rain to Alberta, we desperately need it to put out our MONSTER wildfire.",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 728731227667103744,
+        "tweet_text": "RT @dbpromotionsca: Thank you to our American friends the @StLouisBlues for their kindness and compassion. #ymmfire #ymm #FortMacFire http",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 729019527824990208,
+        "tweet_text": "@RachelNotley why no Prime Minister in Ab to at the least meet with people who have lost homes?",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 729012870931988481,
+        "tweet_text": "RT @CharityMcGrath1: We are still keeping #FortMcMurray residents &amp; fire fighters in our thoughts &amp; prayers @mukundpurohit #Ontario",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 728748365865869312,
+        "tweet_text": "RT @AC360: Alberta #wildfire: - At least 1,600 structures destroyed - 88,000 evacuations ordered - No word on the cause",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 728813857322336257,
+        "tweet_text": "RT @albertateachers: Albertas teachers pledge $200,000 for Wildfire Relief.  #abed #ymmfire",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728620432476102656,
+        "tweet_text": "RT @MasterCardCA: Today we donated $50,000 to Red Cross wildfire disaster relief efforts in Alberta. Find out how you can help:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 734425437330231297,
+        "tweet_text": "RT @TheRealVOSTCat: Black #bears are prowling for food in the wake of the Canadian #wildfire  #wildlife #ymmfire #AB",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 730078108431224832,
+        "tweet_text": "I am very happy to hear that the wildfire re FORT MAC did not destroy as many homes as imagined!",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 729412279737913344,
+        "tweet_text": "Really? This organization is ridiculous !",
+        "class_label": "not_humanitarian"
+    },
+    {
+        "tweet_id": 728573345306951680,
+        "tweet_text": "RT @foodbankscanada: Wondering how you can help communities in Alberta affected by the wildfire?",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728773567731650562,
+        "tweet_text": "@BlueJays Great job! #OneNation #ComeTogether Blue Jays create auction for wildfire victims Sent with @MLB At Bat",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729038387898925056,
+        "tweet_text": "RT @FarmsOfTheWorld: In 1995 the helicopter wildfire crew used our pond to dip water to fight a local fire we were glad to help",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729798823640338434,
+        "tweet_text": "RT @ConserveAlberta: Alberta has issued a province wide restriction on off-road vehicles to prevent fires.  #Alberta",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 729753364175585280,
+        "tweet_text": "Did I miss something? I think we need all the help we can get.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 732272605172924416,
+        "tweet_text": "Wildfire danger on the rise again in Saskatchewan: After cooler conditions and rain shrank the extreme risk",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 729552107762634753,
+        "tweet_text": "Are #YMM evacuees climate refugees? Were not sure! But listen in to hear accounts of",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 735818043503353856,
+        "tweet_text": "RT @RedCrossEastTN: #QuestionOfTheDay: To assist wildfire relief efforts, which Canadian province has the @RedCross sent volunteers to?",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728954374429478912,
+        "tweet_text": "Stop by at your local @hm and donate to the Red Cross. Donations will be gone towards the wildfire in Alberta! #charity #makeadifference",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728642042230870016,
+        "tweet_text": "RT @ThisBoyTV: cheers! #Saskatchewan donating $250,000 to help Fort McMurray #ymmhelp victims",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732971093137317889,
+        "tweet_text": "Donations in support of the Fort McMurray wildfire evacuees being prepared for complimentary shipment #ymm #vankam",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729765834114121728,
+        "tweet_text": "RT @AlArabiya_Eng: ‘Now it is our turn’: Syrian refugees aid Canadians displaced by wildfire",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728591247716163584,
+        "tweet_text": "RT @KyleHarrietha: Fort McKay First Nation shelters 3,000 evacuees, while Métis group loses headquarters to wildfire | CBC",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 731535681281888256,
+        "tweet_text": "The Korner Pub wildfire relief fundraiser Tomorrow 1:00pm",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729278884491997184,
+        "tweet_text": "@RMWoodBuffalo @BradRgrainger unbelievable images of your wildfires. Thoughts are with you from Scottish Wildfire Forum in UK. Stay safe.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 732211213044731904,
+        "tweet_text": "@LegupDept Hes not on a HOLIDAY! Hes literally walking through the aftermath destruction of a WILDFIRE!",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 729780800003002368,
+        "tweet_text": "Close to a quarter of a million dollars has been donated at BC Liquor Stores for Fort McMurray wildfire relief efforts #ymmfire",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729132131557908480,
+        "tweet_text": "Province of Manitoba | News Releases | Manitobas Urban Search and Rescue Team to Assist Alberta Wildfire Fight",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730526660764811264,
+        "tweet_text": "WTP Assist information for Zurich Canada customers affected by the #FortMcMurray wildfire #YMMfire",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 731492470102458369,
+        "tweet_text": "Our team will be there at 10:30 to accept your donations! Thank you!",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729280801586688001,
+        "tweet_text": "My heart goes out to every person affected by this disaster, I pray you recover and get divine help speedily.",
+        "class_label": "sympathy_and_support"
+    },
+    {
+        "tweet_id": 728753641490911232,
+        "tweet_text": "RT @sluuby: Our partners at Labatt stopped beer production to ship out drinking water. #Nice  #Nice",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729252516332871680,
+        "tweet_text": "Canadian communities mobilise to help wildfire victims",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730177344032378881,
+        "tweet_text": "RT @Jake_Kislinsky: . @victoryfordCK helps company raise over $500K for wildfire relief efforts",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728996323345620992,
+        "tweet_text": "Alberta-bound truck filling up w/ donations to help wildfire evacuees. Parked @ Inkster &amp; Brookside till 9pm#ctvwpg",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 728990152710819841,
+        "tweet_text": "James Taylor to donate concert proceeds to help wildfire victims | Ottawa &amp; Regi",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 731248284707098625,
+        "tweet_text": "RT @AirbnbHelp: Those impacted by #ymmfire, Alberta hosts have opened their homes. @Airbnbs Kellie Bentz explains on @BloombergCA /",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729362464681250817,
+        "tweet_text": "Wildfire hazards across SK are still mostly extreme. 12 active fires, 2 not contained, no threat to any communities @ctvsaskatoon",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 732000848755089410,
+        "tweet_text": "RT @cganders: Ill just be casually ignoring the entire city that was literally destroyed by wildfire prior to forest fire season",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 735161026816180224,
+        "tweet_text": "3 weeks today, the #Ymm #wildfire forced us from our homes. Its still #burning. I want to go #home. #Albertastrong",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 728563327761186818,
+        "tweet_text": "Fort Mac Wildfire Animal Relief Fund - Edmonton Humane Soc./Alberta SPCA Donation link",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 734527998003695616,
+        "tweet_text": "RT @jenna_poll: Just donated money to @AveryMcCain s father, and I cant wait to donate more. Spread this like wildfire! ❤️Ὁ5❤️Ὁ5 .",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729041305117036544,
+        "tweet_text": "Red Cross says donations for Fort McMurray wildfire aid has hit $44 million - CBC",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732353422050111489,
+        "tweet_text": "Work camps north of Fort McMurray ordered to evacuate due to growing wildfire",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 733660893330821120,
+        "tweet_text": "In the News:  - Ag Groups Raise Money To Support Canadian Wildfire Victims",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732953920687874048,
+        "tweet_text": "Canada wildfire prompts new evacuation of oil sands workers  #energynews",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 728943472019963904,
+        "tweet_text": "Matching donations and CLWRs response UPDATE: Fort McMurray wildfire response Thank you to all who have donated",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729515648347418625,
+        "tweet_text": "Just made a donation to Cdn Red Cross to held Alberta wildfire victims. Hope you can do the same.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732600797494566912,
+        "tweet_text": "Mandatory evacuation for residents in MD of Greenview has been lifted, but residents remain on 2 hour alert #wildfire #ABfire",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 733395749971492865,
+        "tweet_text": "#ymmfire officially exceeds total damage of 2015 AB wildfire season  #rmwb @Mix1037radio",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 728548864186327040,
+        "tweet_text": "RT @BreakingNSNews: Rapper Classified donating song proceeds to wildfire relief efforts in Fort McMurray: Nova Scotia rapper Classified ht",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732350600914968576,
+        "tweet_text": "Wildfire north of #YMM growing. Mandatory evacuation for #YMM expanding north. All camps north of #YMM to evacuate up to &amp; incl Ruth Lake",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 731799744910069760,
+        "tweet_text": "RT @apihtawikosisan: Still just dealing with the symptoms of climate change. Good fire safety info, but disappointing lack of context. http",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 728644581038788608,
+        "tweet_text": "12 buildings destroyed in Anzac.#ymm #ymmfire",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 729750809651642369,
+        "tweet_text": "TIL in 2002, a wildfire was started by a lost hiker trying to signal a news helicopter that was itself watching another wildfire started by",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 733120014350487552,
+        "tweet_text": "RT @BluesOnWhyte: Burning Blues for Wildfire Victims. May 22, 4 Bands  #yegmusic #ymmfire",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 729307547388149760,
+        "tweet_text": "RT @ctvwinnipeg: Manitoba-Ontario wildfire moves east, forces more evacuations: A fire burning along the Manitoba-Ontario bord",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 731198180524580865,
+        "tweet_text": "Looking to contribute to #families affected by the #FortMcMurray Wildfire? Donate now to @SaveChildrenCan:  #ymmfire",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732739168111988737,
+        "tweet_text": "RT @660NEWS: Troubled Ontario First Nation makes $5,000 donation to wildfire relief: Red Crossmore tonight on 660 NEWS.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 735613559879667712,
+        "tweet_text": "@ERDO_CANADA thanks donors for their outpouring of support for Fort McMurray families who received practical care:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 735865944627642369,
+        "tweet_text": "RT @samantha_ef: Giving with style: our favourite! ὄ7  : Join us in supporting @FMSPCA wildfire relief efforts.",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 730054281634578434,
+        "tweet_text": "RT @ChildrnsCottage: Here are Wildfire Mental Health Resources for families affected by #ymmfire:   #yyc #ymm",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 732692261255938048,
+        "tweet_text": "Growing wildfire forces evacuation of Fort McMurray oilsands camps. Hoping our colleagues are in a safe haven.",
+        "class_label": "displaced_people_and_evacuations"
+    },
+    {
+        "tweet_id": 729200167161716736,
+        "tweet_text": "State of emergency declared after wildfire in Fort McMurray – video report",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 731736496387072000,
+        "tweet_text": "RT @fcain: More Images Of Albertas Fires From Space",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 728954588473122817,
+        "tweet_text": "A series of beautiful photographs showing the dantesque devastation of forest fires in Alberta.",
+        "class_label": "infrastructure_and_utility_damage"
+    },
+    {
+        "tweet_id": 731970471659483136,
+        "tweet_text": "RT @HarvCBC: Excellent food for thought. Thinking about how to make my house #firesmart #yeg",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 729659686002294784,
+        "tweet_text": "RT @bobdigby: There are many frightening things about #wildfires but this is probably scariest  #geographyteacher",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 730131843475857408,
+        "tweet_text": "RT @GlobalEdmonton: Fort McMurray wildfire: how to apply to be part of the cleanup, rebuild efforts #ymm #ymmfire",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 731228745944563712,
+        "tweet_text": "Want to help Covenant Bay Camp house a number of families relocated from AB wildfires? Give thru Commons Church:",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    },
+    {
+        "tweet_id": 732337058732072960,
+        "tweet_text": "Firefighting turns to technology to get the jump on wildfires - Edmonton - CBC News",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 728670009350709250,
+        "tweet_text": "RT @ChrisNielsenNDP: Info regarding Albertas Provincial Achievement Tests for schools &amp; students affected by the Alberta wildfires",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 730049540426850305,
+        "tweet_text": "the Premiere w/ direction from the emergency team will ask for more help if they need it #cdnpoli",
+        "class_label": "requests_or_urgent_needs"
+    },
+    {
+        "tweet_id": 732333131630436353,
+        "tweet_text": "Another late night another wildfire. People need to be smart about their camp fires while fire danger is high.",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 730492201122177024,
+        "tweet_text": "Whiteshell wildfire has reached the tunnel between North Cross and South Cross lakes (Nick Martin) @WinnipegNews",
+        "class_label": "caution_and_advice"
+    },
+    {
+        "tweet_id": 730403466905063424,
+        "tweet_text": "#toronto #news : Couple splits after Fort McMurray wildfire",
+        "class_label": "other_relevant_information"
+    },
+    {
+        "tweet_id": 728825304991424512,
+        "tweet_text": "Canada wildfire disrupts rescue convoy",
+        "class_label": "rescue_volunteering_or_donation_effort"
+    }
+]

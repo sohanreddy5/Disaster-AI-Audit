@@ -1,0 +1,88 @@
+# Default configuration for disaster AI audit experiments
+# -------------------------------------------------------
+
+# Paths
+data_dir: ./data
+cache_dir: ./cache
+output_dir: ./outputs
+log_dir: ./logs
+
+# Dataset
+dataset:
+  name: crisismmd
+  label_task: informative
+  root: ${data_dir}/crisismmd
+
+# Feature extraction
+features:
+  image_model: ViT-B-32
+  image_pretrained: openai
+  text_model: all-MiniLM-L6-v2
+  batch_size: 64
+  cache_dir: ${cache_dir}/features
+
+# Splits
+splits:
+  strategies:
+    - random
+    - loeo
+  random_seed: 42
+  n_random_splits: 5
+  min_test_samples: 10
+
+# Models / probes
+models:
+  logistic:
+    C: 1.0
+    max_iter: 1000
+    solver: lbfgs
+  mlp:
+    hidden_dims: [256, 128]
+    dropout: 0.3
+    lr: 0.001
+    epochs: 50
+    batch_size: 256
+    patience: 10
+
+# Domain generalisation
+domain_gen:
+  enabled: false
+  methods:
+    - groupdro
+    - irm
+    - coral
+  groupdro:
+    eta: 0.01
+  irm:
+    lambda_irm: 1.0
+    penalty_anneal_iters: 500
+  coral:
+    lambda_coral: 1.0
+
+# Evaluation
+evaluation:
+  metrics:
+    - accuracy
+    - macro_f1
+    - balanced_accuracy
+  calibration:
+    n_bins: 15
+  abstention:
+    coverage_levels: [0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+  statistics:
+    n_bootstrap: 2000
+    alpha: 0.05
+
+# Audit
+audit:
+  duplicates:
+    hash_threshold: 10
+    embed_threshold: 0.95
+  label_noise:
+    n_folds: 5
+
+# Experiment
+experiment:
+  seed: 42
+  device: auto  # auto, cpu, cuda
+  num_workers: 4

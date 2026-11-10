@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\caption{Model evaluation under Joint Compound Shift (Leave-(Disaster Type $\times$ Geographic Region)-Out) on HUMAID. Shows severe performance degradation when models face novel disaster categories in unobserved geographical settings.}
+\label{tab:compound_shift_humaid}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Held-Out Compound Domain} & \textbf{Test $N$} & \textbf{Accuracy} & \textbf{Macro-F1} & \textbf{ECE} & \textbf{AURC} \\
+\midrule
+Earthquake $\Times$ South America & 1563 & 83.69\% & 0.535 & 0.032 & 0.036 \\
+Earthquake $\Times$ Europe & 1201 & 83.43\% & 0.469 & 0.041 & 0.039 \\
+Earthquake $\Times$ Central America & 2015 & 81.94\% & 0.552 & 0.076 & 0.058 \\
+Wildfire $\Times$ Europe & 1515 & 75.84\% & 0.539 & 0.034 & 0.084 \\
+Cyclone $\Times$ Africa & 3933 & 73.35\% & 0.520 & 0.032 & 0.101 \\
+Earthquake $\Times$ South Asia & 1958 & 73.14\% & 0.509 & 0.046 & 0.108 \\
+Wildfire $\Times$ North America & 9618 & 70.10\% & 0.584 & 0.017 & 0.128 \\
+Hurricane $\Times$ North America & 15376 & 67.70\% & 0.587 & 0.016 & 0.143 \\
+Flood $\Times$ South Asia & 8544 & 67.66\% & 0.544 & 0.018 & 0.142 \\
+Earthquake $\Times$ Oceania & 2195 & 67.47\% & 0.650 & 0.042 & 0.150 \\
+Hurricane $\Times$ Caribbean & 25944 & 66.11\% & 0.649 & 0.038 & 0.165 \\
+Flood $\Times$ North America & 2622 & 64.80\% & 0.484 & 0.023 & 0.165 \\
+\midrule
+\textbf{Macro Average} & -- & \textbf{72.93\%} & \textbf{0.552} & \textbf{0.035} & \textbf{0.110} \\
+\bottomrule
+\end{tabular}
+\end{table}
