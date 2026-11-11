@@ -1,13 +1,12 @@
-\documentclass[10pt,journal,compsoc]{IEEEtran}
+\documentclass[10pt,journal]{IEEEtran}
 
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{microtype}
 \usepackage{url}
-\usepackage{hyperref}
-\usepackage{subcaption}
 \usepackage{xcolor}
+\usepackage{hyperref}
 
 \hypersetup{
     colorlinks=true,
@@ -16,243 +15,390 @@
     urlcolor=blue
 }
 
+% Graphics paths
+\graphicspath{{outputs/figures/}{figures/}{./}}
+
+% =====================================================================
+%  AUTHOR DETAILS & METADATA
+% =====================================================================
+\newcommand{\AuthorOne}{Sohan Reddy Mandala}
+\newcommand{\AuthorOneAffil}{Independent Researcher, Hyderabad, Telangana, India}
+\newcommand{\AuthorOneEmail}{msohanreddy@gmail.com}
+\newcommand{\AuthorOneORCID}{0009-0009-6296-7536}
+
+\newcommand{\ManuscriptDate}{November 2026}
+\newcommand{\CodeURL}{\url{https://github.com/sohanreddy5/Disaster-AI-Audit}}
+\newcommand{\LicenseName}{CC BY-NC-SA 4.0}
+\newcommand{\ContribStatement}{Sohan Reddy Mandala: conceptualization, methodology, software, experiments, statistical analysis, and writing of the manuscript.}
+\newcommand{\FundingStatement}{This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.}
+\newcommand{\ConflictStatement}{The author declares no competing financial or non-financial interests.}
+% =====================================================================
+
 \begin{document}
 
-\title{Beyond the Random Split: An Empirical Audit and Out-of-Distribution Benchmark of Multimodal Disaster AI}
+\title{Beyond the Random Split: An Empirical Audit and Out-of-Distribution Benchmark of Disaster AI}
 
-\author{
-    Research Team / Disaster AI Benchmark Initiative
-    \thanks{Manuscript received November 2026. Code, feature embeddings, pre-computed split manifests, and evaluation protocols are openly released on GitHub and Zenodo under open-access licenses.}
-}
+\author{\AuthorOne%
+\thanks{\AuthorOneAffil\ (e-mail: \AuthorOneEmail; ORCID: \AuthorOneORCID).}}
 
-\IEEEtitleabstractindextext{
+\maketitle
+
 \begin{abstract}
-Machine learning systems deployed for automated disaster response and humanitarian crisis assessment are conventionally evaluated via uniform random train/test splits. In this paper, we conduct an extensive empirical audit of multimodal disaster AI across 94,566 real-world crisis observations spanning 26 distinct global disaster events. We demonstrate that conventional random splits suffer from pervasive dataset contamination and severely obscure out-of-distribution (OOD) failure modes. Specifically: (1) Random splits conceal an average catastrophic performance drop of 15.8 to 21.2 percentage points on unseen disasters, with worst-event test accuracy collapsing to 39.3\% (CrisisMMD) and 47.7\% (HumAID). (2) An uninformative event-prior baseline achieves 38.7\% accuracy without consuming any input features, proving that published random-split numbers heavily reflect memorization of base event distributions. (3) An audit of cross-split contamination reveals thousands of near-duplicate posts across random partitions; evaluating models on leaked test samples yields an artificial memorization boost of up to +15.46 percentage points ($\tau \ge 0.90$). (4) Under compound distribution shifts (simultaneous category and geographic displacement combined with sensor degradation), model accuracy drops to 13.9\% while Expected Calibration Error (ECE) explodes from 0.039 to 0.797. (5) In an out-of-distribution domain generalization benchmark across 26 Leave-One-Event-Out folds, standard algorithms (GroupDRO, IRM, CORAL) fail to outperform Empirical Risk Minimization (ERM) on average, though GroupDRO offers modest protection against worst-event tail collapse and IRM improves probability calibration. (6) Finally, we provide an empirical power analysis demonstrating that holding out fewer than 15 disaster events results in an unacceptable 95\% confidence interval width exceeding $\pm 10$ percentage points, rendering small-event benchmarks statistically unreliable. We release standardized split manifests, feature caches, and an open evaluation harness to guide reliable future deployments.
+Machine learning systems for rapid disaster triage and humanitarian crisis response are conventionally evaluated using uniform random train/test splits. In this setup, observations from every disaster event appear on both sides of the split. In real-world emergency deployments, however, models face a fundamentally different challenge: transferring to an entirely unobserved disaster in an unfamiliar geographic region. In this paper, we conduct an extensive empirical audit of crisis classification across 94,566 labeled observations from 26 event-level evaluation folds (7 in CrisisMMD and 19 in HumAID) spanning 22 unique physical disaster incidents. Averaged across events, leave-one-event-out (LOEO) evaluation incurs only a 1.0 to 3.0 percentage point reduction in accuracy relative to random splits. However, this average conceals severe tail-risk vulnerability: accuracy on the hardest held-out event falls by 15.8 percentage points (to 39.33\% on CrisisMMD) and 21.2 percentage points (to 51.48\% on HumAID) below random-split baselines. An input-free event-prior baseline achieves 38.67\% accuracy on CrisisMMD and 32.21\% on HumAID, demonstrating that class-prior skews account for approximately 70.2\% and 44.3\% of random-split performance respectively. Near-duplicate posts also cross random split boundaries; test instances with training near-duplicates ($\tau \ge 0.90$) exhibit an accuracy advantage of up to +15.46 percentage points over clean samples. Under zero-shot compound shift (combining event displacement with synthetic feature corruption), accuracy drops to 17.19\% (falling to 13.91\% under extreme stress) while Expected Calibration Error (ECE) surges from 0.039 to 0.745--0.797. Across all 26 LOEO folds, standard domain generalization algorithms (GroupDRO, IRM, and CORAL) do not improve mean accuracy over empirical risk minimization (ERM). GroupDRO provides modest worst-event protection (+1.61 pp on CrisisMMD, +0.40 pp on HumAID), while IRM significantly improves probability calibration on HumAID ($p = 7.6 \times 10^{-5}$). We also prove that for linear probes on frozen representations, CORAL mathematically reduces to ERM due to vanishing covariance gradients. Finally, empirical resampling reveals that the 95\% confidence interval width on mean accuracy remains 10.96 points wide even with fifteen held-out events, showing that small-scale benchmarks with 2--3 events provide unstable comparisons. We openly release all code, cached embeddings, and split manifests.
 \end{abstract}
 
 \begin{IEEEkeywords}
-Disaster Response, Out-of-Distribution Generalization, Dataset Audit, Multimodal AI, Domain Shift, Calibration, Statistical Power Analysis.
+Disaster Response, Out-of-Distribution Generalization, Dataset Audit, Domain Generalization, Calibration, Statistical Power Analysis.
 \end{IEEEkeywords}
-}
 
-\maketitle
-\IEEEdisplaynontitleabstractindextext
 \IEEEpeerreviewmaketitle
 
+%====================================================================
 \section{Introduction}
 \label{sec:intro}
 
-When rapid-onset disasters strike---such as hurricanes, earthquakes, and flash floods---emergency response organizations require timely and accurate situational awareness from social media and remote sensing data. Multimodal machine learning models have been widely proposed to automate damage assessment, humanitarian request filtering, and casualty estimation~\cite{alam2018crisismmd,alam2021humaid,gupta2019xbd}.
+\subsection{Motivation and Problem Statement}
+Rapid-onset natural disasters---including tropical cyclones, earthquakes, and flash floods---demand immediate situational awareness for humanitarian response and search-and-rescue coordination. Microblogged text and social imagery provide real-time updates regarding casualty counts, infrastructure damage, and supply requests~\cite{imran2015processing,alam2018crisismmd,alam2021humaid,gupta2019xbd}. While deep learning classifiers report high validation accuracy (frequently 75\%--90\%) in published benchmarks, field practitioners often report performance degradation when deploying models onto novel disaster events.
 
-However, despite reports of high accuracy (frequently 75\%--90\%) in peer-reviewed literature, field operators repeatedly experience acute system failures when deploying AI models onto newly emergent disaster events. We hypothesize that this disconnect stems from a pervasive methodological vulnerability: \textbf{the uncritical reliance on uniform random train/test splits}.
+We hypothesize that this discrepancy stems from a pervasive methodological vulnerability: \textbf{the default reliance on uniform random train/test splits}. In multi-event disaster corpora, random partitioning guarantees that samples from every single disaster appear in both training and testing sets. As a consequence, models exploit event-specific geographic artifacts, localized vocabulary, or viral hashtags. Operational deployment reverses this condition: an emergency triage model trained on historical disasters must generalize to a future event situated in unfamiliar geography with distinct infrastructure vulnerabilities and linguistic patterns.
 
-When a dataset containing multiple disaster incidents is split uniformly at random, samples from every individual disaster appear in both the training and testing sets. This violates the fundamental operational requirement of disaster AI: \textit{a model trained on historical disasters must deploy onto a completely unseen future event, often in an unobserved geographic region with distinct topography, language nuances, and infrastructure vulnerability}.
-
-In this paper, we conduct a systematic, multi-faceted empirical audit of multimodal disaster AI. Our contributions are summarized as follows:
+\subsection{Contributions}
+This paper presents a comprehensive empirical audit of disaster AI generalization across 94,566 crisis observations and 26 event-level evaluation folds. Our contributions are:
 \begin{enumerate}
-    \item \textbf{Harmonized 26-Event Benchmark:} We curate and harmonize 94,566 real crisis observations across 26 international disaster events (including 7 events from CrisisMMD and 19 events from HumAID), providing the largest standardized multi-event testbed for disaster out-of-distribution evaluation to date.
-    \item \textbf{Quantification of Split Inflation \& Tail Collapse:} We benchmark models across five distinct split protocols: Random, Leave-One-Event-Out (LOEO), Leave-One-Disaster-Type-Out (LODTO), Leave-One-Region-Out (LORO), and Compound Shift. We find that random splits overestimate real-world disaster transfer by 15.8 to 21.2 percentage points on tail events.
-    \item \textbf{Leakage and Contamination Audit:} We detect thousands of near-duplicate image and text pairs crossing random split boundaries. We show that near-duplicate leakage artificially inflates reported test set accuracy by +5.86 pp (CrisisMMD) and +15.46 pp (HumAID).
-    \item \textbf{Domain Generalization Benchmark:} We evaluate GroupDRO~\cite{sagawa2020distributionally}, IRM~\cite{arjovsky2019invariant}, and Deep CORAL~\cite{sun2016deep} against Empirical Risk Minimization (ERM) across all 26 LOEO folds, establishing rigorous baseline evidence for disaster domain transfer.
-    \item \textbf{Compound Shift Formalization:} We formalize compound shifts (joint category-region shifts combined with sensor/transmission corruption), showing catastrophic calibration collapse (ECE rising to 0.797).
-    \item \textbf{Empirical Power Analysis:} We prove empirically that evaluating on fewer than $k=15$ held-out disaster events leaves benchmark comparisons statistically underpowered ($\pm 10$ pp margin of error).
+    \item \textit{A Standardized Multi-Event Testbed:} We harmonize CrisisMMD~\cite{alam2018crisismmd} and HumAID~\cite{alam2021humaid} under a unified evaluation protocol covering 22 unique global disasters across 5 disaster types and 8 continental regions.
+    \item \textit{Quantification of the Event-Transfer Gap:} We evaluate five distinct split protocols: Random, Leave-One-Event-Out (LOEO), Leave-One-Disaster-Type-Out (LODTO), Leave-One-Region-Out (LORO), and Compound Shift. We show that while mean LOEO accuracy drops by only 1.0 to 3.0 percentage points, tail accuracy on the hardest unseen event collapses by 15.8 to 21.2 points.
+    \item \textit{Audit of Label Priors and Data Leakage:} We demonstrate that an input-free event-prior baseline achieves 38.67\% (CrisisMMD) and 32.21\% (HumAID). Furthermore, dense near-duplicate leakage across random splits provides an artificial test accuracy boost of up to +15.46 percentage points.
+    \item \textit{Domain Generalization Benchmark (26 LOEO Folds):} We benchmark ERM against GroupDRO~\cite{sagawa2020distributionally}, IRM~\cite{arjovsky2019invariant}, and Deep CORAL~\cite{sun2016deep} across all 26 folds with paired Wilcoxon significance tests. We provide a mathematical proof showing why linear CORAL on frozen representations reduces to ERM.
+    \item \textit{Compound Shift and Stress Testing:} We evaluate models under simultaneous event displacement and zero-shot feature degradation, documenting catastrophic overconfidence where ECE rises to 0.745--0.797.
+    \item \textit{Resampling Power Analysis:} Using cluster bootstrapping across $k \in [3, 18]$ held-out events, we analyze confidence interval widths, providing empirical evidence on the sample sizes required for benchmark stability.
 \end{enumerate}
 
+%====================================================================
 \section{Related Work}
 \label{sec:related}
 
-\textbf{Disaster Response Datasets.} Pioneer benchmarks such as CrisisMMD~\cite{alam2018crisismmd}, HumAID~\cite{alam2021humaid}, and xBD~\cite{gupta2019xbd} established crucial foundations for disaster classification. However, their primary published evaluations employ standard random splits or single-target cross-domain experiments, obscuring the statistical distribution of performance across diverse events.
+\subsection{Crisis Informatics and Disaster Datasets}
+Crisis informatics research has evolved from keyword lexicons~\cite{olteanu2014crisislex,imran2015processing} to deep multimodal datasets. CrisisMMD~\cite{alam2018crisismmd} pairs microblogged tweets with images across 7 natural disasters, while HumAID~\cite{alam2021humaid} provides 76,484 annotated tweets spanning 19 crisis events. Multimodal fusion techniques have been applied to crisis damage identification~\cite{ofli2020analysis}, and satellite imagery benchmarks such as xBD~\cite{gupta2019xbd} evaluate building damage. However, existing benchmarks predominantly report performance on uniform random splits or single-target domain transfer, leaving multi-event tail behavior under-explored.
 
-\textbf{Domain Generalization \& Out-of-Distribution Benchmarking.} The WILDS benchmark~\cite{koh2021wilds} and DomainBed~\cite{gulrajani2021search} demonstrated that machine learning models frequently learn spurious shortcuts rather than invariant representations~\cite{geirhos2020shortcut}. In natural language and computer vision, Gulrajani and Lopez-Paz~\cite{gulrajani2021search} revealed that modern domain generalization algorithms often fail to outperform tuned ERM baselines under rigorous evaluation. Our work provides the first extensive empirical verification of this phenomenon in disaster AI across 26 distinct global crisis environments.
+\subsection{Domain Generalization and Shortcut Learning}
+Statistical learning theory relates out-of-distribution error bounds to discrepancy measures between source and target domains~\cite{bendavid2010theory,recht2019imagenet}. WILDS~\cite{koh2021wilds} demonstrated that real-world distribution shifts induce severe performance degradation due to shortcut learning~\cite{geirhos2020shortcut}. Domain generalization methods such as GroupDRO~\cite{sagawa2020distributionally}, Invariant Risk Minimization (IRM)~\cite{arjovsky2019invariant}, and Deep CORAL~\cite{sun2016deep} aim to mitigate domain shifts. However, Gulrajani and Lopez-Paz~\cite{gulrajani2021search} established that domain generalization methods often fail to outperform empirical risk minimization (ERM) under rigorous model selection. We examine whether this phenomenon holds in disaster response.
 
-\textbf{Dataset Leakage \& Label Noise Auditing.} Confident Learning~\cite{northcutt2021confident} has shown that label noise in common ML benchmarks is widespread. Our study extends duplicate-detection and label audit methodologies directly to disaster scenarios, where viral retweets and duplicate imagery heavily contaminate random splits.
+\subsection{Calibration, Selective Prediction, and Dataset Leakage}
+Modern neural networks frequently exhibit overconfidence under distribution shift~\cite{guo2017calibration,ovadia2019can}. In emergency triage, selective classification frameworks allowing models to abstain based on calibrated confidence are critical~\cite{geifman2017selective}. In parallel, near-duplicate contamination across train/test partitions has been identified as a source of performance inflation in vision and language benchmarks~\cite{barz2020train,lee2022dedup,northcutt2021confident}. We extend these audit frameworks to multi-event disaster corpora.
 
-\section{Benchmark Construction and Split Taxonomy}
-\label{sec:benchmark}
+%====================================================================
+\section{Methodology}
+\label{sec:method}
 
-\subsection{Harmonized Multi-Event Corpus}
-We standardize data schemas across two benchmark families:
+\subsection{Dataset Descriptions and Event Mapping}
+We evaluate two benchmark collections within a unified protocol:
 \begin{itemize}
-    \item \textbf{CrisisMMD (Multimodal):} 18,082 text-image samples spanning 7 disasters across 3 types (earthquake, hurricane, wildfire) and 4 regions.
-    \item \textbf{HumAID (Large-scale Crisis Text):} 76,484 annotated crisis tweets spanning 19 disasters across 5 disaster types and 6 continental regions.
+    \item \textbf{CrisisMMD (Multimodal):} 18,082 text-image pairs across 7 disaster events labeled into 8 humanitarian categories following UN OCHA guidelines.
+    \item \textbf{HumAID (Crisis Text):} 76,484 human-annotated tweets across 19 disaster events categorized into 10 humanitarian tasks.
 \end{itemize}
+
+Table~\ref{tab:event_mapping} documents the complete event-level metadata for all 26 evaluation folds. Four physical disasters overlap between the two corpora: Hurricane Harvey (2017), Hurricane Irma (2017), Hurricane Maria (2017), and the Sri Lanka Floods (2017). Across both collections, the 26 folds represent 22 unique global disaster events spanning 5 disaster categories (cyclone, earthquake, flood, hurricane, wildfire) and 8 continental regions. Both datasets retain their native annotation taxonomies and are evaluated independently within our standardized framework.
+
+\begin{table*}[t]
+\centering
+\caption{Complete event-level metadata mapping for all 26 evaluation folds across CrisisMMD and HumAID.}
+\label{tab:event_mapping}
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lllcrcc}
+\toprule
+\textbf{Dataset} & \textbf{Event Identifier} & \textbf{Disaster Type} & \textbf{Geographic Region} & \textbf{Samples} & \textbf{Classes} & \textbf{Overlap Note} \\
+\midrule
+CrisisMMD & \texttt{california\_wildfires} & Wildfire & North America & 1,589 & 8 & Unique to CrisisMMD \\
+CrisisMMD & \texttt{hurricane\_harvey} & Hurricane & North America & 4,434 & 7 & Overlaps with HumAID (Harvey 2017) \\
+CrisisMMD & \texttt{hurricane\_irma} & Hurricane & Caribbean & 4,504 & 8 & Overlaps with HumAID (Irma 2017) \\
+CrisisMMD & \texttt{hurricane\_maria} & Hurricane & Caribbean & 4,556 & 8 & Overlaps with HumAID (Maria 2017) \\
+CrisisMMD & \texttt{iraq\_iran\_earthquake} & Earthquake & Middle East & 597 & 7 & Unique to CrisisMMD \\
+CrisisMMD & \texttt{mexico\_earthquake} & Earthquake & Central America & 1,380 & 8 & Unique to CrisisMMD \\
+CrisisMMD & \texttt{srilanka\_floods} & Flood & South Asia & 1,022 & 8 & Overlaps with HumAID (Sri Lanka 2017) \\
+\midrule
+HumAID & \texttt{california\_wildfires\_2018} & Wildfire & North America & 7,376 & 10 & 2018 Camp Fire \\
+HumAID & \texttt{canada\_wildfires\_2016} & Wildfire & North America & 2,242 & 8 & 2016 Fort McMurray \\
+HumAID & \texttt{cyclone\_idai\_2019} & Cyclone & Africa & 3,933 & 10 & Mozambique/Zimbabwe \\
+HumAID & \texttt{ecuador\_earthquake\_2016} & Earthquake & South America & 1,563 & 8 & 2016 M7.8 Earthquake \\
+HumAID & \texttt{greece\_wildfires\_2018} & Wildfire & Europe & 1,515 & 9 & 2018 Attica Wildfires \\
+HumAID & \texttt{hurricane\_dorian\_2019} & Hurricane & Caribbean & 7,613 & 9 & 2019 Category 5 \\
+HumAID & \texttt{hurricane\_florence\_2018} & Hurricane & North America & 6,264 & 9 & 2018 Carolinas \\
+HumAID & \texttt{hurricane\_harvey\_2017} & Hurricane & North America & 9,112 & 9 & Overlaps with CrisisMMD \\
+HumAID & \texttt{hurricane\_irma\_2017} & Hurricane & Caribbean & 9,399 & 9 & Overlaps with CrisisMMD \\
+HumAID & \texttt{hurricane\_maria\_2017} & Hurricane & Caribbean & 7,278 & 9 & Overlaps with CrisisMMD \\
+HumAID & \texttt{hurricane\_matthew\_2016} & Hurricane & Caribbean & 1,654 & 9 & 2016 Haiti/US \\
+HumAID & \texttt{italy\_earthquake\_aug\_2016} & Earthquake & Europe & 1,201 & 6 & 2016 Central Italy \\
+HumAID & \texttt{kaikoura\_earthquake\_2016} & Earthquake & Oceania & 2,195 & 9 & 2016 New Zealand \\
+HumAID & \texttt{kerala\_floods\_2018} & Flood & South Asia & 7,984 & 9 & 2018 Monsoon Floods \\
+HumAID & \texttt{maryland\_floods\_2018} & Flood & North America & 742 & 8 & 2018 Ellicott City \\
+HumAID & \texttt{midwestern\_us\_floods\_2019} & Flood & North America & 1,880 & 7 & 2019 Missouri/Mississippi \\
+HumAID & \texttt{pakistan\_earthquake\_2019} & Earthquake & South Asia & 1,958 & 8 & 2019 Mirpur \\
+HumAID & \texttt{puebla\_mexico\_earthquake\_2017} & Earthquake & Central America & 2,015 & 8 & 2017 Central Mexico \\
+HumAID & \texttt{srilanka\_floods\_2017} & Flood & South Asia & 560 & 8 & Overlaps with CrisisMMD \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Feature Extraction and Architecture}
+To eliminate confounding factors from non-converged end-to-end fine-tuning and support direct reproduction across all 26 folds, we utilize frozen foundation encoders:
+\begin{itemize}
+    \item \textbf{Text Features:} Extracted via \texttt{sentence-transformers/all-MiniLM-L6-v2} (384-dimensional dense sentence embeddings, max token length 128, mean pooling).
+    \item \textbf{Image Features:} Extracted via OpenCLIP ViT-B/32 (\texttt{laion2b\_s34b\_b79k} weights, 512 dimensions, images resized to $224 \times 224$).
+    \item \textbf{Feature Normalization:} All extracted embeddings are $L_2$-normalized to unit hyperspheres ($x / \|x\|_2$).
+\end{itemize}
+
+\subsection{Model Objectives and Probe Formulations}
+We evaluate two complementary modeling frameworks:
+\subsubsection{Convex $L_2$-Regularized Probes}
+For the five split protocols (Table~\ref{tab:split_comparison}), we optimize a multinomial logistic probe $f_W(x) = \text{softmax}(Wx + b)$ via L-BFGS to global convergence with inverse regularization strength $C = 1.0$.
+
+\subsubsection{Neural Domain Generalization Learners}
+To benchmark domain generalization algorithms (Table~\ref{tab:dg_summary}), linear heads are optimized via mini-batch Adam ($\text{lr} = 10^{-3}$, weight decay $10^{-4}$) for 15 epochs (CrisisMMD, batch size 128) and 8 epochs (HumAID, batch size 512):
+\begin{itemize}
+    \item \textbf{ERM:} Minimizes pooled training cross-entropy $\mathcal{L}_{\text{ERM}}(\theta) = \frac{1}{|\mathcal{D}_{\text{tr}}|} \sum_{i} \ell(f_\theta(x_i), y_i)$.
+    \item \textbf{GroupDRO~\cite{sagawa2020distributionally}:} Maintains group weights $q_g$ over training disaster events with step size $\eta_q = 0.01$, optimizing $\min_\theta \sum_g q_g \mathcal{L}_g(\theta)$.
+    \item \textbf{IRM~\cite{arjovsky2019invariant}:} Penalizes gradient norm invariance $\|\nabla_{w|w=1.0} \mathcal{L}_g(w \cdot f_\theta(x))\|^2$ across training events with penalty weight $\lambda_{\text{irm}} = 10.0$ following 10 annealing epochs.
+    \item \textbf{CORAL~\cite{sun2016deep}:} Penalizes Frobenius distance between event covariance matrices with weight $\lambda_{\text{coral}} = 1.0$.
+\end{itemize}
+
+\subsubsection{Theoretical Property of Linear CORAL on Frozen Features}
+\noindent\textbf{Proposition 1.} \textit{Let $x \in \mathbb{R}^d$ be a frozen feature vector and $f_W(x) = Wx + b$ a linear classifier. Then the gradient of the CORAL covariance penalty with respect to the classifier weights $W$ is identically zero, reducing CORAL updates to standard ERM.}
+
+\noindent\textit{Proof.} In Deep CORAL, the alignment penalty is computed over intermediate representations: $\mathcal{L}_{\text{CORAL}} = \frac{1}{4d^2} \|\text{Cov}(h_a) - \text{Cov}(h_b)\|_F^2$. For a linear probe on frozen features, the representation is $h = x$. Because $x$ contains no trainable parameters ($\nabla_W x = 0$), $\text{Cov}(x_a)$ is constant with respect to $W$. Therefore, $\nabla_W \mathcal{L}_{\text{CORAL}} \equiv 0$ and $\nabla_W (\mathcal{L}_{\text{ERM}} + \lambda \mathcal{L}_{\text{CORAL}}) = \nabla_W \mathcal{L}_{\text{ERM}}$, confirming that linear CORAL on frozen features is mathematically identical to ERM.
+
+\subsubsection{Zero-Feature Event Prior Baseline}
+To quantify the role of class imbalance, we evaluate a baseline that ignores input $x$ and predicts the average training event label prior:
+\begin{equation}
+    \hat{P}(y = c) = \frac{1}{|\mathcal{E}_{\text{train}}|} \sum_{e \in \mathcal{E}_{\text{train}}} \frac{\sum_{i \in \mathcal{D}_e} \mathbb{I}(y_i = c)}{|\mathcal{D}_e|}.
+\end{equation}
+Point predictions are assigned via $\hat{y} = \arg\max_c \hat{P}(y = c)$.
 
 \subsection{Split Protocol Taxonomy}
-Let $\mathcal{D} = \{(x_i, y_i, e_i, t_i, r_i)\}_{i=1}^N$ denote the dataset, where $x_i$ is the input, $y_i \in \mathcal{Y}$ the label, $e_i \in \mathcal{E}$ the disaster event, $t_i \in \mathcal{T}$ the disaster type, and $r_i \in \mathcal{R}$ the geographical region. We formalize five split protocols:
+Let $\mathcal{D} = \{(x_i, y_i, e_i, t_i, r_i)\}_{i=1}^N$:
 \begin{enumerate}
-    \item \textbf{Random Split:} Uniform partition $\mathcal{D} = \mathcal{D}_{\text{train}} \cup \mathcal{D}_{\text{test}}$, where $\mathbb{P}(e \in \mathcal{D}_{\text{train}} \cap \mathcal{D}_{\text{test}}) \approx 1$.
-    \item \textbf{Leave-One-Event-Out (LOEO):} For held-out event $e^* \in \mathcal{E}$:
-    \begin{equation}
-        \mathcal{D}_{\text{test}}^{(e^*)} = \{ (x_i, y_i) \mid e_i = e^* \}, \quad \mathcal{D}_{\text{train}}^{(e^*)} = \{ (x_i, y_i) \mid e_i \neq e^* \}
-    \end{equation}
-    \item \textbf{Leave-One-Disaster-Type-Out (LODTO):} Held-out disaster type $t^* \in \mathcal{T}$, enforcing category shift.
-    \item \textbf{Leave-One-Region-Out (LORO):} Held-out geographic region $r^* \in \mathcal{R}$, enforcing spatial shift.
-    \item \textbf{Compound Shift Split:} Held-out tuple $(t^*, r^*) \in \mathcal{T} \times \mathcal{R}$, evaluating simultaneous category and geographical displacement.
+    \item \textbf{Random Split:} Uniform 70/15/15 stratified partition evaluated across 5 random seeds.
+    \item \textbf{Leave-One-Event-Out (LOEO):} Test set consists of a single held-out disaster event $e^*$; models train on the remaining $|\mathcal{E}| - 1$ events.
+    \item \textbf{Leave-One-Disaster-Type-Out (LODTO):} Held-out disaster type $t^* \in \mathcal{T}$, enforcing category displacement.
+    \item \textbf{Leave-One-Region-Out (LORO):} Held-out continent $r^* \in \mathcal{R}$, enforcing geographic displacement.
+    \item \textbf{Compound Shift Split:} Held-out $(t^*, r^*) \in \mathcal{T} \times \mathcal{R}$, evaluating joint category and geographic displacement.
 \end{enumerate}
 
-\section{Empirical Evaluation and Findings}
-\label{sec:experiments}
+\subsection{Evaluation Metrics}
+We report accuracy (\%), balanced accuracy, Expected Calibration Error (ECE) across $M=15$ equal-width bins~\cite{guo2017calibration}, Area Under the Risk-Coverage curve (AURC) for selective prediction~\cite{geifman2017selective}, and non-parametric cluster bootstrap confidence intervals across $B=1,000$ resamples~\cite{efron1993bootstrap}.
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=\columnwidth]{outputs/figures/fig1_split_inflation.pdf}
-    \caption{The Hidden Tail Risk: Comparison of model accuracy across Random, Region-held-out (LORO), Event-held-out (LOEO), Disaster-type-held-out (LODTO), and the single Worst-Event performance under LOEO. Random splits mask severe drops of 15.8 to 21.2 percentage points on unseen disasters.}
-    \label{fig:split_inflation}
-\end{figure}
+%====================================================================
+\section{Results and Discussion}
+\label{sec:results}
 
-\subsection{Random Split Inflation and Tail Risk Collapse}
-In Table~\ref{tab:split_comparison}, we compare probe performance across the split taxonomy. On CrisisMMD, random split accuracy reaches $55.1\%$, but mean LOEO accuracy drops to $52.1\%$, and the single hardest event (\textit{california\_wildfires}) collapses to \textbf{39.3\%} (a $15.8$ pp drop). On HumAID, random split accuracy reaches $72.7\%$, but drops to \textbf{51.5\%} on the worst-case held-out event (\textit{hurricane\_florence\_2018}).
+\subsection{Split Protocols and Tail-Risk Collapse}
+Table~\ref{tab:split_comparison} compares model performance across the five split protocols.
 
-\begin{table}[h]
+\begin{table}[t]
 \centering
-\caption{Benchmark performance across evaluation split protocols on CrisisMMD and HumAID. ECE indicates Expected Calibration Error; AURC indicates Area Under Risk-Coverage curve.}
+\caption{Model performance across evaluation split protocols. Table reports convex $L_2$-regularized logistic probe results across seeds (random) and folds (OOD). Lower is better for ECE and AURC.}
 \label{tab:split_comparison}
-\begin{tabular}{lcccc}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lccccc}
 \toprule
-\textbf{Split Protocol} & \textbf{Mean Acc (\%)} & \textbf{Worst Event} & \textbf{ECE} & \textbf{AURC} \\
+\textbf{Split Protocol} & \textbf{Mean Acc.} & \textbf{Worst Fold} & \textbf{Bal. Acc.} & \textbf{ECE} & \textbf{AURC} \\
 \midrule
-\multicolumn{5}{l}{\textit{CrisisMMD (18,082 samples, 8 classes)}} \\
-Random Split & 55.12 $\pm$ 0.4 & -- & 0.024 & 0.334 \\
-LORO (Region) & 52.74 $\pm$ 3.8 & 44.5\% & 0.071 & 0.358 \\
-LOEO (Event) & 52.08 $\pm$ 12.9 & \textbf{39.33\%} & 0.090 & 0.363 \\
-LODTO (Type) & 51.20 $\pm$ 4.2 & 43.1\% & 0.108 & 0.381 \\
-Event Prior Anchor & 38.67 $\pm$ 5.1 & 32.1\% & 0.284 & 0.540 \\
+\multicolumn{6}{l}{\textit{CrisisMMD (18,082 samples, 8 classes)}} \\
+Majority Class Baseline & 38.70 & -- & 12.50 & 0.613 & 0.613 \\
+Event Prior Anchor & 38.67 $\pm$ 5.1 & 32.10 & 14.82 & 0.284 & 0.540 \\
+Random Split (5 seeds) & 55.12 $\pm$ 0.4 & 54.35 & 31.71 & 0.024 & 0.282 \\
+LORO (Region) & 52.66 $\pm$ 13.9 & 42.04 & 29.42 & 0.071 & 0.328 \\
+LOEO (Event) & 52.08 $\pm$ 12.8 & \textbf{39.33} & 29.70 & 0.070 & 0.341 \\
+LODTO (Type) & 51.24 $\pm$ 17.1 & 39.33 & 25.45 & 0.108 & 0.352 \\
 \midrule
-\multicolumn{5}{l}{\textit{HumAID (76,484 samples, 10 classes)}} \\
-Random Split & 72.69 $\pm$ 0.2 & -- & 0.038 & 0.121 \\
-LORO (Region) & 73.41 $\pm$ 4.5 & 64.8\% & 0.024 & 0.128 \\
-LOEO (Event) & 71.69 $\pm$ 8.9 & \textbf{51.48\%} & 0.161 & 0.154 \\
-LODTO (Type) & 69.72 $\pm$ 3.1 & 64.8\% & 0.032 & 0.144 \\
-Event Prior Anchor & 32.21 $\pm$ 4.0 & 28.6\% & 0.342 & 0.612 \\
+\multicolumn{6}{l}{\textit{HumAID (76,484 samples, 10 classes)}} \\
+Majority Class Baseline & 27.82 & -- & 10.00 & 0.722 & 0.722 \\
+Event Prior Anchor & 32.21 $\pm$ 4.0 & 28.60 & 13.25 & 0.342 & 0.612 \\
+Random Split (5 seeds) & 72.69 $\pm$ 0.2 & 72.30 & 67.66 & 0.021 & 0.110 \\
+LORO (Region) & 73.36 $\pm$ 7.2 & 66.11 & 59.55 & 0.038 & 0.107 \\
+LOEO (Event) & 71.69 $\pm$ 7.7 & \textbf{51.48} & 60.27 & 0.039 & 0.121 \\
+LODTO (Type) & 69.73 $\pm$ 4.3 & 64.84 & 56.50 & 0.027 & 0.129 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-\textbf{The Event-Prior Anchor.} To quantify how much performance relies solely on memorizing event label imbalance, we evaluate a zero-feature baseline:
-\begin{equation}
-    \hat{P}(y = c \mid x) = \frac{1}{|\mathcal{E}_{\text{train}}|} \sum_{e \in \mathcal{E}_{\text{train}}} \frac{\sum_{i \in \mathcal{D}_e} \mathbb{I}(y_i = c)}{|\mathcal{D}_e|}
-\end{equation}
-This zero-feature prior baseline achieves $38.67\%$ on CrisisMMD and $32.21\%$ on HumAID, demonstrating that substantial fractions of published test performance simply reflect label prior alignment rather than generalized multimodal understanding.
+On CrisisMMD, random split accuracy reaches 55.12\%, while mean LOEO accuracy is 52.08\% (a modest 3.04 percentage point average drop). However, this average conceals severe tail-risk vulnerability: on the hardest held-out event (\textit{california\_wildfires}), accuracy collapses to \textbf{39.33\%} (a 15.79 pp drop). On HumAID, random accuracy is 72.69\%, yet falls to \textbf{51.48\%} on the worst-case disaster (\textit{hurricane\_florence\_2018}), a drop of 21.21 percentage points. Balanced accuracy reflects this fragility, dropping from 67.66\% to 60.27\% (with minimum event balanced accuracy reaching 42.10\%).
 
-\subsection{Dataset Contamination and Leakage Audit}
-
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=\columnwidth]{outputs/figures/fig2_leakage_impact.pdf}
-    \caption{Near-duplicate train/test leakage creates substantial artificial accuracy inflation. Samples in the random test split that share high semantic similarity ($\tau \ge 0.90$) with training samples achieve massive accuracy advantages over truly clean samples.}
-    \label{fig:leakage_impact}
-\end{figure}
-
-Using perceptual image hashing (pHash) and dense cosine similarity ($\tau \in [0.90, 0.98]$), we identified 2,376 cross-split leaked samples in CrisisMMD and 1,766 in HumAID.
-
-In Table~\ref{tab:leakage_table}, we isolate the performance on the leaked subset versus clean test samples. On HumAID, leaked samples achieve an astounding \textbf{87.47\%} accuracy compared to $72.01\%$ on clean samples---an artificial inflation of \textbf{+15.46 percentage points}. Even on highly conservative near-exact duplicates ($\tau \ge 0.98$), leaked samples maintain a +15.09 pp advantage.
-
-\begin{table}[h]
-\centering
-\caption{Empirical test accuracy inflation induced by near-duplicate train/test leakage across 5 random seeds (mean $\pm$ std).}
-\label{tab:leakage_table}
-\begin{tabular}{lcccc}
-\toprule
-\textbf{Threshold} & \textbf{Leakage \%} & \textbf{Leaked Test Acc} & \textbf{Clean Test Acc} & \textbf{Inflation $\Delta$} \\
-\midrule
-\multicolumn{5}{l}{\textit{CrisisMMD}} \\
-$\tau \ge 0.90$ & 16.3\% & \textbf{59.64 $\pm$ 0.8\%} & 54.24 $\pm$ 0.6\% & \textbf{+5.40 pp} \\
-$\tau \ge 0.95$ & 15.7\% & \textbf{59.92 $\pm$ 0.9\%} & 54.23 $\pm$ 0.6\% & \textbf{+5.69 pp} \\
-$\tau \ge 0.98$ & 15.7\% & \textbf{60.06 $\pm$ 0.8\%} & 54.20 $\pm$ 0.6\% & \textbf{+5.86 pp} \\
-\midrule
-\multicolumn{5}{l}{\textit{HumAID}} \\
-$\tau \ge 0.90$ & 4.4\% & \textbf{87.47 $\pm$ 0.7\%} & 72.01 $\pm$ 0.3\% & \textbf{+15.46 pp} \\
-$\tau \ge 0.95$ & 0.3\% & \textbf{85.29 $\pm$ 5.4\%} & 72.65 $\pm$ 0.2\% & \textbf{+12.65 pp} \\
-$\tau \ge 0.98$ & 0.04\% & \textbf{87.78 $\pm$ 6.9\%} & 72.68 $\pm$ 0.2\% & \textbf{+15.09 pp} \\
-\bottomrule
-\end{tabular}
-\end{table}
+\textit{Event-Prior Baseline Analysis:} The input-free baseline achieves 38.67\% on CrisisMMD and 32.21\% on HumAID (Table~\ref{tab:split_comparison}). This reaches 70.2\% and 44.3\% of the random-split ERM accuracy respectively. This highlights the importance of class-prior effects when interpreting headline accuracy, demonstrating that standard models in part exploit label skews rather than pure situational semantics.
 
 \subsection{Domain Generalization Benchmark (26 LOEO Folds)}
+Table~\ref{tab:dg_summary} reports the benchmark comparing ERM, GroupDRO, IRM, and CORAL across all 26 LOEO folds under uniform mini-batch Adam optimization.
 
-To assess whether algorithmic domain generalization resolves event transfer failure, we benchmark four learning algorithms across all Leave-One-Event-Out folds:
-\begin{itemize}
-    \item \textbf{ERM:} Empirical Risk Minimization.
-    \item \textbf{GroupDRO~\cite{sagawa2020distributionally}:} Minimax optimization over training event groups.
-    \item \textbf{IRM~\cite{arjovsky2019invariant}:} Invariant Risk Minimization enforcing feature invariance.
-    \item \textbf{CORAL~\cite{sun2016deep}:} Correlation alignment of second-order feature statistics.
-\end{itemize}
-
-\begin{table}[h]
+\begin{table}[t]
 \centering
-\caption{Domain Generalization Benchmark across 26 Leave-One-Event-Out (LOEO) folds on CrisisMMD (7 folds) and HumAID (19 folds).}
+\caption{Domain Generalization benchmark over 26 Leave-One-Event-Out folds (7 CrisisMMD, 19 HumAID) trained with mini-batch Adam.}
 \label{tab:dg_summary}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
 \begin{tabular}{lcccc}
 \toprule
-\textbf{Algorithm} & \textbf{Mean LOEO Acc} & \textbf{Worst-Event} & \textbf{Mean ECE} & \textbf{Mean AURC} \\
+\textbf{Algorithm} & \textbf{Mean Acc.} & \textbf{Worst Event} & \textbf{ECE} & \textbf{AURC} \\
 \midrule
-\multicolumn{5}{l}{\textit{CrisisMMD (7 Folds)}} \\
-ERM & \textbf{50.51 $\pm$ 12.9\%} & 37.35\% & 0.090 & 0.363 \\
-GroupDRO & 50.26 $\pm$ 12.4\% & \textbf{38.96\%} & 0.113 & 0.380 \\
-IRM & 49.45 $\pm$ 12.8\% & 37.02\% & \textbf{0.085} & 0.371 \\
-CORAL & 50.51 $\pm$ 12.9\% & 37.35\% & 0.090 & 0.363 \\
+\multicolumn{5}{l}{\textit{CrisisMMD (7 LOEO folds)}} \\
+ERM & \textbf{50.51 $\pm$ 12.9} & 37.35 & 0.090 & \textbf{0.363} \\
+GroupDRO & 50.26 $\pm$ 12.4 & \textbf{38.96} & 0.113 & 0.380 \\
+IRM & 49.45 $\pm$ 12.8 & 37.02 & \textbf{0.085} & 0.371 \\
+CORAL & \textbf{50.51 $\pm$ 12.9} & 37.35 & 0.090 & \textbf{0.363} \\
 \midrule
-\multicolumn{5}{l}{\textit{HumAID (19 Folds)}} \\
-ERM & \textbf{67.81 $\pm$ 9.0\%} & 47.71\% & 0.161 & \textbf{0.154} \\
-GroupDRO & 67.14 $\pm$ 8.5\% & \textbf{48.11\%} & 0.195 & 0.160 \\
-IRM & 64.14 $\pm$ 9.8\% & 47.30\% & \textbf{0.082} & 0.185 \\
-CORAL & 67.81 $\pm$ 9.0\% & 47.71\% & 0.161 & 0.154 \\
+\multicolumn{5}{l}{\textit{HumAID (19 LOEO folds)}} \\
+ERM & \textbf{67.81 $\pm$ 9.0} & 47.71 & 0.161 & \textbf{0.154} \\
+GroupDRO & 67.14 $\pm$ 8.5 & \textbf{48.11} & 0.195 & 0.160 \\
+IRM & 64.14 $\pm$ 9.8 & 47.30 & \textbf{0.082} & 0.185 \\
+CORAL & \textbf{67.81 $\pm$ 9.0} & 47.71 & 0.161 & \textbf{0.154} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-As shown in Table~\ref{tab:dg_summary}:
+\textit{Reconciling Table~\ref{tab:split_comparison} and Table~\ref{tab:dg_summary}:} The ERM figures in Table~\ref{tab:dg_summary} (50.51\% on CrisisMMD, 67.81\% on HumAID) differ slightly from the LOEO rows in Table~\ref{tab:split_comparison} (52.08\% and 71.69\%) because Table~\ref{tab:split_comparison} uses exact convex $L_2$-regularized logistic regression (L-BFGS), whereas Table~\ref{tab:dg_summary} uses mini-batch Adam optimization across all algorithms to maintain consistent gradient dynamics.
+
+\textit{Algorithmic Findings:}
 \begin{enumerate}
-    \item \textbf{No Method Beats ERM on Average:} GroupDRO, IRM, and CORAL achieve mean accuracies within $\pm 0.5\%$ of ERM on CrisisMMD, while IRM trails ERM on HumAID ($64.14\%$ vs $67.81\%$).
-    \item \textbf{GroupDRO Shields Worst-Case Tail Risk:} GroupDRO consistently improves worst-event accuracy across both benchmarks ($38.96\%$ vs $37.35\%$ on CrisisMMD; $48.11\%$ vs $47.71\%$ on HumAID).
-    \item \textbf{IRM Substantially Enhances Calibration:} IRM yields the lowest ECE on both benchmarks ($0.085$ on CrisisMMD, $0.082$ on HumAID vs $0.161$ for ERM), producing calibrated confidence estimates indispensable for selective abstention.
+    \item \textbf{Mean Transfer:} No domain generalization method outperforms ERM in mean accuracy, mirroring the findings of DomainBed~\cite{gulrajani2021search}.
+    \item \textbf{Tail Protection:} GroupDRO consistently raises worst-event accuracy across both datasets (from 37.35\% to \textbf{38.96\%} on CrisisMMD, and from 47.71\% to \textbf{48.11\%} on HumAID).
+    \item \textbf{Calibration:} On HumAID, IRM cuts ECE nearly in half (0.082 vs 0.161). A paired Wilcoxon signed-rank test across all $N=19$ folds yields test statistic $W = 0.0$ and two-sided $p = 7.6 \times 10^{-5} < 0.0001$, demonstrating statistically significant calibration improvements across every single held-out fold. On CrisisMMD (7 folds), IRM reduces ECE from 0.090 to 0.085 ($W = 11.0, p = 0.469$).
+    \item \textbf{CORAL Behavior:} In accordance with Proposition 1, linear CORAL produces identical predictions to ERM due to vanishing covariance gradients on frozen features.
 \end{enumerate}
 
-\subsection{Compound Shift and Stress Degradation}
+\subsection{Near-Duplicate Contamination and Leakage Audit}
+To quantify dataset contamination across random partitions, we perform pairwise cosine similarity auditing on $L_2$-normalized dense embeddings across train and test partitions.
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=\columnwidth]{outputs/figures/fig4_compound_stress_heatmap.pdf}
-    \caption{Compound Stress Response: Model accuracy under simultaneous event shift (LOEO) and sensor corruption (Gaussian noise $\sigma$ and modality dropout). Severe compounding effects degrade performance to random guessing.}
-    \label{fig:compound_stress}
-\end{figure}
+\begin{table}[t]
+\centering
+\caption{Test accuracy (\%) on leaked vs. clean samples across random train/test splits (5 seeds, mean $\pm$ std). $N_{\text{leaked}}$ and $N_{\text{clean}}$ report average test sample counts.}
+\label{tab:leakage_table}
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Threshold} & \textbf{Share (\%)} & $N_{\text{leaked}}$ & $N_{\text{clean}}$ & \textbf{Leaked Acc.} & \textbf{Clean Acc.} & \textbf{Gap ($\Delta$)} \\
+\midrule
+\multicolumn{7}{l}{\textit{CrisisMMD ($N_{\text{test}} = 3,617$)}} \\
+$\tau \ge 0.90$ & 16.27 & 588.6 & 3,028.4 & 59.64 $\pm$ 0.9 & 54.24 $\pm$ 0.8 & \textbf{+5.40} \\
+$\tau \ge 0.95$ & 15.73 & 568.8 & 3,048.2 & 59.92 $\pm$ 0.9 & 54.23 $\pm$ 0.8 & \textbf{+5.69} \\
+$\tau \ge 0.98$ & 15.67 & 566.8 & 3,050.2 & 60.06 $\pm$ 0.8 & 54.20 $\pm$ 0.8 & \textbf{+5.86} \\
+\midrule
+\multicolumn{7}{l}{\textit{HumAID ($N_{\text{test}} = 15,297$)}} \\
+$\tau \ge 0.90$ & 4.41 & 674.2 & 14,622.8 & 87.47 $\pm$ 1.0 & 72.01 $\pm$ 0.3 & \textbf{+15.46} \\
+$\tau \ge 0.95$ & 0.34 & 51.8 & 15,245.2 & 85.29 $\pm$ 5.5 & 72.65 $\pm$ 0.3 & \textbf{+12.65} \\
+$\tau \ge 0.98$ & 0.04 & 6.2 & 15,290.8 & 87.78 $\pm$ 7.2 & 72.68 $\pm$ 0.3 & \textbf{+15.09} \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-In operational disaster missions, models rarely experience domain shift in isolation; communication lines fail, images are blurred, and sensor inputs drop out.
+As documented in Table~\ref{tab:leakage_table}, leaked test instances achieve an accuracy advantage of \textbf{+5.86 pp} on CrisisMMD ($\tau \ge 0.98$) and \textbf{+15.46 pp} on HumAID ($\tau \ge 0.90$) compared to clean samples. We note that while the HumAID creators removed exact lexical duplicate tweets during corpus creation~\cite{alam2021humaid}, dense semantic near-duplicates (e.g. retweets with minor punctuation changes or altered user handles) persist across random partitions. Because leaked samples represent 4.41\% of HumAID and 16.27\% of CrisisMMD, their net effect on overall test accuracy is approximately 0.7 to 0.9 percentage points. However, on benchmark leaderboards where models compete over sub-percentage margins, this memorization advantage is non-trivial.
 
-In Figure~\ref{fig:compound_stress}, we evaluate models under simultaneous LOEO event shift and synthetic corruption. On HumAID, introducing moderate sensor noise ($\sigma = 0.50$) reduces accuracy from $71.69\%$ to \textbf{17.19\%}, while worst-event accuracy drops to $13.75\%$ (approaching the $10\%$ random baseline for 10 classes). Expected Calibration Error explodes to \textbf{0.745}, indicating that models become catastrophically overconfident in completely incorrect predictions under compound stress.
+\subsection{Compound Shift and Stress Testing}
+In disaster deployments, geographic domain shift co-occurs with severe communication and sensor degradations. We model this via zero-shot test-time embedding perturbations:
+\begin{equation}
+    \tilde{x} = (x + \epsilon) \odot m, \quad \epsilon \sim \mathcal{N}(0, \sigma^2 I), \quad m_j \sim \text{Bernoulli}(1 - p_{\text{drop}}).
+\end{equation}
+Models are evaluated zero-shot without retraining. On HumAID text embeddings, moderate Gaussian noise ($\sigma = 0.50$, $p_{\text{drop}} = 0.0$) degrades mean accuracy from 71.69\% to 17.19\% (with worst-event accuracy falling to 13.75\%), while ECE increases from 0.039 to 0.745. Under extreme compound corruption ($\sigma = 0.75$, $p_{\text{drop}} = 0.50$), accuracy collapses to 13.91\% (approaching the 10\% random guessing threshold across 10 classes) and ECE reaches 0.797. This confirms that confidence scores degrade severely under compound stress.
 
-\subsection{Empirical Statistical Power Analysis}
+\subsection{Resampling Power Analysis}
+To evaluate the statistical precision of disaster benchmarks as a function of the number of held-out events, we conduct empirical subsampling across $k \in [3, 18]$ events. For each $k$, we draw 100 event subsets without replacement, and for each subset compute the 95\% cluster bootstrap confidence interval width over 1,000 resamples.
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=\columnwidth]{outputs/figures/fig3_power_analysis.pdf}
-    \caption{Empirical Statistical Power Analysis: Width of the 95\% confidence interval as a function of the number of held-out disaster events $k$. Reliable evaluation requires $k \ge 15$ events.}
-    \label{fig:power_analysis}
-\end{figure}
+The mean 95\% confidence interval width is 18.21 percentage points ($\pm 9.1\%$) at $k=3$, 14.87 pp at $k=7$, 12.99 pp at $k=10$, 10.96 pp at $k=15$, and 10.18 pp at $k=18$. In our empirical resampling analysis, increasing the number of held-out events reduced uncertainty in estimated mean accuracy. The observed interval widths suggest that evaluations based on very few events (such as 2 or 3 events) provide unstable performance estimates. The $k=15$ result should be interpreted as an empirical observation for these disaster distributions rather than a universal minimum sample-size requirement.
 
-A major vulnerability of existing disaster evaluation studies is the small number of events evaluated. Studies frequently report cross-event transfer across only 2 or 3 events.
+%====================================================================
+\section{Threats to Validity and Limitations}
+\label{sec:threats}
 
-We conduct an empirical subsampling experiment across $k \in [3, 18]$ held-out events with 1,000 bootstrap iterations. As depicted in Figure~\ref{fig:power_analysis}:
-\begin{itemize}
-    \item At $k=3$ held-out events, the 95\% cluster bootstrap confidence interval width is \textbf{18.2 percentage points} ($\pm 9.1\%$). Two models differing by 8 pp cannot be statistically distinguished.
-    \item At $k=10$ events, the CI width remains high at $12.9$ percentage points.
-    \item Only when $k \ge 15$ does the CI width fall below the 10 percentage point threshold ($10.1$ pp at $k=18$).
-\end{itemize}
-\textbf{Benchmark Recommendation:} Disaster AI benchmarks must evaluate across at least $k \ge 15$ independent events to make credible statistical claims regarding model superiority.
+\subsection{Threats to Validity}
+\textit{Event Overlap:} Four physical disasters appear in both CrisisMMD and HumAID. While evaluated as separate, dataset-specific folds, cross-dataset transfer cannot treat these as independent physical incidents.
+\textit{Near-Duplicate Ambiguity:} High embedding cosine similarity may capture both memorized retweets and genuinely easy, prototypical crisis posts. While our audit demonstrates that leaked samples score substantially higher, part of this gap may reflect intrinsic sample simplicity.
+\textit{Synthetic Corruption:} Our compound stress experiments evaluate Gaussian embedding perturbations and dimension dropout, which serve as mathematical proxies rather than empirical telecom loss patterns.
 
-\section{Discussion and Limitations}
-\label{sec:discussion}
+\subsection{Limitations and Ethics}
+Our experiments are restricted to English-language social media text and visual assets, excluding non-English crisis communications. Furthermore, social media data exhibits demographic representation biases, skewing toward connected urban populations. All datasets used in this work are publicly available under research licenses (\LicenseName).
 
-\textbf{Implications for Deployment.} Emergency responders cannot trust models certified solely on random splits. If an automated triaging agent is deployed during an unobserved disaster, its true error rate will be dramatically higher than its reported benchmark score, potentially misrouting critical aid.
-
-\textbf{Limitations.} While our study harmonizes 26 events across two major benchmark suites, satellite remote sensing modalities (such as SAR and high-res optical imagery) feature additional sensor-specific artifacts that warrant unified future extensions.
-
-\section{Conclusion}
+%====================================================================
+\section{Conclusion and Future Scope}
 \label{sec:conclusion}
+This paper audited disaster AI across 94,566 observations and 26 event folds. We demonstrated that random splits overestimate performance on unseen disasters by 15.8 to 21.2 percentage points on tail events, near-duplicate leakage provides an artificial +15.5 point boost, and linear CORAL algebraically reduces to ERM on frozen features. Future work will extend this audit to satellite building-damage assessment benchmarks (xBD) and vision-language foundation models.
 
-This paper provides an empirical audit of multimodal disaster AI. We have shown that random splits conceal an average catastrophic collapse of up to 21.2 pp on unseen disasters, that train/test leakage inflates reported metrics by up to +15.46 pp, and that domain generalization algorithms provide only localized tail risk benefits. By releasing standardized split manifests and an open evaluation library, we provide the research community with the tools to build dependable, trustworthy disaster AI systems.
+\section*{Declarations}
+\noindent\textbf{Author Contributions.} \ContribStatement
 
-\bibliographystyle{IEEEtran}
-\bibliography{references}
+\noindent\textbf{Funding.} \FundingStatement
+
+\noindent\textbf{Competing Interests.} \ConflictStatement
+
+\noindent\textbf{Data and Code Availability.} All code, split manifests, and cached feature embeddings are available at \CodeURL.
+
+\begin{thebibliography}{22}
+
+\bibitem{alam2018crisismmd}
+F. Alam, F. Ofli, and M. Imran, ``CrisisMMD: Multimodal Twitter datasets from natural disasters,'' in \textit{Proc. 12th Int. AAAI Conf. Web Social Media (ICWSM)}, 2018.
+
+\bibitem{alam2021humaid}
+F. Alam, U. Qazi, M. Imran, and F. Ofli, ``HumAID: Human-annotated disaster incidents data from Twitter with deep learning benchmarks,'' in \textit{Proc. Int. AAAI Conf. Web Social Media (ICWSM)}, vol. 15, no. 1, 2021, pp. 933--942.
+
+\bibitem{sagawa2020distributionally}
+S. Sagawa, P. W. Koh, T. B. Hashimoto, and P. Liang, ``Distributionally robust neural networks for group shifts: On the importance of regularization for worst-case generalization,'' in \textit{Proc. Int. Conf. Learn. Represent. (ICLR)}, 2020.
+
+\bibitem{arjovsky2019invariant}
+M. Arjovsky, L. Bottou, I. Gulrajani, and D. Lopez-Paz, ``Invariant risk minimization,'' arXiv:1907.02893, 2019.
+
+\bibitem{sun2016deep}
+B. Sun and K. Saenko, ``Deep CORAL: Correlation alignment for deep domain adaptation,'' in \textit{Computer Vision -- ECCV 2016 Workshops}, 2016.
+
+\bibitem{imran2015processing}
+M. Imran, C. Castillo, F. Diaz, and S. Vieweg, ``Processing social media messages in mass emergency: A survey,'' \textit{ACM Comput. Surv.}, vol. 47, no. 4, art. 67, 2015.
+
+\bibitem{gupta2019xbd}
+R. Gupta \textit{et al.}, ``xBD: A dataset for assessing building damage from satellite imagery,'' arXiv:1911.09296, 2019.
+
+\bibitem{olteanu2014crisislex}
+A. Olteanu, C. Castillo, F. Diaz, and S. Vieweg, ``CrisisLex: A lexicon for collecting and filtering microblogged communications in crises,'' in \textit{Proc. 8th Int. AAAI Conf. Weblogs Social Media (ICWSM)}, 2014.
+
+\bibitem{ofli2020analysis}
+F. Ofli, F. Alam, and M. Imran, ``Analysis of social media data using multimodal deep learning for disaster response,'' in \textit{Proc. 17th Int. Conf. Inf. Syst. Crisis Response Manage. (ISCRAM)}, 2020.
+
+\bibitem{bendavid2010theory}
+S. Ben-David, J. Blitzer, K. Crammer, A. Kulesza, F. Pereira, and J. W. Vaughan, ``A theory of learning from different domains,'' \textit{Mach. Learn.}, vol. 79, pp. 151--175, 2010.
+
+\bibitem{recht2019imagenet}
+B. Recht, R. Roelofs, L. Schmidt, and V. Shankar, ``Do ImageNet classifiers generalize to ImageNet?'' in \textit{Proc. Int. Conf. Mach. Learn. (ICML)}, 2019.
+
+\bibitem{koh2021wilds}
+P. W. Koh \textit{et al.}, ``WILDS: A benchmark of in-the-wild distribution shifts,'' in \textit{Proc. Int. Conf. Mach. Learn. (ICML)}, 2021, pp. 5637--5664.
+
+\bibitem{geirhos2020shortcut}
+R. Geirhos \textit{et al.}, ``Shortcut learning in deep neural networks,'' \textit{Nature Mach. Intell.}, vol. 2, no. 11, pp. 665--673, 2020.
+
+\bibitem{gulrajani2021search}
+I. Gulrajani and D. Lopez-Paz, ``In search of lost domain generalization,'' in \textit{Proc. Int. Conf. Learn. Represent. (ICLR)}, 2021.
+
+\bibitem{guo2017calibration}
+C. Guo, G. Pleiss, Y. Sun, and K. Q. Weinberger, ``On calibration of modern neural networks,'' in \textit{Proc. Int. Conf. Mach. Learn. (ICML)}, 2017, pp. 1321--1330.
+
+\bibitem{ovadia2019can}
+Y. Ovadia \textit{et al.}, ``Can you trust your model's uncertainty? Evaluating predictive uncertainty under dataset shift,'' in \textit{Adv. Neural Inf. Process. Syst. (NeurIPS)}, vol. 32, 2019.
+
+\bibitem{hendrycks2019benchmarking}
+D. Hendrycks and T. Dietterich, ``Benchmarking neural network robustness to common corruptions and perturbations,'' in \textit{Proc. Int. Conf. Learn. Represent. (ICLR)}, 2019.
+
+\bibitem{geifman2017selective}
+Y. Geifman and R. El-Yaniv, ``Selective classification for deep neural networks,'' in \textit{Adv. Neural Inf. Process. Syst. (NeurIPS)}, vol. 30, 2017.
+
+\bibitem{barz2020train}
+B. Barz and J. Denzler, ``Do we train on test data? Purging CIFAR of near-duplicates,'' \textit{J. Imaging}, vol. 6, no. 6, p. 41, 2020.
+
+\bibitem{lee2022dedup}
+K. Lee \textit{et al.}, ``Deduplicating training data makes language models better,'' in \textit{Proc. 60th Annu. Meeting Assoc. Comput. Linguistics (ACL)}, 2022.
+
+\bibitem{northcutt2021confident}
+C. G. Northcutt, L. Jiang, and I. L. Chuang, ``Confident learning: Estimating uncertainty in dataset labels,'' \textit{J. Artif. Intell. Res.}, vol. 70, pp. 1373--1411, 2021.
+
+\bibitem{efron1993bootstrap}
+B. Efron and R. J. Tibshirani, \textit{An Introduction to the Bootstrap}. New York, NY, USA: Chapman \& Hall, 1993.
+
+\end{thebibliography}
 
 \end{document}
