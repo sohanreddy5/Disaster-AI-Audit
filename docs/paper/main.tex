@@ -192,7 +192,14 @@ We report accuracy (\%), balanced accuracy, Expected Calibration Error (ECE) acr
 \label{sec:results}
 
 \subsection{Split Protocols and Tail-Risk Collapse}
-Table~\ref{tab:split_comparison} compares model performance across the five split protocols.
+Table~\ref{tab:split_comparison} compares model performance across the five split protocols, and Figure~\ref{fig:split_inflation} illustrates the split-inflation and tail-collapse phenomena.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig1_split_inflation}
+\caption{Comparison of classification accuracy across evaluation split protocols on CrisisMMD and HumAID. While mean LOEO performance drops modestly, tail accuracy on the hardest held-out event collapses by 15.8 to 21.2 percentage points.}
+\label{fig:split_inflation}
+\end{figure}
 
 \begin{table}[t]
 \centering
@@ -266,7 +273,14 @@ CORAL & \textbf{67.81 $\pm$ 9.0} & 47.71 & 0.161 & \textbf{0.154} \\
 \end{enumerate}
 
 \subsection{Near-Duplicate Contamination and Leakage Audit}
-To quantify dataset contamination across random partitions, we perform pairwise cosine similarity auditing on $L_2$-normalized dense embeddings across train and test partitions.
+To quantify dataset contamination across random partitions, we perform pairwise cosine similarity auditing on $L_2$-normalized dense embeddings across train and test partitions. Figure~\ref{fig:leakage} and Table~\ref{tab:leakage_table} document the performance advantage of leaked near-duplicate samples over clean test samples.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig2_leakage_impact}
+\caption{Classification accuracy on leaked near-duplicates vs. clean test samples across similarity thresholds $\tau \in \{0.90, 0.95, 0.98\}$. Leaked instances exhibit an artificial memorization advantage of up to +15.46 percentage points.}
+\label{fig:leakage}
+\end{figure}
 
 \begin{table}[t]
 \centering
@@ -298,12 +312,26 @@ In disaster deployments, geographic domain shift co-occurs with severe communica
 \begin{equation}
     \tilde{x} = (x + \epsilon) \odot m, \quad \epsilon \sim \mathcal{N}(0, \sigma^2 I), \quad m_j \sim \text{Bernoulli}(1 - p_{\text{drop}}).
 \end{equation}
-Models are evaluated zero-shot without retraining. On HumAID text embeddings, moderate Gaussian noise ($\sigma = 0.50$, $p_{\text{drop}} = 0.0$) degrades mean accuracy from 71.69\% to 17.19\% (with worst-event accuracy falling to 13.75\%), while ECE increases from 0.039 to 0.745. Under extreme compound corruption ($\sigma = 0.75$, $p_{\text{drop}} = 0.50$), accuracy collapses to 13.91\% (approaching the 10\% random guessing threshold across 10 classes) and ECE reaches 0.797. This confirms that confidence scores degrade severely under compound stress.
+Models are evaluated zero-shot without retraining. Figure~\ref{fig:compound_stress} visualizes accuracy degradation and calibration failure across grid levels of noise $\sigma$ and dropout $p_{\text{drop}}$. On HumAID text embeddings, moderate Gaussian noise ($\sigma = 0.50$, $p_{\text{drop}} = 0.0$) degrades mean accuracy from 71.69\% to 17.19\% (with worst-event accuracy falling to 13.75\%), while ECE increases from 0.039 to 0.745. Under extreme compound corruption ($\sigma = 0.75$, $p_{\text{drop}} = 0.50$), accuracy collapses to 13.91\% (approaching the 10\% random guessing threshold across 10 classes) and ECE reaches 0.797. This confirms that confidence scores degrade severely under compound stress.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig4_compound_stress_heatmap}
+\caption{Accuracy collapse and Expected Calibration Error (ECE) explosion under zero-shot compound distribution shift across varying feature noise $\sigma \in [0.0, 0.75]$ and dimension dropout rates $p_{\text{drop}} \in [0.0, 0.50]$.}
+\label{fig:compound_stress}
+\end{figure}
 
 \subsection{Resampling Power Analysis}
 To evaluate the statistical precision of disaster benchmarks as a function of the number of held-out events, we conduct empirical subsampling across $k \in [3, 18]$ events. For each $k$, we draw 100 event subsets without replacement, and for each subset compute the 95\% cluster bootstrap confidence interval width over 1,000 resamples.
 
-The mean 95\% confidence interval width is 18.21 percentage points ($\pm 9.1\%$) at $k=3$, 14.87 pp at $k=7$, 12.99 pp at $k=10$, 10.96 pp at $k=15$, and 10.18 pp at $k=18$. In our empirical resampling analysis, increasing the number of held-out events reduced uncertainty in estimated mean accuracy. The observed interval widths suggest that evaluations based on very few events (such as 2 or 3 events) provide unstable performance estimates. The $k=15$ result should be interpreted as an empirical observation for these disaster distributions rather than a universal minimum sample-size requirement.
+Figure~\ref{fig:power_analysis} shows the 95\% bootstrap confidence interval width narrowing as the number of held-out events increases. The mean 95\% confidence interval width is 18.21 percentage points ($\pm 9.1\%$) at $k=3$, 14.87 pp at $k=7$, 12.99 pp at $k=10$, 10.96 pp at $k=15$, and 10.18 pp at $k=18$. In our empirical resampling analysis, increasing the number of held-out events reduced uncertainty in estimated mean accuracy. The observed interval widths suggest that evaluations based on very few events (such as 2 or 3 events) provide unstable performance estimates. The $k=15$ result should be interpreted as an empirical observation for these disaster distributions rather than a universal minimum sample-size requirement.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{fig3_power_analysis}
+\caption{Empirical bootstrap 95\% confidence interval width as a function of the number of held-out evaluation events ($k \in [3, 18]$). Small benchmarks with $k \le 3$ yield unstable intervals exceeding $\pm 9$ percentage points.}
+\label{fig:power_analysis}
+\end{figure}
 
 %====================================================================
 \section{Threats to Validity and Limitations}
