@@ -132,6 +132,39 @@ class TestScientificClaims(unittest.TestCase):
         expected_c_worst = f"{c_diag['loeo_acc'].min() * 100:.2f}"
         self.assertEqual(macros.get("cWorstLOEOAcc"), expected_c_worst)
 
+    def test_paper_manuscript_text_numbers_consistency(self):
+        """Verify that main.tex text numbers match benchmark outputs and macros with 0 discrepancy."""
+        paper_file = PROJECT_ROOT / "docs" / "paper" / "main.tex"
+        if not paper_file.exists():
+            self.skipTest("main.tex not found.")
+
+        with open(paper_file, "r") as f:
+            latex = f.read()
+
+        # 1. DG Benchmark gains and penalties
+        self.assertIn("+0.81 to +0.88", latex)
+        self.assertIn("-2.90 to -3.77", latex)
+
+        # 2. Synthetic noise numbers match 19-fold mean
+        self.assertIn(r"63.15\%", latex)
+        self.assertIn(r"47.67\%", latex)
+        self.assertIn(r"17.19\%", latex)
+        self.assertIn("0.745", latex)
+
+        # 3. Leakage Table IV macros and deduplication explanation
+        self.assertIn(r"\cLeakShareNinety", latex)
+        self.assertIn(r"\cLeakCountNinety", latex)
+        self.assertIn(r"\cCleanCountNinety", latex)
+        self.assertIn(r"\hLeakAssocGapNinety", latex)
+        self.assertIn(r"\hLeakCountNinetyEight", latex)
+        self.assertIn(r"17.53\% near-identical duplicate retweets", latex)
+
+        # 4. Precision section terminology
+        self.assertNotIn("Statistical power analysis", latex)
+        self.assertNotIn("empirical margin of error under 10 percentage points", latex)
+        self.assertIn("Resampling precision analysis", latex)
+        self.assertIn(r"half-width $\pm 5.48$ pp", latex)
+
 
 if __name__ == "__main__":
     unittest.main()

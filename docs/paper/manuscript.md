@@ -10,7 +10,7 @@
 
 ## Abstract
 
-Machine learning systems for rapid disaster triage and humanitarian crisis response are conventionally evaluated using uniform random train/test splits. Under this protocol, observations from every disaster event are shared across training and test partitions, obscuring out-of-distribution failure modes. In real-world emergency deployments, however, models must generalize to entirely unobserved disaster incidents in unfamiliar geographic regions. In this paper, we conduct an extensive empirical audit of crisis classification across 94,566 labeled observations from 26 event-level evaluation folds (7 in CrisisMMD and 19 in HumAID) spanning 22 unique physical disasters across 9 continental regions. While macro leave-one-event-out (LOEO) accuracy drops by only 1.0 to 3.0 percentage points on average relative to random splits, evaluating individual target events reveals severe performance vulnerability: paired test accuracy on the hardest held-out event drops by 5.54 percentage points on CrisisMMD (California Wildfires) and 15.52 points on HumAID (Maryland Floods) relative to event-matched random test instances. We find that event-level class-prior divergence is the single strongest predictor of out-of-distribution drop ($r=0.563, p=0.0121$), and an input-free label-prior baseline accounts for 38.67% and 32.21% accuracy. An audit of cross-split contamination reveals that near-duplicates ($\tau \ge 0.90$) exhibit an association accuracy gap of up to +13.74 to +15.46 percentage points on leaked slices, but causal purging demonstrates that net benchmark inflation across the full test set is limited to 0.00 to 0.69 percentage points. Across all 26 LOEO folds, minibatch-normalized GroupDRO modestly aids worst-event accuracy (+0.40 to +0.69 pp), whereas Invariant Risk Minimization (IRM) incurs a statistically significant accuracy penalty (-2.90 to -3.77 pp, Holm-corrected $p \le 0.031$) in exchange for reduced Expected Calibration Error (ECE 0.081 vs 0.161), an improvement matched by temperature-scaled empirical risk minimization (ECE 0.024--0.041) without accuracy loss. Under zero-shot synthetic feature corruption, unnormalized perturbations multiply embedding norms, driving ECE up to 0.741. Finally, empirical cluster bootstrapping demonstrates that evaluating fewer than 15 held-out events yields 95% confidence interval widths exceeding 10 percentage points. We openly release all code, cached embeddings, and split manifests.
+Machine learning systems for rapid disaster triage and humanitarian crisis response are conventionally evaluated using uniform random train/test splits. Under this protocol, observations from every disaster event are shared across training and test partitions, obscuring out-of-distribution failure modes. In real-world emergency deployments, however, models must generalize to entirely unobserved disaster incidents in unfamiliar geographic regions. In this paper, we conduct an extensive empirical audit of crisis classification across 94,566 labeled observations from 26 event-level evaluation folds (7 in CrisisMMD and 19 in HumAID) spanning 22 unique physical disasters across 9 continental regions. While macro leave-one-event-out (LOEO) accuracy drops by only 2.70 percentage points on CrisisMMD (54.78% to 52.08%) and 3.24 percentage points on HumAID (74.93% to 71.69%) on average relative to random splits, evaluating individual target events reveals severe performance vulnerability: paired test accuracy on the hardest held-out event drops by 5.54 percentage points on CrisisMMD (California Wildfires) and 15.52 points on HumAID (Maryland Floods) relative to event-matched random test instances. We find that event-level class-prior divergence is strongly associated with out-of-distribution drop (and represents its strongest observed predictor: $r=0.563, p=0.0121$), while an input-free label-prior baseline accounts for 38.67% and 32.21% accuracy. An audit of cross-split contamination reveals that near-duplicates exhibit an association accuracy advantage of up to +15.46 percentage points on leaked slices ($\tau \ge 0.90$), but causal purging demonstrates that net benchmark inflation across the full test set is limited to 0.00 to 0.69 percentage points. Across all 26 LOEO folds, minibatch-normalized GroupDRO modestly aids worst-event accuracy (+0.81 to +0.88 pp), whereas Invariant Risk Minimization (IRM) incurs a statistically significant accuracy penalty (-2.90 to -3.77 pp, Holm-corrected $p \le 0.031$) in exchange for reduced Expected Calibration Error (ECE 0.081 vs 0.161), an improvement matched by temperature-scaled empirical risk minimization (ECE 0.024--0.041) without accuracy loss. Under zero-shot synthetic feature corruption, unnormalized perturbations multiply embedding norms, driving ECE up to 0.745. Finally, empirical cluster bootstrapping demonstrates that at least 15 held-out events were required in this benchmark to achieve an empirical 95% confidence interval width below 11 percentage points (a half-width of $\pm 5.5$ percentage points). We openly release all code, cached embeddings, and split manifests.
 
 ---
 
@@ -62,7 +62,7 @@ Four physical disasters overlap between the corpora: Hurricane Harvey (2017), Hu
 2. **Convex $L_2$-Regularized Probes:** Evaluated across four split protocols (Random 80/20, LORO, LOEO, LODTO) using multinomial logistic probes ($C = 1.0$) optimized via L-BFGS to global convergence.
 3. **Neural Domain Generalization Learners:** Benchmarked across all 26 LOEO folds over 5 independent random seeds using mini-batch Adam ($\text{lr} = 10^{-3}$, weight decay $10^{-4}$):
    - **ERM:** Empirical Risk Minimization on pooled source events.
-   - **Minibatch-Normalized GroupDRO:** Online exponential weighting over training disaster groups ($q_g \propto \exp(\eta_q \mathcal{L}_g)$).
+   - **Minibatch-Normalized GroupDRO:** Maintains group weights $q \in \Delta^{|\mathcal{G}|}$ with step size $\eta_q = 0.01$, updated via an exponentiated gradient step over active groups in each mini-batch: $q_g \leftarrow q_g \exp(\eta_q \mathcal{L}_g(\theta))$ and normalized via $w_g^{\text{batch}} = q_g / \sum_{g' \in \mathcal{G}_{\text{batch}}} q_{g'}$. This prevents inactive batch groups from deflating gradients.
    - **IRM:** Gradient norm invariance penalty across training environments ($\lambda_{\text{irm}} = 1.0$ on HumAID, annealed to $10.0$ on CrisisMMD).
    - *CORAL Note:* On frozen feature representations $x$, the covariance penalty satisfies $\nabla_W \text{Cov}(x) \equiv 0$, identically reducing parameter updates to ERM; CORAL is therefore omitted.
 4. **Zero-Feature Event Prior Baseline:** Predicts the historical macro class prior across training events without consuming input features:
@@ -88,7 +88,7 @@ Four physical disasters overlap between the corpora: Hurricane Harvey (2017), Hu
 - **Paired Shift Gaps:** Comparing random-split accuracy directly to the lowest LOEO fold conflates base event difficulty with distribution shift. The exact paired shift gap on matching test samples is:
   - **CrisisMMD:** Mean paired drop = 2.70 pp; California Wildfires drops from 44.88% (random) to 39.33% (LOEO), a paired drop of 5.54 pp. Maximum paired drop is Iraq-Iran Earthquake (+6.97 pp: 49.01% $\to$ 42.04%).
   - **HumAID:** Mean paired drop = 3.23 pp; Maryland Floods drops from 67.01% (random) to 51.48% (LOEO), a severe paired drop of **15.52 percentage points**.
-- **Predictor of Failure:** Class-prior divergence $D_{\text{KL}}(P_e \| P_{\text{train}})$ is strongly correlated with the paired drop ($r = 0.563, p = 0.0121$). Sample count ($r = -0.218$) and active class count ($r = 0.089$) show negligible correlation.
+- **Predictor of Failure:** Class-prior divergence $D_{\text{KL}}(P_e \| P_{\text{train}})$ is strongly associated with the paired drop ($r = 0.563, p = 0.0121$), representing its strongest observed predictor. Sample count ($r = -0.218$) and active class count ($r = 0.089$) show negligible correlation.
 - **Event Prior Anchor:** Achieves 38.67% on CrisisMMD and 32.21% on HumAID without features. In all 26 folds, learned text models outperform this prior baseline by +15.3 to +65.4 percentage points.
 - **Regional Macro Nuance:** HumAID LORO (73.36%) exceeds pooled random (72.69%) because macro-averaging over 8 continental regions weights smaller high-accuracy regions equally, whereas pooled random split is dominated by large North American hurricane events.
 
@@ -99,14 +99,14 @@ Four physical disasters overlap between the corpora: Hurricane Harvey (2017), Hu
 | Algorithm | Dataset | Mean Acc. (%) | Worst Event (%) | ECE | Scaled ECE | AURC |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
 | **ERM** | CrisisMMD | **51.41 $\pm$ 11.6** | 38.77 | 0.076 | 0.041 | **0.356** |
-| **GroupDRO** | CrisisMMD | 51.27 $\pm$ 11.2 | **39.65** | 0.096 | **0.034** | 0.370 |
-| **IRM** | CrisisMMD | 48.51 $\pm$ 11.6 | 37.86 | **0.067** | 0.035 | 0.386 |
+| **GroupDRO** | CrisisMMD | 51.27 $\pm$ 11.2 | **39.65** (+0.88 pp) | 0.096 | **0.034** | 0.370 |
+| **IRM** | CrisisMMD | 48.51 $\pm$ 11.6 (-2.90 pp) | 37.86 | **0.067** | 0.035 | 0.386 |
 | **ERM** | HumAID | **67.75 $\pm$ 8.9** | 46.90 | 0.161 | **0.024** | **0.154** |
-| **GroupDRO** | HumAID | 67.14 $\pm$ 8.4 | **47.71** | 0.196 | 0.022 | 0.161 |
-| **IRM** | HumAID | 63.98 $\pm$ 9.7 | 45.97 | **0.081** | **0.021** | 0.186 |
+| **GroupDRO** | HumAID | 67.14 $\pm$ 8.4 | **47.71** (+0.81 pp) | 0.196 | 0.022 | 0.161 |
+| **IRM** | HumAID | 63.98 $\pm$ 9.7 (-3.77 pp) | 45.97 | **0.081** | **0.021** | 0.186 |
 
-- **Worst-Event Tail Protection:** Minibatch-normalized GroupDRO improves worst-event accuracy across both datasets (38.77% $\to$ 39.65% on CrisisMMD; 46.90% $\to$ 47.71% on HumAID).
-- **The IRM Tradeoff:** IRM dramatically reduces unscaled ECE on HumAID (0.081 vs 0.161, Wilcoxon $W = 0.0, p = 4.0 \times 10^{-6}$, Holm-corrected $p = 8.0 \times 10^{-6}$). However, this calibration gain incurs a statistically significant **-3.77 pp accuracy drop** on HumAID ($p = 8.0 \times 10^{-6}$) and **-2.90 pp drop** on CrisisMMD ($p = 0.031$).
+- **Worst-Event Tail Protection:** Minibatch-normalized GroupDRO improves worst-event accuracy across both datasets (+0.88 pp on CrisisMMD: 38.77% $\to$ 39.65%; +0.81 pp on HumAID: 46.90% $\to$ 47.71%).
+- **The IRM Tradeoff:** IRM dramatically reduces unscaled ECE on HumAID (0.081 vs 0.161, Wilcoxon $W = 0.0, p = 4.0 \times 10^{-6}$, Holm-corrected $p = 8.0 \times 10^{-6}$). However, this calibration gain incurs a statistically significant **-3.77 pp accuracy penalty** on HumAID ($p = 8.0 \times 10^{-6}$) and **-2.90 pp penalty** on CrisisMMD ($p = 0.031$).
 - **Temperature Scaling Resolution:** Applying post-hoc temperature scaling ($T \approx 0.64$) to ERM reduces ECE to **0.024** on HumAID and **0.041** on CrisisMMD without any accuracy penalty, demonstrating that IRM's calibration gain is driven by logit shrinkage rather than invariant feature learning.
 
 ---
@@ -115,30 +115,33 @@ Four physical disasters overlap between the corpora: Hurricane Harvey (2017), Hu
 
 | Dataset | Threshold | Leaked Share (%) | Leaked Acc (%) | Clean Acc (%) | Association Gap ($\Delta$) | Net Test Effect (pp) | Causal Purge Drop (pp) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **CrisisMMD** | $\tau \ge 0.90$ | 15.7% (568 / 3,617) | 60.98 $\pm$ 0.9 | 54.40 $\pm$ 0.8 | **+6.59 pp** | +1.04 pp | -0.69 pp |
-| **CrisisMMD** | $\tau \ge 0.98$ | 15.7% (567 / 3,617) | 60.06 $\pm$ 0.8 | 54.20 $\pm$ 0.8 | **+5.86 pp** | +0.92 pp | -0.69 pp |
-| **HumAID** | $\tau \ge 0.90$ | 4.3% (652 / 15,297) | 85.74 $\pm$ 1.0 | 72.00 $\pm$ 0.3 | **+13.74 pp** | +0.59 pp | 0.00 pp |
-| **HumAID** | $\tau \ge 0.98$ | 0.04% (6 / 15,297) | 87.78 $\pm$ 7.2 | 72.68 $\pm$ 0.3 | **+15.09 pp** | +0.01 pp | 0.00 pp |
+| **CrisisMMD** | $\tau \ge 0.90$ | 16.27% (588.6 / 3,617) | 59.64 $\pm$ 0.9 | 54.24 $\pm$ 0.8 | **+5.40 pp** | +0.88 pp | -0.69 pp |
+| **CrisisMMD** | $\tau \ge 0.95$ | 15.73% (568.8 / 3,617) | 59.92 $\pm$ 0.9 | 54.23 $\pm$ 0.8 | **+5.69 pp** | +0.90 pp | -0.69 pp |
+| **CrisisMMD** | $\tau \ge 0.98$ | 15.67% (566.8 / 3,617) | 60.06 $\pm$ 0.8 | 54.20 $\pm$ 0.8 | **+5.86 pp** | +0.92 pp | -0.69 pp |
+| **HumAID** | $\tau \ge 0.90$ | 4.41% (674.2 / 15,297) | 87.47 $\pm$ 1.0 | 72.01 $\pm$ 0.3 | **+15.46 pp** | +0.68 pp | 0.00 pp |
+| **HumAID** | $\tau \ge 0.95$ | 0.34% (51.8 / 15,297) | 85.29 $\pm$ 5.5 | 72.65 $\pm$ 0.3 | **+12.65 pp** | +0.04 pp | 0.00 pp |
+| **HumAID** | $\tau \ge 0.98$ | 0.04% (6.2 / 15,297) | 87.78 $\pm$ 7.2 | 72.68 $\pm$ 0.3 | **+15.09 pp** | +0.01 pp | 0.00 pp |
 
-- **Slice vs Net Effect:** While leaked test instances exhibit a substantial accuracy advantage (+6.59 to +15.09 pp), their low prevalence (4.3% on HumAID) limits the net test-set effect to +0.59 to +1.04 percentage points.
-- **Causal Purging:** When near-duplicates are causally removed from training data, model accuracy on the full test set drops by only **0.69 pp** on CrisisMMD and **0.00 pp** on HumAID, confirming that near-duplicate overlap does not artificially inflate headline benchmark numbers.
+- **Physical Mechanism of Leakage:** In CrisisMMD, 17.53% of the dataset consists of near-identical duplicate retweets and automated weather advisories with identical sentence embeddings ($\cos \ge 0.98$); consequently, varying $\tau$ from 0.90 to 0.98 leaves the leaked count nearly unchanged ($588.6 \to 568.8 \to 566.8$). In contrast, HumAID was explicitly deduplicated during dataset curation (leaving only 0.02% duplicate tweets), so the count drops rapidly ($674.2 \to 51.8 \to 6.2$).
+- **Slice Association vs. Net Benchmark Inflation:** While leaked test instances exhibit a marked association accuracy advantage (+5.40 to +5.86 pp on CrisisMMD; +12.65 to +15.46 pp on HumAID), their low prevalence limits the net test-set effect to +0.88 to +0.92 pp on CrisisMMD and +0.01 to +0.68 pp on HumAID.
+- **Causal Purging:** When near-duplicates are causally removed from training data, model accuracy on the full test set drops by only **0.69 pp** on CrisisMMD (55.12% $\to$ 54.43%) and **0.00 pp** on HumAID (72.69% $\to$ 72.69%), confirming that near-duplicate overlap does not artificially inflate headline benchmark numbers.
 
 ---
 
 ### 4.4 Synthetic Feature Corruption and Stress Response
 
 - **Noise-to-Signal Ratio:** Features are unit-normalized ($\|x\|_2 = 1, d = 384$). For Gaussian noise $\epsilon \sim \mathcal{N}(0, \sigma^2 I)$, $\mathbb{E}[\|\epsilon\|_2] = \sqrt{384 \sigma^2}$. NSR scales linearly: $\sigma = 0.05 \implies \text{NSR} \approx 0.98$; $\sigma = 0.10 \implies \text{NSR} \approx 1.96$; $\sigma = 0.50 \implies \text{NSR} \approx 9.80$.
-- **Accuracy & Calibration Collapse:** On HumAID, accuracy degrades from 71.69% ($\sigma=0.0$) to 61.93% ($\sigma=0.05$), 47.32% ($\sigma=0.10$), and 17.48% ($\sigma=0.50$), while ECE surges from 0.039 to **0.741**.
-- **Logit Norm Inflation:** Unnormalized noise multiplies embedding norms by up to $10\times$, scaling unconstrained linear logits and driving softmax confidence to near 1.0 on randomized inputs. Re-normalizing features preserves calibration ($\text{ECE} \le 0.045$), and noise-augmented training reduces ECE to 0.016.
+- **Accuracy & Calibration Collapse (19-Fold HumAID Mean):** Across all 19 folds, accuracy degrades from 71.69% ($\sigma=0.0$, ECE 0.039) to 63.15% ($\sigma=0.05$, ECE 0.077), 47.67% ($\sigma=0.10$, ECE 0.252), and 17.19% ($\sigma=0.50$, ECE **0.745**).
+- **Logit Norm Inflation:** Unnormalized noise multiplies embedding norms by up to $10\times$, scaling unconstrained linear logits and driving softmax confidence to near 1.0 on randomized inputs. Re-normalizing features preserves calibration ($\text{ECE} \le 0.052$ for $\sigma \le 0.05$), and noise-augmented training reduces ECE to 0.016.
 
 ---
 
-### 4.5 Resampling and Statistical Power Analysis
+### 4.5 Resampling and Precision Analysis
 
 - **Bootstrap Protocol:** Subsampled $k \in [3, 18]$ held-out events across 500 outer subsets without replacement, with 200 inner cluster bootstrap resamples.
-- **Analytic Comparison:** Mean 95% CI width narrows from 18.21 pp ($k=3$) to 14.87 pp ($k=7$), 12.99 pp ($k=10$), 10.96 pp ($k=15$), and 10.18 pp ($k=18$).
+- **Analytic Comparison:** Mean 95% CI width narrows from 18.21 pp ($k=3$) to 14.87 pp ($k=7$), 12.99 pp ($k=10$), 10.96 pp ($k=15$, half-width $\pm 5.48$ pp), and 10.18 pp ($k=18$).
 - **Theoretical Curves:** Plotted against infinite superpopulation curve ($2 \cdot 1.96 \cdot \text{SD}/\sqrt{k}$, $\text{SD}=0.0768$) and finite-population-corrected (FPC) curve ($\sqrt{\frac{N-k}{N-1}}$).
-- **Recommendation:** Evaluating fewer than 15 disaster events results in an empirical 95% confidence interval width exceeding 10 percentage points. Reliable crisis AI benchmarks require at least **$k \ge 15$ held-out disaster events**.
+- **Benchmark Sample Size Requirement:** In this benchmark, at least 15 held-out events were required to achieve an empirical 95% confidence interval width below 11 percentage points (a half-width of $\pm 5.5$ percentage points). Evaluations relying on 2 to 3 disaster events produce confidence intervals spanning over 18 percentage points ($\pm 9$ percentage points), making algorithmic comparisons statistically uninformative.
 
 ---
 

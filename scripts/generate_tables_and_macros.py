@@ -94,6 +94,14 @@ def main() -> None:
     macros.append(f"\\newcommand{{\\hPriorMacro}}{{{fmt(h_diag['event_prior_acc'].mean() * 100)}}}")
     macros.append(f"\\newcommand{{\\hPriorPooled}}{{{fmt(32.21)}}}")
 
+    # Macro drops
+    c_macro_drop = c_diag['random_acc'].mean() * 100 - c_loeo['accuracy'].mean() * 100
+    h_macro_drop = h_diag['random_acc'].mean() * 100 - h_loeo['accuracy'].mean() * 100
+    macros.append("")
+    macros.append("% --- Average Macro LOEO Drops ---")
+    macros.append(f"\\newcommand{{\\cMacroLOEODrop}}{{{fmt(c_macro_drop, 2)}}}")
+    macros.append(f"\\newcommand{{\\hMacroLOEODrop}}{{{fmt(h_macro_drop, 2)}}}")
+
     # Paired drop from random pooled to worst LOEO:
     c_tail_drop_mean = c_rand['accuracy'].mean() * 100 - c_loeo['accuracy'].min() * 100
     c_tail_drop_low = c_rand['accuracy'].min() * 100 - c_loeo['accuracy'].min() * 100
@@ -108,100 +116,123 @@ def main() -> None:
     macros.append(f"\\newcommand{{\\hTailDropLow}}{{{fmt(h_tail_drop_low, 1)}}}")
 
     # =========================================================================
-    # 2. Causal Deduplication & Leakage Impact
+    # 2. Leakage Table IV (Exact 5-Seed Averages)
     # =========================================================================
-    c_leak = pd.read_csv(out_dir / "diagnostics" / "crisismmd_causal_dedup.csv")
-    h_leak = pd.read_csv(out_dir / "diagnostics" / "humaid_causal_dedup.csv")
+    c_leak_5s = pd.read_csv(out_dir / "leakage_impact" / "crisismmd_leakage_impact_results.csv")
+    h_leak_5s = pd.read_csv(out_dir / "leakage_impact" / "humaid_leakage_impact_results.csv")
+
+    c_causal = pd.read_csv(out_dir / "diagnostics" / "crisismmd_causal_dedup.csv")
+    h_causal = pd.read_csv(out_dir / "diagnostics" / "humaid_causal_dedup.csv")
 
     macros.append("")
-    macros.append("% --- Near-Duplicate Leakage & Causal Deduplication ---")
-    c_tau90 = c_leak[c_leak["tau"] == 0.90].iloc[0]
-    h_tau90 = h_leak[h_leak["tau"] == 0.90].iloc[0]
+    macros.append("% --- Near-Duplicate Leakage (Table IV: 5-Seed Means) ---")
 
-    macros.append(f"\\newcommand{{\\cLeakShareNinety}}{{{fmt(c_tau90['leak_share'] * 100, 1)}}}")
-    macros.append(f"\\newcommand{{\\cLeakAccNinety}}{{{fmt(c_tau90['acc_leaked'] * 100, 2)}}}")
-    macros.append(f"\\newcommand{{\\cCleanAccNinety}}{{{fmt(c_tau90['acc_clean'] * 100, 2)}}}")
-    macros.append(f"\\newcommand{{\\cLeakAssocGapNinety}}{{{fmt(c_tau90['assoc_gap'] * 100, 2)}}}")
-    macros.append(f"\\newcommand{{\\cLeakNetEffectNinety}}{{{fmt(c_tau90['net_effect'] * 100, 2)}}}")
-    macros.append(f"\\newcommand{{\\cCausalDropNinety}}{{{fmt(c_tau90['causal_drop'] * 100, 2)}}}")
+    # CrisisMMD Thresholds
+    for tau, tag in [(0.90, "Ninety"), (0.95, "NinetyFive"), (0.98, "NinetyEight")]:
+        sub = c_leak_5s[c_leak_5s["similarity_threshold"] == tau]
+        macros.append(f"\\newcommand{{\\cLeakShare{tag}}}{{{fmt(sub['leakage_rate'].mean() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\cLeakCount{tag}}}{{{fmt(sub['n_test_leaked'].mean(), 1)}}}")
+        macros.append(f"\\newcommand{{\\cCleanCount{tag}}}{{{fmt(sub['n_test_clean'].mean(), 1)}}}")
+        macros.append(f"\\newcommand{{\\cLeakAcc{tag}}}{{{fmt(sub['acc_leaked'].mean() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\cLeakAccStd{tag}}}{{{fmt(sub['acc_leaked'].std() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\cCleanAcc{tag}}}{{{fmt(sub['acc_clean'].mean() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\cCleanAccStd{tag}}}{{{fmt(sub['acc_clean'].std() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\cLeakAssocGap{tag}}}{{{fmt(sub['delta_inflation'].mean() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\cLeakAssocGapStd{tag}}}{{{fmt(sub['delta_inflation'].std() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\cLeakNetEffect{tag}}}{{{fmt(sub['delta_reported'].mean() * 100, 2)}}}")
 
-    macros.append(f"\\newcommand{{\\hLeakShareNinety}}{{{fmt(h_tau90['leak_share'] * 100, 1)}}}")
-    macros.append(f"\\newcommand{{\\hLeakAccNinety}}{{{fmt(h_tau90['acc_leaked'] * 100, 2)}}}")
-    macros.append(f"\\newcommand{{\\hCleanAccNinety}}{{{fmt(h_tau90['acc_clean'] * 100, 2)}}}")
-    macros.append(f"\\newcommand{{\\hLeakAssocGapNinety}}{{{fmt(h_tau90['assoc_gap'] * 100, 2)}}}")
-    macros.append(f"\\newcommand{{\\hLeakNetEffectNinety}}{{{fmt(h_tau90['net_effect'] * 100, 2)}}}")
-    macros.append(f"\\newcommand{{\\hCausalDropNinety}}{{{fmt(h_tau90['causal_drop'] * 100, 2)}}}")
+    # HumAID Thresholds
+    for tau, tag in [(0.90, "Ninety"), (0.95, "NinetyFive"), (0.98, "NinetyEight")]:
+        sub = h_leak_5s[h_leak_5s["similarity_threshold"] == tau]
+        macros.append(f"\\newcommand{{\\hLeakShare{tag}}}{{{fmt(sub['leakage_rate'].mean() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\hLeakCount{tag}}}{{{fmt(sub['n_test_leaked'].mean(), 1)}}}")
+        macros.append(f"\\newcommand{{\\hCleanCount{tag}}}{{{fmt(sub['n_test_clean'].mean(), 1)}}}")
+        macros.append(f"\\newcommand{{\\hLeakAcc{tag}}}{{{fmt(sub['acc_leaked'].mean() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\hLeakAccStd{tag}}}{{{fmt(sub['acc_leaked'].std() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\hCleanAcc{tag}}}{{{fmt(sub['acc_clean'].mean() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\hCleanAccStd{tag}}}{{{fmt(sub['acc_clean'].std() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\hLeakAssocGap{tag}}}{{{fmt(sub['delta_inflation'].mean() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\hLeakAssocGapStd{tag}}}{{{fmt(sub['delta_inflation'].std() * 100, 2)}}}")
+        macros.append(f"\\newcommand{{\\hLeakNetEffect{tag}}}{{{fmt(sub['delta_reported'].mean() * 100, 2)}}}")
+
+    # Causal Purge Drops
+    c_causal_drop = c_causal[c_causal["tau"] == 0.90]["causal_drop"].iloc[0] * 100
+    h_causal_drop = h_causal[h_causal["tau"] == 0.90]["causal_drop"].iloc[0] * 100
+    macros.append(f"\\newcommand{{\\cCausalDropNinety}}{{{fmt(c_causal_drop, 2)}}}")
+    macros.append(f"\\newcommand{{\\hCausalDropNinety}}{{{fmt(h_causal_drop, 2)}}}")
 
     # =========================================================================
     # 3. Domain Generalization Benchmark (5-seed)
     # =========================================================================
     macros.append("")
-    macros.append("% --- Domain Generalization Benchmarks (Table III) ---")
+    macros.append("% --- Domain Generalization Benchmarks (Table III: 5 seeds) ---")
     # CrisisMMD
     c_dg_file = out_dir / "dg_benchmark" / "crisismmd_dg_benchmark_5seeds_results.csv"
-    if c_dg_file.exists():
-        c_dg = pd.read_csv(c_dg_file)
-        c_dg_mean = c_dg.groupby("method").mean(numeric_only=True)
-        c_dg_std = c_dg.groupby("method").std(numeric_only=True)
-        c_dg_min = c_dg.groupby("method")["accuracy"].min()
+    c_dg = pd.read_csv(c_dg_file)
+    c_dg_mean = c_dg.groupby("method").mean(numeric_only=True)
+    c_dg_std = c_dg.groupby("method").std(numeric_only=True)
+    c_dg_min = c_dg.groupby("method")["accuracy"].min()
 
-        macros.append(f"\\newcommand{{\\cERMAcc}}{{{fmt(c_dg_mean.loc['ERM', 'accuracy'] * 100)}}}")
-        macros.append(f"\\newcommand{{\\cERMAccStd}}{{{fmt(c_dg_std.loc['ERM', 'accuracy'] * 100)}}}")
-        macros.append(f"\\newcommand{{\\cERMWorst}}{{{fmt(c_dg_min.loc['ERM'] * 100)}}}")
-        macros.append(f"\\newcommand{{\\cERMECE}}{{{fmt(c_dg_mean.loc['ERM', 'ece'], 3)}}}")
-        macros.append(f"\\newcommand{{\\cERMECEScaled}}{{{fmt(c_dg_mean.loc['ERM', 'ece_temp_scaled'], 3)}}}")
-        macros.append(f"\\newcommand{{\\cERMAURC}}{{{fmt(c_dg_mean.loc['ERM', 'aurc'], 3)}}}")
+    macros.append(f"\\newcommand{{\\cERMAcc}}{{{fmt(c_dg_mean.loc['ERM', 'accuracy'] * 100)}}}")
+    macros.append(f"\\newcommand{{\\cERMAccStd}}{{{fmt(c_dg_std.loc['ERM', 'accuracy'] * 100)}}}")
+    macros.append(f"\\newcommand{{\\cERMWorst}}{{{fmt(c_dg_min.loc['ERM'] * 100)}}}")
+    macros.append(f"\\newcommand{{\\cERMECE}}{{{fmt(c_dg_mean.loc['ERM', 'ece'], 3)}}}")
+    macros.append(f"\\newcommand{{\\cERMECEScaled}}{{{fmt(c_dg_mean.loc['ERM', 'ece_temp_scaled'], 3)}}}")
+    macros.append(f"\\newcommand{{\\cERMAURC}}{{{fmt(c_dg_mean.loc['ERM', 'aurc'], 3)}}}")
 
-        macros.append(f"\\newcommand{{\\cGroupDROAcc}}{{{fmt(c_dg_mean.loc['GroupDRO', 'accuracy'] * 100)}}}")
-        macros.append(f"\\newcommand{{\\cGroupDROAccStd}}{{{fmt(c_dg_std.loc['GroupDRO', 'accuracy'] * 100)}}}")
-        macros.append(f"\\newcommand{{\\cGroupDROWorst}}{{{fmt(c_dg_min.loc['GroupDRO'] * 100)}}}")
-        macros.append(f"\\newcommand{{\\cGroupDROECE}}{{{fmt(c_dg_mean.loc['GroupDRO', 'ece'], 3)}}}")
-        macros.append(f"\\newcommand{{\\cGroupDROECEScaled}}{{{fmt(c_dg_mean.loc['GroupDRO', 'ece_temp_scaled'], 3)}}}")
-        macros.append(f"\\newcommand{{\\cGroupDROAURC}}{{{fmt(c_dg_mean.loc['GroupDRO', 'aurc'], 3)}}}")
+    macros.append(f"\\newcommand{{\\cGroupDROAcc}}{{{fmt(c_dg_mean.loc['GroupDRO', 'accuracy'] * 100)}}}")
+    macros.append(f"\\newcommand{{\\cGroupDROAccStd}}{{{fmt(c_dg_std.loc['GroupDRO', 'accuracy'] * 100)}}}")
+    macros.append(f"\\newcommand{{\\cGroupDROWorst}}{{{fmt(c_dg_min.loc['GroupDRO'] * 100)}}}")
+    macros.append(f"\\newcommand{{\\cGroupDROECE}}{{{fmt(c_dg_mean.loc['GroupDRO', 'ece'], 3)}}}")
+    macros.append(f"\\newcommand{{\\cGroupDROECEScaled}}{{{fmt(c_dg_mean.loc['GroupDRO', 'ece_temp_scaled'], 3)}}}")
+    macros.append(f"\\newcommand{{\\cGroupDROAURC}}{{{fmt(c_dg_mean.loc['GroupDRO', 'aurc'], 3)}}}")
 
-        macros.append(f"\\newcommand{{\\cIRMAcc}}{{{fmt(c_dg_mean.loc['IRM', 'accuracy'] * 100)}}}")
-        macros.append(f"\\newcommand{{\\cIRMAccStd}}{{{fmt(c_dg_std.loc['IRM', 'accuracy'] * 100)}}}")
-        macros.append(f"\\newcommand{{\\cIRMWorst}}{{{fmt(c_dg_min.loc['IRM'] * 100)}}}")
-        macros.append(f"\\newcommand{{\\cIRMECE}}{{{fmt(c_dg_mean.loc['IRM', 'ece'], 3)}}}")
-        macros.append(f"\\newcommand{{\\cIRMECEScaled}}{{{fmt(c_dg_mean.loc['IRM', 'ece_temp_scaled'], 3)}}}")
-        macros.append(f"\\newcommand{{\\cIRMAURC}}{{{fmt(c_dg_mean.loc['IRM', 'aurc'], 3)}}}")
+    macros.append(f"\\newcommand{{\\cIRMAcc}}{{{fmt(c_dg_mean.loc['IRM', 'accuracy'] * 100)}}}")
+    macros.append(f"\\newcommand{{\\cIRMAccStd}}{{{fmt(c_dg_std.loc['IRM', 'accuracy'] * 100)}}}")
+    macros.append(f"\\newcommand{{\\cIRMWorst}}{{{fmt(c_dg_min.loc['IRM'] * 100)}}}")
+    macros.append(f"\\newcommand{{\\cIRMECE}}{{{fmt(c_dg_mean.loc['IRM', 'ece'], 3)}}}")
+    macros.append(f"\\newcommand{{\\cIRMECEScaled}}{{{fmt(c_dg_mean.loc['IRM', 'ece_temp_scaled'], 3)}}}")
+    macros.append(f"\\newcommand{{\\cIRMAURC}}{{{fmt(c_dg_mean.loc['IRM', 'aurc'], 3)}}}")
+
+    # GroupDRO Worst Event Gain on CrisisMMD:
+    c_dro_gain = (c_dg_min.loc['GroupDRO'] - c_dg_min.loc['ERM']) * 100
+    c_irm_pen = (c_dg_mean.loc['ERM', 'accuracy'] - c_dg_mean.loc['IRM', 'accuracy']) * 100
+    macros.append(f"\\newcommand{{\\cGroupDROGain}}{{{fmt(c_dro_gain, 2)}}}")
+    macros.append(f"\\newcommand{{\\cIRMPenalty}}{{{fmt(c_irm_pen, 2)}}}")
 
     # HumAID
     h_dg_5s_file = out_dir / "dg_benchmark" / "humaid_dg_benchmark_5seeds_results.csv"
-    h_dg_1s_file = out_dir / "dg_benchmark" / "humaid_dg_benchmark_results.csv"
-    if h_dg_5s_file.exists():
-        h_dg = pd.read_csv(h_dg_5s_file)
-        h_dg_mean = h_dg.groupby("method").mean(numeric_only=True)
-        h_dg_std = h_dg.groupby("method").std(numeric_only=True)
-        h_dg_min = h_dg.groupby("method")["accuracy"].min()
-        scaled_col = "ece_temp_scaled" if "ece_temp_scaled" in h_dg.columns else "ece"
-    else:
-        h_dg = pd.read_csv(h_dg_1s_file)
-        h_dg_mean = h_dg.groupby("method").mean(numeric_only=True)
-        h_dg_std = h_dg.groupby("method").std(numeric_only=True)
-        h_dg_min = h_dg.groupby("method")["accuracy"].min()
-        scaled_col = "ece"
+    h_dg = pd.read_csv(h_dg_5s_file)
+    h_dg_mean = h_dg.groupby("method").mean(numeric_only=True)
+    h_dg_std = h_dg.groupby("method").std(numeric_only=True)
+    h_dg_min = h_dg.groupby("method")["accuracy"].min()
 
     macros.append(f"\\newcommand{{\\hERMAcc}}{{{fmt(h_dg_mean.loc['ERM', 'accuracy'] * 100)}}}")
     macros.append(f"\\newcommand{{\\hERMAccStd}}{{{fmt(h_dg_std.loc['ERM', 'accuracy'] * 100)}}}")
     macros.append(f"\\newcommand{{\\hERMWorst}}{{{fmt(h_dg_min.loc['ERM'] * 100)}}}")
     macros.append(f"\\newcommand{{\\hERMECE}}{{{fmt(h_dg_mean.loc['ERM', 'ece'], 3)}}}")
-    macros.append(f"\\newcommand{{\\hERMECEScaled}}{{{fmt(0.024, 3)}}}")
+    macros.append(f"\\newcommand{{\\hERMECEScaled}}{{{fmt(h_dg_mean.loc['ERM', 'ece_temp_scaled'], 3)}}}")
     macros.append(f"\\newcommand{{\\hERMAURC}}{{{fmt(h_dg_mean.loc['ERM', 'aurc'], 3)}}}")
 
     macros.append(f"\\newcommand{{\\hGroupDROAcc}}{{{fmt(h_dg_mean.loc['GroupDRO', 'accuracy'] * 100)}}}")
     macros.append(f"\\newcommand{{\\hGroupDROAccStd}}{{{fmt(h_dg_std.loc['GroupDRO', 'accuracy'] * 100)}}}")
     macros.append(f"\\newcommand{{\\hGroupDROWorst}}{{{fmt(h_dg_min.loc['GroupDRO'] * 100)}}}")
     macros.append(f"\\newcommand{{\\hGroupDROECE}}{{{fmt(h_dg_mean.loc['GroupDRO', 'ece'], 3)}}}")
-    macros.append(f"\\newcommand{{\\hGroupDROECEScaled}}{{{fmt(0.022, 3)}}}")
+    macros.append(f"\\newcommand{{\\hGroupDROECEScaled}}{{{fmt(h_dg_mean.loc['GroupDRO', 'ece_temp_scaled'], 3)}}}")
     macros.append(f"\\newcommand{{\\hGroupDROAURC}}{{{fmt(h_dg_mean.loc['GroupDRO', 'aurc'], 3)}}}")
 
     macros.append(f"\\newcommand{{\\hIRMAcc}}{{{fmt(h_dg_mean.loc['IRM', 'accuracy'] * 100)}}}")
     macros.append(f"\\newcommand{{\\hIRMAccStd}}{{{fmt(h_dg_std.loc['IRM', 'accuracy'] * 100)}}}")
     macros.append(f"\\newcommand{{\\hIRMWorst}}{{{fmt(h_dg_min.loc['IRM'] * 100)}}}")
     macros.append(f"\\newcommand{{\\hIRMECE}}{{{fmt(h_dg_mean.loc['IRM', 'ece'], 3)}}}")
-    macros.append(f"\\newcommand{{\\hIRMECEScaled}}{{{fmt(0.021, 3)}}}")
+    macros.append(f"\\newcommand{{\\hIRMECEScaled}}{{{fmt(h_dg_mean.loc['IRM', 'ece_temp_scaled'], 3)}}}")
     macros.append(f"\\newcommand{{\\hIRMAURC}}{{{fmt(h_dg_mean.loc['IRM', 'aurc'], 3)}}}")
+
+    # GroupDRO Worst Event Gain on HumAID:
+    h_dro_gain = (h_dg_min.loc['GroupDRO'] - h_dg_min.loc['ERM']) * 100
+    h_irm_pen = (h_dg_mean.loc['ERM', 'accuracy'] - h_dg_mean.loc['IRM', 'accuracy']) * 100
+    macros.append(f"\\newcommand{{\\hGroupDROGain}}{{{fmt(h_dro_gain, 2)}}}")
+    macros.append(f"\\newcommand{{\\hIRMPenalty}}{{{fmt(h_irm_pen, 2)}}}")
 
     # =========================================================================
     # 4. Write macros_results.tex

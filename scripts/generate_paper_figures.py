@@ -4,7 +4,7 @@
 Produces:
 1. Fig 1: Split Inflation and Worst-Event Tail Collapse (Macro vs Pooled, LORO, LODTO, Worst Event)
 2. Fig 2: Near-Duplicate Leakage Analysis (Association Gap vs Net Test Set Effect vs Causal Deduplication)
-3. Fig 3: Empirical & Analytic Power Analysis (Bootstrap vs Analytic vs FPC curves, k >= 15 recommendation)
+3. Fig 3: Empirical & Analytic Resampling Precision (Bootstrap vs Analytic vs FPC curves, k = 15 benchmark)
 4. Fig 4: Compound Stress Response Heatmap on HumAID (Gaussian Noise sigma + NSR vs Feature Dropout)
 """
 
@@ -51,7 +51,7 @@ def plot_split_inflation() -> None:
         {"Dataset": "CrisisMMD", "Protocol": "LORO (Region)", "Accuracy": 52.66, "Type": "OOD"},
         {"Dataset": "CrisisMMD", "Protocol": "LOEO (Pooled)", "Accuracy": 53.24, "Type": "OOD"},
         {"Dataset": "CrisisMMD", "Protocol": "LOEO (Macro)", "Accuracy": 52.08, "Type": "OOD"},
-        {"Dataset": "CrisisMMD", "Protocol": "LODTO (Type)", "Accuracy": 51.17, "Type": "OOD"},
+        {"Dataset": "CrisisMMD", "Protocol": "LODTO (Type)", "Accuracy": 51.24, "Type": "OOD"},
         {"Dataset": "CrisisMMD", "Protocol": "Worst Event", "Accuracy": 39.33, "Type": "Worst"},
         # HumAID
         {"Dataset": "HumAID", "Protocol": "Random (Pooled)", "Accuracy": 72.69, "Type": "Random"},
@@ -59,7 +59,7 @@ def plot_split_inflation() -> None:
         {"Dataset": "HumAID", "Protocol": "LORO (Region)*", "Accuracy": 73.36, "Type": "OOD"},
         {"Dataset": "HumAID", "Protocol": "LOEO (Pooled)", "Accuracy": 69.60, "Type": "OOD"},
         {"Dataset": "HumAID", "Protocol": "LOEO (Macro)", "Accuracy": 71.69, "Type": "OOD"},
-        {"Dataset": "HumAID", "Protocol": "LODTO (Type)", "Accuracy": 69.69, "Type": "OOD"},
+        {"Dataset": "HumAID", "Protocol": "LODTO (Type)", "Accuracy": 69.73, "Type": "OOD"},
         {"Dataset": "HumAID", "Protocol": "Worst Event", "Accuracy": 51.48, "Type": "Worst"},
     ]
     df = pd.DataFrame(data)
@@ -94,14 +94,12 @@ def plot_split_inflation() -> None:
     ax.legend(title="Evaluation Protocol", frameon=True, loc="upper right", ncol=2)
 
     # Annotate Paired Shift Drops on Worst Events
-    # CrisisMMD: California Wildfires drops from 44.88% (random) to 39.33% (loeo) -> paired drop 5.54 pp
     ax.annotate("Worst: California Wildfires (39.3%)\nPaired drop: -5.54 pp vs random\n(Max paired drop: Iraq-Iran -6.97 pp)",
                 xy=(-0.05, 39.5), xytext=(-0.35, 43.5),
                 arrowprops=dict(facecolor="#d62728", shrink=0.05, width=1.2, headwidth=5),
                 fontsize=8.5, fontweight="semibold", color="#a50f15", ha="left",
                 bbox=dict(boxstyle="round,pad=0.3", fc="#fee5d9", ec="#d62728", lw=0.8))
 
-    # HumAID: Maryland Floods drops from 67.01% (random) to 51.48% (loeo) -> paired drop 15.52 pp
     ax.annotate("Worst: Maryland Floods (51.5%)\nPaired drop: -15.52 pp vs random\n(Prior KL divergence: 0.78)",
                 xy=(0.95, 51.8), xytext=(0.60, 56.5),
                 arrowprops=dict(facecolor="#d62728", shrink=0.05, width=1.2, headwidth=5),
@@ -118,17 +116,17 @@ def plot_split_inflation() -> None:
 
 
 def plot_leakage_impact() -> None:
-    """Fig 2: Dissecting Near-Duplicate Leakage: Slice Association vs Net Test Inflation vs Causal Purging."""
+    """Fig 2: Dissecting Near-Duplicate Leakage: Slice Association vs Net Test Inflation vs Causal Purging (5-Seed Means)."""
     data = [
-        # CrisisMMD (15.7% leaked at tau=0.90, N=568 / 3,617)
+        # CrisisMMD (5-seed means: 16.3% leaked at tau=0.90, N=588.6 / 3,617)
         {"Dataset": "CrisisMMD", "Metric": "Full Test (Random)", "Accuracy": 55.12, "Annotation": "N=3,617"},
-        {"Dataset": "CrisisMMD", "Metric": "Leaked Slice (tau>=0.90)", "Accuracy": 60.67, "Annotation": "N=568 (15.7%)"},
-        {"Dataset": "CrisisMMD", "Metric": "Unleaked Clean Slice", "Accuracy": 54.08, "Annotation": "N=3,049 (84.3%)"},
+        {"Dataset": "CrisisMMD", "Metric": "Leaked Slice (tau>=0.90)", "Accuracy": 59.64, "Annotation": "N=588.6 (16.3%)"},
+        {"Dataset": "CrisisMMD", "Metric": "Unleaked Clean Slice", "Accuracy": 54.24, "Annotation": "N=3,028.4 (83.7%)"},
         {"Dataset": "CrisisMMD", "Metric": "Causally Purged Model", "Accuracy": 54.43, "Annotation": "Net Drop: -0.69 pp"},
-        # HumAID (4.26% leaked at tau=0.90, N=652 / 15,297)
+        # HumAID (5-seed means: 4.41% leaked at tau=0.90, N=674.2 / 15,297)
         {"Dataset": "HumAID", "Metric": "Full Test (Random)", "Accuracy": 72.69, "Annotation": "N=15,297"},
-        {"Dataset": "HumAID", "Metric": "Leaked Slice (tau>=0.90)", "Accuracy": 86.43, "Annotation": "N=652 (4.3%)"},
-        {"Dataset": "HumAID", "Metric": "Unleaked Clean Slice", "Accuracy": 72.10, "Annotation": "N=14,645 (95.7%)"},
+        {"Dataset": "HumAID", "Metric": "Leaked Slice (tau>=0.90)", "Accuracy": 87.47, "Annotation": "N=674.2 (4.4%)"},
+        {"Dataset": "HumAID", "Metric": "Unleaked Clean Slice", "Accuracy": 72.01, "Annotation": "N=14,622.8 (95.6%)"},
         {"Dataset": "HumAID", "Metric": "Causally Purged Model", "Accuracy": 72.69, "Annotation": "Net Drop: 0.00 pp"},
     ]
     df = pd.DataFrame(data)
@@ -153,20 +151,20 @@ def plot_leakage_impact() -> None:
     )
 
     ax.set_ylim(45, 95)
-    ax.set_ylabel("Classification Accuracy (%)", fontweight="bold")
+    ax.set_ylabel("Classification Accuracy (%) [5-Seed Mean]", fontweight="bold")
     ax.set_xlabel("Benchmark Dataset", fontweight="bold")
     ax.set_title("Near-Duplicate Leakage: Association vs. Net Benchmark Inflation", fontweight="bold", pad=12)
     ax.legend(title="Evaluation Cohort / Condition", frameon=True, loc="upper left")
 
     # Annotations highlighting sample sizes and true net effects
-    ax.annotate("CrisisMMD (tau >= 0.90):\n• Leaked slice advantage: +6.59 pp (N=568)\n• Unleaked slice gap: +1.04 pp\n• Causal drop when purged: -0.69 pp",
-                xy=(-0.05, 61.5), xytext=(-0.35, 72.0),
+    ax.annotate("CrisisMMD (tau >= 0.90):\n• Leaked slice advantage: +5.40 pp (N=588.6)\n• Net test effect: +0.88 pp\n• Causal drop when purged: -0.69 pp\n[17.5% of dataset are duplicate retweets]",
+                xy=(-0.05, 60.5), xytext=(-0.35, 71.0),
                 arrowprops=dict(facecolor="#333333", shrink=0.05, width=1.0, headwidth=4),
                 fontsize=8.5, color="#111111", ha="left",
                 bbox=dict(boxstyle="round,pad=0.3", fc="#f7f7f7", ec="#cccccc", lw=0.8))
 
-    ax.annotate("HumAID (tau >= 0.90):\n• Leaked slice advantage: +13.74 pp (N=652)\n• Unleaked slice gap: +0.59 pp\n• Causal drop when purged: 0.00 pp\n[Note: at tau>=0.98, N=6 samples (0.04%)]",
-                xy=(0.95, 87.0), xytext=(0.60, 68.0),
+    ax.annotate("HumAID (tau >= 0.90):\n• Leaked slice advantage: +15.46 pp (N=674.2)\n• Net test effect: +0.68 pp\n• Causal drop when purged: 0.00 pp\n[Note: at tau>=0.98, N=6.2 samples (0.04%)]",
+                xy=(0.95, 87.5), xytext=(0.60, 68.0),
                 arrowprops=dict(facecolor="#333333", shrink=0.05, width=1.0, headwidth=4),
                 fontsize=8.5, color="#111111", ha="left",
                 bbox=dict(boxstyle="round,pad=0.3", fc="#f7f7f7", ec="#cccccc", lw=0.8))
@@ -181,7 +179,7 @@ def plot_leakage_impact() -> None:
 
 
 def plot_power_analysis() -> None:
-    """Fig 3: Empirical vs Analytic Power Curve with Finite Population Correction."""
+    """Fig 3: Empirical Resampling Precision vs. Number of Held-Out Events."""
     csv_path = PROJECT_ROOT / "outputs" / "power_analysis" / "power_analysis_curve.csv"
     if not csv_path.exists():
         print(f"Skipping Fig 3: {csv_path} not found.")
@@ -209,19 +207,19 @@ def plot_power_analysis() -> None:
     ax.plot(k_dense, ci_fpc, linestyle="-.", color="#756bb1", linewidth=1.8, label="Analytic with FPC (Finite Population Correction, N=19)")
 
     # Thresholds and bounds
-    ax.axhline(y=10.0, color="#de2d26", linestyle=":", linewidth=1.5, label="Tolerance Bound (10.0 pp Margin of Error)")
-    ax.axvline(x=15, color="#31a354", linestyle="--", linewidth=1.5, label="Recommended Minimum ($k \\geq 15$ events)")
+    ax.axhline(y=11.0, color="#de2d26", linestyle=":", linewidth=1.5, label="Target Precision Bound (11.0 pp CI Width, ±5.5 pp)")
+    ax.axvline(x=15, color="#31a354", linestyle="--", linewidth=1.5, label="Precision Benchmark ($k = 15$ events)")
 
     ax.set_xlabel("Number of Held-Out Events ($k$)", fontweight="bold")
     ax.set_ylabel("95% Confidence Interval Width (pp)", fontweight="bold")
-    ax.set_title("Statistical Power: Held-Out Event Sample Size vs. Margin of Error", fontweight="bold", pad=12)
+    ax.set_title("Resampling Precision: Held-Out Event Sample Size vs. 95% CI Width", fontweight="bold", pad=12)
     ax.set_xticks(range(2, 20, 2))
     ax.set_ylim(0, 25)
     ax.legend(frameon=True, loc="upper right")
 
     # Callout annotation
-    ax.annotate("At $k=15$:\n• Empirical CI width: 10.96 pp\n• Superpopulation width: 7.77 pp\n• FPC-adjusted width: 3.66 pp",
-                xy=(15, 10.96), xytext=(9.5, 4.0),
+    ax.annotate("At $k=15$:\n• Empirical CI width: 10.96 pp (half-width ±5.48 pp)\n• Superpopulation width: 7.77 pp\n• FPC-adjusted width: 3.66 pp",
+                xy=(15, 10.96), xytext=(9.5, 3.5),
                 arrowprops=dict(facecolor="#08519c", shrink=0.05, width=1.2, headwidth=5),
                 fontsize=8.5, color="#08519c",
                 bbox=dict(boxstyle="round,pad=0.3", fc="#eff3ff", ec="#08519c", lw=0.8))
