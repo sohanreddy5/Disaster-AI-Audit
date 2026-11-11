@@ -44,11 +44,11 @@
 \maketitle
 
 \begin{abstract}
-Machine learning systems for rapid disaster triage and humanitarian crisis response are conventionally evaluated using uniform random train/test splits. In this setup, observations from every disaster event appear on both sides of the split. In real-world emergency deployments, however, models face a fundamentally different challenge: transferring to an entirely unobserved disaster in an unfamiliar geographic region. In this paper, we conduct an extensive empirical audit of crisis classification across 94,566 labeled observations from 26 event-level evaluation folds (7 in CrisisMMD and 19 in HumAID) spanning 22 unique physical disaster incidents across 9 geographic regions. Averaged across events, leave-one-event-out (LOEO) evaluation incurs only a 1.0 to 3.0 percentage point reduction in accuracy relative to random splits. However, this average conceals severe tail-risk vulnerability: accuracy on the hardest held-out event falls by 15.8 percentage points (to 39.33\% on CrisisMMD) and 21.2 percentage points (to 51.48\% on HumAID) below random-split baselines. An input-free event-prior baseline achieves 38.67\% accuracy on CrisisMMD and 32.21\% on HumAID, reaching 70.2\% and 44.3\% of the corresponding random-split model accuracies and highlighting the substantial influence of label-prior structure. Near-duplicate posts also cross random split boundaries; test instances with training near-duplicates ($\tau \ge 0.90$) exhibit a near-duplicate-associated accuracy advantage of up to +15.46 percentage points over clean samples. Under zero-shot synthetic feature corruption (evaluating embedding noise and dimension dropout), accuracy drops to 17.19\% while Expected Calibration Error (ECE) surges from 0.039 to 0.745. Across all 26 LOEO folds, under our frozen-feature experimental setup, GroupDRO and IRM do not improve mean accuracy over empirical risk minimization (ERM), while the fixed-input covariance penalty produces results identical to ERM by construction. GroupDRO provides modest worst-event protection (+1.61 pp on CrisisMMD, +0.40 pp on HumAID), while IRM produces substantially lower mean ECE on HumAID than ERM ($W=0.0, p=3.81 \times 10^{-6}$). Although mean LOEO accuracy is relatively close to random-split performance, the hardest held-out events exhibit catastrophic accuracy reductions (falling by 15.8 to 21.2 percentage points). Finally, empirical resampling reveals that the 95\% confidence interval width on mean accuracy remains 10.96 points wide even with fifteen held-out events, showing that small-scale benchmarks with 2--3 events provide unstable comparisons. We openly release all code, cached embeddings, and split manifests.
+Machine learning systems for rapid disaster triage and humanitarian crisis response are conventionally evaluated using uniform random train/test splits. In this setup, observations from every disaster event appear on both sides of the split. In real-world emergency deployments, however, models face a fundamentally different challenge: transferring to an entirely unobserved disaster in an unfamiliar geographic region. In this paper, we conduct an extensive empirical audit of crisis classification across 94,566 labeled observations from 26 event-level evaluation folds (7 in CrisisMMD and 19 in HumAID) spanning 22 unique physical disaster incidents across 9 geographic regions. Averaged across events, leave-one-event-out (LOEO) evaluation incurs only a 1.0 to 3.0 percentage point reduction in accuracy relative to random splits. However, this average conceals severe tail-risk vulnerability: accuracy on the hardest held-out event falls by 15.8 percentage points on CrisisMMD (from 55.12\% mean random accuracy to 39.33\% worst-event accuracy) and 21.2 percentage points on HumAID (from 72.69\% to 51.48\%). (Comparing against the lowest random-split seed gives drops of 15.02 and 20.82 percentage points respectively). An input-free event-prior baseline achieves 38.67\% accuracy on CrisisMMD and 32.21\% on HumAID, reaching 70.2\% and 44.3\% of the corresponding random-split model accuracies and highlighting the substantial influence of label-prior structure. Near-duplicate posts also cross random split boundaries; test instances with training near-duplicates ($\tau \ge 0.90$) exhibit a near-duplicate-associated accuracy advantage of up to +15.46 percentage points over clean samples. Under zero-shot synthetic feature degradation (evaluating embedding noise and dimension dropout), accuracy degrades sharply from 71.69\% to 47.67\% under mild perturbation ($\sigma=0.10$) and collapses to 17.19\% ($\sigma=0.50$), while Expected Calibration Error (ECE) surges from 0.039 to 0.745. Across all 26 LOEO folds, under our frozen-feature experimental setup, GroupDRO and IRM do not improve mean accuracy over empirical risk minimization (ERM), while the fixed-input covariance penalty produces results identical to ERM by construction. GroupDRO provides modest worst-event protection (+1.61 pp on CrisisMMD, +0.40 pp on HumAID), while IRM produces substantially lower mean ECE on HumAID than ERM ($W=0.0, p=3.81 \times 10^{-6}$). Although mean LOEO accuracy is relatively close to random-split performance, the hardest held-out events exhibit catastrophic accuracy reductions (falling by 15.8 to 21.2 percentage points). Finally, empirical resampling reveals that the 95\% confidence interval width on mean accuracy remains 10.96 points wide even with fifteen held-out events, showing that small-scale benchmarks with 2--3 events provide unstable comparisons. We openly release all code, cached embeddings, and split manifests.
 \end{abstract}
 
 \begin{IEEEkeywords}
-Disaster Response, Out-of-Distribution Generalization, Dataset Audit, Domain Generalization, Calibration, Statistical Power Analysis.
+Disaster Response, Out-of-Distribution Generalization, Dataset Audit, Domain Generalization, Calibration, Empirical Precision Analysis.
 \end{IEEEkeywords}
 
 \IEEEpeerreviewmaketitle
@@ -70,7 +70,7 @@ This paper provides an empirical audit of this discrepancy. We evaluate 94,566 o
     \item \textit{Audit of Label Priors and Data Leakage:} We demonstrate that an input-free event-prior baseline achieves 38.67\% (CrisisMMD) and 32.21\% (HumAID). Furthermore, near-duplicate leakage across random partitions is associated with an accuracy advantage of up to +15.46 percentage points on leaked test instances.
     \item \textit{Domain Generalization Benchmark (26 LOEO Folds):} We benchmark ERM against GroupDRO~\cite{sagawa2020distributionally}, IRM~\cite{arjovsky2019invariant}, and Fixed-Input CORAL across all 26 folds with paired Wilcoxon signed-rank tests ($W=0.0, p=3.81 \times 10^{-6}$ on HumAID)~\cite{wilcoxon1945individual}. We clarify the mathematical conditions under which a fixed-input covariance penalty on frozen representations reduces to ERM.
     \item \textit{Synthetic Feature Corruption Stress Testing:} We evaluate models under simulated zero-shot feature degradation~\cite{hendrycks2019benchmarking}, documenting severe calibration deterioration where ECE rises from 0.039 to 0.745.
-    \item \textit{Resampling Power Analysis:} Using cluster bootstrapping across $k \in [3, 18]$ held-out events, we analyze confidence interval widths, providing empirical evidence on the sample sizes required for benchmark stability.
+    \item \textit{Resampling and Precision Analysis:} Using cluster bootstrapping across $k \in [3, 18]$ held-out events, we analyze confidence interval widths, providing empirical evidence on the event sample sizes required for benchmark stability.
 \end{enumerate}
 
 %====================================================================
@@ -205,13 +205,13 @@ Table~\ref{tab:split_comparison} compares model performance across the four spli
 
 \begin{table}[t]
 \centering
-\caption{Model performance across evaluation split protocols. Table reports convex $L_2$-regularized logistic probe results across seeds (random, mean $\pm$ std across 5 seeds) and folds (OOD protocols, mean $\pm$ std across held-out folds). Lower is better for ECE and AURC.}
+\caption{Model performance across evaluation split protocols. Table reports convex $L_2$-regularized logistic probe results. Mean Acc. and Bal. Acc. report mean $\pm$ standard deviation across 5 random seeds (Random) and across held-out folds (OOD protocols). Worst-Fold Acc. reports the lowest top-1 accuracy across folds (or lowest seed for Random Split). Lower is better for ECE and AURC.}
 \label{tab:split_comparison}
 \footnotesize
 \setlength{\tabcolsep}{3.5pt}
 \begin{tabular}{lccccc}
 \toprule
-\textbf{Split Protocol} & \textbf{Mean Acc.} & \textbf{Worst Fold} & \textbf{Bal. Acc.} & \textbf{ECE} & \textbf{AURC} \\
+\textbf{Split Protocol} & \textbf{Mean Acc.} & \textbf{Worst-Fold Acc.} & \textbf{Bal. Acc.} & \textbf{ECE} & \textbf{AURC} \\
 \midrule
 \multicolumn{6}{l}{\textit{CrisisMMD (18,082 samples, 8 classes)}} \\
 Majority Class Baseline & 38.70 & -- & 12.50 & 0.613 & 0.613 \\
@@ -232,7 +232,7 @@ LODTO (Type) & 69.73 $\pm$ 4.3 & 64.84 & 56.50 & 0.027 & 0.129 \\
 \end{tabular}
 \end{table}
 
-On CrisisMMD, random split accuracy reaches 55.12\%, while mean LOEO accuracy is 52.08\% (a modest 3.04 percentage point average drop). However, this average conceals severe tail-risk vulnerability: on the hardest held-out event (\textit{california\_wildfires}), accuracy collapses to \textbf{39.33\%} (a 15.79 pp drop). On HumAID, random accuracy is 72.69\%, yet falls to \textbf{51.48\%} on the worst-case disaster (\textit{hurricane\_florence\_2018}), a drop of 21.21 percentage points. Balanced accuracy reflects this fragility, dropping from 67.66\% to 60.27\% (with individual event balanced accuracies ranging from 42.10\% on \textit{hurricane\_florence\_2018} to 78.45\% on \textit{srilanka\_floods\_2017}).
+On CrisisMMD, mean random split accuracy is 55.12\% (with individual seed accuracies ranging from 54.35\% to 55.85\%), while mean LOEO accuracy is 52.08\% (a modest 3.04 percentage point average drop). However, this average conceals severe tail-risk vulnerability: on the hardest held-out event (\textit{california\_wildfires}), accuracy collapses to \textbf{39.33\%}---a drop of 15.79 percentage points relative to mean random accuracy, and 15.02 percentage points relative to the lowest random seed (54.35\%). On HumAID, mean random accuracy is 72.69\% (lowest seed 72.30\%), yet falls to \textbf{51.48\%} on the worst-case disaster (\textit{hurricane\_florence\_2018}), a drop of 21.21 percentage points from the mean and 20.82 percentage points from the lowest seed. Balanced accuracy reflects this fragility, dropping from 67.66\% to 60.27\% on HumAID (with individual event balanced accuracies ranging from 48.74\% to 66.56\%), and from 31.71\% to 29.70\% on CrisisMMD (with lowest event balanced accuracy collapsing to 22.75\%).
 
 \textit{Event-Prior Baseline Analysis:} The input-free baseline achieves 38.67\% on CrisisMMD and 32.21\% on HumAID (Table~\ref{tab:split_comparison}). The event-prior baseline reaches 70.2\% and 44.3\% of the corresponding random-split model accuracies, highlighting the substantial influence of label-prior structure when interpreting headline performance.
 
@@ -275,7 +275,7 @@ Fixed-Input CORAL & \textbf{67.81 $\pm$ 9.0} & 47.71 & 0.161 & \textbf{0.154} \\
 \end{enumerate}
 
 \subsection{Near-Duplicate Contamination and Leakage Audit}
-To quantify dataset contamination across random partitions, we perform pairwise cosine similarity auditing on $L_2$-normalized dense embeddings across train and test partitions. Figure~\ref{fig:leakage} and Table~\ref{tab:leakage_table} document the performance advantage of leaked near-duplicate samples over clean test samples.
+To quantify dataset contamination across random partitions, we audit pairwise cosine similarity between $L_2$-normalized dense embeddings across train and test sets. For each test sample $x_{\text{test}}$, we compute its maximum similarity against all training instances: $s^*(x_{\text{test}}) = \max_{x_{\text{tr}} \in \mathcal{D}_{\text{tr}}} \cos(x_{\text{test}}, x_{\text{tr}})$. Test instances with $s^* \ge \tau$ are flagged as training near-duplicates; instances with $s^* < \tau$ form the clean partition. Figure~\ref{fig:leakage} and Table~\ref{tab:leakage_table} document the performance gap between leaked and clean test samples across 5 random seeds.
 
 \begin{figure}[t]
 \centering
@@ -310,11 +310,13 @@ $\tau \ge 0.98$ & 0.04 & 6.2 & 15,290.8 & 87.78 $\pm$ 7.2 & 72.68 $\pm$ 0.3 & \t
 As documented in Table~\ref{tab:leakage_table} and Figure~\ref{fig:leakage}, test instances with near-duplicates in the training set exhibit an accuracy advantage of \textbf{+5.86 pp} on CrisisMMD ($\tau \ge 0.98$) and \textbf{+15.46 pp} on HumAID ($\tau \ge 0.90$) compared to clean samples. We interpret this near-duplicate-associated accuracy advantage as reflecting both cross-split lexical overlap and the intrinsic prototypicality of common crisis phrasing. Because leaked samples represent 4.41\% of HumAID and 16.27\% of CrisisMMD, their estimated net effect on overall test accuracy is approximately 0.7 to 0.9 percentage points (estimated as the product of the leaked sample share and the accuracy gap). Test instances with training-set near-duplicates exhibit an accuracy advantage of up to 15.46 percentage points over clean test instances. This association highlights the potential influence of cross-partition similarity on benchmark results, although intrinsic sample difficulty may also contribute to the observed difference.
 
 \subsection{Synthetic Feature Corruption and Stress Testing}
-To evaluate model stability under synthetic feature degradation, we introduce test-time embedding perturbations~\cite{hendrycks2019benchmarking} on the convex LOEO probe:
+To evaluate classifier stability under synthetic feature degradation, we introduce zero-shot test-time embedding perturbations~\cite{hendrycks2019benchmarking} on the convex LOEO probe:
 \begin{equation}
     \tilde{x} = (x + \epsilon) \odot m, \quad \epsilon \sim \mathcal{N}(0, \sigma^2 I), \quad m_j \sim \text{Bernoulli}(1 - p_{\text{drop}}).
 \end{equation}
-Models are evaluated zero-shot without retraining. Figure~\ref{fig:compound_stress} visualizes accuracy degradation and calibration failure across grid levels of noise $\sigma$ and dropout $p_{\text{drop}}$. On HumAID text embeddings, moderate Gaussian noise ($\sigma = 0.50$, $p_{\text{drop}} = 0.0$) degrades mean accuracy from 71.69\% to 17.19\% (with worst-event accuracy falling to 13.75\%), while ECE increases from 0.039 to 0.745. Under extreme synthetic corruption ($\sigma = 0.75$, $p_{\text{drop}} = 0.50$), accuracy collapses to 13.91\% (approaching the 10\% random guessing threshold across 10 classes) and ECE reaches 0.797. This stress test indicates severe calibration deterioration under synthetic feature corruption.
+Models are evaluated zero-shot without retraining. Because the feature representations are $L_2$-normalized to the unit sphere ($\|x\|_2 = 1$, where the expected coordinate magnitude is $1/\sqrt{384} \approx 0.051$), Gaussian noise with $\sigma \in [0.10, 0.75]$ induces controlled orientation shifts. We distinguish this mathematical stress test from empirical telecommunication channel loss.
+
+Figure~\ref{fig:compound_stress} visualizes accuracy degradation and calibration failure across a grid of noise levels ($\sigma \in [0.0, 0.75]$) and dropout rates ($p_{\text{drop}} \in [0.0, 0.50]$) on HumAID text embeddings. Even under mild perturbation ($\sigma = 0.10, p_{\text{drop}} = 0.0$), mean LOEO accuracy drops from 71.69\% to 47.67\% and ECE worsens from 0.039 to 0.252. At moderate noise ($\sigma = 0.25$), accuracy falls to 25.32\% (ECE 0.589). At $\sigma = 0.50$, accuracy drops to 17.19\% (worst-event 13.75\%) while ECE surges to 0.745. Under extreme degradation ($\sigma = 0.75, p_{\text{drop}} = 0.50$), accuracy collapses to 13.91\% (approaching the 10\% uniform random guessing threshold) with ECE of 0.780. This demonstrates that confidence scores deteriorate severely under synthetic feature perturbations.
 
 \begin{figure}[t]
 \centering
@@ -323,7 +325,7 @@ Models are evaluated zero-shot without retraining. Figure~\ref{fig:compound_stre
 \label{fig:compound_stress}
 \end{figure}
 
-\subsection{Resampling Power Analysis}
+\subsection{Resampling and Precision Analysis}
 To evaluate the statistical precision of disaster benchmarks as a function of the number of held-out events, we conduct empirical subsampling across $k \in [3, 18]$ events. For each $k$, we draw 100 event subsets without replacement, and for each subset compute the 95\% cluster bootstrap confidence interval width over 1,000 resamples clustering by held-out event folds.
 
 Figure~\ref{fig:power_analysis} shows the 95\% bootstrap confidence interval width (where 18.21 pp width corresponds to $\pm 9.1\%$) narrowing as the number of held-out events increases. Resampling evaluates stability across held-out event folds within HumAID ($N=19$ folds). The mean 95\% confidence interval width is 18.21 percentage points at $k=3$, 14.87 pp at $k=7$, 12.99 pp at $k=10$, 10.96 pp at $k=15$, and 10.18 pp at $k=18$. In our empirical resampling analysis, increasing the number of held-out events reduced uncertainty in estimated mean accuracy. The observed interval widths suggest that evaluations based on very few events (such as 2 or 3 events) provide unstable performance estimates. The $k=15$ result should be interpreted as an empirical observation for these disaster distributions rather than a universal minimum sample-size requirement.
@@ -341,7 +343,7 @@ Figure~\ref{fig:power_analysis} shows the 95\% bootstrap confidence interval wid
 
 \subsection{Threats to Validity}
 \textit{Representation Scope:} Our empirical audit focuses on frozen dense text embeddings to establish a controlled comparison across 94,566 samples; end-to-end multimodal fine-tuning may exhibit different transfer dynamics.
-\textit{Event Overlap:} Four physical disasters appear in both CrisisMMD and HumAID. While evaluated as separate, dataset-specific folds, cross-dataset transfer cannot treat these as independent physical incidents.
+\textit{Event Overlap and Unit of Analysis:} Four physical disasters appear in both CrisisMMD and HumAID. To prevent conflation, all significance tests, splits, and evaluations are conducted strictly within each dataset independently (7 event folds for CrisisMMD, 19 event folds for HumAID) rather than pooling across datasets as independent physical events.
 \textit{Near-Duplicate Ambiguity:} High embedding cosine similarity may capture both lexical memorization and genuinely easy, prototypical crisis posts. While our audit demonstrates that leaked samples score substantially higher, part of this gap may reflect intrinsic sample simplicity.
 \textit{Synthetic Corruption:} Our stress experiments evaluate Gaussian embedding perturbations and dimension dropout, which serve as mathematical proxies rather than empirical telecom loss patterns.
 
@@ -360,7 +362,7 @@ This paper audited disaster AI across 94,566 observations and 26 event folds. We
 
 \noindent\textbf{Competing Interests.} \ConflictStatement
 
-\noindent\textbf{Data and Code Availability.} All code, split manifests, and cached feature embeddings are available at \CodeURL.
+\noindent\textbf{Data and Code Availability.} All evaluation code, split manifests, feature extraction scripts, and reproduction pipelines are available at \CodeURL\ under CC BY-NC-SA 4.0. Pretrained embeddings can be regenerated directly from source datasets via the provided scripts.
 
 \begin{thebibliography}{24}
 
