@@ -4,3 +4,5 @@ __pycache__/
 .DS_Store
 cache/features/*.npz
 data/raw/
+PAPER_1_ARTIFACTS.zip
+*.zip
