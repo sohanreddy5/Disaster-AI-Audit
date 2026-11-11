@@ -114,14 +114,21 @@ class GroupDROTrainer:
                         group_losses[gi] = per_sample_loss[mask].mean()
                         group_counts[gi] = mask.sum().float()
 
-                # Exponentiated gradient step on group weights
-                self._group_weights = self._group_weights * torch.exp(
-                    self.group_adj_step * group_losses.detach()
+                active_mask = group_counts > 0
+                if not active_mask.any():
+                    continue
+
+                # Exponentiated gradient step on group weights for active groups in batch
+                self._group_weights[active_mask] = self._group_weights[active_mask] * torch.exp(
+                    self.group_adj_step * group_losses[active_mask].detach()
                 )
                 self._group_weights = self._group_weights / self._group_weights.sum()
 
-                # Weighted loss
-                loss = (group_losses * self._group_weights).sum()
+                # Weighted loss: normalized across active groups in this minibatch
+                # so that inactive groups do not artificially deflate the gradient norm
+                active_w = self._group_weights[active_mask]
+                active_w_norm = active_w / active_w.sum()
+                loss = (group_losses[active_mask] * active_w_norm).sum()
 
                 optimizer.zero_grad()
                 loss.backward()

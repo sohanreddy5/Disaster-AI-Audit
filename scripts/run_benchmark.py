@@ -57,7 +57,7 @@ logger = get_logger(__name__)
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run Full Disaster AI Benchmark.")
-    parser.add_argument("--dataset", type=str, default="crisismmd", choices=["crisismmd", "humaid"], help="Dataset to benchmark")
+    parser.add_argument("--dataset", "--dataset-name", dest="dataset", type=str, default="crisismmd", choices=["crisismmd", "humaid"], help="Dataset to benchmark")
     parser.add_argument("--data-root", type=str, default="./data", help="Root data directory")
     parser.add_argument("--cache-dir", type=str, default="./cache/features", help="Embedding cache directory")
     parser.add_argument("--output-dir", type=str, default="./outputs/benchmark", help="Output directory")

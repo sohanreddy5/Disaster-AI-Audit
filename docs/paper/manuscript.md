@@ -1,7 +1,9 @@
 # Beyond the Random Split: An Empirical Audit and Out-of-Distribution Benchmark of Multimodal Disaster AI
 
+**Author:** Sohan Reddy Mandala (msohanreddy@gmail.com, ORCID: 0009-0009-6296-7536)  
+**Affiliation:** Independent Researcher, Hyderabad, Telangana, India  
 **Target Venues:** IEEE Transactions on Geoscience and Remote Sensing (TGRS) / ISPRS Journal of Photogrammetry and Remote Sensing / Nature Scientific Data / NeurIPS Datasets and Benchmarks Track  
-**Artifact Repository:** `/Users/sohanreddy/.gemini/antigravity/scratch/disaster-ai-audit`  
+**Code Repository:** [https://github.com/sohanreddy5/Disaster-AI-Audit](https://github.com/sohanreddy5/Disaster-AI-Audit)  
 **License:** MIT / CC-BY 4.0  
 
 ---
@@ -11,12 +13,12 @@
 Machine learning systems deployed for automated disaster response and humanitarian crisis assessment are conventionally evaluated via uniform random train/test splits. In this paper, we conduct an extensive empirical audit of multimodal disaster AI across **94,566 real-world crisis observations spanning 26 distinct global disaster events**. We demonstrate that conventional random splits suffer from pervasive dataset contamination and severely obscure out-of-distribution (OOD) failure modes. 
 
 Specifically:
-1. **The Tail Risk Collapse:** Random splits conceal an average catastrophic performance drop of **15.8 to 21.2 percentage points** on unseen disasters, with worst-event test accuracy collapsing to **39.3%** on CrisisMMD and **47.7%** on HumAID.
-2. **The Event-Prior Illusion:** An uninformative event-prior baseline achieves **38.7%** accuracy without consuming any input features, proving that published random-split numbers heavily reflect memorization of base event distributions rather than true situational understanding.
+1. **The Tail Risk Collapse:** Random splits conceal an average catastrophic performance drop of **15.8 to 21.2 percentage points** on unseen disasters, with worst-event test accuracy collapsing to **39.33%** on CrisisMMD and **51.48%** on HumAID (with the hardest single-event ERM fold reaching **47.71%**).
+2. **The Event-Prior Illusion:** An uninformative event-prior baseline achieves **38.67%** (CrisisMMD) and **32.21%** (HumAID) accuracy without consuming any input features, proving that published random-split numbers heavily reflect memorization of base event distributions rather than true situational understanding.
 3. **Pervasive Contamination Inflation:** An audit of cross-split contamination reveals thousands of near-duplicate posts across random partitions. Evaluating models on leaked test samples yields an artificial memorization boost of up to **+15.46 percentage points** ($\tau \ge 0.90$) and **+15.09 percentage points** on near-exact duplicates ($\tau \ge 0.98$).
-4. **Catastrophic Compound Shift:** Under compound distribution shifts (simultaneous category and geographic displacement combined with sensor degradation), model accuracy drops to **13.9%** while Expected Calibration Error (ECE) explodes from **0.039 to 0.797**.
-5. **Domain Generalization Benchmark:** In an out-of-distribution domain generalization benchmark across 26 Leave-One-Event-Out folds, standard algorithms (GroupDRO, IRM, CORAL) fail to outperform Empirical Risk Minimization (ERM) on average, though GroupDRO offers modest protection against worst-event tail collapse and IRM improves probability calibration by 49%.
-6. **Empirical Power Analysis:** Finally, we provide an empirical power analysis demonstrating that holding out fewer than 15 disaster events results in an unacceptable 95% confidence interval width exceeding $\pm 10$ percentage points, rendering small-event benchmarks statistically uninformative.
+4. **Synthetic Feature Corruption & Calibration Crash:** Simulated feature perturbations ($\sigma=0.10$ to $0.50$) cause accuracy to plummet from **71.69% to 17.19%** and Expected Calibration Error (ECE) to surge from **0.039 to 0.745** (collapsing to **13.91%** accuracy, **0.797** ECE, and **0.852** AURC under extreme joint degradation with $\sigma=0.75, \delta=0.50$).
+5. **Domain Generalization Benchmark:** In an out-of-distribution domain generalization benchmark across 26 Leave-One-Event-Out folds, standard algorithms (GroupDRO, IRM, CORAL) fail to outperform Empirical Risk Minimization (ERM) on average, though GroupDRO offers modest protection against worst-event tail collapse (+1.61 pp on CrisisMMD, +0.40 pp on HumAID) and IRM improves probability calibration by 49%.
+6. **Empirical Resampling and Precision Analysis:** Using cluster bootstrapping across $k \in [3, 18]$ held-out events, we analyze confidence interval widths, demonstrating that holding out fewer than 15 disaster events results in an empirical 95% confidence interval width exceeding $\pm 10$ percentage points.
 
 We release standardized split manifests, feature caches, and an open evaluation harness to guide reliable future deployments.
 
@@ -31,9 +33,9 @@ However, despite reports of high accuracy (frequently 75%–90%) in peer-reviewe
 ```
                 CONVENTIONAL PARADIGM (Random Split)
 ┌─────────────────────────────────────────────────────────────────┐
-│ Disaster A (70%) │ Disaster B (70%) │ Disaster C (70%) │ Train  │
+│ Disaster A (80%) │ Disaster B (80%) │ Disaster C (80%) │ Train  │
 ├──────────────────┼──────────────────┼──────────────────┼────────┤
-│ Disaster A (30%) │ Disaster B (30%) │ Disaster C (30%) │ Test   │
+│ Disaster A (20%) │ Disaster B (20%) │ Disaster C (20%) │ Test   │
 └─────────────────────────────────────────────────────────────────┘
  Result: High Reported Accuracy (75%–90%) due to Memorization & Duplicate Leakage!
 
@@ -41,9 +43,9 @@ However, despite reports of high accuracy (frequently 75%–90%) in peer-reviewe
 ┌─────────────────────────────────────────────────────────────────┐
 │ Disaster A (100%)│ Disaster B (100%)│ Historical Events│ Train  │
 ├──────────────────┴──────────────────┴──────────────────┼────────┤
-│ Novel Unseen Event (e.g. Earthquake in new country)   │ Test   │
+│ Novel Unseen Event (e.g. Hurricane Florence / CalFire) │ Test   │
 └─────────────────────────────────────────────────────────────────┘
- Result: Catastrophic Performance Collapse (Drops to 39.3% - 47.7%)!
+ Result: Catastrophic Performance Collapse (Drops to 39.3% - 51.5%)!
 ```
 
 When a dataset containing multiple disaster incidents is split uniformly at random, samples from every individual disaster appear in both the training and testing sets. This violates the fundamental operational requirement of disaster AI: *a model trained on historical disasters must deploy onto a completely unseen future event, often in an unobserved geographic region with distinct topography, language nuances, and infrastructure vulnerability*.
@@ -63,12 +65,12 @@ To evaluate out-of-distribution robustness with high statistical power, we harmo
 ### Split Taxonomy Formalization
 
 Let $\mathcal{D} = \{(x_i, y_i, e_i, t_i, r_i)\}_{i=1}^N$ denote the dataset, where $x_i$ is the input, $y_i \in \mathcal{Y}$ the label, $e_i \in \mathcal{E}$ the disaster event, $t_i \in \mathcal{T}$ the disaster type, and $r_i \in \mathcal{R}$ the geographical region:
-1. **Random Split:** Uniform partition $\mathcal{D} = \mathcal{D}_{\text{train}} \cup \mathcal{D}_{\text{test}}$, where $\mathbb{P}(e \in \mathcal{D}_{\text{train}} \cap \mathcal{D}_{\text{test}}) \approx 1$.
+1. **Random Split:** Stratified 80/20 train/test partition ($N_{\text{test}} = 20\%$), evaluated across 5 independent random seeds.
 2. **Leave-One-Event-Out (LOEO):** For held-out event $e^* \in \mathcal{E}$:
    $$\mathcal{D}_{\text{test}}^{(e^*)} = \{ (x_i, y_i) \mid e_i = e^* \}, \quad \mathcal{D}_{\text{train}}^{(e^*)} = \{ (x_i, y_i) \mid e_i \neq e^* \}$$
 3. **Leave-One-Disaster-Type-Out (LODTO):** Held-out disaster type $t^* \in \mathcal{T}$, enforcing category shift.
 4. **Leave-One-Region-Out (LORO):** Held-out geographic region $r^* \in \mathcal{R}$, enforcing spatial shift.
-5. **Compound Shift Split:** Held-out tuple $(t^*, r^*) \in \mathcal{T} \times \mathcal{R}$, evaluating simultaneous category and geographical displacement.
+5. **Joint Compound Shift:** Held-out tuple $(t^*, r^*) \in \mathcal{T} \times \mathcal{R}$, evaluating simultaneous category and geographical displacement.
 
 ---
 
@@ -142,28 +144,32 @@ We evaluated standard domain generalization algorithms across all 26 Leave-One-E
 
 ---
 
-### Finding 4: Compound Shift & Sensor Degradation
+### Finding 4: Compound Shift & Synthetic Feature Corruption Stress Testing
 
 ![Compound Stress Heatmap](outputs/figures/fig4_compound_stress_heatmap.png)
 
-When models experience simultaneous event shift and sensor/transmission degradation:
-- Accuracy plummets from **71.69%** down to **13.91%** on HumAID.
-- Expected Calibration Error surges to **0.7969**, indicating severe overconfidence in erroneous predictions.
-- Area Under Risk-Coverage (AURC) explodes from **0.1206** to **0.8521**, showing that selective prediction mechanisms fail under compound distribution shift.
+We evaluate models under two distinct forms of operational degradation:
+
+1. **Joint Compound Domain Shift:** Holding out simultaneous disaster categories and geographic regions (e.g., *Flood $\times$ North America* or *Hurricane $\times$ Caribbean*). On HumAID, mean compound accuracy is **72.93%**, but drops to **64.80%** on hardest held-out domains.
+2. **Synthetic Feature Corruption & Calibration Crash:** Simulating transmission noise and channel degradation via Gaussian perturbations ($\sigma$) and dimension dropout ($\delta$) on normalized representations ($d=384, \|x\|_2=1$):
+   - At $\sigma = 0.10$ (mild perturbation): Accuracy drops from **71.69% to 47.67%**, and ECE increases to **0.252**.
+   - At $\sigma = 0.25$ (moderate perturbation): Accuracy drops to **25.32%**, and ECE surges to **0.589**.
+   - At $\sigma = 0.50$ (severe perturbation): Accuracy drops to **17.19%**, and ECE reaches **0.745**.
+   - Under combined extreme degradation ($\sigma = 0.75, \delta = 0.50$): Accuracy collapses to **13.91%**, ECE reaches **0.797**, and AURC explodes from **0.121 to 0.852**, demonstrating that selective prediction mechanisms fail under severe corruption.
 
 ---
 
-### Finding 5: Empirical Power Analysis Mandates $k \ge 15$ Events
+### Finding 5: Empirical Resampling and Precision Analysis Mandates $k \ge 15$ Events
 
 ![Power Analysis Curve](outputs/figures/fig3_power_analysis.png)
 
-We evaluated 95% confidence interval widths as a function of the number of held-out events $k \in [3, 18]$:
+Using cluster bootstrapping across held-out event subsets $k \in [3, 18]$ (500 resamples per $k$):
 - At $k=3$ events: 95% CI width is **18.21 pp** ($\pm 9.1\%$). Two models differing by 8 pp cannot be distinguished statistically.
 - At $k=10$ events: CI width is **12.99 pp**.
 - At $k=15$ events: CI width reaches **10.96 pp**.
 - At $k=18$ events: CI width reaches **10.18 pp**.
 
-**Scientific Recommendation:** Benchmarks must evaluate over at least **15 held-out events** to support statistically valid rankings.
+**Scientific Recommendation:** Benchmarks must evaluate over at least **15 held-out events** to support statistically valid rankings and narrow the 95% confidence interval within operational bounds.
 
 ---
 

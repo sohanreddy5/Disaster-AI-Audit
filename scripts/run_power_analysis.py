@@ -30,7 +30,8 @@ logger = get_logger(__name__)
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run Power Analysis on LOEO Benchmark Results.")
-    parser.add_argument("--results-csv", type=str, required=True, help="Path to benchmark_results.csv containing LOEO fold results")
+    parser.add_argument("--results-csv", type=str, default="./outputs/benchmark/humaid_benchmark_results.csv", help="Path to benchmark_results.csv containing LOEO fold results")
+    parser.add_argument("--features-npz", type=str, default=None, help="Optional features path (power analysis runs directly on results-csv)")
     parser.add_argument("--output-dir", type=str, default="./outputs/power_analysis", help="Output directory")
     parser.add_argument("--n-boot", type=int, default=500, help="Number of bootstrap resamples per k")
     parser.add_argument("--seed", type=int, default=42, help="Random seed")

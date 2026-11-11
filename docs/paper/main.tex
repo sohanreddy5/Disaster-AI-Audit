@@ -66,7 +66,7 @@ This paper provides an empirical audit of this discrepancy. We evaluate 94,566 o
 
 \subsection{Contributions}
 \begin{enumerate}
-    \item \textit{Comprehensive Multi-Split Audit (94,566 Observations):} We evaluate four canonical split protocols: Stratified 70/10/20 Random Split ($N_{\text{test}} = 20\%$), Leave-One-Region-Out (LORO), Leave-One-Event-Out (LOEO), and Leave-One-Disaster-Type-Out (LODTO). We show that while mean LOEO accuracy drops by only 1.0 to 3.0 percentage points, tail accuracy on the hardest unseen event collapses by 15.8 to 21.2 points.
+    \item \textit{Comprehensive Multi-Split Audit (94,566 Observations):} We evaluate four canonical split protocols: Stratified 80/20 Random Split ($N_{\text{test}} = 20\%$), Leave-One-Region-Out (LORO), Leave-One-Event-Out (LOEO), and Leave-One-Disaster-Type-Out (LODTO). We show that while mean LOEO accuracy drops by only 1.0 to 3.0 percentage points, tail accuracy on the hardest unseen event collapses by 15.8 to 21.2 points.
     \item \textit{Audit of Label Priors and Data Leakage:} We demonstrate that an input-free event-prior baseline achieves 38.67\% (CrisisMMD) and 32.21\% (HumAID). Furthermore, near-duplicate leakage across random partitions is associated with an accuracy advantage of up to +15.46 percentage points on leaked test instances.
     \item \textit{Domain Generalization Benchmark (26 LOEO Folds):} We benchmark ERM against GroupDRO~\cite{sagawa2020distributionally}, IRM~\cite{arjovsky2019invariant}, and Fixed-Input CORAL across all 26 folds with paired Wilcoxon signed-rank tests ($W=0.0, p=3.81 \times 10^{-6}$ on HumAID)~\cite{wilcoxon1945individual}. We clarify the mathematical conditions under which a fixed-input covariance penalty on frozen representations reduces to ERM.
     \item \textit{Synthetic Feature Corruption Stress Testing:} We evaluate models under simulated zero-shot feature degradation~\cite{hendrycks2019benchmarking}, documenting severe calibration deterioration where ECE rises from 0.039 to 0.745.
@@ -179,7 +179,7 @@ Point predictions are assigned via $\hat{y} = \arg\max_c \hat{P}(y = c)$.
 \subsection{Split Protocol Taxonomy}
 Let $\mathcal{D} = \{(x_i, y_i, e_i, t_i, r_i)\}_{i=1}^N$:
 \begin{enumerate}
-    \item \textbf{Random Split:} Stratified 70/10/20 training, validation, and test partition ($N_{\text{test}} = 20\%$), evaluated across 5 random seeds.
+    \item \textbf{Random Split:} Stratified 80/20 train/test partition ($N_{\text{test}} = 20\%$), evaluated across 5 independent random seeds.
     \item \textbf{Leave-One-Region-Out (LORO):} Held-out geographic region $r^* \in \mathcal{R}$, enforcing geographic displacement (5 folds for CrisisMMD, 8 folds for HumAID).
     \item \textbf{Leave-One-Event-Out (LOEO):} Test set consists of a single held-out disaster event $e^*$; models train on the remaining $|\mathcal{E}| - 1$ events (7 folds for CrisisMMD, 19 folds for HumAID).
     \item \textbf{Leave-One-Disaster-Type-Out (LODTO):} Held-out disaster type $t^* \in \mathcal{T}$, enforcing category displacement (4 folds for CrisisMMD, 5 folds for HumAID).

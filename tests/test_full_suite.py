@@ -21,6 +21,10 @@ from src.data.splits import (
 from src.evaluation.calibration import expected_calibration_error
 from src.evaluation.abstention import aurc
 from src.evaluation.statistics import cluster_bootstrap_ci
+import torch
+import torch.nn as nn
+from torch.utils.data import DataLoader, TensorDataset
+from src.models.domain_generalization import GroupDROTrainer
 
 
 class TestBenchmarkEngine(unittest.TestCase):
@@ -86,6 +90,22 @@ class TestBenchmarkEngine(unittest.TestCase):
                 data = json.load(f)
                 self.assertIn("splits", data)
                 self.assertIn("loeo", data["splits"])
+
+
+    def test_group_dro_trainer(self):
+        # 5 groups, 10 samples total, batches of size 4 (so batches have missing groups)
+        x = torch.randn(20, 16)
+        y = torch.randint(0, 3, (20,))
+        g = torch.tensor([0, 0, 1, 1, 2, 2, 3, 3, 4, 4] * 2)
+        dataset = TensorDataset(x, y, g)
+        loader = DataLoader(dataset, batch_size=4, shuffle=True)
+
+        model = nn.Linear(16, 3)
+        trainer = GroupDROTrainer(model, n_groups=5, lr=0.01, epochs=2)
+        trainer.fit(loader)
+        preds = trainer.predict(x.numpy())
+        self.assertEqual(len(preds), 20)
+        self.assertAlmostEqual(trainer._group_weights.sum().item(), 1.0, places=4)
 
 
 if __name__ == "__main__":

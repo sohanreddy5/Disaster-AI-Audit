@@ -13,10 +13,10 @@ A standardized benchmark, empirical audit suite, and evaluation protocol for out
 Most published machine learning models for disaster triage and damage assessment are evaluated using **uniform random train/test splits**. Because crisis data is clustered by events, random splits allow near-duplicate images and tweets from the *same crisis* to leak into test sets.
 
 This audit provides empirical proof of four major systemic failures:
-1. **Severe Tail Collapse (15.8 to 21.2 pp Drops):** Random splits conceal catastrophic out-of-distribution failure, with accuracy on the worst-case unseen disaster dropping to **39.3%** on CrisisMMD and **47.7%** on HumAID.
+1. **Severe Tail Collapse (15.8 to 21.2 pp Drops):** Random splits conceal catastrophic out-of-distribution failure, with accuracy on the worst-case unseen disaster dropping to **39.33%** on CrisisMMD and **51.48%** on HumAID (with the hardest single-event ERM fold reaching **47.71%**).
 2. **Train/Test Leakage Advantage (+5.9 to +15.5 pp):** Near-duplicate samples crossing random train/test partitions enjoy an artificial memorization boost of up to **+15.46 pp** ($\tau \ge 0.90$) and **+15.09 pp** ($\tau \ge 0.98$).
-3. **Compound Shift & Calibration Crash:** Simultaneous event shift and sensor noise causes accuracy to drop to **13.9%** and Expected Calibration Error (ECE) to explode from **0.039 to 0.797**.
-4. **Statistical Power Bound ($k \ge 15$):** Holding out fewer than 15 disaster events results in an unacceptable 95% confidence interval width exceeding $\pm 10$ percentage points.
+3. **Synthetic Feature Corruption & Calibration Crash:** Simulated feature perturbations ($\sigma=0.10$ to $0.50$) cause accuracy to plummet from **71.69% to 17.19%** and ECE to surge from **0.039 to 0.745** (collapsing to **13.91%** accuracy, **0.797** ECE, and **0.852** AURC under extreme joint degradation with $\sigma=0.75, \delta=0.50$).
+4. **Empirical Precision Bound ($k \ge 15$):** Holding out fewer than 15 disaster events results in an empirical 95% confidence interval width exceeding $\pm 10$ percentage points, demonstrating the necessity of large multi-event benchmarks.
 
 ---
 
@@ -46,8 +46,8 @@ This audit provides empirical proof of four major systemic failures:
 ### 1. Environment Setup
 ```bash
 # Clone the repository
-git clone https://github.com/disaster-ai-audit/disaster-ai-audit.git
-cd disaster-ai-audit
+git clone https://github.com/sohanreddy5/Disaster-AI-Audit.git
+cd Disaster-AI-Audit
 
 # Create environment and install dependencies
 uv venv .venv --python python3.11
@@ -58,12 +58,13 @@ pip install -r requirements.txt
 ### 2. Reproduce All Experiments
 
 ```bash
-# 1. Run Unit Tests (Split integrity and zero-leakage verification)
+# 1. Run Unit Tests (Split integrity, zero-leakage, calibration, and models)
 python tests/test_splits.py
+python tests/test_full_suite.py
 
-# 2. Run Comprehensive Multi-Split Benchmark
-python scripts/run_benchmark.py --dataset-name crisismmd
-python scripts/run_benchmark.py --dataset-name humaid
+# 2. Run Comprehensive Multi-Split Benchmark (Random, LORO, LOEO, LODTO)
+python scripts/run_benchmark.py --dataset crisismmd
+python scripts/run_benchmark.py --dataset humaid
 
 # 3. Run Near-Duplicate Leakage Impact Experiment
 python scripts/run_leakage_impact.py --features-npz cache/features/crisismmd_humanitarian_text_features.npz --dataset-name crisismmd
@@ -77,8 +78,8 @@ python scripts/run_domain_generalization.py --features-npz cache/features/humaid
 python scripts/run_compound_shift.py --features-npz cache/features/crisismmd_humanitarian_text_features.npz --dataset-name crisismmd
 python scripts/run_compound_shift.py --features-npz cache/features/humaid_benchmark_features.npz --dataset-name humaid
 
-# 6. Run Empirical Power Analysis
-python scripts/run_power_analysis.py --features-npz cache/features/humaid_benchmark_features.npz
+# 6. Run Empirical Resampling and Precision Analysis
+python scripts/run_power_analysis.py --results-csv outputs/benchmark/humaid_benchmark_results.csv
 
 # 7. Generate All Publication Figures (PDF & 300 DPI PNG)
 python scripts/generate_paper_figures.py
@@ -122,10 +123,10 @@ disaster-ai-audit/
 If you use this benchmark, split manifests, or evaluation harness, please cite:
 
 ```bibtex
-@article{disaster_ai_audit_2026,
+@article{mandala2026beyond,
   title={Beyond the Random Split: An Empirical Audit and Out-of-Distribution Benchmark of Multimodal Disaster AI},
-  author={Disaster AI Benchmark Initiative},
-  journal={arXiv preprint},
+  author={Mandala, Sohan Reddy},
+  journal={IEEE Transactions on Geoscience and Remote Sensing (Under Review)},
   year={2026}
 }
 ```
