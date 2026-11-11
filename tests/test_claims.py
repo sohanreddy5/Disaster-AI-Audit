@@ -159,11 +159,29 @@ class TestScientificClaims(unittest.TestCase):
         self.assertIn(r"\hLeakCountNinetyEight", latex)
         self.assertIn(r"17.53\% near-identical duplicate retweets", latex)
 
-        # 4. Precision section terminology
+        # 4. Precision section terminology and consistency
         self.assertNotIn("Statistical power analysis", latex)
         self.assertNotIn("empirical margin of error under 10 percentage points", latex)
+        self.assertNotIn("exceeding 10 percentage points", latex)
         self.assertIn("Resampling precision analysis", latex)
+        self.assertIn(r"exceeding 11 percentage points", latex)
         self.assertIn(r"half-width $\pm 5.48$ pp", latex)
+
+        # 5. Temperature scaling consistency (matches Table III 0.035 and 0.041)
+        self.assertIn("0.035--0.041", latex)
+        self.assertNotIn("0.024--0.041", latex)
+        self.assertIn(r"\hERMECEScaled", latex)
+        self.assertIn(r"\cERMECEScaled", latex)
+
+        # 6. Near-duplicate terminology distinction
+        self.assertIn("Slice-Weighted Association vs. Causal Retraining Effect", latex)
+        self.assertIn("slice-weighted association contribution", latex)
+        self.assertIn("Causal Purge Retraining Effect", latex)
+
+        # 7. Non-prescriptive recommendations & geographic wording
+        self.assertNotIn("Mandatory LOEO Evaluation", latex)
+        self.assertIn("Transparent Event-Level LOEO Reporting", latex)
+        self.assertIn("unfamiliar geographic regions (evaluated via leave-one-region-out, LORO)", latex)
 
 
 if __name__ == "__main__":
