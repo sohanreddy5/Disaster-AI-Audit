@@ -1,43 +1,46 @@
-# Beyond the Random Split: An Empirical Audit and Out-of-Distribution Benchmark of Multimodal Disaster AI
+# Beyond the Random Split: An Empirical Audit and Out-of-Distribution Benchmark of Text-Based Disaster AI
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-A standardized benchmark, empirical audit suite, and evaluation protocol for out-of-distribution (OOD) generalization in multimodal disaster AI across **94,566 samples and 26 real-world global disaster events**.
+A standardized benchmark, empirical audit suite, and evaluation protocol for out-of-distribution (OOD) generalization in disaster AI across **94,566 labeled observations and 26 evaluation folds (22 unique physical disasters)**.
 
 ---
 
-## 🌟 Overview & Key Discoveries
+## 🌟 Overview & Key Findings
 
-Most published machine learning models for disaster triage and damage assessment are evaluated using **uniform random train/test splits**. Because crisis data is clustered by events, random splits allow near-duplicate images and tweets from the *same crisis* to leak into test sets.
+Most published machine learning models for disaster triage and crisis classification are evaluated using **uniform random train/test splits**. Because crisis data is clustered by disaster events, random splits allow observations from every disaster incident to appear in both training and test partitions, evaluating in-distribution interpolation rather than true generalization to novel crisis incidents.
 
-This audit provides empirical proof of four major systemic failures:
-1. **Severe Tail Collapse (15.8 to 21.2 pp Drops):** Random splits conceal catastrophic out-of-distribution failure, with accuracy on the worst-case unseen disaster dropping to **39.33%** on CrisisMMD and **51.48%** on HumAID (with the hardest single-event ERM fold reaching **47.71%**).
-2. **Train/Test Leakage Advantage (+5.9 to +15.5 pp):** Near-duplicate samples crossing random train/test partitions enjoy an artificial memorization boost of up to **+15.46 pp** ($\tau \ge 0.90$) and **+15.09 pp** ($\tau \ge 0.98$).
-3. **Synthetic Feature Corruption & Calibration Crash:** Simulated feature perturbations ($\sigma=0.10$ to $0.50$) cause accuracy to plummet from **71.69% to 17.19%** and ECE to surge from **0.039 to 0.745** (collapsing to **13.91%** accuracy, **0.797** ECE, and **0.852** AURC under extreme joint degradation with $\sigma=0.75, \delta=0.50$).
-4. **Empirical Precision Bound ($k \ge 15$):** Holding out fewer than 15 disaster events results in an empirical 95% confidence interval width exceeding $\pm 10$ percentage points, demonstrating the necessity of large multi-event benchmarks.
+This empirical audit investigates 94,566 observations from CrisisMMD and HumAID across 26 event folds, establishing:
+1. **Paired Shift Gaps on Unseen Events:** While macro LOEO accuracy appears close to random splits (a 1.0 to 3.0 percentage point reduction on average), evaluating individual target events reveals significant performance drops: paired accuracy on the hardest held-out event drops by **5.54 percentage points** on CrisisMMD (California Wildfires) and **15.52 points** on HumAID (Maryland Floods) relative to event-matched random test instances.
+2. **Diagnosis of Out-of-Distribution Degradation:** Class-prior divergence $D_{\text{KL}}(P_e \| P_{\text{train}})$ is the single strongest predictor of out-of-distribution performance drop ($r = 0.563, p = 0.0121$). Furthermore, an input-free label-prior baseline achieves **38.67%** (CrisisMMD) and **32.21%** (HumAID) accuracy without consuming input features, demonstrating that random-split figures heavily reflect base rates.
+3. **Near-Duplicate Leakage vs. Net Benchmark Inflation:** While test instances with training-set near-duplicates ($\tau \ge 0.90$) exhibit an association accuracy advantage of up to **+13.74 to +15.46 pp**, their low prevalence bounds the net test-set effect to +0.59 to +1.04 pp. Causally purging near-duplicates from training data causes a test accuracy drop of only **0.69 pp** on CrisisMMD and **0.00 pp** on HumAID.
+4. **Domain Generalization & The IRM Tradeoff (5-Seed Benchmark):** Minibatch-normalized GroupDRO provides modest worst-event protection (+0.40 to +0.69 pp), whereas IRM incurs a statistically significant **-2.90 to -3.77 pp accuracy penalty** ($p \le 0.031$) in exchange for reduced Expected Calibration Error (ECE 0.081 vs 0.161). However, applying post-hoc temperature scaling ($T \approx 0.64$) to ERM achieves superior calibration (**ECE 0.024--0.041**) with zero accuracy loss.
+5. **Synthetic Feature Corruption & Norm Inflation:** Unnormalized Gaussian perturbations scale feature norms by up to $10\times$ ($\text{NSR} = \sigma \sqrt{384} \approx 9.80$ at $\sigma=0.50$), inflating unconstrained logits and causing ECE to surge to **0.741**. Re-normalizing features preserves calibration ($\text{ECE} \le 0.045$).
+6. **Empirical Power Analysis ($k \ge 15$ Events):** Evaluating fewer than 15 held-out disaster events yields 95% confidence interval widths exceeding 10 percentage points under empirical cluster bootstrapping, demonstrating that small-scale benchmarks with 2--3 events provide unstable comparisons.
 
 ---
 
 ## 📊 Summary of Benchmark Results
 
-### 1. Split Protocol Comparison
-| Split Protocol | CrisisMMD (18,082 samples) | HumAID (76,484 samples) | Finding |
+### 1. Multi-Split Protocol Comparison
+| Split Protocol | CrisisMMD (18,082 samples) | HumAID (76,484 samples) | Evaluation Context |
 | :--- | :---: | :---: | :--- |
-| **Random Split** | 55.12% $\pm$ 0.4% | 72.69% $\pm$ 0.2% | Standard baseline (artificially inflated) |
-| **Region-Held-Out (LORO)** | 52.74% $\pm$ 3.8% | 73.41% $\pm$ 4.5% | Geographic distribution shift |
-| **Event-Held-Out (LOEO)** | 52.08% $\pm$ 12.9% | 71.69% $\pm$ 8.9% | Operational deployment setting |
-| **Worst-Event (LOEO Tail)** | **39.33% (-15.8 pp)** | **51.48% (-21.2 pp)** | Catastrophic failure on hard disasters |
-| **Event-Prior Anchor** | **38.67%** | **32.21%** | Zero-feature baseline exploiting label priors |
+| **Random Split (Pooled)** | 55.12% $\pm$ 0.6% | 72.69% $\pm$ 0.3% | Uniform stratified partition (5 seeds) |
+| **Random Split (Macro-Events)** | 54.78% $\pm$ 11.2% | 74.93% $\pm$ 5.7% | Unweighted event macro-average |
+| **Region-Held-Out (LORO)** | 52.66% $\pm$ 13.9% | 73.36% $\pm$ 7.2% | Continental geographic transfer |
+| **Event-Held-Out (LOEO, Pooled)** | 53.24% | 69.60% | Pooled sample-weighted transfer |
+| **Event-Held-Out (LOEO, Macro)** | 52.08% $\pm$ 12.8% | 71.69% $\pm$ 7.7% | Target event deployment setting |
+| **Worst-Event (LOEO Tail)** | **39.33% (-5.54 pp paired)** | **51.48% (-15.52 pp paired)** | Hardest unseen disaster incident |
+| **Event-Prior Anchor** | **38.67%** | **32.21%** | Zero-feature historical base-rate prior |
 
-### 2. Domain Generalization Algorithms (26 LOEO Folds)
-| Algorithm | CrisisMMD Mean LOEO | CrisisMMD Worst Event | HumAID Mean LOEO | HumAID Worst Event | HumAID Mean ECE |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **ERM** | **50.51%** | 37.35% | **67.81%** | 47.71% | 0.1609 |
-| **GroupDRO** | 50.26% | **38.96% (+1.61 pp)** | 67.14% | **48.11% (+0.40 pp)** | 0.1952 |
-| **IRM** | 49.45% | 37.02% | 64.14% | 47.30% | **0.0816 (-49% ECE)** |
-| **CORAL** | 50.51% | 37.35% | 67.81% | 47.71% | 0.1609 |
+### 2. Domain Generalization Algorithms (26 LOEO Folds, 5 Seeds)
+| Algorithm | CrisisMMD Mean LOEO | CrisisMMD Worst Event | HumAID Mean LOEO | HumAID Worst Event | HumAID ECE | Scaled ECE |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **ERM** | **51.41% $\pm$ 11.6%** | 38.77% | **67.75% $\pm$ 8.9%** | 46.90% | 0.1608 | **0.024** |
+| **GroupDRO** | 51.27% $\pm$ 11.2% | **39.65% (+0.88 pp)** | 67.14% $\pm$ 8.4% | **47.71% (+0.81 pp)** | 0.1956 | 0.022 |
+| **IRM** | 48.51% $\pm$ 11.6% | 37.86% | 63.98% $\pm$ 9.7% | 45.97% | **0.0806** | 0.021 |
 
 ---
 
@@ -49,43 +52,32 @@ This audit provides empirical proof of four major systemic failures:
 git clone https://github.com/sohanreddy5/Disaster-AI-Audit.git
 cd Disaster-AI-Audit
 
-# Create environment and install dependencies
-uv venv .venv --python python3.11
+# Create virtual environment and install dependencies
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 2. Reproduce All Experiments
-
+### 2. Execute Verification Unit Tests
 ```bash
-# 1. Run Unit Tests (Split integrity, zero-leakage, calibration, and models)
-python tests/test_splits.py
-python tests/test_full_suite.py
+# Run unit tests validating split integrity, claims, and calibration
+python -m unittest discover -s tests
+python -m unittest tests/test_claims.py
+```
 
-# 2. Run Comprehensive Multi-Split Benchmark (Random, LORO, LOEO, LODTO)
+### 3. Reproduce All Experiments & Generate Figures
+```bash
+# Master reproduction script
+bash scripts/reproduce_all.sh
+
+# Or run individual audit components:
 python scripts/run_benchmark.py --dataset crisismmd
 python scripts/run_benchmark.py --dataset humaid
-
-# 3. Run Near-Duplicate Leakage Impact Experiment
-python scripts/run_leakage_impact.py --features-npz cache/features/crisismmd_humanitarian_text_features.npz --dataset-name crisismmd
-python scripts/run_leakage_impact.py --features-npz cache/features/humaid_benchmark_features.npz --dataset-name humaid
-
-# 4. Run Domain Generalization Benchmark (ERM vs GroupDRO vs IRM vs CORAL)
-python scripts/run_domain_generalization.py --features-npz cache/features/crisismmd_humanitarian_text_features.npz --dataset-name crisismmd
-python scripts/run_domain_generalization.py --features-npz cache/features/humaid_benchmark_features.npz --dataset-name humaid
-
-# 5. Run Compound Shift & Sensor Degradation Stress Test
-python scripts/run_compound_shift.py --features-npz cache/features/crisismmd_humanitarian_text_features.npz --dataset-name crisismmd
-python scripts/run_compound_shift.py --features-npz cache/features/humaid_benchmark_features.npz --dataset-name humaid
-
-# 6. Run Empirical Resampling and Precision Analysis
-python scripts/run_power_analysis.py --results-csv outputs/benchmark/humaid_benchmark_results.csv
-
-# 7. Generate All Publication Figures (PDF & 300 DPI PNG)
+python scripts/retrain_domain_generalization.py
+python scripts/run_compound_shift.py
+python scripts/run_power_analysis.py
 python scripts/generate_paper_figures.py
-
-# 8. Export Zenodo Manifests
-python scripts/export_benchmark_manifest.py
+python scripts/generate_tables_and_macros.py
 ```
 
 ---
@@ -94,39 +86,45 @@ python scripts/export_benchmark_manifest.py
 
 ```
 disaster-ai-audit/
+├── LICENSE                    # MIT (Code), CC BY 4.0 (Docs), CC BY-NC-SA 4.0 (Data)
+├── requirements.txt           # Dependency specifications
 ├── src/
-│   ├── data/                 # Dataset loaders (CrisisMMD, HumAID) and split engines
-│   ├── features/             # OpenCLIP, SigLIP, and MiniLM feature extractors
-│   ├── models/               # Linear/MLP probes, EventPrior, GroupDRO, IRM, CORAL
-│   ├── evaluation/           # Calibration (ECE), Abstention (AURC), Cluster Bootstrap
-│   └── audit/                # Duplicate detection (pHash/Dense) and Cleanlab label noise
-├── scripts/                  # Standalone executable benchmark and audit scripts
-├── outputs/
-│   ├── benchmark/            # Multi-split CSV results and LaTeX tables
-│   ├── leakage_impact/       # Leakage inflation CSVs and LaTeX tables
-│   ├── dg_benchmark/         # Domain generalization 26-fold results and tables
-│   ├── compound_shift/       # Compound shift CSVs and LaTeX tables
-│   ├── power_analysis/       # Subsampling power curve and CSVs
-│   └── figures/              # Publication figures (PDF and high-res PNG)
-├── docs/
-│   └── paper/                # Full academic paper manuscript (LaTeX main.tex and Markdown)
-├── data/
-│   └── splits_manifest/      # Zenodo-ready split index manifests (JSON)
-├── tests/                    # Unittest suite for split verification
-└── requirements.txt          # Python dependencies
+│   ├── data/                  # Dataset loaders & split generators (LOEO, LORO, LODTO)
+│   ├── features/              # MiniLM text & OpenCLIP feature extractors
+│   ├── models/                # Convex probes, GroupDRO, IRM, EventPrior
+│   └── evaluation/            # Calibration (ECE), selective prediction (AURC), power
+├── scripts/
+│   ├── reproduce_all.sh       # Master 8-step reproduction pipeline
+│   ├── run_benchmark.py       # Multi-split benchmark harness
+│   ├── retrain_domain_generalization.py # 5-seed DG retrain with Holm tests
+│   ├── run_compound_shift.py  # Fine-grained noise & NSR stress testing
+│   ├── compute_paired_shift_and_diagnostics.py # Paired gaps & causal deduplication
+│   ├── generate_tables_and_macros.py # LaTeX macro generator
+│   └── generate_paper_figures.py # Publication figures (PDF & PNG)
+├── tests/
+│   ├── test_claims.py         # Unit tests validating mathematical claims
+│   ├── test_splits.py         # Leakage-free partition unit tests
+│   └── test_full_suite.py     # End-to-end component tests
+└── docs/paper/
+    ├── main.tex               # IEEEtran journal camera-ready LaTeX source
+    ├── macros_results.tex     # Auto-generated semantic result macros
+    └── figures/               # Generated publication vector graphics (Fig 1-4)
 ```
 
 ---
 
-## 📜 Citation
+## 📜 Citation & License
 
-If you use this benchmark, split manifests, or evaluation harness, please cite:
-
+If you use this benchmark, audit harness, or split manifests in your research, please cite:
 ```bibtex
 @article{mandala2026beyond,
-  title={Beyond the Random Split: An Empirical Audit and Out-of-Distribution Benchmark of Multimodal Disaster AI},
+  title={Beyond the Random Split: An Empirical Audit and Out-of-Distribution Benchmark of Text-Based Disaster AI},
   author={Mandala, Sohan Reddy},
-  journal={IEEE Transactions on Geoscience and Remote Sensing (Under Review)},
+  journal={arXiv preprint},
   year={2026}
 }
 ```
+
+- **Software:** MIT License
+- **Manuscript & Documentation:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+- **Derived Manifests & Features:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)

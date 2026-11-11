@@ -2,11 +2,10 @@
 """Generate publication-ready figures for the disaster AI audit paper.
 
 Produces:
-1. Fig 1: Split Inflation and Worst-Event Tail Collapse (Random vs LOEO vs LODTO vs Compound)
-2. Fig 2: Train/Test Near-Duplicate Leakage Inflation (Leaked vs Clean accuracy)
-3. Fig 3: Statistical Power vs Number of Held-Out Events (CI width shrinkage)
-4. Fig 4: Calibration Degradation & Expected Calibration Error under Event Shift
-5. Fig 5: Compound Shift Stress Response Heatmap (Noise sigma vs Modality Dropout)
+1. Fig 1: Split Inflation and Worst-Event Tail Collapse (Macro vs Pooled, LORO, LODTO, Worst Event)
+2. Fig 2: Near-Duplicate Leakage Analysis (Association Gap vs Net Test Set Effect vs Causal Deduplication)
+3. Fig 3: Empirical & Analytic Power Analysis (Bootstrap vs Analytic vs FPC curves, k >= 15 recommendation)
+4. Fig 4: Compound Stress Response Heatmap on HumAID (Gaussian Noise sigma + NSR vs Feature Dropout)
 """
 
 from __future__ import annotations
@@ -15,6 +14,8 @@ import json
 import sys
 from pathlib import Path
 
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -23,17 +24,17 @@ import seaborn as sns
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-# Publication style
+# Publication style configuration
 plt.style.use("seaborn-v0_8-whitegrid" if "seaborn-v0_8-whitegrid" in plt.style.available else "default")
 plt.rcParams.update({
     "font.family": "sans-serif",
-    "font.size": 11,
-    "axes.labelsize": 12,
-    "axes.titlesize": 13,
-    "xtick.labelsize": 10,
-    "ytick.labelsize": 10,
-    "legend.fontsize": 10,
-    "figure.titlesize": 14,
+    "font.size": 10,
+    "axes.labelsize": 11,
+    "axes.titlesize": 12,
+    "xtick.labelsize": 9.5,
+    "ytick.labelsize": 9.5,
+    "legend.fontsize": 9,
+    "figure.titlesize": 13,
     "figure.dpi": 300,
 })
 
@@ -42,46 +43,70 @@ FIG_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def plot_split_inflation() -> None:
-    """Fig 1: Compare Random vs LOEO vs LODTO vs LORO vs Worst Event."""
-    # Empirical numbers from benchmark runs
-    data = {
-        "Dataset": ["CrisisMMD", "CrisisMMD", "CrisisMMD", "CrisisMMD", "CrisisMMD",
-                    "HumAID", "HumAID", "HumAID", "HumAID", "HumAID"],
-        "Split Protocol": ["Random", "LORO (Region)", "LOEO (Event)", "LODTO (Type)", "Worst Event (LOEO)",
-                           "Random", "LORO (Region)", "LOEO (Event)", "LODTO (Type)", "Worst Event (LOEO)"],
-        "Accuracy (%)": [55.1, 52.7, 52.1, 51.2, 39.3,
-                         72.7, 73.4, 71.7, 69.7, 51.5],
-    }
+    """Fig 1: Compare Random vs LOEO vs LODTO vs LORO vs Worst Event with Macro and Pooled metrics."""
+    data = [
+        # CrisisMMD
+        {"Dataset": "CrisisMMD", "Protocol": "Random (Pooled)", "Accuracy": 55.12, "Type": "Random"},
+        {"Dataset": "CrisisMMD", "Protocol": "Random (Macro)", "Accuracy": 54.78, "Type": "Random"},
+        {"Dataset": "CrisisMMD", "Protocol": "LORO (Region)", "Accuracy": 52.66, "Type": "OOD"},
+        {"Dataset": "CrisisMMD", "Protocol": "LOEO (Pooled)", "Accuracy": 53.24, "Type": "OOD"},
+        {"Dataset": "CrisisMMD", "Protocol": "LOEO (Macro)", "Accuracy": 52.08, "Type": "OOD"},
+        {"Dataset": "CrisisMMD", "Protocol": "LODTO (Type)", "Accuracy": 51.17, "Type": "OOD"},
+        {"Dataset": "CrisisMMD", "Protocol": "Worst Event", "Accuracy": 39.33, "Type": "Worst"},
+        # HumAID
+        {"Dataset": "HumAID", "Protocol": "Random (Pooled)", "Accuracy": 72.69, "Type": "Random"},
+        {"Dataset": "HumAID", "Protocol": "Random (Macro)", "Accuracy": 74.93, "Type": "Random"},
+        {"Dataset": "HumAID", "Protocol": "LORO (Region)*", "Accuracy": 73.36, "Type": "OOD"},
+        {"Dataset": "HumAID", "Protocol": "LOEO (Pooled)", "Accuracy": 69.60, "Type": "OOD"},
+        {"Dataset": "HumAID", "Protocol": "LOEO (Macro)", "Accuracy": 71.69, "Type": "OOD"},
+        {"Dataset": "HumAID", "Protocol": "LODTO (Type)", "Accuracy": 69.69, "Type": "OOD"},
+        {"Dataset": "HumAID", "Protocol": "Worst Event", "Accuracy": 51.48, "Type": "Worst"},
+    ]
     df = pd.DataFrame(data)
 
-    fig, ax = plt.subplots(figsize=(9, 5))
-    palette = ["#2b5c8f", "#4575b4", "#74add1", "#abd9e9", "#d73027"]
+    fig, ax = plt.subplots(figsize=(10, 5.2), dpi=300)
+    palette = {
+        "Random (Pooled)": "#1f77b4",
+        "Random (Macro)": "#aec7e8",
+        "LORO (Region)": "#2ca02c",
+        "LORO (Region)*": "#2ca02c",
+        "LOEO (Pooled)": "#ff7f0e",
+        "LOEO (Macro)": "#ffbb78",
+        "LODTO (Type)": "#9467bd",
+        "Worst Event": "#d62728",
+    }
 
     sns.barplot(
         data=df,
         x="Dataset",
-        y="Accuracy (%)",
-        hue="Split Protocol",
+        y="Accuracy",
+        hue="Protocol",
         palette=palette,
         edgecolor="black",
-        linewidth=0.8,
+        linewidth=0.6,
         ax=ax,
     )
 
-    ax.set_ylim(30, 80)
+    ax.set_ylim(30, 82)
     ax.set_ylabel("Classification Accuracy (%)", fontweight="bold")
-    ax.set_xlabel("Harmonized Disaster Benchmark", fontweight="bold")
-    ax.set_title("The Hidden Tail Risk: Random Splits Conceal Severe OOD Generalization Collapse", fontweight="bold", pad=12)
-    ax.legend(title="Evaluation Split", frameon=True, loc="upper right")
+    ax.set_xlabel("Harmonized Crisis Benchmark", fontweight="bold")
+    ax.set_title("OOD Evaluation Reveals Tail Collapse and Split Sensitivity", fontweight="bold", pad=12)
+    ax.legend(title="Evaluation Protocol", frameon=True, loc="upper right", ncol=2)
 
-    # Annotate drops
-    ax.annotate("-15.8 pp Drop\n(Worst Event)", xy=(-0.05, 40.0), xytext=(-0.25, 45.0),
-                arrowprops=dict(facecolor="#d73027", shrink=0.05, width=1.5, headwidth=6),
-                fontsize=9, fontweight="bold", color="#d73027", ha="center")
+    # Annotate Paired Shift Drops on Worst Events
+    # CrisisMMD: California Wildfires drops from 44.88% (random) to 39.33% (loeo) -> paired drop 5.54 pp
+    ax.annotate("Worst: California Wildfires (39.3%)\nPaired drop: -5.54 pp vs random\n(Max paired drop: Iraq-Iran -6.97 pp)",
+                xy=(-0.05, 39.5), xytext=(-0.35, 43.5),
+                arrowprops=dict(facecolor="#d62728", shrink=0.05, width=1.2, headwidth=5),
+                fontsize=8.5, fontweight="semibold", color="#a50f15", ha="left",
+                bbox=dict(boxstyle="round,pad=0.3", fc="#fee5d9", ec="#d62728", lw=0.8))
 
-    ax.annotate("-21.2 pp Drop\n(Worst Event)", xy=(0.95, 52.0), xytext=(0.75, 57.0),
-                arrowprops=dict(facecolor="#d73027", shrink=0.05, width=1.5, headwidth=6),
-                fontsize=9, fontweight="bold", color="#d73027", ha="center")
+    # HumAID: Maryland Floods drops from 67.01% (random) to 51.48% (loeo) -> paired drop 15.52 pp
+    ax.annotate("Worst: Maryland Floods (51.5%)\nPaired drop: -15.52 pp vs random\n(Prior KL divergence: 0.78)",
+                xy=(0.95, 51.8), xytext=(0.60, 56.5),
+                arrowprops=dict(facecolor="#d62728", shrink=0.05, width=1.2, headwidth=5),
+                fontsize=8.5, fontweight="semibold", color="#a50f15", ha="left",
+                bbox=dict(boxstyle="round,pad=0.3", fc="#fee5d9", ec="#d62728", lw=0.8))
 
     plt.tight_layout()
     out_pdf = FIG_DIR / "fig1_split_inflation.pdf"
@@ -93,47 +118,58 @@ def plot_split_inflation() -> None:
 
 
 def plot_leakage_impact() -> None:
-    """Fig 2: Empirical accuracy on Leaked vs Full vs Clean test subsets."""
-    data = {
-        "Dataset": ["CrisisMMD", "CrisisMMD", "CrisisMMD",
-                    "HumAID", "HumAID", "HumAID"],
-        "Subset": ["Clean Subset", "Full Random Test", "Leaked Subset",
-                   "Clean Subset", "Full Random Test", "Leaked Subset"],
-        "Accuracy (%)": [54.2, 55.1, 60.1,
-                         72.0, 72.7, 87.5],
-        "Error": [0.6, 0.5, 0.8,
-                  0.3, 0.2, 0.7],
-    }
+    """Fig 2: Dissecting Near-Duplicate Leakage: Slice Association vs Net Test Inflation vs Causal Purging."""
+    data = [
+        # CrisisMMD (15.7% leaked at tau=0.90, N=568 / 3,617)
+        {"Dataset": "CrisisMMD", "Metric": "Full Test (Random)", "Accuracy": 55.12, "Annotation": "N=3,617"},
+        {"Dataset": "CrisisMMD", "Metric": "Leaked Slice (tau>=0.90)", "Accuracy": 60.67, "Annotation": "N=568 (15.7%)"},
+        {"Dataset": "CrisisMMD", "Metric": "Unleaked Clean Slice", "Accuracy": 54.08, "Annotation": "N=3,049 (84.3%)"},
+        {"Dataset": "CrisisMMD", "Metric": "Causally Purged Model", "Accuracy": 54.43, "Annotation": "Net Drop: -0.69 pp"},
+        # HumAID (4.26% leaked at tau=0.90, N=652 / 15,297)
+        {"Dataset": "HumAID", "Metric": "Full Test (Random)", "Accuracy": 72.69, "Annotation": "N=15,297"},
+        {"Dataset": "HumAID", "Metric": "Leaked Slice (tau>=0.90)", "Accuracy": 86.43, "Annotation": "N=652 (4.3%)"},
+        {"Dataset": "HumAID", "Metric": "Unleaked Clean Slice", "Accuracy": 72.10, "Annotation": "N=14,645 (95.7%)"},
+        {"Dataset": "HumAID", "Metric": "Causally Purged Model", "Accuracy": 72.69, "Annotation": "Net Drop: 0.00 pp"},
+    ]
     df = pd.DataFrame(data)
 
-    fig, ax = plt.subplots(figsize=(8, 5))
-    palette = ["#2ca02c", "#1f77b4", "#d62728"]
+    fig, ax = plt.subplots(figsize=(9.5, 5.2), dpi=300)
+    palette = {
+        "Full Test (Random)": "#1f77b4",
+        "Leaked Slice (tau>=0.90)": "#d62728",
+        "Unleaked Clean Slice": "#2ca02c",
+        "Causally Purged Model": "#9467bd",
+    }
 
-    bars = sns.barplot(
+    sns.barplot(
         data=df,
         x="Dataset",
-        y="Accuracy (%)",
-        hue="Subset",
+        y="Accuracy",
+        hue="Metric",
         palette=palette,
         edgecolor="black",
-        linewidth=0.8,
+        linewidth=0.6,
         ax=ax,
     )
 
     ax.set_ylim(45, 95)
-    ax.set_ylabel("Accuracy (%) [5-seed Mean]", fontweight="bold")
+    ax.set_ylabel("Classification Accuracy (%)", fontweight="bold")
     ax.set_xlabel("Benchmark Dataset", fontweight="bold")
-    ax.set_title("Near-Duplicate Train/Test Leakage Artificially Inflates Test Accuracy", fontweight="bold", pad=12)
-    ax.legend(title="Test Set Slice", frameon=True, loc="upper left")
+    ax.set_title("Near-Duplicate Leakage: Association vs. Net Benchmark Inflation", fontweight="bold", pad=12)
+    ax.legend(title="Evaluation Cohort / Condition", frameon=True, loc="upper left")
 
-    # Annotations
-    ax.annotate("+5.9 pp\nInflation", xy=(-0.05, 60.5), xytext=(-0.05, 65.0),
-                arrowprops=dict(facecolor="#d62728", shrink=0.05, width=1.2, headwidth=5),
-                fontsize=9, fontweight="bold", color="#d62728", ha="center")
+    # Annotations highlighting sample sizes and true net effects
+    ax.annotate("CrisisMMD (tau >= 0.90):\n• Leaked slice advantage: +6.59 pp (N=568)\n• Unleaked slice gap: +1.04 pp\n• Causal drop when purged: -0.69 pp",
+                xy=(-0.05, 61.5), xytext=(-0.35, 72.0),
+                arrowprops=dict(facecolor="#333333", shrink=0.05, width=1.0, headwidth=4),
+                fontsize=8.5, color="#111111", ha="left",
+                bbox=dict(boxstyle="round,pad=0.3", fc="#f7f7f7", ec="#cccccc", lw=0.8))
 
-    ax.annotate("+15.5 pp\nInflation", xy=(0.95, 88.0), xytext=(0.95, 91.5),
-                arrowprops=dict(facecolor="#d62728", shrink=0.05, width=1.2, headwidth=5),
-                fontsize=9, fontweight="bold", color="#d62728", ha="center")
+    ax.annotate("HumAID (tau >= 0.90):\n• Leaked slice advantage: +13.74 pp (N=652)\n• Unleaked slice gap: +0.59 pp\n• Causal drop when purged: 0.00 pp\n[Note: at tau>=0.98, N=6 samples (0.04%)]",
+                xy=(0.95, 87.0), xytext=(0.60, 68.0),
+                arrowprops=dict(facecolor="#333333", shrink=0.05, width=1.0, headwidth=4),
+                fontsize=8.5, color="#111111", ha="left",
+                bbox=dict(boxstyle="round,pad=0.3", fc="#f7f7f7", ec="#cccccc", lw=0.8))
 
     plt.tight_layout()
     out_pdf = FIG_DIR / "fig2_leakage_impact.pdf"
@@ -145,7 +181,7 @@ def plot_leakage_impact() -> None:
 
 
 def plot_power_analysis() -> None:
-    """Fig 3: Empirical Statistical Power Curve."""
+    """Fig 3: Empirical vs Analytic Power Curve with Finite Population Correction."""
     csv_path = PROJECT_ROOT / "outputs" / "power_analysis" / "power_analysis_curve.csv"
     if not csv_path.exists():
         print(f"Skipping Fig 3: {csv_path} not found.")
@@ -153,18 +189,42 @@ def plot_power_analysis() -> None:
 
     df = pd.read_csv(csv_path)
 
-    fig, ax1 = plt.subplots(figsize=(8, 4.8))
+    # Empirical values from HumAID event LOEO results: SD across 19 events = 0.0768 (7.68 pp)
+    sd_events = 0.0768
+    N_total = 19
+    k_dense = np.linspace(2, 18.5, 100)
 
-    ax1.plot(df["k"], df["mean_ci_width"] * 100, marker="o", color="#08519c", linewidth=2.2, label="95% CI Width (pp)")
-    ax1.axhline(y=10.0, color="#de2d26", linestyle="--", linewidth=1.5, label="Tolerance Threshold (10 pp)")
-    ax1.axvline(x=15, color="#31a354", linestyle=":", linewidth=1.5, label="Recommended Bound (k >= 15)")
+    # Analytic curve (infinite superpopulation assumption): 2 * 1.96 * SD / sqrt(k)
+    ci_analytic = (2 * 1.96 * sd_events / np.sqrt(k_dense)) * 100
 
-    ax1.set_xlabel("Number of Held-Out Events ($k$)", fontweight="bold")
-    ax1.set_ylabel("95% Confidence Interval Width (pp)", fontweight="bold", color="#08519c")
-    ax1.set_title("Empirical Power Analysis: Held-Out Disaster Event Count vs. Margin of Error", fontweight="bold", pad=12)
-    ax1.set_xticks(df["k"].tolist())
-    ax1.set_ylim(8, 22)
-    ax1.legend(frameon=True, loc="upper right")
+    # Finite Population Correction (FPC) curve: 2 * 1.96 * SD / sqrt(k) * sqrt((N - k) / (N - 1))
+    fpc_factor = np.sqrt(np.maximum(0, (N_total - k_dense) / (N_total - 1)))
+    ci_fpc = ci_analytic * fpc_factor
+
+    fig, ax = plt.subplots(figsize=(8.2, 5.0), dpi=300)
+
+    # Plot lines
+    ax.plot(df["k"], df["mean_ci_width"] * 100, marker="o", color="#08519c", linewidth=2.2, label="Empirical Cluster Bootstrap (without repl.)")
+    ax.plot(k_dense, ci_analytic, linestyle="--", color="#e6550d", linewidth=1.8, label="Analytic Superpopulation (2 × 1.96 × SD / $\\sqrt{k}$)")
+    ax.plot(k_dense, ci_fpc, linestyle="-.", color="#756bb1", linewidth=1.8, label="Analytic with FPC (Finite Population Correction, N=19)")
+
+    # Thresholds and bounds
+    ax.axhline(y=10.0, color="#de2d26", linestyle=":", linewidth=1.5, label="Tolerance Bound (10.0 pp Margin of Error)")
+    ax.axvline(x=15, color="#31a354", linestyle="--", linewidth=1.5, label="Recommended Minimum ($k \\geq 15$ events)")
+
+    ax.set_xlabel("Number of Held-Out Events ($k$)", fontweight="bold")
+    ax.set_ylabel("95% Confidence Interval Width (pp)", fontweight="bold")
+    ax.set_title("Statistical Power: Held-Out Event Sample Size vs. Margin of Error", fontweight="bold", pad=12)
+    ax.set_xticks(range(2, 20, 2))
+    ax.set_ylim(0, 25)
+    ax.legend(frameon=True, loc="upper right")
+
+    # Callout annotation
+    ax.annotate("At $k=15$:\n• Empirical CI width: 10.96 pp\n• Superpopulation width: 7.77 pp\n• FPC-adjusted width: 3.66 pp",
+                xy=(15, 10.96), xytext=(9.5, 4.0),
+                arrowprops=dict(facecolor="#08519c", shrink=0.05, width=1.2, headwidth=5),
+                fontsize=8.5, color="#08519c",
+                bbox=dict(boxstyle="round,pad=0.3", fc="#eff3ff", ec="#08519c", lw=0.8))
 
     plt.tight_layout()
     out_pdf = FIG_DIR / "fig3_power_analysis.pdf"
@@ -176,28 +236,41 @@ def plot_power_analysis() -> None:
 
 
 def plot_compound_stress_heatmap() -> None:
-    """Fig 4: Heatmap of Accuracy under Event Shift + Sensor Corruption."""
-    csv_path = PROJECT_ROOT / "outputs" / "compound_shift" / "crisismmd_compound_stress_results.csv"
+    """Fig 4: Heatmap of Accuracy under Event Shift + Gaussian Noise + Feature Dropout on HumAID."""
+    csv_path = PROJECT_ROOT / "outputs" / "compound_shift" / "humaid_compound_stress_results.csv"
     if not csv_path.exists():
         print(f"Skipping Fig 4: {csv_path} not found.")
         return
 
     df = pd.read_csv(csv_path)
-    pivot = df.groupby(["noise_sigma", "dropout_rate"])["accuracy"].mean().unstack() * 100
 
-    fig, ax = plt.subplots(figsize=(7, 5))
+    # Filter to representative subset of noise sigmas for clear visual presentation
+    target_sigmas = [0.0, 0.01, 0.025, 0.05, 0.10, 0.25, 0.50]
+    df_sub = df[df["noise_sigma"].isin(target_sigmas)]
+
+    # Compute mean accuracy across folds (converted to %)
+    pivot = df_sub.groupby(["noise_sigma", "dropout_rate"])["accuracy"].mean().unstack() * 100
+
+    # Format y-index with Noise-to-Signal Ratio (NSR)
+    def label_row(sigma: float) -> str:
+        nsr = np.sqrt(384 * (sigma ** 2))
+        return f"{sigma:.3f} (NSR: {nsr:.2f})" if sigma > 0 else f"{sigma:.3f} (Clean)"
+
+    pivot.index = [label_row(s) for s in pivot.index]
+
+    fig, ax = plt.subplots(figsize=(7.8, 5.4), dpi=300)
     sns.heatmap(
         pivot,
         annot=True,
         fmt=".1f",
         cmap="YlOrRd_r",
-        cbar_kws={"label": "LOEO Accuracy (%)"},
-        linewidths=0.5,
+        cbar_kws={"label": "LOEO Accuracy (%) [19 Folds Mean]"},
+        linewidths=0.6,
         ax=ax,
     )
-    ax.set_title("Compound Stress Response: Event Shift + Modality Degradation", fontweight="bold", pad=12)
-    ax.set_xlabel("Modality Dropout Fraction", fontweight="bold")
-    ax.set_ylabel("Sensor Noise (Gaussian $\\sigma$)", fontweight="bold")
+    ax.set_title("HumAID Compound Stress: Event Shift + Noise (NSR) vs Dropout", fontweight="bold", pad=12)
+    ax.set_xlabel("Feature Dimension Dropout Fraction", fontweight="bold")
+    ax.set_ylabel("Sensor Noise $\\sigma$ and Noise-to-Signal Ratio (NSR)", fontweight="bold")
 
     plt.tight_layout()
     out_pdf = FIG_DIR / "fig4_compound_stress_heatmap.pdf"
@@ -213,7 +286,7 @@ def main() -> None:
     plot_leakage_impact()
     plot_power_analysis()
     plot_compound_stress_heatmap()
-    print("All publication figures successfully generated!")
+    print("All updated publication figures successfully generated!")
 
 
 if __name__ == "__main__":

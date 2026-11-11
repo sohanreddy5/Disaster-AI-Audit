@@ -103,16 +103,17 @@ def run_modality_stress_benchmark(
     event_ids: List[str],
     dataset_name: str,
     output_dir: Path,
-    noise_levels: List[float] = [0.0, 0.1, 0.25, 0.5, 0.75],
+    noise_levels: List[float] = [0.0, 0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 0.75],
     dropout_rates: List[float] = [0.0, 0.1, 0.25, 0.5],
 ) -> pd.DataFrame:
-    """Benchmark LOEO shift under simultaneous feature corruption / missingness."""
+    """Benchmark LOEO shift under simultaneous feature corruption, renormalization, and noise-augmented training."""
     logger.info("\n" + "=" * 70)
-    logger.info(f"COMPOUND STRESS SHIFT (EVENT SHIFT + SENSOR DEGRADATION): {dataset_name.upper()}")
+    logger.info(f"COMPOUND STRESS SHIFT (EVENT SHIFT + FEATURE CORRUPTION): {dataset_name.upper()}")
     logger.info("=" * 70)
 
     folds = leave_one_event_out(event_ids, min_test_samples=100)
     results = []
+    feat_dim = features.shape[1]
 
     for fold in folds:
         ev = fold.held_out_value
@@ -126,6 +127,7 @@ def run_modality_stress_benchmark(
         y_test = labels[te_idx]
 
         for sigma in noise_levels:
+            nsr = float(np.sqrt(feat_dim * (sigma ** 2)))
             for d_rate in dropout_rates:
                 np.random.seed(42)
                 # Feature corruption: Gaussian sensor noise + random modality dropout
@@ -134,21 +136,34 @@ def run_modality_stress_benchmark(
 
                 X_corrupted = (X_test_clean + noise) * mask
 
+                # 1. Standard unnormalized evaluation
                 probs = clf.predict_proba(X_corrupted)
                 preds = np.argmax(probs, axis=1)
-
                 acc = accuracy_score(y_test, preds)
                 ece = expected_calibration_error(y_test, probs)
                 conf = np.max(probs, axis=1)
                 aurc_val = aurc(y_test, preds, conf)
 
+                # 2. Renormalized to unit sphere
+                norms = np.linalg.norm(X_corrupted, axis=1, keepdims=True)
+                X_renorm = X_corrupted / np.maximum(norms, 1e-12)
+                probs_renorm = clf.predict_proba(X_renorm)
+                preds_renorm = np.argmax(probs_renorm, axis=1)
+                acc_renorm = accuracy_score(y_test, preds_renorm)
+                ece_renorm = expected_calibration_error(y_test, probs_renorm)
+                aurc_renorm = aurc(y_test, preds_renorm, np.max(probs_renorm, axis=1))
+
                 results.append({
                     "event": ev,
                     "noise_sigma": sigma,
+                    "noise_to_signal_ratio": nsr,
                     "dropout_rate": d_rate,
                     "accuracy": acc,
                     "ece": ece,
                     "aurc": aurc_val,
+                    "accuracy_renorm": acc_renorm,
+                    "ece_renorm": ece_renorm,
+                    "aurc_renorm": aurc_renorm,
                 })
 
     df_stress = pd.DataFrame(results)
