@@ -1,0 +1,14 @@
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+
+Copyright (c) 2026 Sohan Reddy Mandala
+
+This license covers all derived split manifests, feature representation caches, and benchmark evaluation tables in this repository:
+- Derived in part from CrisisMMD (Alam et al., ICWSM 2018), released under CC BY-NC-SA 4.0.
+- Derived in part from HumAID (Alam et al., ICWSM 2021), released by QCRI under Non-Commercial Research Use terms.
+
+Under the terms of CC BY-NC-SA 4.0:
+- NonCommercial — You may not use the material for commercial purposes.
+- ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+- Attribution — You must give appropriate credit to the authors and upstream corpora creators.
+
+Full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode

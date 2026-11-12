@@ -1,11 +1,4 @@
-Disaster AI Audit Benchmark: Licensing Terms
-=============================================
-
-This repository contains multiple distinct artifacts with modular, open-access licenses:
-
-1. Software & Implementation Code
----------------------------------
-All source code within `src/`, `scripts/`, and `tests/` is released under the MIT License:
+MIT License
 
 Copyright (c) 2026 Sohan Reddy Mandala
 
@@ -27,20 +20,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-2. Academic Manuscript and Documentation
-----------------------------------------
-All academic paper text, LaTeX sources, figures, and documentation in `docs/` and `README.md`
-are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License:
-https://creativecommons.org/licenses/by/4.0/
-
-3. Derived Benchmark Manifests & Feature Representations
---------------------------------------------------------
-The split manifests (`data/splits_manifest/`), cached embeddings (`cache/features/`),
-and benchmark evaluation tables (`outputs/`) are derived from the upstream research corpora:
-- CrisisMMD (Alam et al., ICWSM 2018), released under CC BY-NC-SA 4.0.
-- HumAID (Alam et al., ICWSM 2021), released by QCRI under Non-Commercial Research Use terms.
-
-In accordance with upstream license terms, all derived split manifests, feature caches,
-and evaluation results are distributed strictly under Creative Commons
-Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0):
-https://creativecommons.org/licenses/by-nc-sa/4.0/
+--------------------------------------------------------------------------------
+Notice for Documentation and Data Artifacts:
+- Documentation and academic manuscript sources are licensed under CC BY 4.0 (see LICENSE-docs).
+- Split manifests, cached representations, and evaluation outputs are licensed under CC BY-NC-SA 4.0 (see LICENSE-data).

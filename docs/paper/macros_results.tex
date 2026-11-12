@@ -10,14 +10,18 @@
 \newcommand{\cAccLOEOMacro}{52.08}
 \newcommand{\cAccLOEOStd}{12.77}
 \newcommand{\cWorstLOEOAcc}{39.33}
-\newcommand{\cWorstLOEOEvent}{california_wildfires}
+\newcommand{\cWorstLOEOEvent}{california\_wildfires}
 \newcommand{\cPairedGapMean}{2.70}
 \newcommand{\cPairedGapMax}{6.97}
-\newcommand{\cPairedGapMaxEvent}{iraq_iran_earthquake}
+\newcommand{\cPairedGapMaxEvent}{iraq\_iran\_earthquake}
+\newcommand{\cWorstPairedGap}{5.54}
 \newcommand{\cAccLORO}{52.66}
 \newcommand{\cAccLODTO}{51.24}
 \newcommand{\cPriorMacro}{38.73}
 \newcommand{\cPriorPooled}{38.67}
+\newcommand{\cPriorMarginMin}{5.58}
+\newcommand{\cPriorMarginMax}{18.76}
+\newcommand{\cPriorMarginMean}{13.35}
 
 % --- HumAID Splits ---
 \newcommand{\hAccRandomPooled}{72.69}
@@ -28,14 +32,18 @@
 \newcommand{\hAccLOEOMacro}{71.69}
 \newcommand{\hAccLOEOStd}{7.68}
 \newcommand{\hWorstLOEOAcc}{51.48}
-\newcommand{\hWorstLOEOEvent}{maryland_floods_2018}
+\newcommand{\hWorstLOEOEvent}{maryland\_floods\_2018}
 \newcommand{\hPairedGapMean}{3.23}
 \newcommand{\hPairedGapMax}{15.52}
-\newcommand{\hPairedGapMaxEvent}{maryland_floods_2018}
+\newcommand{\hPairedGapMaxEvent}{maryland\_floods\_2018}
+\newcommand{\hWorstPairedGap}{15.52}
 \newcommand{\hAccLORO}{73.36}
 \newcommand{\hAccLODTO}{69.73}
 \newcommand{\hPriorMacro}{28.57}
 \newcommand{\hPriorPooled}{32.21}
+\newcommand{\hPriorMarginMin}{15.32}
+\newcommand{\hPriorMarginMax}{65.37}
+\newcommand{\hPriorMarginMean}{43.12}
 
 % --- Average Macro LOEO Drops ---
 \newcommand{\cMacroLOEODrop}{2.70}
@@ -110,6 +118,9 @@
 \newcommand{\hLeakNetEffectNinetyEight}{0.01}
 \newcommand{\cCausalDropNinety}{0.69}
 \newcommand{\hCausalDropNinety}{0.00}
+\newcommand{\cDedupControlDrop}{0.12}
+\newcommand{\hDedupControlDrop}{0.08}
+\newcommand{\cCorpusDupShare}{17.53}
 
 % --- Domain Generalization Benchmarks (Table III: 5 seeds) ---
 \newcommand{\cERMAcc}{51.41}
@@ -152,3 +163,47 @@
 \newcommand{\hIRMAURC}{0.186}
 \newcommand{\hGroupDROGain}{0.81}
 \newcommand{\hIRMPenalty}{3.76}
+
+% --- Temperature Scaling T values ---
+\newcommand{\hERMOptTMean}{0.645}
+\newcommand{\hERMOptTStd}{0.136}
+\newcommand{\cERMOptTMean}{0.873}
+\newcommand{\cERMOptTStd}{0.162}
+
+% --- Wilcoxon Exact P-Values ---
+\newcommand{\hWilcoxonRawP}{3.81 \times 10^{-6}}
+\newcommand{\hWilcoxonHolmP}{7.63 \times 10^{-6}}
+\newcommand{\cWilcoxonRawP}{0.0156}
+\newcommand{\cWilcoxonHolmP}{0.0313}
+
+% --- Synthetic Feature Corruption (Table V: HumAID 19-Fold Mean) ---
+\newcommand{\hNoiseRawAccZero}{71.69}
+\newcommand{\hNoiseRawECEZero}{0.039}
+\newcommand{\hNoiseRenormAccZero}{71.69}
+\newcommand{\hNoiseRenormECEZero}{0.039}
+\newcommand{\hNoiseAugAccZero}{71.69}
+\newcommand{\hNoiseAugECEZero}{0.039}
+\newcommand{\hNoiseRawAccFive}{63.15}
+\newcommand{\hNoiseRawECEFive}{0.077}
+\newcommand{\hNoiseRenormAccFive}{57.57}
+\newcommand{\hNoiseRenormECEFive}{0.052}
+\newcommand{\hNoiseAugAccFive}{65.80}
+\newcommand{\hNoiseAugECEFive}{0.044}
+\newcommand{\hNoiseRawAccTen}{47.67}
+\newcommand{\hNoiseRawECETen}{0.252}
+\newcommand{\hNoiseRenormAccTen}{31.88}
+\newcommand{\hNoiseRenormECETen}{0.214}
+\newcommand{\hNoiseAugAccTen}{56.68}
+\newcommand{\hNoiseAugECETen}{0.070}
+\newcommand{\hNoiseRawAccTwentyFive}{25.32}
+\newcommand{\hNoiseRawECETwentyFive}{0.589}
+\newcommand{\hNoiseRenormAccTwentyFive}{13.29}
+\newcommand{\hNoiseRenormECETwentyFive}{0.449}
+\newcommand{\hNoiseAugAccTwentyFive}{37.17}
+\newcommand{\hNoiseAugECETwentyFive}{0.139}
+\newcommand{\hNoiseRawAccFifty}{17.19}
+\newcommand{\hNoiseRawECEFifty}{0.745}
+\newcommand{\hNoiseRenormAccFifty}{10.51}
+\newcommand{\hNoiseRenormECEFifty}{0.508}
+\newcommand{\hNoiseAugAccFifty}{27.63}
+\newcommand{\hNoiseAugECEFifty}{0.115}

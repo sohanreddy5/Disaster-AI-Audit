@@ -6,3 +6,4 @@ cache/features/*.npz
 data/raw/
 PAPER_1_ARTIFACTS.zip
 *.zip
+outputs/overleaf_package/

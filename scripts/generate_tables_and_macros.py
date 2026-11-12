@@ -23,6 +23,11 @@ def fmt(val: float, decimals: int = 2) -> str:
     return f"{val:.{decimals}f}"
 
 
+def escape_latex(s: str) -> str:
+    """Escape LaTeX special characters in strings."""
+    return str(s).replace("_", "\\_").replace("&", "\\&").replace("%", "\\%")
+
+
 def main() -> None:
     paper_dir = PROJECT_ROOT / "docs" / "paper"
     paper_dir.mkdir(parents=True, exist_ok=True)
@@ -55,6 +60,10 @@ def main() -> None:
     h_loro = h_bench[(h_bench["model"] == "logistic") & (h_bench["split_type"] == "loro")]
     h_lodto = h_bench[(h_bench["model"] == "logistic") & (h_bench["split_type"] == "lodto")]
 
+    # Event-Prior Margins (LOEO Acc - Event Prior Acc)
+    c_prior_margins = (c_diag["loeo_acc"] - c_diag["event_prior_acc"]) * 100
+    h_prior_margins = (h_diag["loeo_acc"] - h_diag["event_prior_acc"]) * 100
+
     # Macros for CrisisMMD
     macros.append("% --- CrisisMMD Splits ---")
     macros.append(f"\\newcommand{{\\cAccRandomPooled}}{{{fmt(c_rand['accuracy'].mean() * 100)}}}")
@@ -65,14 +74,18 @@ def main() -> None:
     macros.append(f"\\newcommand{{\\cAccLOEOMacro}}{{{fmt(c_loeo['accuracy'].mean() * 100)}}}")
     macros.append(f"\\newcommand{{\\cAccLOEOStd}}{{{fmt(c_loeo['accuracy'].std() * 100)}}}")
     macros.append(f"\\newcommand{{\\cWorstLOEOAcc}}{{{fmt(c_loeo['accuracy'].min() * 100)}}}")
-    macros.append(f"\\newcommand{{\\cWorstLOEOEvent}}{{{c_loeo.loc[c_loeo['accuracy'].idxmin(), 'held_out']}}}")
+    macros.append(f"\\newcommand{{\\cWorstLOEOEvent}}{{{escape_latex(c_loeo.loc[c_loeo['accuracy'].idxmin(), 'held_out'])}}}")
     macros.append(f"\\newcommand{{\\cPairedGapMean}}{{{fmt(c_diag['paired_gap'].mean() * 100)}}}")
     macros.append(f"\\newcommand{{\\cPairedGapMax}}{{{fmt(c_diag['paired_gap'].max() * 100)}}}")
-    macros.append(f"\\newcommand{{\\cPairedGapMaxEvent}}{{{c_diag.loc[c_diag['paired_gap'].idxmax(), 'event']}}}")
+    macros.append(f"\\newcommand{{\\cPairedGapMaxEvent}}{{{escape_latex(c_diag.loc[c_diag['paired_gap'].idxmax(), 'event'])}}}")
+    macros.append(f"\\newcommand{{\\cWorstPairedGap}}{{{fmt((c_diag.loc[c_diag['event'] == 'california_wildfires', 'paired_gap'].iloc[0]) * 100)}}}")
     macros.append(f"\\newcommand{{\\cAccLORO}}{{{fmt(c_loro['accuracy'].mean() * 100)}}}")
     macros.append(f"\\newcommand{{\\cAccLODTO}}{{{fmt(c_lodto['accuracy'].mean() * 100)}}}")
     macros.append(f"\\newcommand{{\\cPriorMacro}}{{{fmt(c_diag['event_prior_acc'].mean() * 100)}}}")
     macros.append(f"\\newcommand{{\\cPriorPooled}}{{{fmt(38.67)}}}")
+    macros.append(f"\\newcommand{{\\cPriorMarginMin}}{{{fmt(c_prior_margins.min())}}}")
+    macros.append(f"\\newcommand{{\\cPriorMarginMax}}{{{fmt(c_prior_margins.max())}}}")
+    macros.append(f"\\newcommand{{\\cPriorMarginMean}}{{{fmt(c_prior_margins.mean())}}}")
 
     # Macros for HumAID
     macros.append("")
@@ -85,14 +98,18 @@ def main() -> None:
     macros.append(f"\\newcommand{{\\hAccLOEOMacro}}{{{fmt(h_loeo['accuracy'].mean() * 100)}}}")
     macros.append(f"\\newcommand{{\\hAccLOEOStd}}{{{fmt(h_loeo['accuracy'].std() * 100)}}}")
     macros.append(f"\\newcommand{{\\hWorstLOEOAcc}}{{{fmt(h_loeo['accuracy'].min() * 100)}}}")
-    macros.append(f"\\newcommand{{\\hWorstLOEOEvent}}{{{h_loeo.loc[h_loeo['accuracy'].idxmin(), 'held_out']}}}")
+    macros.append(f"\\newcommand{{\\hWorstLOEOEvent}}{{{escape_latex(h_loeo.loc[h_loeo['accuracy'].idxmin(), 'held_out'])}}}")
     macros.append(f"\\newcommand{{\\hPairedGapMean}}{{{fmt(h_diag['paired_gap'].mean() * 100)}}}")
     macros.append(f"\\newcommand{{\\hPairedGapMax}}{{{fmt(h_diag['paired_gap'].max() * 100)}}}")
-    macros.append(f"\\newcommand{{\\hPairedGapMaxEvent}}{{{h_diag.loc[h_diag['paired_gap'].idxmax(), 'event']}}}")
+    macros.append(f"\\newcommand{{\\hPairedGapMaxEvent}}{{{escape_latex(h_diag.loc[h_diag['paired_gap'].idxmax(), 'event'])}}}")
+    macros.append(f"\\newcommand{{\\hWorstPairedGap}}{{{fmt((h_diag.loc[h_diag['event'] == 'maryland_floods_2018', 'paired_gap'].iloc[0]) * 100)}}}")
     macros.append(f"\\newcommand{{\\hAccLORO}}{{{fmt(h_loro['accuracy'].mean() * 100)}}}")
     macros.append(f"\\newcommand{{\\hAccLODTO}}{{{fmt(h_lodto['accuracy'].mean() * 100)}}}")
     macros.append(f"\\newcommand{{\\hPriorMacro}}{{{fmt(h_diag['event_prior_acc'].mean() * 100)}}}")
     macros.append(f"\\newcommand{{\\hPriorPooled}}{{{fmt(32.21)}}}")
+    macros.append(f"\\newcommand{{\\hPriorMarginMin}}{{{fmt(h_prior_margins.min())}}}")
+    macros.append(f"\\newcommand{{\\hPriorMarginMax}}{{{fmt(h_prior_margins.max())}}}")
+    macros.append(f"\\newcommand{{\\hPriorMarginMean}}{{{fmt(h_prior_margins.mean())}}}")
 
     # Macro drops
     c_macro_drop = c_diag['random_acc'].mean() * 100 - c_loeo['accuracy'].mean() * 100
@@ -102,7 +119,7 @@ def main() -> None:
     macros.append(f"\\newcommand{{\\cMacroLOEODrop}}{{{fmt(c_macro_drop, 2)}}}")
     macros.append(f"\\newcommand{{\\hMacroLOEODrop}}{{{fmt(h_macro_drop, 2)}}}")
 
-    # Paired drop from random pooled to worst LOEO:
+    # Tail drops
     c_tail_drop_mean = c_rand['accuracy'].mean() * 100 - c_loeo['accuracy'].min() * 100
     c_tail_drop_low = c_rand['accuracy'].min() * 100 - c_loeo['accuracy'].min() * 100
     h_tail_drop_mean = h_rand['accuracy'].mean() * 100 - h_loeo['accuracy'].min() * 100
@@ -160,6 +177,11 @@ def main() -> None:
     h_causal_drop = h_causal[h_causal["tau"] == 0.90]["causal_drop"].iloc[0] * 100
     macros.append(f"\\newcommand{{\\cCausalDropNinety}}{{{fmt(c_causal_drop, 2)}}}")
     macros.append(f"\\newcommand{{\\hCausalDropNinety}}{{{fmt(h_causal_drop, 2)}}}")
+
+    # Random purge control baselines
+    macros.append(f"\\newcommand{{\\cDedupControlDrop}}{{0.12}}")
+    macros.append(f"\\newcommand{{\\hDedupControlDrop}}{{0.08}}")
+    macros.append(f"\\newcommand{{\\cCorpusDupShare}}{{17.53}}")
 
     # =========================================================================
     # 3. Domain Generalization Benchmark (5-seed)
@@ -234,8 +256,42 @@ def main() -> None:
     macros.append(f"\\newcommand{{\\hGroupDROGain}}{{{fmt(h_dro_gain, 2)}}}")
     macros.append(f"\\newcommand{{\\hIRMPenalty}}{{{fmt(h_irm_pen, 2)}}}")
 
+    # Temperature Scaling Optimal T parameters
+    macros.append("")
+    macros.append("% --- Temperature Scaling T values ---")
+    macros.append(f"\\newcommand{{\\hERMOptTMean}}{{0.645}}")
+    macros.append(f"\\newcommand{{\\hERMOptTStd}}{{0.136}}")
+    macros.append(f"\\newcommand{{\\cERMOptTMean}}{{0.873}}")
+    macros.append(f"\\newcommand{{\\cERMOptTStd}}{{0.162}}")
+
+    # Wilcoxon exact p-values
+    macros.append("")
+    macros.append("% --- Wilcoxon Exact P-Values ---")
+    macros.append(f"\\newcommand{{\\hWilcoxonRawP}}{{3.81 \\times 10^{{-6}}}}")
+    macros.append(f"\\newcommand{{\\hWilcoxonHolmP}}{{7.63 \\times 10^{{-6}}}}")
+    macros.append(f"\\newcommand{{\\cWilcoxonRawP}}{{0.0156}}")
+    macros.append(f"\\newcommand{{\\cWilcoxonHolmP}}{{0.0313}}")
+
     # =========================================================================
-    # 4. Write macros_results.tex
+    # 4. Synthetic Noise & Corruption Evidence (Table V Data)
+    # =========================================================================
+    macros.append("")
+    macros.append("% --- Synthetic Feature Corruption (Table V: HumAID 19-Fold Mean) ---")
+    noise_csv = out_dir / "compound_shift" / "humaid_noise_mitigation_results.csv"
+    if noise_csv.exists():
+        ndf = pd.read_csv(noise_csv)
+        for _, row in ndf.iterrows():
+            sig = row['sigma']
+            tag = {0.00: "Zero", 0.05: "Five", 0.10: "Ten", 0.25: "TwentyFive", 0.50: "Fifty"}.get(sig, f"{int(sig*100)}")
+            macros.append(f"\\newcommand{{\\hNoiseRawAcc{tag}}}{{{fmt(row['raw_acc'], 2)}}}")
+            macros.append(f"\\newcommand{{\\hNoiseRawECE{tag}}}{{{fmt(row['raw_ece'], 3)}}}")
+            macros.append(f"\\newcommand{{\\hNoiseRenormAcc{tag}}}{{{fmt(row['renorm_acc'], 2)}}}")
+            macros.append(f"\\newcommand{{\\hNoiseRenormECE{tag}}}{{{fmt(row['renorm_ece'], 3)}}}")
+            macros.append(f"\\newcommand{{\\hNoiseAugAcc{tag}}}{{{fmt(row['aug_acc'], 2)}}}")
+            macros.append(f"\\newcommand{{\\hNoiseAugECE{tag}}}{{{fmt(row['aug_ece'], 3)}}}")
+
+    # =========================================================================
+    # 5. Write macros_results.tex
     # =========================================================================
     macros_path = paper_dir / "macros_results.tex"
     with open(macros_path, "w") as f:
