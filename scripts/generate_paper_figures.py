@@ -122,12 +122,12 @@ def plot_leakage_impact() -> None:
         {"Dataset": "CrisisMMD", "Metric": "Full Test (Random)", "Accuracy": 55.12, "Annotation": "N=3,617"},
         {"Dataset": "CrisisMMD", "Metric": "Leaked Slice (tau>=0.90)", "Accuracy": 59.64, "Annotation": "N=588.6 (16.3%)"},
         {"Dataset": "CrisisMMD", "Metric": "Unleaked Clean Slice", "Accuracy": 54.24, "Annotation": "N=3,028.4 (83.7%)"},
-        {"Dataset": "CrisisMMD", "Metric": "Causally Purged Model", "Accuracy": 54.43, "Annotation": "Net Drop: -0.69 pp"},
+        {"Dataset": "CrisisMMD", "Metric": "Purged & Retrained Model", "Accuracy": 54.43, "Annotation": "Net Drop: -0.69 pp"},
         # HumAID (5-seed means: 4.41% leaked at tau=0.90, N=674.2 / 15,297)
         {"Dataset": "HumAID", "Metric": "Full Test (Random)", "Accuracy": 72.69, "Annotation": "N=15,297"},
         {"Dataset": "HumAID", "Metric": "Leaked Slice (tau>=0.90)", "Accuracy": 87.47, "Annotation": "N=674.2 (4.4%)"},
         {"Dataset": "HumAID", "Metric": "Unleaked Clean Slice", "Accuracy": 72.01, "Annotation": "N=14,622.8 (95.6%)"},
-        {"Dataset": "HumAID", "Metric": "Causally Purged Model", "Accuracy": 72.69, "Annotation": "Net Drop: 0.00 pp"},
+        {"Dataset": "HumAID", "Metric": "Purged & Retrained Model", "Accuracy": 72.69, "Annotation": "Net Drop: 0.00 pp"},
     ]
     df = pd.DataFrame(data)
 
@@ -136,7 +136,7 @@ def plot_leakage_impact() -> None:
         "Full Test (Random)": "#1f77b4",
         "Leaked Slice (tau>=0.90)": "#d62728",
         "Unleaked Clean Slice": "#2ca02c",
-        "Causally Purged Model": "#9467bd",
+        "Purged & Retrained Model": "#9467bd",
     }
 
     sns.barplot(
@@ -153,17 +153,17 @@ def plot_leakage_impact() -> None:
     ax.set_ylim(45, 95)
     ax.set_ylabel("Classification Accuracy (%) [5-Seed Mean]", fontweight="bold")
     ax.set_xlabel("Benchmark Dataset", fontweight="bold")
-    ax.set_title("Near-Duplicate Audit: Leaked-Slice Association vs. Causal Retraining Effect", fontweight="bold", pad=12)
+    ax.set_title("Near-Duplicate Audit: Leaked-Slice Association vs. Purge-and-Retrain Effect", fontweight="bold", pad=12)
     ax.legend(title="Evaluation Cohort / Condition", frameon=True, loc="upper left")
 
     # Annotations highlighting sample sizes and true net effects
-    ax.annotate("CrisisMMD (tau >= 0.90):\n• Leaked slice advantage: +5.40 pp (N=588.6)\n• Slice-weighted association contribution: +0.88 pp\n• Causal purge retraining effect: -0.69 pp\n[17.5% of dataset are duplicate retweets]",
+    ax.annotate("CrisisMMD (tau >= 0.90):\n• Leaked slice advantage: +5.40 pp (N=588.6)\n• Slice-weighted association contribution: +0.88 pp\n• Purge-and-retrain effect: -0.69 pp\n[17.5% of dataset are duplicate retweets]",
                 xy=(-0.05, 60.5), xytext=(-0.35, 71.0),
                 arrowprops=dict(facecolor="#333333", shrink=0.05, width=1.0, headwidth=4),
                 fontsize=8.5, color="#111111", ha="left",
                 bbox=dict(boxstyle="round,pad=0.3", fc="#f7f7f7", ec="#cccccc", lw=0.8))
 
-    ax.annotate("HumAID (tau >= 0.90):\n• Leaked slice advantage: +15.46 pp (N=674.2)\n• Slice-weighted association contribution: +0.68 pp\n• Causal purge retraining effect: 0.00 pp\n[Note: at tau>=0.98, N=6.2 samples (0.04%)]",
+    ax.annotate("HumAID (tau >= 0.90):\n• Leaked slice advantage: +15.46 pp (N=674.2)\n• Slice-weighted association contribution: +0.68 pp\n• Purge-and-retrain effect: 0.00 pp\n[Note: at tau>=0.98, N=6.2 samples (0.04%)]",
                 xy=(0.95, 87.5), xytext=(0.60, 68.0),
                 arrowprops=dict(facecolor="#333333", shrink=0.05, width=1.0, headwidth=4),
                 fontsize=8.5, color="#111111", ha="left",

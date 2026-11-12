@@ -154,16 +154,17 @@ class TestScientificClaims(unittest.TestCase):
         self.assertIn(r"half-width $\pm 5.48$ pp", latex)
 
         # 5. Temperature scaling consistency
-        self.assertIn("0.035--0.041", latex)
+        self.assertIn("0.035", latex)
+        self.assertIn("0.041", latex)
         self.assertIn(r"\hERMECEScaled", latex)
         self.assertIn(r"\cERMECEScaled", latex)
         self.assertIn(r"\hERMOptTMean", latex)
         self.assertIn(r"\cERMOptTMean", latex)
 
         # 6. Near-duplicate terminology distinction
-        self.assertIn("Slice-Weighted Association vs. Causal Retraining Effect", latex)
+        self.assertIn("Slice-Weighted Association vs. Purge-and-Retrain Effect", latex)
         self.assertIn("slice-weighted association contribution", latex)
-        self.assertIn("Causal Purge Retraining Effect", latex)
+        self.assertIn("Purge-and-Retrain Effect", latex)
         self.assertIn(r"\cDedupControlDrop", latex)
 
         # 7. Non-prescriptive recommendations & geographic wording

@@ -15,8 +15,8 @@ Most published machine learning models for disaster triage and crisis classifica
 This empirical audit investigates 94,566 observations from CrisisMMD and HumAID across 26 event folds spanning 9 geographic regions, establishing:
 1. **Paired Shift Gaps on Unseen Events:** While macro LOEO accuracy drops modestly on average (2.70 percentage points on CrisisMMD and 3.23 percentage points on HumAID relative to random splits), evaluating individual target events reveals significant performance vulnerability: the largest paired performance drop on individual disaster events reaches **6.97 pp** on CrisisMMD (Iraq-Iran Earthquake) and **15.52 pp** on HumAID (Maryland Floods) relative to matching random test instances. The lowest absolute LOEO fold accuracy is **39.33%** on California Wildfires (CrisisMMD, paired drop 5.54 pp) and **51.48%** on Maryland Floods (HumAID).
 2. **Diagnosis of Out-of-Distribution Degradation:** Class-prior divergence $D_{\text{KL}}(P_e \| P_{\text{train}})$ is strongly associated with out-of-distribution performance drop ($r = 0.563, p = 0.0121$), representing its strongest observed predictor. Furthermore, an input-free label-prior baseline achieves **38.67%** (CrisisMMD) and **32.21%** (HumAID) accuracy without consuming input features, demonstrating that random-split figures heavily reflect base rates. In all 26 folds, learned models outperform event priors by +5.58 to +18.76 pp (CrisisMMD) and +15.32 to +65.37 pp (HumAID).
-3. **Near-Duplicate Leakage vs. Causal Retraining Impact:** While test instances with training-set near-duplicates exhibit an association accuracy advantage of up to **+15.46 pp** ($\tau \ge 0.90$), their low prevalence limits the slice-weighted association contribution to +0.01 to +0.92 pp. Causally retraining after purging training near-duplicates shifts overall test accuracy by only **0.69 pp** on CrisisMMD and **0.00 pp** on HumAID, comparable to random training removal baselines (0.12 pp on CrisisMMD, 0.08 pp on HumAID).
-4. **Domain Generalization & The IRM Tradeoff (5-Seed Benchmark):** Minibatch-normalized GroupDRO provides modest worst-event protection (**+0.81 to +0.88 pp**), whereas IRM incurs a statistically significant **-2.90 to -3.77 pp accuracy penalty** ($p \le 0.032$, Holm-corrected) in exchange for reduced Expected Calibration Error (ECE 0.081 vs 0.161). However, applying post-hoc temperature scaling ($T \approx 0.64$) to ERM achieves superior calibration (**ECE 0.035--0.041**) with zero accuracy loss.
+3. **Near-Duplicate Leakage vs. Purge-and-Retrain Impact:** While test instances with training-set near-duplicates exhibit an association accuracy advantage of up to **+15.46 pp** ($\tau \ge 0.90$), their low prevalence limits the slice-weighted association contribution to +0.01 to +0.92 pp. Purging training near-duplicates and retraining from scratch shifts overall test accuracy by only **0.69 pp** on CrisisMMD and **0.00 pp** on HumAID, comparable to random training removal baselines (0.12 pp on CrisisMMD, 0.08 pp on HumAID).
+4. **Domain Generalization & The IRM Tradeoff (5-Seed Benchmark):** Minibatch-normalized GroupDRO provides modest worst-event protection (**+0.81 to +0.88 pp**) with slight mean accuracy penalties (-0.14 pp on CrisisMMD, -0.61 pp on HumAID), whereas IRM incurs a statistically significant **-2.90 to -3.77 pp accuracy penalty** ($p \le 0.032$, Holm-corrected). Raw ECE reduction from IRM is prominent on HumAID (0.081 vs 0.161) but minimal on CrisisMMD (0.067 vs 0.076). However, applying post-hoc temperature scaling ($T \approx 0.64$) to ERM achieves superior calibration without accuracy loss (**scaled ECE 0.035 on HumAID, 0.041 on CrisisMMD**).
 5. **Synthetic Feature Corruption & Norm Inflation:** Unnormalized Gaussian perturbations scale feature norms by up to $10\times$ ($\text{NSR} = \sigma \sqrt{384} \approx 9.80$ at $\sigma=0.50$), inflating unconstrained logits and causing ECE to surge to **0.745**. Re-normalizing features preserves calibration ($\text{ECE} \le 0.052$ for $\sigma \le 0.05$), while noise-augmented training preserves 27.63% accuracy and 0.115 ECE at $\sigma=0.50$.
 6. **Resampling Precision Analysis ($k \ge 15$ Events):** In this benchmark setting, at least 15 held-out disaster events were required to achieve an empirical 95% confidence interval width below 11 percentage points (a half-width of $\pm 5.5$ percentage points). Small-scale benchmarks evaluating $k=3$ events produce 95% confidence interval widths of 18.21 pp ($\pm 9.1$ pp).
 
@@ -36,11 +36,11 @@ This empirical audit investigates 94,566 observations from CrisisMMD and HumAID 
 | **Event-Prior Anchor** | **38.67%** | **32.21%** | Zero-feature historical base-rate prior |
 
 ### 2. Domain Generalization Algorithms (26 LOEO Folds, 5 Seeds)
-| Algorithm | CrisisMMD Mean LOEO | CrisisMMD Worst Event | HumAID Mean LOEO | HumAID Worst Event | HumAID ECE | Scaled ECE |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **ERM** | **51.41% $\pm$ 11.6%** | 38.77% | **67.75% $\pm$ 8.9%** | 46.90% | 0.1608 | **0.035** |
-| **GroupDRO** | 51.27% $\pm$ 11.2% | **39.65% (+0.88 pp)** | 67.14% $\pm$ 8.4% | **47.71% (+0.81 pp)** | 0.1956 | 0.022 |
-| **IRM** | 48.51% $\pm$ 11.6% | 37.86% | 63.98% $\pm$ 9.7% | 45.97% | **0.0806** | 0.021 |
+| Algorithm | CrisisMMD Mean LOEO | CrisisMMD Worst Event | HumAID Mean LOEO | HumAID Worst Event | HumAID ECE | HumAID Scaled ECE | CrisisMMD Scaled ECE |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **ERM** | **51.41% $\pm$ 11.6%** | 38.77% | **67.75% $\pm$ 8.9%** | 46.90% | 0.1608 | **0.035** | 0.041 |
+| **GroupDRO** | 51.27% $\pm$ 11.2% | **39.65% (+0.88 pp)** | 67.14% $\pm$ 8.4% | **47.71% (+0.81 pp)** | 0.1956 | 0.041 | **0.034** |
+| **IRM** | 48.51% $\pm$ 11.6% | 37.86% | 63.98% $\pm$ 9.7% | 45.97% | **0.0806** | 0.043 | 0.035 |
 
 ---
 
@@ -100,7 +100,7 @@ disaster-ai-audit/
 │   ├── run_benchmark.py       # Multi-split benchmark harness
 │   ├── retrain_domain_generalization.py # 5-seed DG retrain with Holm tests
 │   ├── run_compound_shift.py  # Fine-grained noise & NSR stress testing
-│   ├── compute_paired_shift_and_diagnostics.py # Paired gaps & causal deduplication
+│   ├── compute_paired_shift_and_diagnostics.py # Paired gaps & purge-and-retrain evaluation
 │   ├── generate_tables_and_macros.py # LaTeX macro generator
 │   └── generate_paper_figures.py # Publication figures (PDF & PNG)
 ├── tests/
@@ -129,4 +129,4 @@ If you use this benchmark, audit harness, or split manifests in your research, p
 
 - **Software:** MIT License
 - **Manuscript & Documentation:** Creative Commons Attribution 4.0 International (CC BY 4.0)
-- **Derived Manifests & Features:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+- **Derived Manifests, Cached Representations & Evaluation Tables:** Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
